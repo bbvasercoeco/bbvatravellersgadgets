@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  <ModulePrefs title="Special Effects" scrolling="true" height="320">
+    <Require feature="drag" />
+    
+  </ModulePrefs>
+  <Content type="html">
+  <![CDATA[
+<style type="text/css">
+
+body {background-color:yellow}
+p {color:blue}
+.prueba{
+font-size:18px;
+}
+</style>
+
+</script>
+    <table border=0 class="prueba">
+      <tr>
+        <td>
+          <p id="id1" style="font-weight:bold;">original</p>
+          <p id="id2" style="color:brown; font-weight:bold;">sepia</p>
+          <p id="id3" style="color:red; font-weight:bold;">red</p>
+          <p id="id4" style="color:green; font-weight:bold;">green</p>
+        </td>
+        <td id="id5" style="padding-left:60;">
+          <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcSPlouf8NPYjDdQcdG-N_t6M6N7Z9Gb81g_xwufqjWsz4Nteeuv91xFcvr19Q" alt="Rowan"/>
+        </td>
+      </tr>
+    </table>
+
+
+    <script type="text/javascript">
+    // Preload the images
+    var images = new Object();
+    images["id1"] = new Image();
+    images["id1"].src = "http://doc.examples.googlepages.com/Rowan-small.gif";
+    images["id2"] = new Image();
+    images["id2"].src = "http://doc.examples.googlepages.com/Rowan-small-sepia.gif";
+    images["id3"] = new Image();
+    images["id3"].src = "http://doc.examples.googlepages.com/Rowan-small-red.gif";
+    images["id4"] = new Image();
+    images["id4"].src = "http://doc.examples.googlepages.com/Rowan-small-green.gif";
+
+
+    // drag constructor
+    var drag_obj = new _IG_Drag();
+
+    // Add sources and target. In this example, there is one target: the photo.
+    drag_obj.addSource("original", _gel("id1"), "<p style=color:orange;>Restore original...</p>");
+    drag_obj.addSource("sepia", _gel("id2"), "<p style=color:orange;>Change to sepia...</p>");
+    drag_obj.addSource("red", _gel("id3"), "<p style=color:orange;>Change to red...</p>");
+    drag_obj.addSource("green", _gel("id4"), "<p style=color:orange;>Change to green...</p>");
+    drag_obj.addTarget("image", _gel("id5"));
+
+
+    // When user drags source onto target and releases it,
+    // display appropriate photo.
+    drag_obj.onDragEnd = function(source, target) {
+      if (target == null) return;
+      target.innerHTML = "<img src='" + images[source.id].src + "'/>";
+    }
+    </script>
+  ]]>
+  </Content>
+</Module>
