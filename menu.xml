@@ -27,7 +27,7 @@
 	float:left;  
 	padding: 19px 0 0 0;   
 	color: #fff;  
-	width: 190px;
+	width: 187px;
 	height: 34px;
 }  
 #button li a.first {  
@@ -37,12 +37,15 @@
 	float:left;  
 	padding: 19px 0 0 0;     
 	color: #fff;  
-	width: 122px;
+	width: 112px;
 	height:34px;
 }  
 #button li a:hover {  
 	background-color: #2586d7;  
 }  
+#button li a:active {  
+	background-color: #2586d7;  
+}
 </style>
 <div id="cabeceramenu">
 <ul id="button">  
