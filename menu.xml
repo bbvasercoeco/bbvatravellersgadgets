@@ -2,57 +2,56 @@
 <Module>
 <ModulePrefs title="menu" />
 <Content type="html"><![CDATA[
-
 <style> 
 #cabeceramenu {
-width: 970px;
-height: 61px;
-background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondomenu.png);	
-margin:0;
-padding: 0;
+	width: 970px;
+	height: 61px;
+	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondomenu.png);	
+	margin:0;
+	padding: 0;
+	background-repeat: no-repeat;
 }
-    #button {  
-    padding: 4px 0 0 73px;  
-height:60px;
-margin: 0 0 0 0px;
-    }  
-	    #button li {  
-    display: inline; 
-text-align: center;
-    }  
-	    #button li a {  
-    font-family: Arial;  
-    font-size:15px;  
-    text-decoration: none;  
-    float:left;  
-    padding: 19px 0 0 0;   
-    color: #fff;  
-width: 190px;
-height: 34px;
-    }  
-	  #button li a.first {  
-    font-family: Arial;  
-    font-size:15px;  
-    text-decoration: none;  
-    float:left;  
-    padding: 19px 0 0 0;     
-    color: #fff;  
-width: 122px;
-height:34px;
-    }  
-	    #button li a:hover {  
-    background-color: #2586d7;  
-   
-    }  </style>
-
-    <div id="cabeceramenu">
-    <ul id="button">  
-    <li><a href="https://sites.google.com/a/bbva.com/travellers/" class="first">Home</a></li>  
-     <li><a href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels">Future Travels</a></li>  
-	<li><a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels">Past Travels</a></li> 
-    <li><a href="https://sites.google.com/a/bbva.com/travellers/home/contribute">Contribute</a></li>  
-    <li><a href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda">Traveller's Agenda</a></li>  
-    </ul>  
+#button {  
+	padding: 4px 0 0 73px;  
+	height:60px;
+	margin: 0 0 0 0px;
+}  
+#button li {  
+	display: inline; 
+	text-align: center;
+}  
+#button li a {  
+	font-family: Arial;  
+	font-size:15px;  
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;   
+	color: #fff;  
+	width: 190px;
+	height: 34px;
+}  
+#button li a.first {  
+	font-family: Arial;  
+	font-size:15px;  
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;     
+	color: #fff;  
+	width: 122px;
+	height:34px;
+}  
+#button li a:hover {  
+	background-color: #2586d7;  
+}  
+</style>
+<div id="cabeceramenu">
+<ul id="button">  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/" class="first">Home</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels">Future Travels</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels">Past Travels</a></li> 
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/contribute">Contribute</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda">Traveller's Agenda</a></li>  
+</ul>  
 </div>
 ]]></Content>
 </Module>
