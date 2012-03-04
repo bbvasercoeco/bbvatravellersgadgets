@@ -7,7 +7,7 @@
 #cabeceramenu {
 width: 970px;
 height: 61px;
-background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/fondomenu.png);	
+background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondomenu.png);	
 margin:0;
 padding: 0;
 }
