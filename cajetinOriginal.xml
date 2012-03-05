@@ -78,7 +78,7 @@ if (VarBorde!="0") {
      html+=VarColorFondo;
      html+=';"';
      }
-  html+=" width=100%";
+  html+=" width=100%>";
     html+='<tr><td>';
   
 html+='<div style="font-size:';
