@@ -29,7 +29,7 @@
         <EnumValue value="9" />
   </UserPref>  
   <UserPref name="VarColorBorde" display_name="Color del borde" default_value="#a5c3f3"/>
-  <UserPref name="VarColorFondo" display_name="Color de fondo" default_value="transparent"/>
+  <UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
   <UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
   <UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
 
