@@ -150,7 +150,7 @@ function btn_seleccionado(tag,contenedor){
 				case "Previo": comprueba_bbcode2html(contenedor); break
 			    
 				case "Fuente": muestra_oculta("fuente",contenedor);break
-				case "Ayuda": window.open("http://sites.google.com/site/fdvcreations/google-sites/ayuda-para-bbcode","ayudabbcode","width=600,height=400,menubar=no,scrollbars=yes"); break
+				//case "Ayuda": window.open("http://sites.google.com/site/fdvcreations/google-sites/ayuda-para-bbcode","ayudabbcode","width=600,height=400,menubar=no,scrollbars=yes"); break
 
 				default: inssmile (tag,contenedor)
 				}
