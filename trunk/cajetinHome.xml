@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Module>
+<Module> 
   <ModulePrefs title="Cajetin texto personalizado Home Travellers"
     title_url="http://sites.google.com/site/fdvcreations/google-sites/cajetin"
     height="90"     
@@ -40,7 +40,7 @@
     padding: 10px;
 }
 </style>
-<div id="content_div"></div>
+<div id="content_div" style="height:300px"></div>
 <SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
 var html="";
