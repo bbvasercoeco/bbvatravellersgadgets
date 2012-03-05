@@ -49,11 +49,11 @@
 </style>
 <div id="cabeceramenu">
 <ul id="button">  
-<li><a href="https://sites.google.com/a/bbva.com/travellers/" class="first" target="top">Home</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/" class="first" target="_parent">Home</a></li>  
 <li><a href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels" target="_parent">Future Travels</a></li>  
-<li><a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels" target="top">Past Travels</a></li> 
-<li><a href="https://sites.google.com/a/bbva.com/travellers/home/contribute" target="top">Contribute</a></li>  
-<li><a href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="top">Traveller's Agenda</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels" target="_parent">Past Travels</a></li> 
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/contribute" target="_parent">Contribute</a></li>  
+<li><a href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
 </ul>  
 </div>
 ]]></Content>
