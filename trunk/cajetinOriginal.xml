@@ -37,10 +37,13 @@
 <Content type="html" view="home"><![CDATA[
 <style>
 #content_div {
- background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png);
+    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png) no-repeat top;
+}
+#content_div img {
+    padding: 20px;
 }
 </style>
-<div id="content_div"></div>
+<div id="content_div"  style="height:300px"></div>
 <SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
 var html="";
