@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-  <ModulePrefs title="Cajetin"
-    title_url="http://sites.google.com/site/fdvcreations/google-sites/cajetin"
-  height="90"
-  author="FdvCreations"
-  author_email="dev.fdvcreations@gmail.com"
+  <ModulePrefs title="Cajetin personalizado home bbva travellers"
+    title_url=""
+  height="220"
+  author=""
+  author_email=""
   description="GadGet para Google Sites que muestra textos en una caja con formato."
-  screenshot="http://cajetingadget.googlecode.com/files/cajetinscreen.jpg"
-  thumbnail="http://cajetingadget.googlecode.com/files/cajetin.png"  
+  screenshot=""
+  thumbnail=""  
   scrolling="false"
-  author_location="Cordoba, Spain"
+  author_location="Madrid, Spain"
   scaling="false">
   
   <Require feature="dynamic-height"/>
@@ -37,7 +37,7 @@
 <Content type="html" view="home"><![CDATA[
 <style>
 #content_div {
-    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png) no-repeat top;
+    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png) no-repeat top;
 }
 #content_div img {
     padding: 20px;
@@ -104,6 +104,7 @@ gadgets.window.adjustHeight();
    <![CDATA[
 
 <SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>
+<!--<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>-->
 
 <table width="100%" border=0><tr>
        <td>Comentario (admite bbcode):</td>
