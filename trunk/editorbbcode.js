@@ -307,7 +307,7 @@ function editor_para(contenedor){
 				
 		 // Fuente
 		
-		 html_btn+='<div id="fuente_'+contenedor+'" style="display:none; border-width:0; font-size:11;">';
+		 html_btn+='<div id="fuente_'+contenedor+'" style="display:inline; border-width:0; font-size:11;">';
 		 html_btn+="&nbsp;";
 		 html_btn+="Fuente:&nbsp;";
 		 html_btn+='<select id="Selec_font_'+contenedor+'" onchange="insfont (';
@@ -360,6 +360,6 @@ function editor_para(contenedor){
 		 html_btn+='</div>';
 
 		 document.write (html_btn);
-		  muestra_oculta("fuente",contenedor);
+		 // muestra_oculta("fuente",contenedor);
 		 }
 		 
