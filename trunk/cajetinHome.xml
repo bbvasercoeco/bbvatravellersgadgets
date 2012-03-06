@@ -43,13 +43,13 @@
 <Content type="html" view="home"><![CDATA[
 <style>
 #content_div {
-    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;
+    /*background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;*/
 }
 #content_div img {
     padding: 20px;
 }
 </style>
-<div id="content_div"  style="height:300px"></div>
+<div id="content_div"  style="height:300px; background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;"></div>
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>-->
 <SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
@@ -72,7 +72,7 @@ case "Verde": document.getElementById('content_div').style.background-image="url
 case "Azul": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png)"; break;    	
 	}
 */
-document.body.style.backgroundColor="transparent";// VarFondoGadget;
+document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
 if (VarBorde!="0") {
        html+='<table style="border-style: ';
