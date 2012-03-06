@@ -148,7 +148,7 @@ function btn_seleccionado(tag,contenedor){
 				case "Lista": inslist (contenedor); break
 				case "Previo": comprueba_bbcode2html(contenedor); break
 			    
-				case "Fuente": muestra_oculta("fuente",contenedor);break
+				//case "Fuente": muestra_oculta("fuente",contenedor);break
 				//case "Ayuda": window.open("http://sites.google.com/site/fdvcreations/google-sites/ayuda-para-bbcode","ayudabbcode","width=600,height=400,menubar=no,scrollbars=yes"); break
 
 				default: inssmile (tag,contenedor)
@@ -303,10 +303,11 @@ function editor_para(contenedor){
 				   html_btn+=boton("Previo",contenedor);
 				   }*/
 		 
-		 //html_btn+="</div>";
+		 html_btn+="</div>";
 				
 		 // Fuente
-		 //html_btn+='<div id="fuente_'+contenedor+'" style="display:block; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
+		
+		 html_btn+='<div id="fuente_'+contenedor+'" style="display:none; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
 		 html_btn+="&nbsp;";
 		 html_btn+="Fuente:&nbsp;";
 		 html_btn+='<select id="Selec_font_'+contenedor+'" onchange="insfont (';
@@ -359,5 +360,6 @@ function editor_para(contenedor){
 		 html_btn+='</div>';
 
 		 document.write (html_btn);
+		  muestra_oculta("fuente",contenedor);
 		 }
 		 
