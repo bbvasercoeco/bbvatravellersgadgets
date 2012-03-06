@@ -287,8 +287,8 @@ function editor_para(contenedor){
 		 html_btn+=boton("Subrayado",contenedor);		 
 		 html_btn+=boton("Cursiva",contenedor);
 		 html_btn+=boton("|",contenedor);
-		 html_btn+=boton("Fuente",contenedor);
-		 html_btn+=boton("|",contenedor);
+		/* html_btn+=boton("Fuente",contenedor);
+		 html_btn+=boton("|",contenedor);*/
 		 html_btn+=boton("Insertar enlace",contenedor);
 		 html_btn+=boton("Insertar imagen",contenedor);
 		// html_btn+=boton("Insertar emoticon",contenedor);
@@ -299,33 +299,12 @@ function editor_para(contenedor){
 		 html_btn+=boton("|",contenedor);
 		 html_btn+=boton("Ayuda",contenedor);
 		 
-		 if(typeof bbcode2html != 'undefined') {		 		   
+		 /*if(typeof bbcode2html != 'undefined') {		 		   
 				   html_btn+=boton("Previo",contenedor);
-				   }
+				   }*/
 		 
 		 html_btn+="</div>";
-		 
-		 // Caretos
-		/* html_btn+='<div id="caretos_'+contenedor+'" style="display:none; border-width:1; border-color:#d9f3bb; border-style:solid; ">';
-		 html_btn+="&nbsp;";
-		 html_btn+=boton(":)",contenedor);
-		 html_btn+=boton(":(",contenedor);
-		 html_btn+=boton(";)",contenedor);
-		 html_btn+=boton(":o",contenedor);
-		 html_btn+=boton(":P",contenedor);
-		 html_btn+=boton(":x",contenedor);
-		 html_btn+=boton("bien",contenedor);
-		 html_btn+=boton("mal",contenedor);
-		 html_btn+=boton("si",contenedor);
-		 html_btn+=boton("no",contenedor);
-		 html_btn+=boton("aplausos",contenedor);
-		 html_btn+=boton("mejorable",contenedor);
-		 html_btn+=boton("a ver",contenedor);
-		 html_btn+=boton("pensando",contenedor);
-		 html_btn+=boton("flipe",contenedor);
-		 html_btn+=boton("sin palabras",contenedor);
-		 html_btn+='</div>';*/
-		 // fin caretos
+				
 		 // Fuente
 		 html_btn+='<div id="fuente_'+contenedor+'" style="display:none; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
 		 html_btn+="&nbsp;";
