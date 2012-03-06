@@ -126,8 +126,12 @@ gadgets.window.adjustHeight();
 <style>
 #tablaconfig1 td, #tablaconfig2 td {
 	color: #000;
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: bold;
+}
+#tablaconfig2 input {
+	width: 50%;
+	font-size: 12px;
 }
 </style>
 <table width="100%" border="1" id="tablaconfig1">
@@ -157,7 +161,7 @@ gadgets.window.adjustHeight();
 			</select>	
 		</td>
 		<td>Color fondo:</td>
-		<td><input type="text" id="VarColorFondo" style="width: 100%" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
+		<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
 	</tr>	
 	<tr>
 		<td>Borde:</td>
@@ -174,19 +178,13 @@ gadgets.window.adjustHeight();
 			</select>	
 		</td>
 		<td>Color del borde:</td>
-		<td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
-    </tr>
-	<tr>
-		<td>Borde:</td>
-		<td><select id="VarBorde" onchange="registra('VarBorde')"><option value="0">Sin borde<option value="1">Linea solida<option value="2">Punteado<option value="3">Linea doble<option value="4">Linea discontinua<option value="5">Ranura<option value="6">Cresta<option value="7">Relieve interior<option value="8">Relieve exterior<option value="9">Redondeado</td>
-		<td>Color del borde:</td>
-		<td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
-    </tr>
+		<td><input type="text" id="VarColorBorde" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
+    </tr>	
 	<tr>
 		<td>Tamaño del texto:</td>
-		<td><input type="text" id="VarSize" style="width: 50" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
+		<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
         <td>Color texto:</td>
-		<td><input type="text" id="VarColorLetra" style="width: 100%" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
+		<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
 		     
 	</tr>
 </table>
