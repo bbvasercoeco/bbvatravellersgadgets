@@ -118,7 +118,7 @@ gadgets.window.adjustHeight();
   ]]>  
   </Content>
   
-<Content type="html" view="configuration"  preferred_height="280">
+<Content type="html" view="configuration"  preferred_height="300">
    <![CDATA[
 
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
@@ -134,7 +134,7 @@ gadgets.window.adjustHeight();
 	font-size: 12px;
 }
 </style>
-<table width="100%" border="1" id="tablaconfig1">
+<table width="100%" border="0" id="tablaconfig1">
 	<tr>
 		<td>Texto (admite bbcode):</td>		
 	</tr>
@@ -149,7 +149,7 @@ gadgets.window.adjustHeight();
 		</td>
 	</tr>
 </table>
-<table width="100%" border="1" id="tablaconfig2">
+<table width="100%" border="0" id="tablaconfig2">
 	<tr>
 		<td>Imagen de fondo:</td>
 		<td>
