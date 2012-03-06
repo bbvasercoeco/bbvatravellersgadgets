@@ -1,5 +1,4 @@
 var carpetagrf="http://bbcode2html-para-gadget.googlecode.com/files/";
-//var carpetagrf="C:/Users/David/Desktop/pruebas gadget/foro/editor bbcode/example_files/";
 //var carpetagrf="http://bbvatravellersgadgets.googlecode.com/svn/trunk/";
 var iconostxt=":)|:(|:o|;)|:P|:x|bien|mal|si|no|aplausos|mejorable|a ver|pensando|flipe|sin palabras";
 var matriz_iconos= new Array(); 
@@ -363,7 +362,8 @@ function editor_para(contenedor){
 		 html_btn+="'"+contenedor+"')";
 		 html_btn+='"><option value="" selected>-';
 		 html_btn+='<option value="white" style="color:white;">blanco';
-		 html_btn+='<option value="black" style="color:black;">black';
+		 html_btn+='<option value="azultextobbva" style="color:#073763;">azul texto BBVA';
+		 html_btn+='<option value="black" style="color:black;">negro';
 		 html_btn+='<option value="green" style="color:green;">verde';
 		 html_btn+='<option value="red" style="color:red;">rojo';
 		 html_btn+='<option value="yellow" style="color:yellow;">amarillo';
@@ -374,8 +374,7 @@ function editor_para(contenedor){
 		 html_btn+='<option value="maroon" style="color:maroon;">marron';
 		 html_btn+='<option value="navy" style="color:navy;">mar';
 		 html_btn+='<option value="silver" style="color:silver;">plata';
-		 html_btn+='<option value="cyan" style="color:cyan;">celeste';
-		 html_btn+='<option value="magenta" style="color:magenta;">rosa';
+		 html_btn+='<option value="cyan" style="color:cyan;">celeste';		 
 		 html_btn+='</select>';
 		 // Fin Fuente
 		 html_btn+='</div>';
