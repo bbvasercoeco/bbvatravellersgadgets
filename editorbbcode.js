@@ -97,25 +97,7 @@ function imagen_para(tag){
 				case "Previo": return "lupa.gif"; break
 				case "Fuente": return "sfuente.gif"; break
 				case "Ayuda": return "help.gif"; break
-				
-				case ":)": return "00.gif"; break
-				case ":(": return "01.gif"; break
-				
-				case ":o": return "13.gif"; break
-				case ";)": return "14.gif"; break
-				case ":P": return "15.gif"; break
-				
-				case ":x": return "02.gif"; break
-				case "bien": return "03.gif";break
-				case "mal": return "04.gif";break
-				case "si": return "05.gif";break
-				case "no": return "06.gif";break
-				case "aplausos": return "07.gif";break
-				case "mejorable": return "08.gif";break
-				case "a ver": return "09.gif";break
-				case "pensando": return "10.gif";break
-				case "flipe": return "11.gif";break
-				case "sin palabras": return "12.gif";break
+
 				}		 
 		 }
 function muestra_oculta(tag,contenedor){
@@ -342,7 +324,7 @@ function editor_para(contenedor){
 		 html_btn+="'"+contenedor+"')";
 		 html_btn+='"><option value="" selected>-';
 		 html_btn+='<option value="white" style="color:white;">blanco';
-		 html_btn+='<option value="azultextobbva" style="color:#073763;">azul texto BBVA';
+		 html_btn+='<option value="#073763" style="color:#073763;">azul texto BBVA';
 		 html_btn+='<option value="black" style="color:black;">negro';
 		 html_btn+='<option value="green" style="color:green;">verde';
 		 html_btn+='<option value="red" style="color:red;">rojo';
