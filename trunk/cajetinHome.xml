@@ -37,7 +37,7 @@
 <Content type="html" view="home"><![CDATA[
 <style>
 #content_div {
-    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png) no-repeat top;
+    background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarilo.png) no-repeat top;
 }
 #content_div img {
     padding: 20px;
