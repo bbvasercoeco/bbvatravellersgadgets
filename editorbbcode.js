@@ -282,7 +282,7 @@ function esicono(tag){
 function editor_para(contenedor){
         
 		 var html_btn="";
-		 html_btn+="<div>";
+		 html_btn+="<div style='display:inline;'>";
 		 html_btn+=boton("Negrita",contenedor);
 		 html_btn+=boton("Subrayado",contenedor);		 
 		 html_btn+=boton("Cursiva",contenedor);
@@ -297,7 +297,7 @@ function editor_para(contenedor){
 		 html_btn+=boton("Cita",contenedor);
 		 html_btn+=boton("Lista",contenedor);
 		 html_btn+=boton("|",contenedor);
-		 html_btn+=boton("Ayuda",contenedor);
+		// html_btn+=boton("Ayuda",contenedor);
 		 
 		 /*if(typeof bbcode2html != 'undefined') {		 		   
 				   html_btn+=boton("Previo",contenedor);
@@ -307,7 +307,7 @@ function editor_para(contenedor){
 				
 		 // Fuente
 		
-		 html_btn+='<div id="fuente_'+contenedor+'" style="display:none; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
+		 html_btn+='<div id="fuente_'+contenedor+'" style="display:none; border-width:0; font-size:11;">';
 		 html_btn+="&nbsp;";
 		 html_btn+="Fuente:&nbsp;";
 		 html_btn+='<select id="Selec_font_'+contenedor+'" onchange="insfont (';
