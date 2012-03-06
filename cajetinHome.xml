@@ -33,7 +33,7 @@
   <UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
   <UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
    <UserPref name="VarImagenFondo" display_name="Imagen Fondo Home" default_value="0" datatype="enum" >
-   <EnumValue value="Neutra" />
+   <EnumValue value="Neutro" />
       <EnumValue value="Amarillo" />
         <EnumValue value="Verde" />
         <EnumValue value="Azul" />       
@@ -50,7 +50,8 @@
 }
 </style>
 <div id="content_div"  style="height:300px"></div>
-<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>
+<!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>-->
+<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
 var html="";
 // Obtener userprefs
@@ -64,7 +65,9 @@ var VarColorBorde=prefs.getString("VarColorBorde");
 var VarSize=prefs.getString("VarSize");
 var VarImagenFondo=prefs.getString("VarImagenFondo");
 
+
 document.body.style.backgroundColor="transparent";// VarFondoGadget;
+
 if (VarBorde!="0") {
        html+='<table style="border-style: ';
        switch(VarBorde){
@@ -102,6 +105,13 @@ html+="</div>";
 html+='</td></tr></table>';
 
 document.getElementById("content_div").innerHTML = html;
+switch(VarBorde){
+	 case "Neutro": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
+	case "Amarillo": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png)"; break;
+case "Verde": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png)"; break;
+case "Azul": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png)"; break;    	
+	}
+
 gadgets.window.adjustHeight();
 </script>
   ]]>  
@@ -113,30 +123,35 @@ gadgets.window.adjustHeight();
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
 <SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>
 
-<table width="100%" border=0><tr>
-       <td>Comentario (admite bbcode):</td>
-       <td>
-           <script language="Javascript">
-     <!--
-     editor_para("VarComent");
-     //-->
-     </script>
-     <textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea></td>
-</tr></table>
-<table width="100%" border=0><tr>
-     <td>Color fondo:</td>
-       <td><input type="text" id="VarColorFondo" style="width: 100%" value="__UP_VarColorFondo__" onchange="registra('VarColorFondo')"></td>
-       <td>Borde:</td>
-       <td><select id="VarBorde" onchange="registra('VarBorde')"><option value="0">Sin borde<option value="1">Linea solida<option value="2">Punteado<option value="3">Linea doble<option value="4">Linea discontinua<option value="5">Ranura<option value="6">Cresta<option value="7">Relieve interior<option value="8">Relieve exterior<option value="9">Redondeado</td>
-       <td>Color del borde:</td>
-       <td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
-       </tr><tr>
-            <td>Color letra:</td>
-       <td><input type="text" id="VarColorLetra" style="width: 100%" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
-     <td>Grosor del texto:</td>
-       <td><input type="text" id="VarSize" style="width: 50" value="__UP_VarSize__" onchange="registra('VarSize')"></td>
-          
-</tr></table>
+<table width="100%" border=1>
+	<tr>
+		<td>Comentario (admite bbcode):</td>
+		<td>
+			<script language="Javascript">
+			 <!--
+			 editor_para("VarComent");
+			 //-->
+			</script>
+			<textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+		</td>
+	</tr>
+</table>
+<table width="100%" border=1>
+	<tr>
+		<td>Color fondo:</td>
+		<td><input type="text" id="VarColorFondo" style="width: 100%" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
+		<td>Borde:</td>
+		<td><select id="VarBorde" onchange="registra('VarBorde')"><option value="0">Sin borde<option value="1">Linea solida<option value="2">Punteado<option value="3">Linea doble<option value="4">Linea discontinua<option value="5">Ranura<option value="6">Cresta<option value="7">Relieve interior<option value="8">Relieve exterior<option value="9">Redondeado</td>
+		<td>Color del borde:</td>
+		<td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
+    </tr>
+	<tr>
+        <td>Color letra:</td>
+		<td><input type="text" id="VarColorLetra" style="width: 100%" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
+		<td>Grosor del texto:</td>
+		<td><input type="text" id="VarSize" style="width: 50" value="__UP_VarSize__" onchange="registra('VarSize')"></td>         
+	</tr>
+</table>
 
 <script type="text/javascript">
 document.getElementById("VarBorde").value="__UP_VarBorde__";
