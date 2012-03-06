@@ -45,7 +45,7 @@
     /*background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;*/
 }
 #content_div img {
-    padding: 0 15px 0 0;
+    padding: 0 15px 10px 0;
 }
 </style>
 <div id="content_div"  style="height: 220px; padding: 20px; background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
