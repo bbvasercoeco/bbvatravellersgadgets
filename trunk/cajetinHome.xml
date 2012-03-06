@@ -74,6 +74,8 @@ case "None": document.getElementById('content_div').style.background-image="none
 default: document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
 	
 	}
+	
+alert(document.getElementById('content_div').style.background-image);
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
 if (VarBorde!="0") {
