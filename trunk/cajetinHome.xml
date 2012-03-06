@@ -76,7 +76,10 @@ default: document.getElementById('content_div').style.background-image="url(http
 	}
 	*/
 
+document.getElementById("content_div").style.backgroundImage = "url('url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png)')";
+	
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
+
 
 if (VarBorde!="0") {
        html+='<table style="border-style: ';
