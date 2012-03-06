@@ -76,7 +76,7 @@ default: document.getElementById('content_div').style.background-image="url(http
 	}
 	*/
 
-document.getElementById("content_div").style.backgroundImage = "url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')";
+document.getElementById("content_div").style.backgroundImage = "url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')";
 	
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
