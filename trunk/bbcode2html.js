@@ -195,27 +195,7 @@ function bbcode2html(cadena) {
 								case "[/size]": resultado+="</span>"; break								
 								case "[google]": estado=3; contenido=""; etiqueta_esperada="[/google]"; break
 								case "[wikipedia]": estado=3; contenido=""; etiqueta_esperada="[/wikipedia]"; break
-								
-								/*
-								case "[:)]": resultado+= '<img src="'+carpetagrf_bbcode2html+'00.gif">'; break
-								case "[:(]": resultado+= '<img src="'+carpetagrf_bbcode2html+'01.gif">'; break
-				
-								case "[:o]": resultado+= '<img src="'+carpetagrf_bbcode2html+'13.gif">'; break
-								case "[;)]": resultado+= '<img src="'+carpetagrf_bbcode2html+'14.gif">'; break
-								case "[:P]": resultado+= '<img src="'+carpetagrf_bbcode2html+'15.gif">'; break
-				
-								case "[:x]": resultado+= '<img src="'+carpetagrf_bbcode2html+'02.gif">'; break
-								case "[bien]": resultado+= '<img src="'+carpetagrf_bbcode2html+'03.gif">'; break
-								case "[mal]": resultado+= '<img src="'+carpetagrf_bbcode2html+'04.gif">'; break
-								case "[si]": resultado+= '<img src="'+carpetagrf_bbcode2html+'05.gif">'; break
-								case "[no]": resultado+= '<img src="'+carpetagrf_bbcode2html+'06.gif">'; break
-								case "[aplausos]": resultado+= '<img src="'+carpetagrf_bbcode2html+'07.gif">'; break
-								case "[mejorable]": resultado+= '<img src="'+carpetagrf_bbcode2html+'08.gif">'; break
-								case "[a ver]": resultado+= '<img src="'+carpetagrf_bbcode2html+'09.gif">'; break
-								case "[pensando]": resultado+= '<img src="'+carpetagrf_bbcode2html+'10.gif">'; break
-								case "[flipe]": resultado+= '<img src="'+carpetagrf_bbcode2html+'11.gif">'; break
-								case "[sin palabras]": resultado+= '<img src="'+carpetagrf_bbcode2html+'12.gif">'; break
-								*/
+							
 								default: resultado+=etiqueta;
 						 		} // fin del switch etiqueta	
 							} else {
