@@ -64,7 +64,7 @@ var VarColorLetra=prefs.getString("VarColorLetra");
 var VarColorBorde=prefs.getString("VarColorBorde");
 var VarSize=prefs.getString("VarSize");
 var VarImagenFondo=prefs.getString("VarImagenFondo");
-
+/*
 switch(VarImagenFondo){
 	 case "Neutro": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
 	case "Amarillo": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png)"; break;
@@ -74,7 +74,7 @@ case "None": document.getElementById('content_div').style.background-image="none
 default: document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
 	
 	}
-	
+	*/
 
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
