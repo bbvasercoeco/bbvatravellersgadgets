@@ -303,10 +303,10 @@ function editor_para(contenedor){
 				   html_btn+=boton("Previo",contenedor);
 				   }*/
 		 
-		 html_btn+="</div>";
+		 //html_btn+="</div>";
 				
 		 // Fuente
-		 html_btn+='<div id="fuente_'+contenedor+'" style="display:block; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
+		 //html_btn+='<div id="fuente_'+contenedor+'" style="display:block; border-width:1; border-color:#d9f3bb; border-style:solid; font-size:12;">';
 		 html_btn+="&nbsp;";
 		 html_btn+="Fuente:&nbsp;";
 		 html_btn+='<select id="Selec_font_'+contenedor+'" onchange="insfont (';
