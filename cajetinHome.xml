@@ -64,14 +64,17 @@ var VarColorLetra=prefs.getString("VarColorLetra");
 var VarColorBorde=prefs.getString("VarColorBorde");
 var VarSize=prefs.getString("VarSize");
 var VarImagenFondo=prefs.getString("VarImagenFondo");
-/*
+
 switch(VarBorde){
 	 case "Neutro": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
 	case "Amarillo": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png)"; break;
 case "Verde": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png)"; break;
 case "Azul": document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png)"; break;    	
+case "None": document.getElementById('content_div').style.background-image="none"; break;    	
+default: document.getElementById('content_div').style.background-image="url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png)"; break;
+	
 	}
-*/
+
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
 if (VarBorde!="0") {
@@ -118,7 +121,7 @@ gadgets.window.adjustHeight();
   ]]>  
   </Content>
   
-<Content type="html" view="configuration"  preferred_height="300">
+<Content type="html" view="configuration"  preferred_height="330">
    <![CDATA[
 
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
