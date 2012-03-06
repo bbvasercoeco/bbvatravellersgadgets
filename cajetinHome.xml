@@ -49,7 +49,7 @@
     padding: 20px;
 }
 </style>
-<div id="content_div"  style="height:300px; background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;"></div>
+<div id="content_div"  style="height: 220px; background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>-->
 <SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
