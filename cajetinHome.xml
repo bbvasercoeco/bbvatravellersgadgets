@@ -157,7 +157,8 @@ gadgets.window.adjustHeight();
 				<option value="Neutro">Neutra</option>
 				<option value="Amarillo">Amarillo</option>
 				<option value="Verde">Verde</option>
-				<option value="Azul">Azul</option>
+				<option value="Azul">Azul</option>	
+				<option value="None">Sin imágen</option>				
 			</select>	
 		</td>
 		<td>Color fondo:</td>
@@ -184,8 +185,7 @@ gadgets.window.adjustHeight();
 		<td>Tamaño del texto:</td>
 		<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
         <td>Color texto:</td>
-		<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
-		     
+		<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 	</tr>
 </table>
 
