@@ -32,6 +32,12 @@
   <UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
   <UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
   <UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
+   <UserPref name="VarImagenFondo" display_name="Imagen Fondo Home" default_value="0" datatype="enum" >
+   <EnumValue value="Neutra" />
+      <EnumValue value="Amarillo" />
+        <EnumValue value="Verde" />
+        <EnumValue value="Azul" />       
+  </UserPref>
 
 
 <Content type="html" view="home"><![CDATA[
@@ -56,6 +62,7 @@ var VarColorFondo=prefs.getString("VarColorFondo");
 var VarColorLetra=prefs.getString("VarColorLetra");
 var VarColorBorde=prefs.getString("VarColorBorde");
 var VarSize=prefs.getString("VarSize");
+var VarImagenFondo=prefs.getString("VarImagenFondo");
 
 document.body.style.backgroundColor="transparent";// VarFondoGadget;
 if (VarBorde!="0") {
@@ -103,8 +110,8 @@ gadgets.window.adjustHeight();
 <Content type="html" view="configuration"  preferred_height="280">
    <![CDATA[
 
-<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>
-<!--<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>-->
+<!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
+<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>
 
 <table width="100%" border=0><tr>
        <td>Comentario (admite bbcode):</td>
