@@ -75,7 +75,7 @@ default: document.getElementById('content_div').style.background-image="url(http
 	
 	}
 	
-alert(document.getElementById('content_div').style.background-image);
+
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
 if (VarBorde!="0") {
