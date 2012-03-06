@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Module> 
-  <ModulePrefs title="Cajetin texto personalizado Home Travellers"
+<Module>
+  <ModulePrefs title="Cajetin"
     title_url="http://sites.google.com/site/fdvcreations/google-sites/cajetin"
-    height="90"     
-    description="GadGet para Google Sites que muestra textos en una caja con formato."
-    screenshot="http://cajetingadget.googlecode.com/files/cajetinscreen.jpg"
-    thumbnail="http://cajetingadget.googlecode.com/files/cajetin.png"    
-    scrolling="false"    
-    scaling="false">
-    
-    <Require feature="dynamic-height"/>
-    <Require feature="setprefs"/>
+  height="90"
+  author="FdvCreations"
+  author_email="dev.fdvcreations@gmail.com"
+  description="GadGet para Google Sites que muestra textos en una caja con formato."
+  screenshot="http://cajetingadget.googlecode.com/files/cajetinscreen.jpg"
+  thumbnail="http://cajetingadget.googlecode.com/files/cajetin.png"  
+  scrolling="false"
+  author_location="Cordoba, Spain"
+  scaling="false">
+  
+  <Require feature="dynamic-height"/>
+  <Require feature="setprefs"/>
     </ModulePrefs>  
   <UserPref name="VarComent" display_name="Comentario (admite bbcode)" default_value="Comentario"/>  
   <UserPref name="VarBorde" display_name="Estilo del Borde" default_value="0" datatype="enum" >
    <EnumValue value="0" />
-        <EnumValue value="1" />
+      <EnumValue value="1" />
         <EnumValue value="2" />
         <EnumValue value="3" />
         <EnumValue value="4" />
@@ -24,7 +27,7 @@
         <EnumValue value="7" />
         <EnumValue value="8" />
         <EnumValue value="9" />
-    </UserPref>  
+  </UserPref>  
   <UserPref name="VarColorBorde" display_name="Color del borde" default_value="#a5c3f3"/>
   <UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
   <UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
@@ -40,7 +43,7 @@
     padding: 20px;
 }
 </style>
-<div id="content_div" style="height:300px"></div>
+<div id="content_div"  style="height:300px"></div>
 <SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
 var html="";
@@ -68,19 +71,19 @@ if (VarBorde!="0") {
          case "8": html+=' outset; border-width: 4; '; break;
          case "9": html+=' solid; border-width: 2; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;'; break;     
         }
-       html+=' border-color: ';
-       html+=VarColorBorde;
-       html+='; background-color: ';
-       html+=VarColorFondo;
-       html+=';"';
-       } else {
-       html+='<table style="border-style: none; background-color: ';
-       html+=VarColorFondo;
-       html+=';"';
-       }
-    html+=" width=100%>";
+     html+=' border-color: ';
+     html+=VarColorBorde;
+     html+='; background-color: ';
+     html+=VarColorFondo;
+     html+=';"';
+     } else {
+     html+='<table style="border-style: none; background-color: ';
+     html+=VarColorFondo;
+     html+=';"';
+     }
+  html+=" width=100%>";
     html+='<tr><td>';
-    
+  
 html+='<div style="font-size:';
 html+=VarSize;
 html+='; color:';
@@ -94,37 +97,37 @@ html+='</td></tr></table>';
 document.getElementById("content_div").innerHTML = html;
 gadgets.window.adjustHeight();
 </script>
-    ]]>  
+  ]]>  
   </Content>
   
 <Content type="html" view="configuration"  preferred_height="280">
    <![CDATA[
 
-<!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
-<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>
+<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>
+
 <table width="100%" border=0><tr>
        <td>Comentario (admite bbcode):</td>
        <td>
            <script language="Javascript">
-       <!--
-       editor_para("VarComent");
-       //-->
-       </script>
-       <textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea></td>
+     <!--
+     editor_para("VarComent");
+     //-->
+     </script>
+     <textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea></td>
 </tr></table>
 <table width="100%" border=0><tr>
-       <td>Color fondo:</td>
+     <td>Color fondo:</td>
        <td><input type="text" id="VarColorFondo" style="width: 100%" value="__UP_VarColorFondo__" onchange="registra('VarColorFondo')"></td>
        <td>Borde:</td>
        <td><select id="VarBorde" onchange="registra('VarBorde')"><option value="0">Sin borde<option value="1">Linea solida<option value="2">Punteado<option value="3">Linea doble<option value="4">Linea discontinua<option value="5">Ranura<option value="6">Cresta<option value="7">Relieve interior<option value="8">Relieve exterior<option value="9">Redondeado</td>
        <td>Color del borde:</td>
-       <td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>        
+       <td><input type="text" id="VarColorBorde" style="width: 100%" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
        </tr><tr>
-              <td>Color letra:</td>
+            <td>Color letra:</td>
        <td><input type="text" id="VarColorLetra" style="width: 100%" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>
-       <td>Grosor del texto:</td>
+     <td>Grosor del texto:</td>
        <td><input type="text" id="VarSize" style="width: 50" value="__UP_VarSize__" onchange="registra('VarSize')"></td>
-       <td colspan=2>&nbsp;</td>      
+          
 </tr></table>
 
 <script type="text/javascript">
@@ -134,7 +137,7 @@ document.getElementById("VarBorde").value="__UP_VarBorde__";
 var prefs = new gadgets.Prefs();
 function registra(variable){
     prefs.set (variable,document.getElementById(variable).value);
-    }         
+  }     
 gadgets.window.adjustHeight();
       
 //gadgets.util.registerOnLoadHandler(registerHandlers);
