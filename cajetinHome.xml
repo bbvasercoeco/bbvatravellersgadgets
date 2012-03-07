@@ -40,15 +40,15 @@
 <Content type="html" view="home"><![CDATA[
 <style>
 #content_div {
-    /*background: #fff url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;*/
+    /*background: #fff url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png) no-repeat top;*/
 }
 #content_div img {
     padding: 0 15px 10px 0;
 }
 </style>
-<div id="content_div"  style="height: 220px; padding: 20px; background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
+<div id="content_div"  style="height: 220px; padding: 20px; background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/bbcode2html.js"></SCRIPT>-->
-<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></SCRIPT>
+<SCRIPT language=javascript src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></SCRIPT>
 <script type="text/javascript">
 var html="";
 // Obtener userprefs
@@ -63,12 +63,12 @@ var VarSize=prefs.getString("VarSize");
 var VarImagenFondo=prefs.getString("VarImagenFondo");
 
 switch(VarImagenFondo){
-	case "Neutro": document.getElementById('content_div').style.backgroundImage="url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
-	case "Amarillo": document.getElementById('content_div').style.backgroundImage="url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png')"; break;
-	case "Verde": document.getElementById('content_div').style.backgroundImage="url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')"; break;
-	case "Azul": document.getElementById('content_div').style.backgroundImage="url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')"; break;    	
+	case "Neutro": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+	case "Amarillo": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png')"; break;
+	case "Verde": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')"; break;
+	case "Azul": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')"; break;    	
 	case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
-	default: document.getElementById('content_div').style.backgroundImage="url('http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+	default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
 }
 
 document.body.style.backgroundColor="#fff";// VarFondoGadget;
@@ -122,7 +122,7 @@ gadgets.window.adjustHeight();
    <![CDATA[
 
 <!--<SCRIPT language=javascript src="http://bbcode2html-para-gadget.googlecode.com/files/editorbbcode.js"></SCRIPT>-->
-<SCRIPT language=javascript src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>
+<SCRIPT language=javascript src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></SCRIPT>
 <style>
 #tablaconfig1 td, #tablaconfig2 td {
 	color: #000;
