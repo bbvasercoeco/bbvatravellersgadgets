@@ -10,7 +10,7 @@ gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina(){
 //var nombrepagina = window.webspace.page.name;
 //alert(window.webspace.page.name);
-var parametros = gadgets.util.getUrlParameters();
+var parametros = gadgets.util.getUrlParameters()["parent"]);
 var foo = "";
 }
 
