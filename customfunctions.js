@@ -5,6 +5,7 @@ document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
 */
 //var pathurl = window.top.parent.location.pathname;
 var nombrepagina = window.webspace.page.name;
+alert(window.webspace.page.name);
 //var parameters = utils.getUrlParameters();
 //alert(window.top.parent.location.pathname);
 //alert(pathurl); 
