@@ -71,6 +71,7 @@ if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
 }
 }
 </script>
+
 <!--
 <script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/customfunctions.js"></SCRIPT>
 -->
