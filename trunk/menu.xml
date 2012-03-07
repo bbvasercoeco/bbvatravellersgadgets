@@ -64,7 +64,7 @@
 	document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
 	*/
 	var pathurl = window.location.pathname;
-	alert(pathurl);
+	alert(pathurl); 
 	//alert(pathurl.indexOf("Future-Travels"));
 	if (pathurl.indexOf("Future-Travels")!=-1)
 	{
