@@ -8,9 +8,10 @@ document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
 
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina(){
-var nombrepagina = window.webspace.page.name;
-alert(window.webspace.page.name);
-gadgets.util.getUrlParameters();
+//var nombrepagina = window.webspace.page.name;
+//alert(window.webspace.page.name);
+var parametros = gadgets.util.getUrlParameters();
+var foo = "";
 }
 
 //var parameters = utils.getUrlParameters();
