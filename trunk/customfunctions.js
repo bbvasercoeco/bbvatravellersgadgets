@@ -4,6 +4,9 @@ document.getElementById("past-travels").style.backgroundColor = "#FFE100";
 document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
 */
 var pathurl = window.top.parent.location.pathname;
+
+var utils = new gadgets.util();
+var parameters = utils.getUrlParameters();
 //alert(window.top.parent.location.pathname);
 //alert(pathurl); 
 //alert(pathurl.indexOf("Future-Travels"));
