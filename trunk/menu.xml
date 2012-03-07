@@ -56,10 +56,22 @@
 <li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
 </ul>  
 </div>
+gadgets.util.registerOnLoadHandler(datospagina);
+function datospagina(){
 
-
+var parametros = gadgets.util.getUrlParameters()["parent"];
+if (parametros.indexOf("Future-Travels")!=-1)
+{
+	document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+}
+if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
+{
+	document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+}
+}
+<!--
 <script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/customfunctions.js"></SCRIPT>
-
+-->
 
 ]]></Content>
 </Module>
