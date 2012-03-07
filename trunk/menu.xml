@@ -61,14 +61,25 @@ gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina(){
 
 var parametros = gadgets.util.getUrlParameters()["parent"];
-if (parametros.indexOf("Future-Travels")!=-1)
-{
-	document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
-}
-if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
-{
-	document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
-}
+	if (parametros.indexOf("Future-Travels")!=-1)
+	{
+		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+	}
+	if (parametros.indexOf("past-travels")!=-1)
+	{
+		document.getElementById("past-travels").style.backgroundColor = "#FFE100";
+	}
+	if (parametros.indexOf("traveller-agenda")!=-1)
+	{
+		document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
+	}
+	
+	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
+	{
+		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+	}
+	
+	
 }
 </script>
 
