@@ -56,6 +56,7 @@
 <li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
 </ul>  
 </div>
+<script type="text/javascript">
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina(){
 
@@ -69,6 +70,7 @@ if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
 	document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
 }
 }
+</script>
 <!--
 <script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/customfunctions.js"></SCRIPT>
 -->
