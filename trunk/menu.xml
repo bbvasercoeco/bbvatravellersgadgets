@@ -56,11 +56,13 @@
 <li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
 </ul>  
 </div>
+<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/customfunctions.js"></SCRIPT>
 <script type="text/javascript">
+document.getElementById("Future-Travels").style.backgroundColor = "blue";
 	var pathurl = window.location.pathname;
 	if (pathurl.indexOf("Future-Travels")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+		document.getElementById("Future-Travels").style.backgroundColor = "blue";
 	}
 </script>
 ]]></Content>
