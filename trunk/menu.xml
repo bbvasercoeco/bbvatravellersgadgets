@@ -28,7 +28,7 @@
 	padding: 19px 0 0 0;   
 	color: #fff;  
 	width: 187px;
-	height: 34px;
+	height: 35px;
 }  
 #button li a.first {  
 	font-family: Arial;  
@@ -38,7 +38,7 @@
 	padding: 19px 0 0 0;     
 	color: #fff;  
 	width: 112px;
-	height:34px;
+	height:35px;
 }  
 #button li a:hover {  
 	background-color: #2586d7;  
