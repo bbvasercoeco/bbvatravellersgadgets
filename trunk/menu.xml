@@ -60,7 +60,7 @@
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina(){
 
-var parametros = gadgets.util.getUrlParameters()["parent"];
+	var parametros = gadgets.util.getUrlParameters()["parent"];
 	if (parametros.indexOf("Future-Travels")!=-1)
 	{
 		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
@@ -78,6 +78,8 @@ var parametros = gadgets.util.getUrlParameters()["parent"];
 	{
 		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
 	}
+	
+	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
 	
 	
 }
