@@ -80,9 +80,7 @@ function datospagina(){
 	}
 	
 	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px !important";
 	
 	
 }
