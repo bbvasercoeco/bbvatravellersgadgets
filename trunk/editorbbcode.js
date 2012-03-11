@@ -334,8 +334,9 @@ function editor_para(contenedor)
 	 html_btn+='<select id="Selec_Color_'+contenedor+'" onchange="inscolor (';
 	 html_btn+="'"+contenedor+"')";
 	 html_btn+='"><option value="" selected>-';
-	 html_btn+='<option value="white" style="color:white;">blanco';
+	 html_btn+='<option value="white" style="color:black;">blanco';
 	 html_btn+='<option value="#073763" style="color:#073763;">azul texto BBVA';
+	 html_btn+='<option value="#3f78b2" style="color:#3f78b2;">titulo BBVA';
 	 html_btn+='<option value="black" style="color:black;">negro';
 	 html_btn+='<option value="green" style="color:green;">verde';
 	 html_btn+='<option value="red" style="color:red;">rojo';
