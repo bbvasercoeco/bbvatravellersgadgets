@@ -46,6 +46,9 @@
 #button li a:active {  
 	background-color: #2586d7;  
 }
+.sites-adminfooter {
+	display:none !important;
+}
 </style>
 <div id="cabeceramenu">
 <ul id="button">  
@@ -81,10 +84,8 @@ function datospagina(){
 	
 	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";
-	
-	//sites-header-title
-	
+	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";	
+	//sites-header-title	
 }
 </script>
 ]]></Content>
