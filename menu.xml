@@ -74,8 +74,8 @@
 </div>
 <script type="text/javascript">
 gadgets.util.registerOnLoadHandler(datospagina);
-function datospagina(){
-
+function datospagina()
+{
 	var parametros = gadgets.util.getUrlParameters()["parent"];
 	if (parametros.indexOf("Future-Travels")!=-1)
 	{
@@ -96,25 +96,10 @@ function datospagina(){
 	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
 	{
 		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}
-	
+	}	
 	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";	
-	//
-	var rules = window.top.parent.document.styleSheets.item(0); 
-	reglas = rules.cssRules || rules.rules; 
-	for (var i = 0; i <rules.length; i + +) 
-	{ 
-		if (rules.item(0).selectorText == 'sites-adminfooter') 
-		{ 
-			rules.item(i)style.display = 'none'; 
-			break; 
-		} 
-	}
-	
-	
-	//sites-header-title	
+	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";		
 }
 </script>
 ]]></Content>
