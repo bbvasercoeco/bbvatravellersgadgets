@@ -10,7 +10,7 @@
 	margin:0;
 	padding: 0;
 	background-repeat: no-repeat;
-	background-position: left;
+	background-position: -10px center; 
 }
 #button {  
 	height: 60px;
