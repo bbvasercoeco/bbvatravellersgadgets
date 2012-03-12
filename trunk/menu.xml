@@ -89,7 +89,10 @@ function datospagina(){
 	{
 		document.getElementById("traveller-agenda").style.backgroundColor = "#00BEBD";
 	}
-	
+	if (parametros.indexOf("contribute")!=-1)
+	{
+		document.getElementById("traveller-agenda").style.backgroundColor = "#2586d7";
+	}
 	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
 	{
 		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
