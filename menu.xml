@@ -49,6 +49,19 @@
 .sites-adminfooter {
 	display:none !important;
 }
+
+#button li a#past-travels:hover {  
+	background-color: #FEBB60;  
+} 
+
+#button li a#Future-Travels:hover {  
+	background-color: #00A7DE;  
+} 
+
+#button li a#traveller-agenda:hover {  
+	background-color: #7EBD50;  
+} 
+
 </style>
 <div id="cabeceramenu">
 <ul id="button">  
@@ -70,7 +83,7 @@ function datospagina(){
 	}
 	if (parametros.indexOf("past-travels")!=-1)
 	{
-		document.getElementById("past-travels").style.backgroundColor = "#FFE100";
+		document.getElementById("past-travels").style.backgroundColor = "#FEBB60";
 	}
 	if (parametros.indexOf("traveller-agenda")!=-1)
 	{
