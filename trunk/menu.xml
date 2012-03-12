@@ -55,11 +55,11 @@
 } 
 
 #button li a#Future-Travels:hover {  
-	background-color: #00A7DE;  
+	background-color: #7ABD5E;  
 } 
 
 #button li a#traveller-agenda:hover {  
-	background-color: #7EBD50;  
+	background-color: #00BEBD;  
 } 
 
 </style>
@@ -79,7 +79,7 @@ function datospagina(){
 	var parametros = gadgets.util.getUrlParameters()["parent"];
 	if (parametros.indexOf("Future-Travels")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
 	}
 	if (parametros.indexOf("past-travels")!=-1)
 	{
@@ -87,12 +87,12 @@ function datospagina(){
 	}
 	if (parametros.indexOf("traveller-agenda")!=-1)
 	{
-		document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
+		document.getElementById("traveller-agenda").style.backgroundColor = "#00BEBD";
 	}
 	
 	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
+		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
 	}
 	
 	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
