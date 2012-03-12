@@ -102,7 +102,7 @@ function datospagina(){
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
 	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";	
 	//
-	//normas var = document.styleSheets.item (0); 
+	var rules = window.top.parent.document.styleSheets.item(0); 
 	reglas = rules.cssRules || rules.rules; 
 	for (var i = 0; i <rules.length; i + +) 
 	{ 
