@@ -3,10 +3,10 @@
 <ModulePrefs title="menu travellers" />
 <Content type="html"><![CDATA[
 <style> 
-#cabeceramenu {
+#piepagina {
 	width: 970px;
 	height: 61px;
-	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondomenu.png);	
+	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
 	margin:0;
 	padding: 0;
 	background-repeat: no-repeat;
@@ -47,45 +47,13 @@
 	background-color: #2586d7;  
 }
 </style>
-<div id="cabeceramenu">
-<ul id="button">  
-<li><a id="home" href="https://sites.google.com/a/bbva.com/travellers/" class="first" target="_parent">Home</a></li>  
-<li><a id="Future-Travels" href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels" target="_parent">Future Travels</a></li>  
-<li><a id="past-travels" href="https://sites.google.com/a/bbva.com/travellers/home/past-travels" target="_parent">Past Travels</a></li> 
-<li><a id="contribute" href="https://sites.google.com/a/bbva.com/travellers/home/contribute" target="_parent">Contribute</a></li>  
-<li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
-</ul>  
+<div id="piepagina">
+	<ul id="button">  
+		<li><a id="contributepie" href="https://sites.google.com/a/bbva.com/travellers/home/contribute" class="first" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/contribute.png"/></a></li>  
+		<li><a id="newEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/tell-us-new-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1pie.png"/></a></li>  
+		<li><a id="askEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/ask-an-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2pie.png"/></a></li> 
+		<li><a id="yourExperience" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/share-your-experience" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3pie.png"/></a></li>  
+	</ul>  
 </div>
-<script type="text/javascript">
-gadgets.util.registerOnLoadHandler(datospagina);
-function datospagina(){
-
-	var parametros = gadgets.util.getUrlParameters()["parent"];
-	if (parametros.indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
-	}
-	if (parametros.indexOf("past-travels")!=-1)
-	{
-		document.getElementById("past-travels").style.backgroundColor = "#FFE100";
-	}
-	if (parametros.indexOf("traveller-agenda")!=-1)
-	{
-		document.getElementById("traveller-agenda").style.backgroundColor = "#7EBD50";
-	}
-	
-	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#00A7DE";
-	}
-	
-	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
-	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";
-	
-	//sites-header-title
-	
-}
-</script>
 ]]></Content>
 </Module>
