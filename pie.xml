@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Module>
 <ModulePrefs title="pie pagina travellers" />
 <Content type="html"><![CDATA[
@@ -6,7 +6,7 @@
 #piepagina {
 	width: 970px;
 	height: 61px;
-	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
+	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
 	margin:0;
 	padding: 0;
 	background-repeat: no-repeat;
