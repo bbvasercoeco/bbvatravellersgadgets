@@ -101,6 +101,19 @@ function datospagina(){
 	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
 	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";	
+	//
+	//normas var = document.styleSheets.item (0); 
+	reglas = rules.cssRules || rules.rules; 
+	for (var i = 0; i <rules.length; i + +) 
+	{ 
+		if (rules.item(0).selectorText == 'sites-adminfooter') 
+		{ 
+			rules.item(i)style.display = 'none'; 
+			break; 
+		} 
+	}
+	
+	
 	//sites-header-title	
 }
 </script>
