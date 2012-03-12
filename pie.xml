@@ -1,59 +1,206 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="pie pagina travellers" />
-<Content type="html"><![CDATA[
-<style> 
-#piepagina {
-	width: 970px;
-	height: 61px;
-	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
-	margin:0;
-	padding: 0;
-	background-repeat: no-repeat;
-}
-#button {  
-	padding: 4px 0 0 73px;  
-	height:60px;
-	margin: 0 0 0 0px;
-}  
-#button li {  
-	display: inline; 
-	text-align: center;
-}  
-#button li a {  
-	font-family: Arial;  
-	font-size:15px;  
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;   
-	color: #fff;  
-	width: 187px;
-	height: 35px;
-}  
-#button li a.first {  
-	font-family: Arial;  
-	font-size:15px;  
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;     
-	color: #fff;  
-	width: 112px;
-	height:35px;
-}  
-#button li a:hover {  
-	background-color: #2586d7;  
-}  
-#button li a:active {  
-	background-color: #2586d7;  
-}
-</style>
-<div id="piepagina">
-	<ul id="button">  
-		<li><a id="contributepie" href="https://sites.google.com/a/bbva.com/travellers/home/contribute" class="first" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/contribute.png"/></a></li>  
-		<li><a id="newEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/tell-us-new-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1pie.png"/></a></li>  
-		<li><a id="askEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/ask-an-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2pie.png"/></a></li> 
-		<li><a id="yourExperience" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/share-your-experience" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3pie.png"/></a></li>  
-	</ul>  
-</div>
-]]></Content>
+	<ModulePrefs title="Cajetin personalizado home bbva travellers"
+		title_url=""
+		height="230"
+		author=""
+		author_email=""
+		description="GadGet para Google Sites que muestra textos en una caja con formato."
+		screenshot=""
+		thumbnail=""  
+		scrolling="false"
+		author_location="Madrid, Spain"
+		scaling="false">
+		<Require feature="dynamic-height"/>
+		<Require feature="setprefs"/>
+	</ModulePrefs>  
+	<UserPref name="VarComent" display_name="Comentario (admite bbcode)" default_value="Comentario"/>  
+	<UserPref name="VarBorde" display_name="Estilo del Borde" default_value="0" datatype="enum" >
+		<EnumValue value="0" />
+		<EnumValue value="1" />
+		<EnumValue value="2" />
+		<EnumValue value="3" />
+		<EnumValue value="4" />
+		<EnumValue value="5" />
+		<EnumValue value="6" />
+		<EnumValue value="7" />
+		<EnumValue value="8" />
+		<EnumValue value="9" />
+	</UserPref>  
+	<UserPref name="VarColorBorde" display_name="Color del borde" default_value="#a5c3f3"/>
+	<UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
+	<UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
+	<UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
+	<UserPref name="VarImagenFondo" display_name="Imagen Fondo Home" default_value="0" datatype="enum" >
+		<EnumValue value="Neutro" />
+		<EnumValue value="Amarillo" />
+        <EnumValue value="Verde" />
+        <EnumValue value="Azul" />       
+	</UserPref>
+	<Content type="html" view="home"><![CDATA[
+		<style>		
+			#content_div img {
+				padding: 0 15px 10px 0;
+			}
+			#content_div a img {
+				padding: 0;
+			}
+			.sites-adminfooter {
+				display:none;
+			}
+		</style>
+	
+		<div id="content_div"  style="height: 230px; padding: 20px; background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
+
+		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></script>
+
+		<script type="text/javascript">
+			var html="";
+			// Obtener userprefs
+			var prefs = new gadgets.Prefs();
+			var VarComent=prefs.getString("VarComent");
+			var VarBorde=prefs.getString("VarBorde");
+			var VarAlign=prefs.getString("VarAlign");
+			var VarColorFondo=prefs.getString("VarColorFondo");
+			var VarColorLetra=prefs.getString("VarColorLetra");
+			var VarColorBorde=prefs.getString("VarColorBorde");
+			var VarSize=prefs.getString("VarSize");
+			var VarImagenFondo=prefs.getString("VarImagenFondo");
+
+			switch(VarImagenFondo)
+			{
+				case "Neutro": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+				case "Amarillo": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png')"; break;
+				case "Verde": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')"; break;
+				case "Azul": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')"; break;    	
+				case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
+				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+			}
+
+			document.body.style.backgroundColor="#fff";// VarFondoGadget;
+
+			if (VarBorde!="0") 
+			{
+				html+='<table style="border-style: ';
+				switch(VarBorde)
+				{
+					case "1": html+=' solid; border-width: 1; '; break;
+					case "2": html+=' dotted; border-width: 1; '; break;
+					case "3": html+=' double; border-width: 3; '; break;
+					case "4": html+=' dashed; border-width: 1; '; break;
+					case "5": html+=' groove; border-width: 4; '; break;
+					case "6": html+=' ridge; border-width: 4; '; break;
+					case "7": html+=' inset; border-width: 4; '; break;
+					case "8": html+=' outset; border-width: 4; '; break;
+					case "9": html+=' solid; border-width: 2; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;'; break;     
+				}
+				html+=' border-color: ';
+				html+=VarColorBorde;
+				html+='; background-color: ';
+				html+=VarColorFondo;
+				html+=';"';
+			} 
+			else 
+				{
+					html+='<table style="border-style: none; background-color: ';
+					html+=VarColorFondo;
+					html+=';"';
+				}
+			html+=" width=100%>";
+			html+='<tr><td>';  
+			html+='<div style="font-size:';
+			html+=VarSize;
+			html+='; color:';
+			html+=VarColorLetra;
+			html+=';">';
+
+			html+=bbcode2html(VarComent);
+			html+="</div>";
+			html+='</td></tr></table>';
+
+			document.getElementById("content_div").innerHTML = html;
+			gadgets.window.adjustHeight();
+		</script>
+	]]>  
+	</Content>
+  
+	<Content type="html" view="configuration"  preferred_height="330">
+	<![CDATA[
+		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
+		<style>
+			#tablaconfig1 td, #tablaconfig2 td {
+				color: #000;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			#tablaconfig2 input {
+				width: 50%;
+				font-size: 12px;
+			}
+		</style>
+		<table width="100%" height="120px;" border="0" id="tablaconfig1">
+			<tr><td>Texto (admite bbcode):</td></tr>
+			<tr>		
+				<td>
+					<script language="Javascript">
+					<!--
+						editor_para("VarComent");
+					//-->
+					</script>
+					<textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" id="tablaconfig2">
+			<tr>
+				<td>Imagen de fondo:</td>
+				<td>
+					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
+						<option value="Neutro">Neutra</option>
+						<option value="Amarillo">Amarillo</option>
+						<option value="Verde">Verde</option>
+						<option value="Azul">Azul</option>	
+						<option value="None">Sin imágen</option>				
+					</select>	
+				</td>
+				<td>Color fondo:</td>
+				<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
+			</tr>	
+			<tr>
+				<td>Borde:</td>
+				<td>
+					<select id="VarBorde" onchange="registra('VarBorde')">
+						<option value="0">Sin borde<option value="1">Linea solida</option>
+						<option value="2">Punteado<option value="3">Linea doble</option>
+						<option value="4">Linea discontinua</option>
+						<option value="5">Ranura</option>
+						<option value="6">Cresta</option>
+						<option value="7">Relieve interior</option>
+						<option value="8">Relieve exterior</option>
+						<option value="9">Redondeado</option>
+					</select>	
+				</td>
+				<td>Color del borde:</td>
+				<td><input type="text" id="VarColorBorde" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
+			</tr>	
+			<tr>
+				<td>Tamaño del texto:</td>
+				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
+				<td>Color texto:</td>
+				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
+			</tr>
+		</table>
+
+		<script type="text/javascript">
+			document.getElementById("VarBorde").value="__UP_VarBorde__";
+			// Get userprefs
+			var prefs = new gadgets.Prefs();			
+			function registra(variable)
+			{
+				prefs.set (variable,document.getElementById(variable).value);
+			}	
+			gadgets.window.adjustHeight();
+		</script>   
+	]]>
+	</Content>
 </Module>
