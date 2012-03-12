@@ -35,6 +35,9 @@
 	width: 400px;
 	height:50px;
 }  
+.sites-adminfooter {
+	display:none !important;
+}
 </style>
 <div id="piepagina">
 	<ul id="button">  
