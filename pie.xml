@@ -4,7 +4,7 @@
 <Content type="html"><![CDATA[
 <style> 
 #piepagina {
-	width: 965px;
+	width: 955px;
 	height: 68px;
 	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
 	margin:0;
