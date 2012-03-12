@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="pie pagina travellers" />
+<Content type="html"><![CDATA[
+<style> 
+#piepagina {
+	width: 970px;
+	height: 61px;
+	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondopie.png);	
+	margin:0;
+	padding: 0;
+	background-repeat: no-repeat;
+}
+#button {  
+	padding: 4px 0 0 73px;  
+	height:60px;
+	margin: 0 0 0 0px;
+}  
+#button li {  
+	display: inline; 
+	text-align: center;
+}  
+#button li a {  
+	font-family: Arial;  
+	font-size:15px;  
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;   
+	color: #fff;  
+	width: 187px;
+	height: 35px;
+}  
+#button li a.first {  
+	font-family: Arial;  
+	font-size:15px;  
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;     
+	color: #fff;  
+	width: 112px;
+	height:35px;
+}  
+#button li a:hover {  
+	background-color: #2586d7;  
+}  
+#button li a:active {  
+	background-color: #2586d7;  
+}
+</style>
+<div id="piepagina">
+	<ul id="button">  
+		<li><a id="contributepie" href="https://sites.google.com/a/bbva.com/travellers/home/contribute" class="first" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/contribute.png"/></a></li>  
+		<li><a id="newEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/tell-us-new-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1pie.png"/></a></li>  
+		<li><a id="askEvent" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/ask-an-event" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2pie.png"/></a></li> 
+		<li><a id="yourExperience" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/share-your-experience" target="_parent"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3pie.png"/></a></li>  
+	</ul>  
+</div>
+]]></Content>
+</Module>
