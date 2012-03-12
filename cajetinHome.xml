@@ -42,6 +42,9 @@
 			#content_div img {
 				padding: 0 15px 10px 0;
 			}
+			#content_div a img {
+				padding: 0;
+			}
 		</style>
 	
 		<div id="content_div"  style="height: 230px; padding: 20px; background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: #fff; background-repeat: no-repeat; background-position: top; "></div>
