@@ -80,7 +80,7 @@
 		</script>
 	]]>  
 	</Content>  
-	<Content type="html" view="configuration"  preferred_height="450">
+	<Content type="html" view="configuration"  preferred_height="550">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
@@ -96,7 +96,7 @@
 			}
 			
 		</style>
-		<table width="100%" height="380px;" border="0" id="tablaconfig1">
+		<table width="100%" height="350px;" border="0" id="tablaconfig1">
 			<tr><td>Texto (admite bbcode):</td></tr>
 			<tr>		
 				<td>
