@@ -94,7 +94,7 @@
 				width: 50%;
 				font-size: 12px;
 			}
-			p.textoImportante {
+			.textoImportante {
 				color:red;
 				font-size: 15px;
 				font-weight: bold;
@@ -120,9 +120,10 @@
 				<td>Color de texto por defecto:</td>
 				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 			</tr>
-		</table>
-		<br/><br/><br/>
-		<p class="textoImportante">No modificar la altura y el ancho del gadget.</p>
+			<tr>
+				<td colspan="2" class="textoImportante"><br/><br/><br/>No modificar la altura y el ancho del gadget</td>
+			</tr>
+		</table>		
 		<script type="text/javascript">
 			document.getElementById("VarBorde").value="__UP_VarBorde__";
 			// Get userprefs
