@@ -30,47 +30,19 @@
 	float:left;  
 	padding: 19px 0 0 0;   
 	color: #fff;  
-	width: 187px;
-	height: 35px;
-}  
-#button li a.first {  
-	font-family: Arial;  
-	font-size:15px;  
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;     
-	color: #fff;  
-	width: 112px;
-	height:35px;
-}  
+	width: 301px;
+	height:56px;
+}   
 #button li a:hover {  
-	background-color: #2586d7;  
+	background-color: none;  
 }  
 #button li a:active {  
-	background-color: #2586d7;  
+	background-color: none;  
 }
 .sites-adminfooter {
 	display:none !important;
 }
-
-#button li a#past-travels:hover {  
-	background-color: #FEBB60;  
-} 
-
-#button li a#Future-Travels:hover {  
-	background-color: #7ABD5E;  
-} 
-
-#button li a#traveller-agenda:hover {  
-	background-color: #00BEBD;  
-} 
-
 </style>
-<!--
-
-
-
--->
 <div id="bloqueContribute">
 	<ul id="button">
 		<li><a id="wantgo" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/ask-an-event" class="first" target="_parent" title="I want to go. I will attend an event listed in the calendar"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1contribute.png" alt="I want to go. I will attend an event listed in the calendar" width="301" height="56"/></a></li>  
@@ -78,35 +50,5 @@
 		<li><a id="wentto" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/share-your-experience" target="_parent" title="I went to an event what should I do now?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3contribute.png" alt="I went to an event, what should I do now?" width="301" height="56"/></a></li> 
 	</ul>  
 </div>
-<script type="text/javascript">
-gadgets.util.registerOnLoadHandler(datospagina);
-function datospagina()
-{
-	var parametros = gadgets.util.getUrlParameters()["parent"];
-	if (parametros.indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}
-	if (parametros.indexOf("past-travels")!=-1)
-	{
-		document.getElementById("past-travels").style.backgroundColor = "#FEBB60";
-	}
-	if (parametros.indexOf("traveller-agenda")!=-1)
-	{
-		document.getElementById("traveller-agenda").style.backgroundColor = "#00BEBD";
-	}
-	if (parametros.indexOf("contribute")!=-1)
-	{
-		document.getElementById("contribute").style.backgroundColor = "#2586d7";
-	}
-	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}	
-	window.top.parent.document.getElementById("title-crumbs").style.display= "none";
-	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";		
-}
-</script>
 ]]></Content>
 </Module>
