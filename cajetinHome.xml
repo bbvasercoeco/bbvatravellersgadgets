@@ -15,12 +15,23 @@
 		<Require feature="setprefs"/>
 	</ModulePrefs>  
 	<UserPref name="VarComent" display_name="Comentario (admite bbcode)" default_value="Comentario"/>  
-	
-	
-	
+	<UserPref name="VarBorde" display_name="Estilo del Borde" default_value="0" datatype="enum" >
+		<EnumValue value="0" />
+		<EnumValue value="1" />
+		<EnumValue value="2" />
+		<EnumValue value="3" />
+		<EnumValue value="4" />
+		<EnumValue value="5" />
+		<EnumValue value="6" />
+		<EnumValue value="7" />
+		<EnumValue value="8" />
+		<EnumValue value="9" />
+	</UserPref>  
+	<UserPref name="VarColorBorde" display_name="Color del borde" default_value="#a5c3f3"/>
+	<UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
 	<UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
 	<UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
-
+	
 	<Content type="html" view="home"><![CDATA[
 		<style>		
 			#content_div img {
@@ -117,13 +128,13 @@
 			<tr>
 				<td>Imagen de fondo:</td>
 				<td>
-					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
+					<!--<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
 						<option value="Neutro">Neutra</option>
 						<option value="Amarillo">Amarillo</option>
 						<option value="Verde">Verde</option>
 						<option value="Azul">Azul</option>	
 						<option value="None">Sin imágen</option>				
-					</select>	
+					</select>	-->
 				</td>
 				<td>Color fondo:</td>
 				<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
