@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+	<ModulePrefs title="Cajetin personalizado Interno bbva travellers"
+		title_url=""
+		height="650"
+		author=""
+		author_email=""
+		description="GadGet para Google Sites que muestra textos en una caja con formato."
+		screenshot=""
+		thumbnail=""  
+		scrolling="false"
+		author_location="Madrid, Spain"
+		scaling="false">
+		<Require feature="dynamic-height"/>
+		<Require feature="setprefs"/>
+	</ModulePrefs>  
+	<UserPref name="VarComent" display_name="Comentario (admite bbcode)" default_value="Comentario"/>  	
+	<UserPref name="VarColorLetra" display_name="Color de la letra" default_value="#666"/>
+	<UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
+	<Content type="html" view="home"><![CDATA[
+		<style>		
+			#content_div img {
+				padding: 0 15px 10px 0;
+			}
+			#content_div a img {
+				padding: 0;
+			}
+			.sites-adminfooter {
+				display:none;
+			}
+		</style>
+	
+		<div id="content_div"  style="height: 240px; width:950px; padding: 20px; background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg); background-color: transparent; background-repeat: no-repeat; background-position: top; "></div>
+
+		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></script>
+
+		<script type="text/javascript">
+			var html="";
+			// Obtener userprefs
+			var prefs = new gadgets.Prefs();
+			var VarComent=prefs.getString("VarComent");
+			var VarBorde="0";
+			var VarAlign="left";
+			var VarColorFondo="transparent";
+			var VarColorLetra=prefs.getString("VarColorLetra");
+			var VarColorBorde="#fff";
+			var VarSize=prefs.getString("VarSize");
+			var VarImagenFondo="Neutro";
+			switch(VarImagenFondo)
+			{
+				case "Neutro": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg')"; break;
+				case "Amarillo": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png')"; break;
+				case "Verde": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')"; break;
+				case "Azul": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')"; break;    	
+				case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
+				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg')"; break;
+			}
+			document.body.style.backgroundColor="#fff";// VarFondoGadget;			
+			html+='<table style="border-style: none; background-color: ';
+			html+=VarColorFondo;
+			html+=';"';				
+			html+=" width=100%>";
+			html+='<tr><td>';  
+			html+='<div style="font-size:';
+			html+=VarSize;
+			html+='; color:';
+			html+=VarColorLetra;
+			html+=';">';
+			html+=bbcode2html(VarComent);
+			html+="</div>";
+			html+='</td></tr></table>';
+			document.getElementById("content_div").innerHTML = html;
+			gadgets.window.adjustHeight();
+		</script>
+	]]>  
+	</Content>  
+	<Content type="html" view="configuration"  preferred_height="480">
+	<![CDATA[
+		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
+		<style>
+			#tablaconfig1 td, 
+			#tablaconfig2 td {
+				color: #000;
+				font-size: 12px;
+				font-weight: bold;
+			}
+			#tablaconfig2 input {
+				width: 50%;
+				font-size: 12px;
+			}
+			
+		</style>
+		<table width="100%" height="350px;" border="0" id="tablaconfig1">
+			<tr><td>Texto (admite bbcode):</td></tr>
+			<tr>		
+				<td>
+					<script language="Javascript">
+					<!--
+						editor_para("VarComent");
+					//-->
+					</script>
+					<textarea id="VarComent" style="height: 245px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" id="tablaconfig2">			
+			<tr>
+				<td>Tamaño del texto por defecto:</td>
+				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
+				<td>Color de texto por defecto:</td>
+				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
+			</tr>
+			<tr>
+				<td colspan="4" style="color:red;font-size:20px;font-weight:bold;"><br/><br/>No modificar la altura y el ancho del gadget</td>
+			</tr>
+		</table>		
+		<script type="text/javascript">
+			document.getElementById("VarBorde").value="__UP_VarBorde__";
+			// Get userprefs
+			var prefs = new gadgets.Prefs();			
+			function registra(variable)
+			{
+				prefs.set (variable,document.getElementById(variable).value);
+			}	
+			gadgets.window.adjustHeight();
+		</script>   
+	]]>
+	</Content>
+</Module>
