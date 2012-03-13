@@ -110,7 +110,7 @@
 	]]>  
 	</Content>
   
-	<Content type="html" view="configuration"  preferred_height="330">
+	<Content type="html" view="configuration"  preferred_height="400">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
@@ -133,7 +133,7 @@
 						editor_para("VarComent");
 					//-->
 					</script>
-					<textarea id="VarComent" style="height: 270px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+					<textarea id="VarComent" style="height: 250px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
 				</td>
 			</tr>
 		</table>
