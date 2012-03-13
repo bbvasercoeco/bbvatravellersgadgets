@@ -44,9 +44,20 @@
 			var VarColorBorde="#fff;			
 			var VarComent=prefs.getString("VarComent");
 			var VarColorLetra=prefs.getString("VarColorLetra");			
-			var VarSize=prefs.getString("VarSize");			
-
-			document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png');
+			var VarSize=prefs.getString("VarSize");		
+			var VarImagenFondo="Neutro";
+			
+			switch(VarImagenFondo)
+			{
+				case "Neutro": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+				case "Amarillo": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAmarillo.png')"; break;
+				case "Verde": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoVerde.png')"; break;
+				case "Azul": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotextoAzul.png')"; break;    	
+				case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
+				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
+			}
+			
+			
 			document.body.style.backgroundColor="#fff";// VarFondoGadget;
 			
 			html+='<table style="border-style: none; background-color: ';
@@ -81,7 +92,7 @@
 				font-size: 12px;
 			}
 		</style>
-		<table width="100%" height="330px;" border="0" id="tablaconfig1">
+		<table width="100%" height="300px;" border="0" id="tablaconfig1">
 			<tr><td>Texto (admite bbcode):</td></tr>
 			<tr>		
 				<td>
@@ -90,7 +101,7 @@
 						editor_para("VarComent");
 					//-->
 					</script>
-					<textarea id="VarComent" style="height: 300px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+					<textarea id="VarComent" style="height: 270px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
 				</td>
 			</tr>
 		</table>
