@@ -65,7 +65,7 @@
 
 			document.body.style.backgroundColor="#fff";// VarFondoGadget;
 
-			if (VarBorde!="0") 
+			/*if (VarBorde!="0") 
 			{
 				html+='<table style="border-style: ';
 				switch(VarBorde)
@@ -87,11 +87,11 @@
 				html+=';"';
 			} 
 			else 
-				{
+				{*/
 					html+='<table style="border-style: none; background-color: ';
 					html+=VarColorFondo;
 					html+=';"';
-				}
+				//}
 			html+=" width=100%>";
 			html+='<tr><td>';  
 			html+='<div style="font-size:';
@@ -124,7 +124,7 @@
 				font-size: 12px;
 			}
 		</style>
-		<table width="100%" height="120px;" border="0" id="tablaconfig1">
+		<table width="100%" height="320px;" border="0" id="tablaconfig1">
 			<tr><td>Texto (admite bbcode):</td></tr>
 			<tr>		
 				<td>
@@ -133,12 +133,12 @@
 						editor_para("VarComent");
 					//-->
 					</script>
-					<textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+					<textarea id="VarComent" style="height: 270px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
 				</td>
 			</tr>
 		</table>
 		<table width="100%" border="0" id="tablaconfig2">
-			<tr>
+			<!--<tr>
 				<td>Imagen de fondo:</td>
 				<td>
 					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
@@ -168,7 +168,7 @@
 				</td>
 				<td>Color del borde:</td>
 				<td><input type="text" id="VarColorBorde" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
-			</tr>	
+			</tr>	-->
 			<tr>
 				<td>Tamaño del texto:</td>
 				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
