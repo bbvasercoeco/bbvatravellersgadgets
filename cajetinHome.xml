@@ -110,7 +110,7 @@
 	]]>  
 	</Content>
   
-	<Content type="html" view="configuration"  preferred_height="420">
+	<Content type="html" view="configuration"  preferred_height="400">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
@@ -124,10 +124,10 @@
 				font-size: 12px;
 			}
 		</style>
-		<table width="100%" height="320px;" border="0" id="tablaconfig1">
-			<tr><td>Texto (admite bbcode):</td></tr>
+		<table width="100%" height="400px;" border="0" id="tablaconfig1">
+			<tr><td colspan="2">Texto (admite bbcode):</td></tr>
 			<tr>		
-				<td>
+				<td colspan="2">
 					<script language="Javascript">
 					<!--
 						editor_para("VarComent");
@@ -135,40 +135,7 @@
 					</script>
 					<textarea id="VarComent" style="height: 260px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
 				</td>
-			</tr>
-		</table>
-		<table width="100%" border="0" id="tablaconfig2">
-			<!--<tr>
-				<td>Imagen de fondo:</td>
-				<td>
-					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
-						<option value="Neutro">Neutra</option>
-						<option value="Amarillo">Amarillo</option>
-						<option value="Verde">Verde</option>
-						<option value="Azul">Azul</option>	
-						<option value="None">Sin imágen</option>				
-					</select>	
-				</td>
-				<td>Color fondo:</td>
-				<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
-			</tr>	
-			<tr>
-				<td>Borde:</td>
-				<td>
-					<select id="VarBorde" onchange="registra('VarBorde')">
-						<option value="0">Sin borde<option value="1">Linea solida</option>
-						<option value="2">Punteado<option value="3">Linea doble</option>
-						<option value="4">Linea discontinua</option>
-						<option value="5">Ranura</option>
-						<option value="6">Cresta</option>
-						<option value="7">Relieve interior</option>
-						<option value="8">Relieve exterior</option>
-						<option value="9">Redondeado</option>
-					</select>	
-				</td>
-				<td>Color del borde:</td>
-				<td><input type="text" id="VarColorBorde" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
-			</tr>	-->
+			</tr>					
 			<tr>
 				<td>Tamaño del texto:</td>
 				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
