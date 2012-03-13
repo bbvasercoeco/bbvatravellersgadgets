@@ -2,7 +2,7 @@
 <Module>
 	<ModulePrefs title="Cajetin personalizado home bbva travellers"
 		title_url=""
-		height="230"
+		height="630"
 		author=""
 		author_email=""
 		description="GadGet para Google Sites que muestra textos en una caja con formato."
@@ -67,7 +67,7 @@
 		</script>
 	]]>  
 	</Content>  
-	<Content type="html" view="configuration"  preferred_height="330">
+	<Content type="html" view="configuration"  preferred_height="530">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
@@ -81,7 +81,7 @@
 				font-size: 12px;
 			}
 		</style>
-		<table width="100%" height="120px;" border="0" id="tablaconfig1">
+		<table width="100%" height="220px;" border="0" id="tablaconfig1">
 			<tr><td>Texto (admite bbcode):</td></tr>
 			<tr>		
 				<td>
@@ -90,11 +90,11 @@
 						editor_para("VarComent");
 					//-->
 					</script>
-					<textarea id="VarComent" style="height: 90px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
+					<textarea id="VarComent" style="height: 200px; width: 100%" onchange="registra('VarComent')" >__UP_VarComent__</textarea>
 				</td>
 			</tr>
 		</table>
-		<table width="100%" border="0" id="tablaconfig2">			
+		<table width="100%" height="120px;" border="0" id="tablaconfig2">			
 			<tr>
 				<td>Tamaño del texto por defecto:</td>
 				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
