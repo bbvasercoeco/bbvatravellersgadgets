@@ -1,4 +1,3 @@
-//var carpetagrf="http://bbcode2html-para-gadget.googlecode.com/files/";
 var carpetagrf="http://bbvatravellersgadgets.googlecode.com/svn/trunk/";
 var iconostxt=":)|:(|:o|;)|:P|:x|bien|mal|si|no|aplausos|mejorable|a ver|pensando|flipe|sin palabras";
 var matriz_iconos= new Array(); 
