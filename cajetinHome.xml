@@ -59,13 +59,13 @@
 			// Obtener userprefs
 			var prefs = new gadgets.Prefs();
 			var VarComent=prefs.getString("VarComent");
-			var VarBorde=prefs.getString("VarBorde");
-			var VarAlign=prefs.getString("VarAlign");
-			var VarColorFondo=prefs.getString("VarColorFondo");
+			var VarBorde="0";
+			var VarAlign="left";
+			var VarColorFondo="transparent";
 			var VarColorLetra=prefs.getString("VarColorLetra");
-			var VarColorBorde=prefs.getString("VarColorBorde");
+			var VarColorBorde="#fff";
 			var VarSize=prefs.getString("VarSize");
-			var VarImagenFondo=prefs.getString("VarImagenFondo");
+			var VarImagenFondo="Neutro";
 
 			switch(VarImagenFondo)
 			{
