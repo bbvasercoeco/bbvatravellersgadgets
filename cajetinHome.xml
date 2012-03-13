@@ -80,7 +80,7 @@
 		</script>
 	]]>  
 	</Content>  
-	<Content type="html" view="configuration"  preferred_height="550">
+	<Content type="html" view="configuration"  preferred_height="495">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
@@ -117,7 +117,7 @@
 				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 			</tr>
 			<tr>
-				<td colspan="2" style="color:red;font-size:20px;font-weight:bold;"><br/><br/>No modificar la altura y el ancho del gadget</td>
+				<td colspan="4" style="color:red;font-size:20px;font-weight:bold;"><br/><br/>No modificar la altura y el ancho del gadget</td>
 			</tr>
 		</table>		
 		<script type="text/javascript">
