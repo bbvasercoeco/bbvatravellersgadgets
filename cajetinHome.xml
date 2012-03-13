@@ -51,7 +51,7 @@
 			var VarColorLetra=prefs.getString("VarColorLetra");
 			var VarColorBorde="#fff";
 			var VarSize=prefs.getString("VarSize");
-			var VarImagenFondo=prefs.getString("VarImagenFondo");
+			var VarImagenFondo="Neutro";
 
 			switch(VarImagenFondo)
 			{
@@ -64,34 +64,11 @@
 			}
 
 			document.body.style.backgroundColor="#fff";// VarFondoGadget;
-
-			/*if (VarBorde!="0") 
-			{
-				html+='<table style="border-style: ';
-				switch(VarBorde)
-				{
-					case "1": html+=' solid; border-width: 1; '; break;
-					case "2": html+=' dotted; border-width: 1; '; break;
-					case "3": html+=' double; border-width: 3; '; break;
-					case "4": html+=' dashed; border-width: 1; '; break;
-					case "5": html+=' groove; border-width: 4; '; break;
-					case "6": html+=' ridge; border-width: 4; '; break;
-					case "7": html+=' inset; border-width: 4; '; break;
-					case "8": html+=' outset; border-width: 4; '; break;
-					case "9": html+=' solid; border-width: 2; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;'; break;     
-				}
-				html+=' border-color: ';
-				html+=VarColorBorde;
-				html+='; background-color: ';
-				html+=VarColorFondo;
-				html+=';"';
-			} 
-			else 
-				{*/
-					html+='<table style="border-style: none; background-color: ';
-					html+=VarColorFondo;
-					html+=';"';
-				//}
+			
+			html+='<table style="border-style: none; background-color: ';
+			html+=VarColorFondo;
+			html+=';"';
+				
 			html+=" width=100%>";
 			html+='<tr><td>';  
 			html+='<div style="font-size:';
@@ -114,7 +91,8 @@
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
-			#tablaconfig1 td, #tablaconfig2 td {
+			#tablaconfig1 td, 
+			#tablaconfig2 td {
 				color: #000;
 				font-size: 12px;
 				font-weight: bold;
