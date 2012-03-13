@@ -133,7 +133,7 @@
 			<tr>
 				<td>Imagen de fondo:</td>
 				<td>
-					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
+					<select id="VarImagenFondo">
 						<option value="Neutro">Neutra</option>
 						<option value="Amarillo">Amarillo</option>
 						<option value="Verde">Verde</option>
@@ -142,12 +142,12 @@
 					</select>	
 				</td>
 				<td>Color fondo:</td>
-				<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
+				<td><input type="text" id="VarColorFondo" ></td>
 			</tr>	
 			<tr>
 				<td>Borde:</td>
 				<td>
-					<select id="VarBorde" onchange="registra('VarBorde')">
+					<select id="VarBorde" >
 						<option value="0">Sin borde<option value="1">Linea solida</option>
 						<option value="2">Punteado<option value="3">Linea doble</option>
 						<option value="4">Linea discontinua</option>
@@ -159,7 +159,7 @@
 					</select>	
 				</td>
 				<td>Color del borde:</td>
-				<td><input type="text" id="VarColorBorde" value="__UP_VarColorBorde__" onchange="registra('VarColorBorde')"></td>      
+				<td><input type="text" id="VarColorBorde" ></td>      
 			</tr>	
 			<tr>
 				<td>Tamaño del texto:</td>
@@ -170,12 +170,12 @@
 		</table>
 
 		<script type="text/javascript">
-			document.getElementById("VarBorde").value="__UP_VarBorde__";
+			//document.getElementById("VarBorde").value="__UP_VarBorde__";
 			// Get userprefs
 			var prefs = new gadgets.Prefs();			
 			function registra(variable)
 			{
-				prefs.set (variable,document.getElementById(variable).value);
+				prefs.set(variable,document.getElementById(variable).value);
 			}	
 			gadgets.window.adjustHeight();
 		</script>   
