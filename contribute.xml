@@ -13,7 +13,7 @@
 	background-position:left top;
 }
 #button {  
-	padding: 0;  
+	padding: 0 0 0 7px;  
 	height:60px;
 	margin: 0;
 	position:relative;
@@ -30,7 +30,7 @@
 	float:left;  
 	padding: 19px 0 0 0;   
 	color: #fff;  
-	width: 301px;
+	width: 310px;
 	height:56px;
 }   
 #button li a:hover {  
