@@ -94,11 +94,7 @@
 				width: 50%;
 				font-size: 12px;
 			}
-			.textoImportante {
-				color:red;
-				font-size: 15px;
-				font-weight: bold;
-			}
+			
 		</style>
 		<table width="100%" height="320px;" border="0" id="tablaconfig1">
 			<tr><td>Texto (admite bbcode):</td></tr>
@@ -121,7 +117,7 @@
 				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 			</tr>
 			<tr>
-				<td colspan="2" class="textoImportante"><br/><br/><br/>No modificar la altura y el ancho del gadget</td>
+				<td colspan="2" style="color:red;font-size:20px;font-weight:bold;"><br/><br/>No modificar la altura y el ancho del gadget</td>
 			</tr>
 		</table>		
 		<script type="text/javascript">
