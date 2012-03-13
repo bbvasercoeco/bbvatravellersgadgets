@@ -1,4 +1,5 @@
-var carpetagrf="http://bbcode2html-para-gadget.googlecode.com/files/";
+//var carpetagrf="http://bbcode2html-para-gadget.googlecode.com/files/";
+var carpetagrf="http://bbvatravellersgadgets.googlecode.com/svn/trunk/";
 var iconostxt=":)|:(|:o|;)|:P|:x|bien|mal|si|no|aplausos|mejorable|a ver|pensando|flipe|sin palabras";
 var matriz_iconos= new Array(); 
 matriz_iconos=iconostxt.split ("|");
@@ -107,6 +108,7 @@ function imagen_para(tag)
 		case "Previo": return "lupa.gif"; break;
 		case "Fuente": return "sfuente.gif"; break;
 		case "Ayuda": return "help.gif"; break;
+		case "SaltoLinea": return "saltolinea.gif"; break;
 	}		 
 }
 
@@ -132,7 +134,8 @@ function btn_seleccionado(tag,contenedor)
 		case "Subrayado": instag("u",contenedor); break;
 		case "Cursiva": instag("i",contenedor); break;		
 		case "Insertar enlace": inslink(contenedor);break;
-		case "Insertar imagen": insimg(contenedor);break;
+		case "SaltoLinea": instagnoclose("br",contenedor); break;
+		case "Negrita": instag("b",contenedor); break;
 		//case "Insertar emoticon": muestra_oculta("caretos",contenedor);break;		
 		case "Codigo": instag("code",contenedor); break;
 		case "Cita": instag("quote",contenedor); break;
@@ -150,6 +153,14 @@ function instag (tag,contenedor)
 	 var resultado="";
 	 seleccion=leer_de(contenedor);
 	 resultado="["+tag+"]"+seleccion+"[/"+tag+"]";
+	 insertar_en (resultado,contenedor);
+}
+
+function instagnoclose (tag,contenedor)
+{
+	 var seleccion="";
+	 var resultado="";	
+	 resultado="["+tag+"]";
 	 insertar_en (resultado,contenedor);
 }
 
@@ -296,6 +307,7 @@ function editor_para(contenedor)
 	 html_btn+=boton("Cita",contenedor);
 	 html_btn+=boton("Lista",contenedor);
 	 html_btn+=boton("|",contenedor);
+	 html_btn+=boton("SaltoLinea",contenedor);
 	// html_btn+=boton("Ayuda",contenedor);		 
 	 /*if(typeof bbcode2html != 'undefined') {		 		   
 			   html_btn+=boton("Previo",contenedor);
