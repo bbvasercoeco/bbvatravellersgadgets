@@ -31,7 +31,12 @@
 	<UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
 	<UserPref name="VarColorLetra" display_name="Color de la letra" default_value="black"/>
 	<UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
-	
+	<UserPref name="VarImagenFondo" display_name="Imagen Fondo Home" default_value="0" datatype="enum" >
+		<EnumValue value="Neutro" />
+		<EnumValue value="Amarillo" />
+        <EnumValue value="Verde" />
+        <EnumValue value="Azul" />       
+	</UserPref>
 	<Content type="html" view="home"><![CDATA[
 		<style>		
 			#content_div img {
@@ -128,13 +133,13 @@
 			<tr>
 				<td>Imagen de fondo:</td>
 				<td>
-					<!--<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
+					<select id="VarImagenFondo" onchange="registra('VarImagenFondo')">
 						<option value="Neutro">Neutra</option>
 						<option value="Amarillo">Amarillo</option>
 						<option value="Verde">Verde</option>
 						<option value="Azul">Azul</option>	
 						<option value="None">Sin imágen</option>				
-					</select>	--> 
+					</select>	
 				</td>
 				<td>Color fondo:</td>
 				<td><input type="text" id="VarColorFondo" value="__UP_VarColorFondo__" 	onchange="registra('VarColorFondo')"></td>
