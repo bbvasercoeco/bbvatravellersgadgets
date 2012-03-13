@@ -110,7 +110,7 @@
 	]]>  
 	</Content>
   
-	<Content type="html" view="configuration"  preferred_height="400">
+	<Content type="html" view="configuration"  preferred_height="420">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
 		<style>
