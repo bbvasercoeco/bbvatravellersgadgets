@@ -52,7 +52,6 @@
 			var VarColorBorde="#fff";
 			var VarSize=prefs.getString("VarSize");
 			var VarImagenFondo="Neutro";
-
 			switch(VarImagenFondo)
 			{
 				case "Neutro": document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
@@ -62,13 +61,10 @@
 				case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
 				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png')"; break;
 			}
-
-			document.body.style.backgroundColor="#fff";// VarFondoGadget;
-			
+			document.body.style.backgroundColor="#fff";// VarFondoGadget;			
 			html+='<table style="border-style: none; background-color: ';
 			html+=VarColorFondo;
-			html+=';"';
-				
+			html+=';"';				
 			html+=" width=100%>";
 			html+='<tr><td>';  
 			html+='<div style="font-size:';
@@ -76,17 +72,14 @@
 			html+='; color:';
 			html+=VarColorLetra;
 			html+=';">';
-
 			html+=bbcode2html(VarComent);
 			html+="</div>";
 			html+='</td></tr></table>';
-
 			document.getElementById("content_div").innerHTML = html;
 			gadgets.window.adjustHeight();
 		</script>
 	]]>  
-	</Content>
-  
+	</Content>  
 	<Content type="html" view="configuration"  preferred_height="400">
 	<![CDATA[
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/editorbbcode.js"></script>
@@ -123,7 +116,6 @@
 				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 			</tr>
 		</table>
-
 		<script type="text/javascript">
 			document.getElementById("VarBorde").value="__UP_VarBorde__";
 			// Get userprefs
