@@ -117,9 +117,9 @@
 		</table>
 		<table width="100%" border="0" id="tablaconfig2">			
 			<tr>
-				<td>Tamaño del texto:</td>
+				<td>Tamaño del texto por defecto:</td>
 				<td><input type="text" id="VarSize" value="__UP_VarSize__" onchange="registra('VarSize')"></td>   
-				<td>Color texto:</td>
+				<td>Color de texto por defecto:</td>
 				<td><input type="text" id="VarColorLetra" value="__UP_VarColorLetra__" onchange="registra('VarColorLetra')"></td>		     
 			</tr>
 		</table>
