@@ -25,7 +25,7 @@
 		<EnumValue value="6" />
 		<EnumValue value="7" />
 		<EnumValue value="8" />
-		<EnumValue value="9" />
+		<EnumValue value="9" /> 
 	</UserPref>  
 	<UserPref name="VarColorBorde" display_name="Color del borde" default_value="#a5c3f3"/>
 	<UserPref name="VarColorFondo" display_name="Color de fondo" default_value=""/>
