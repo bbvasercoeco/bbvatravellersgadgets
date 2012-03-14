@@ -4,8 +4,8 @@
 <Content type="html"><![CDATA[
 <style>	
 </style>
-<a href="javascript:alert("textoleyena);" >tier1</a>
-<a href="javascript:window.top.parent.document.alert("textoleyena)," >tier2</a>
+<a href="javascript:alert('textoleyenda');" >tier1</a>
+<a href="javascript:window.top.parent.document.alert('textoleyenda');" >tier2</a>
 <a href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/leyenda.html" target="_parent" class="popup">tier3</a>
 ]]></Content>
 </Module>
