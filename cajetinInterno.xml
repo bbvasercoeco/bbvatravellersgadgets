@@ -56,12 +56,11 @@
 				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg')"; break;
 			}
 			document.body.style.backgroundColor="#fff";// VarFondoGadget;			
-			html+='<table style="border-style: none; background-color: ';
-			html+=VarColorFondo;
-			html+=';"';				
+			html+='<table style="border-style: none;';			
+			html+='"';				
 			html+=" width=100%>";
 			html+='<tr><td>';  
-			html+='<div style="font-size:';
+			html+='<div style="padding:20px; font-size:';
 			html+=VarSize;
 			html+='; color:';
 			html+=VarColorLetra;
