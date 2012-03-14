@@ -28,6 +28,9 @@
 			.sites-adminfooter {
 				display:none;
 			}
+			ul li {
+				list-style-position: inside;
+			}
 		</style>
 	
 		<div id="content_div"  style="height: 240px; width:950px; padding: 0px; background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg); background-color: transparent; background-repeat: no-repeat; background-position: top; "></div>
