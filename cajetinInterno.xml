@@ -16,7 +16,7 @@
 	</ModulePrefs>  
 	<UserPref name="VarComent" display_name="Comentario (admite bbcode)" default_value="Comentario"/>  	
 	<UserPref name="VarColorLetra" display_name="Color de la letra" default_value="#666"/>
-	<UserPref name="VarSize" display_name="grosor del texto" default_value="12"/>
+	<UserPref name="VarSize" display_name="grosor del texto" default_value="13"/>
 	<Content type="html" view="home"><![CDATA[
 		<style>		
 			#content_div img {
