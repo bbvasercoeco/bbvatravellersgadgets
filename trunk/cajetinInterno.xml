@@ -56,8 +56,8 @@
 				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg')"; break;
 			}
 			document.body.style.backgroundColor="#fff";// VarFondoGadget;			
-			html+='<div style="padding:20px;';
-			html+='">';
+			//html+='<div style="padding:20px;';
+			//html+='">';
 			tml+='<table style="border-style: none; background-color: ';
 			html+=VarColorFondo;
 			html+=';"';				
@@ -70,7 +70,7 @@
 			html+=';">';
 			html+=bbcode2html(VarComent);
 			html+="</div>";
-			html+='</td></tr></table></div>';
+			html+='</td></tr></table>';
 			document.getElementById("content_div").innerHTML = html;
 			gadgets.window.adjustHeight();
 		</script>
