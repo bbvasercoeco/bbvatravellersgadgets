@@ -337,7 +337,11 @@ function editor_para(contenedor)
 	 html_btn+='<option value="8">8';
 	 html_btn+='<option value="10">10';
 	 html_btn+='<option value="12">12';
+	 html_btn+='<option value="13">13';
 	 html_btn+='<option value="16">16';
+	 html_btn+='<option value="18">18';
+	 html_btn+='<option value="20">20';
+	 html_btn+='<option value="22">22';
 	 html_btn+='<option value="24">24';
 	 html_btn+='<option value="34">34';
 	 html_btn+='<option value="46">46';
