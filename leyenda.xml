@@ -11,10 +11,10 @@
 		border-bottom:none;
 	}
 </style>
-<a href="javascript:alert('Eventos de prioridad 1');" title="Eventos de prioridad 1"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-azul.png" title="Eventos de prioridad 1"/> Eventos de tipo 1</a>
+<a href="javascript:alert('Eventos de prioridad 1');" title="Eventos de prioridad 1"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-azul.png" title="Eventos de prioridad 1" width="10"/> Eventos de tipo 1</a>
 
-<a href="javascript:alert('Eventos de prioridad 2');" title="Eventos de prioridad 2"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-verde.png" title="Eventos de prioridad 2"/> Eventos de tipo 2</a>
+<a href="javascript:alert('Eventos de prioridad 2');" title="Eventos de prioridad 2"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-verde.png" title="Eventos de prioridad 2" width="10"/> Eventos de tipo 2</a>
 
-<a href="javascript:alert('Eventos de prioridad 3');" title="Eventos de prioridad 3"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-amarillo.png" title="Eventos de prioridad 3"/> Eventos de tipo 3</a>
+<a href="javascript:alert('Eventos de prioridad 3');" title="Eventos de prioridad 3"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-amarillo.png" title="Eventos de prioridad 3" width="10"/> Eventos de tipo 3</a>
 ]]></Content>
 </Module>
