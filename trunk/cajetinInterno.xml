@@ -55,7 +55,7 @@
 				case "None": document.getElementById('content_div').style.backgroundImage="none"; break;    	
 				default: document.getElementById('content_div').style.backgroundImage="url('https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto950.jpg')"; break;
 			}
-			document.body.style.backgroundColor="#fff";// VarFondoGadget;			
+			document.body.style.backgroundColor="#fff";	
 			html+='<table style="border-style: none;';			
 			html+='"';				
 			html+=" width=100%>";
