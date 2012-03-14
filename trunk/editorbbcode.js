@@ -133,6 +133,7 @@ function btn_seleccionado(tag,contenedor)
 		case "Subrayado": instag("u",contenedor); break;
 		case "Cursiva": instag("i",contenedor); break;		
 		case "Insertar enlace": inslink(contenedor);break;
+		case "Insertar imagen": insimg(contenedor);break;
 		case "SaltoLinea": instagnoclose("br",contenedor); break;
 		case "Negrita": instag("b",contenedor); break;
 		//case "Insertar emoticon": muestra_oculta("caretos",contenedor);break;		
