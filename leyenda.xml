@@ -3,12 +3,16 @@
 <ModulePrefs title="leyenda mapa travellers" />
 <Content type="html"><![CDATA[
 <style>	
-	a,a:hover,a:active,a:visited {
+	a,a:active,a:visited {
 		color:#666;
 		font-size: 13px;
-		text-decoration: underline;
+		text-decoration: none;
 		background-color:#fff;
 		border-bottom:none;
+	}
+	
+	a:hover {		
+		text-decoration: underline;		
 	}
 </style>
 &nbsp;&nbsp;&nbsp;<a href="javascript:alert('Tier 1');" title="Tier 1"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-azul.png" title="Tier 1"/> Tier 1</a>
