@@ -28,11 +28,11 @@
 			.sites-adminfooter {
 				display:none;
 			}
-			ul {
+			ul{
 				margin:0;
 				padding:0;
 			}
-			ul li {
+			ul li{
 				list-style-position: inside;
 			}
 		</style>
