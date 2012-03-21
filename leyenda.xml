@@ -16,9 +16,10 @@
 	}
 </style>
 &nbsp;&nbsp;&nbsp;<a href="javascript:alert('Tier 1');" title="Tier 1: Events with an assigned Traveler
-"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-azul.png" title="Tier 1: Events with an assigned Traveler"/> Tier 1: Events with an assigned Traveler</a>
+"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-azul.png" title="Tier 1: Events with an assigned Traveler"/> Tier 1: Events with an assigned Traveler</a>&nbsp;&nbsp;
 <a href="javascript:alert('Tier 3');" title="Tier 3: Other Events"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-amarillo.png" title="Tier 3: Other Events" /> Tier 3: Other Events</a>
-<br/><a href="javascript:alert('Tier 2');" title="Tier 2: Events current without a Traveler"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-verde.png" title="Tier 2: Events current without a Traveler" /> Tier 2: Events current without a Traveler</a>
+<br/>
+&nbsp;&nbsp;&nbsp;<a href="javascript:alert('Tier 2');" title="Tier 2: Events current without a Traveler"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/maps-verde.png" title="Tier 2: Events current without a Traveler" /> Tier 2: Events current without a Traveler</a>
 &nbsp;&nbsp;&nbsp;
 ]]></Content>
 </Module>
