@@ -21,9 +21,13 @@
 		<style>		
 			#content_div img {
 				padding: 0 15px 10px 0;
+				border:none !important;
+				border: 0 !important;
 			}
 			#content_div a img {
 				padding: 0;
+				border:none !important;
+				border: 0 !important;
 			}
 			.sites-adminfooter {
 				display:none;
