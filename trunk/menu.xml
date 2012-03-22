@@ -76,7 +76,11 @@
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
-	var parametros = gadgets.util.getUrlParameters()["parent"];
+	var parametros = gadgets.util.getUrlParameters()["parent"];	
+	if (parametros.indexOf("future-travel")!=-1)
+	{
+		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
+	}
 	if (parametros.indexOf("Future-Travels")!=-1)
 	{
 		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
