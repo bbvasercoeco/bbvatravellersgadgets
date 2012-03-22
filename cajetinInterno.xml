@@ -26,8 +26,8 @@
 			}
 			#content_div a img {
 				padding: 0;
-				border:none;
-				border: 0;
+				border:none !important;
+				border: 0 !important;
 			}
 			.sites-adminfooter {
 				display:none;
