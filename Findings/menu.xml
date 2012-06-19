@@ -65,11 +65,11 @@
 </style>
 <div id="cabeceramenu">
 <ul id="button">  
-<li><a id="home" href="https://sites.google.com/a/bbva.com/travellers/" class="first" target="_parent">Home</a></li>  
-<li><a id="Future-Travels" href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels" target="_parent">Topics</a></li>  
-<li><a id="past-travels" href="https://sites.google.com/a/bbva.com/travellers/home/past-travels" target="_parent">Coming Events</a></li> 
+<li><a id="home" href="https://sites.google.com/a/bbva.com/findings/home/" class="first" target="_parent">Home</a></li>  
+<li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" target="_parent">Topics</a></li>  
+<li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" target="_parent">Coming Events</a></li> 
 <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" target="_parent">Contribute</a></li>  
-<li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Monthly Summary</a></li>  
+<li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary" target="_parent">Monthly Summary</a></li>  
 </ul>  
 </div>
 <script type="text/javascript">
@@ -77,29 +77,29 @@ gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
 	var parametros = gadgets.util.getUrlParameters()["parent"];	
-	if (parametros.indexOf("future-travel")!=-1)
+	if (parametros.indexOf("Topics")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
+		document.getElementById("Topics").style.backgroundColor = "#7ABD5E";
 	}
-	if (parametros.indexOf("Future-Travels")!=-1)
+	if (parametros.indexOf("Topics")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
+		document.getElementById("Topics").style.backgroundColor = "#7ABD5E";
 	}
-	if (parametros.indexOf("past-travels")!=-1)
+	if (parametros.indexOf("coming-events")!=-1)
 	{
-		document.getElementById("past-travels").style.backgroundColor = "#FEBB60";
+		document.getElementById("coming-events").style.backgroundColor = "#FEBB60";
 	}
-	if (parametros.indexOf("traveller-agenda")!=-1)
+	if (parametros.indexOf("Monthly-Summary")!=-1)
 	{
-		document.getElementById("traveller-agenda").style.backgroundColor = "#00BEBD";
+		document.getElementById("Monthly-Summary").style.backgroundColor = "#00BEBD";
 	}
 	if (parametros.indexOf("contribute")!=-1)
 	{
 		document.getElementById("contribute").style.backgroundColor = "#2586d7";
 	}
-	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
+	if (gadgets.util.getUrlParameters()["parent"].indexOf("Topics")!=-1)
 	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
+		document.getElementById("Topics").style.backgroundColor = "#7ABD5E";
 	}	
 
 	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
