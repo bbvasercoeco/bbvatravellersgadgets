@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Datos del cliente. Ficha cliente. detallleCliente.xml"
+	<ModulePrefs title="Datos de los Ãºltimos eventos con los Ãºltimos tÃ³pics lastFindings.xml"
 		description=""
 		author_affiliation="Capgemini">
 		<Require feature="idi"/>
@@ -31,14 +31,14 @@
 				display:inline;
 				float:right;
 			}
-			#imagenCliente {
+			#imagenTopic {
 				display: inline;
 				float: left;
 				margin-left: 10px;
 				text-align: left;
 				width: 280px;
 			}
-			#imagenCliente img {
+			#imagenTopic img {
 				margin-right: 40px;
 			}
 			hr {
@@ -98,21 +98,22 @@
 			<hr>
 		</h2>			
 
-		<div id="detalleFicha">
-			<div id="imagenCliente"><img class="loading" width="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			<ul id="datosFicha">
-				<li>Criticidad: <span id="idCriticidad"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
-				<li>En Producción: <span id="idProduccion"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
-				<li>En Implementación: <span id="idImplementacion"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
-				<li>Países: <span id="idPaises"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
-				<li>Producto: <ul id="listaproductos"><span id="idProducto"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></ul></li>
+		<div id="lastfindings">
+			<div id="imagenTopic"><img class="loading" width="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			<ul id="datoslastfindings">
+				<li><span id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li><span id="nameofevent"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li><span id="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li><span id="date"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li><span id="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				
 			</ul>
 		</div>
 		
 		<script type="text/javascript"> 
 			
-			//console.debug('detalleCliente.xml');
-			//console.debug('version 23');
+			//console.debug('lastfindings.xml');
+			//console.debug('version 1');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -131,50 +132,17 @@
 				gadgetHelper = new google.visualization.GadgetHelper();
 				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
 				var opts = {dataType:'jsonp'};	
-				var idCliquery = paramtoquery("ficha-");	
-				
-				//var querytosend = "select *  where A like '" + idCliquery.toUpperCase() + "'";
-				//var querytosend = "select *  where A like 'IDGLOBAL0016'";
+					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				//var querytosend = "select max(B),F where A like 'IDGLOBAL0016' group by F";
-				var querytosend = "select max(B),F where A like '" + idCliquery.toUpperCase() + "' group by F";
+				var querytosend = "select max(D),A,B,C,K,Q group by A,B,C,K,Q order by max(D)  desc limit 3";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
-				var query2 = new google.visualization.Query(urlTable, opts);	
-				//var querytosend2 = "select max(B),C,D,F where A like 'IDGLOBAL0016' group by C,D,F";
-				var querytosend2 = "select max(B),C,D,F where A like '" + idCliquery.toUpperCase() + "' group by C,D,F";
-				query2.setQuery(querytosend2);			  
-				query2.send(handleQueryResponse2);
 				
-				var query3= new google.visualization.Query(urlTable, opts);
-				var querytosend3 = "select max(J), A , B , N , O , P where A like '" + idCliquery.toUpperCase() + "' group by A,B,N,O,P";
-				query3.setQuery(querytosend3);
-				query3.send(handleQueryResponse3);
 			}
 
-			//devuelve el indicide donde se encuentra la "cadena" del array "parametros"
-			function indiceCadena (parametros, cadena)
-			{	
-				for(var i=0; i<parametros.length; i++)
-				{					
-					if(parametros[i].indexOf(cadena)>-1)
-					{
-						return i;
-					} 
-				}	
-			}
-						
-			//obtiene el valor del parametro que le pasamos por url: 
-			// para ficha-CLIGLOBAL001 , pasandole "ficha-" devuelve "CLIGLOBAL001"
-			function paramtoquery(param)
-			{
-				var arrayParametros = gadgets.util.getUrlParameters()["parent"].split("/");		
-				var indexFicha = indiceCadena(arrayParametros,param);		
-				var arrayidCliente = arrayParametros[indexFicha].split("-");		
-				return arrayidCliente[1];		
-			}
+			
 			
 			function handleQueryResponse(response) 
 			{
@@ -183,58 +151,15 @@
 				var paises="";
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				
-				if (data.getNumberOfRows() == 1 )
-				{
-					var paises = data.getValue(0,1);					
-				}
-				else
-				{
-					for (var i=0;i<data.getNumberOfRows();i++)
-					{
-						paises += data.getValue(i,1) + ", ";
-					}
-				}	
-				document.getElementById('idPaises').innerHTML = paises;
+				document.getElementById('topic').innerHTML = data.getValue(0,1);
+				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
+				document.getElementById('place').innerHTML = data.getValue(0,3);
+				document.getElementById('date').innerHTML = data.getValue(0,0);
+				document.getElementById('bbvatraveller').data.getValue(0,4);
+				document.getElementById('imagenTopic').innerHTML ='<img border="0" src="' + data.getValue(0,5) +'">';	
 			}
 			
-			function handleQueryResponse2(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();						
-				var productos="";
-				console.debug(' data.getNumberOfRows(): ' + data.getNumberOfRows());
-				
-				for (var i=0;i<data.getNumberOfRows();i++)
-				{	
-					var Aux = data.getValue(i,2);
-					if(!(productos.indexOf(Aux)>-1)){
-					productos += "<li>"+data.getValue(i,2) + " - " + data.getValue(i,1) + "</li>";
-					}
-				}
-								
-				document.getElementById('idProducto').innerHTML = productos;				
-			}
 			
-		
-			function handleQueryResponse3(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();		
-				
-				document.getElementById('nombreCliente').innerHTML = data.getValue(0,2);				
-				document.getElementById('idCriticidad').innerHTML = data.getValue(0,4);
-			
-				 var estado = data.getValue(0,0);
-				 
-				if(estado.indexOf('Producción')>-1){
-					document.getElementById('idProduccion').innerHTML = "Sí"; 
-				}else { document.getElementById('idProduccion').innerHTML = "No";} 
-				
-				if (estado.indexOf('Producción')== -1){
-					document.getElementById('idImplementacion').innerHTML = "Sí";
-				}else { document.getElementById('idImplementacion').innerHTML = "No";} 		
-				document.getElementById('imagenCliente').innerHTML ='<img border="0" src="' + data.getValue(0,5) +'">';				
-			}
 			
 		</script>
 		]]>
