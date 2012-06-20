@@ -98,9 +98,9 @@
 			<hr>
 		</h2>			
 
-		<div id="lastfindings">
+		<div id="lastfindings" style="float:left;">
 			<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:right;position:top;"/></div>
-			<ul id="datoslastfindings">
+			<ul id="datoslastfindings" style="float:left;">
 				<li><span id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
 				<li><span id="nameofevent"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
 				<li><span id="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
