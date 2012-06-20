@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="Datos del cliente. Ficha cliente. detallleCliente.xml"
+		description=""
+		author_affiliation="Capgemini">
+		<Require feature="idi"/>
+		<Require feature="locked-domain" />
+	</ModulePrefs>
+	
+	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+	
+	<Content type="html">
+		<![CDATA[
+
+		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+		<style type="text/css">			 
+			img.loading {
+				margin: 0 0 0 20px;
+			}
+			h2 {
+				color: #0B5394;
+				font-family: arial,sans-serif;
+				font-size: x-large;
+				line-height:18px;
+				margin-left: 5px;
+				width: 99%;
+				font-weight: normal;
+			}
+			h2 div {
+				display:inline;
+				float:right;
+			}
+			#imagenCliente {
+				display: inline;
+				float: left;
+				margin-left: 10px;
+				text-align: left;
+				width: 280px;
+			}
+			#imagenCliente img {
+				margin-right: 40px;
+			}
+			hr {
+				background-color: #CCCCCC;
+				border-width: 0;
+				height: 1px;
+			}
+			ul#datosFicha {
+				border-collapse: collapse;
+				color: #666666;
+				font-family: arial,sans-serif;
+				font-size: 13px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				letter-spacing: normal;
+				line-height: 17px;
+				text-align: left;
+				text-indent: 0;
+				text-transform: none;
+				white-space: normal;
+				word-spacing: 0;
+			}
+			ul#datosFicha li {
+				border-collapse: collapse;
+				color: #0b5394;
+				font-family: arial,sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				letter-spacing: normal;
+				line-height: 17px;
+				text-align: left;
+				text-indent: 0;
+				text-transform: none;
+				white-space: normal;
+				word-spacing: 0;
+			}
+			
+			ul#datosFicha li span,
+			ul#listaproductos span li  {
+				font-family: arial,sans-serif;
+				font-size: 12px;
+				line-height: 17px;
+				text-align: justify;
+				color: #666666;
+			}
+			ul#listaproductos {
+				margin-left: 250px;
+			}
+			
+		</style>
+	
+		<h2>
+			Ficha Cliente <span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			<hr>
+		</h2>			
+
+		<div id="detalleFicha">
+			<div id="imagenCliente"><img class="loading" width="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			<ul id="datosFicha">
+				<li>Criticidad: <span id="idCriticidad"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li>En Producción: <span id="idProduccion"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li>En Implementación: <span id="idImplementacion"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li>Países: <span id="idPaises"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+				<li>Producto: <ul id="listaproductos"><span id="idProducto"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></ul></li>
+			</ul>
+		</div>
+		
+		<script type="text/javascript"> 
+			
+			//console.debug('detalleCliente.xml');
+			//console.debug('version 23');
+			
+			var gadgetHelper = null;	
+			var prefs = new _IG_Prefs(); // User preferences			
+			var urlTable = prefs.getString("_table_query_url");		
+						
+			_IG_RegisterOnloadHandler(loadVisualizationAPI);
+			
+			function loadVisualizationAPI() 
+			{
+				google.load("visualization", "1", {"packages": ["table"]});
+				google.setOnLoadCallback(sendQuery);
+			}
+
+			function sendQuery() 
+			{
+				gadgetHelper = new google.visualization.GadgetHelper();
+				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
+				var opts = {dataType:'jsonp'};	
+				var idCliquery = paramtoquery("ficha-");	
+				
+				//var querytosend = "select *  where A like '" + idCliquery.toUpperCase() + "'";
+				//var querytosend = "select *  where A like 'IDGLOBAL0016'";
+				
+				var query = new google.visualization.Query(urlTable, opts);	
+				//var querytosend = "select max(B),F where A like 'IDGLOBAL0016' group by F";
+				var querytosend = "select max(B),F where A like '" + idCliquery.toUpperCase() + "' group by F";
+				query.setQuery(querytosend);			  
+				query.send(handleQueryResponse);
+				
+				var query2 = new google.visualization.Query(urlTable, opts);	
+				//var querytosend2 = "select max(B),C,D,F where A like 'IDGLOBAL0016' group by C,D,F";
+				var querytosend2 = "select max(B),C,D,F where A like '" + idCliquery.toUpperCase() + "' group by C,D,F";
+				query2.setQuery(querytosend2);			  
+				query2.send(handleQueryResponse2);
+				
+				var query3= new google.visualization.Query(urlTable, opts);
+				var querytosend3 = "select max(J), A , B , N , O , P where A like '" + idCliquery.toUpperCase() + "' group by A,B,N,O,P";
+				query3.setQuery(querytosend3);
+				query3.send(handleQueryResponse3);
+			}
+
+			//devuelve el indicide donde se encuentra la "cadena" del array "parametros"
+			function indiceCadena (parametros, cadena)
+			{	
+				for(var i=0; i<parametros.length; i++)
+				{					
+					if(parametros[i].indexOf(cadena)>-1)
+					{
+						return i;
+					} 
+				}	
+			}
+						
+			//obtiene el valor del parametro que le pasamos por url: 
+			// para ficha-CLIGLOBAL001 , pasandole "ficha-" devuelve "CLIGLOBAL001"
+			function paramtoquery(param)
+			{
+				var arrayParametros = gadgets.util.getUrlParameters()["parent"].split("/");		
+				var indexFicha = indiceCadena(arrayParametros,param);		
+				var arrayidCliente = arrayParametros[indexFicha].split("-");		
+				return arrayidCliente[1];		
+			}
+			
+			function handleQueryResponse(response) 
+			{
+				if (!gadgetHelper.validateResponse(response)) { return; }			
+				data = response.getDataTable();		
+				var paises="";
+				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				
+				if (data.getNumberOfRows() == 1 )
+				{
+					var paises = data.getValue(0,1);					
+				}
+				else
+				{
+					for (var i=0;i<data.getNumberOfRows();i++)
+					{
+						paises += data.getValue(i,1) + ", ";
+					}
+				}	
+				document.getElementById('idPaises').innerHTML = paises;
+			}
+			
+			function handleQueryResponse2(response) 
+			{
+				if (!gadgetHelper.validateResponse(response)) { return; }			
+				data = response.getDataTable();						
+				var productos="";
+				console.debug(' data.getNumberOfRows(): ' + data.getNumberOfRows());
+				
+				for (var i=0;i<data.getNumberOfRows();i++)
+				{	
+					var Aux = data.getValue(i,2);
+					if(!(productos.indexOf(Aux)>-1)){
+					productos += "<li>"+data.getValue(i,2) + " - " + data.getValue(i,1) + "</li>";
+					}
+				}
+								
+				document.getElementById('idProducto').innerHTML = productos;				
+			}
+			
+		
+			function handleQueryResponse3(response) 
+			{
+				if (!gadgetHelper.validateResponse(response)) { return; }			
+				data = response.getDataTable();		
+				
+				document.getElementById('nombreCliente').innerHTML = data.getValue(0,2);				
+				document.getElementById('idCriticidad').innerHTML = data.getValue(0,4);
+			
+				 var estado = data.getValue(0,0);
+				 
+				if(estado.indexOf('Producción')>-1){
+					document.getElementById('idProduccion').innerHTML = "Sí"; 
+				}else { document.getElementById('idProduccion').innerHTML = "No";} 
+				
+				if (estado.indexOf('Producción')== -1){
+					document.getElementById('idImplementacion').innerHTML = "Sí";
+				}else { document.getElementById('idImplementacion').innerHTML = "No";} 		
+				document.getElementById('imagenCliente').innerHTML ='<img border="0" src="' + data.getValue(0,5) +'">';				
+			}
+			
+		</script>
+		]]>
+	</Content>
+</Module>
