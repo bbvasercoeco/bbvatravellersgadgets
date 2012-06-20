@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-	<ModulePrefs title="Cajetin personalizado home bbva travellers"
+	<ModulePrefs title="Cajetin personalizado home bbva findings"
 		title_url=""
 		height="650"
 		author=""
@@ -34,7 +34,7 @@
 			}
 		</style>
 	
-		<div id="content_div"  style="height:230px; background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png); background-color: transparent; background-repeat: no-repeat; background-position: top; "></div>
+		<div id="content_div"  style="height:230px; background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondotexto.png);border:0; background-color: transparent; background-repeat: no-repeat; background-position: top; "></div>
 
 		<script type="text/javascript" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/bbcode2html.js"></script>
 
