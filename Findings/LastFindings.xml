@@ -94,12 +94,12 @@
 		</style>
 	
 		<h2>
-			Ficha Cliente <span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			Last Findings <span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 			<hr>
 		</h2>			
 
 		<div id="lastfindings">
-			<div id="imagenTopic"><img class="loading" width="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:right;position:top;"/></div>
 			<ul id="datoslastfindings">
 				<li><span id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
 				<li><span id="nameofevent"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
@@ -148,7 +148,6 @@
 			{
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
-				var paises="";
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
