@@ -149,8 +149,7 @@
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				var fecha = new Date(data.getValue(0,0));
-				fecha.format('dd/mm/yyyy');
+				var fecha = new Date(data.getValue(0,0),'dd/mm/yyyy');
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
 				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
 				document.getElementById('place').innerHTML = data.getValue(0,3);
