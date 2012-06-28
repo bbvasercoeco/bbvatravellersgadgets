@@ -113,7 +113,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 11');
+			console.debug('version 12');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -150,17 +150,10 @@
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var fecha = new Date(data.getValue(0,0));
-				console.debug(fecha+"1")
-				console.debug(fecha.getDate()+"2Jordi");
-				console.debug(fecha.getMonth()+1+"3Jordi");
-				console.debug(fecha.getFullYear()+1+"4Jordi");
-				//fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
-				//console.debug(fecha+"2");
-				//console.debug(fecha.getDate()+"3");
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
 				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
 				document.getElementById('place').innerHTML = data.getValue(0,3);
-				document.getElementById('date').innerHTML = fecha;
+				document.getElementById('date').innerHTML = fecha.getDate()+"/"+fecha.getMonth()+1+"/"+fecha.getFullYear();
 				document.getElementById('bbvatraveller').innerHTML = data.getValue(0,4);
 				document.getElementById('imagenTopic').innerHTML ='<img border="0" src="' + data.getValue(0,5) +'">';	
 			}
