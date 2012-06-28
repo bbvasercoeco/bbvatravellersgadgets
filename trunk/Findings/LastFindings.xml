@@ -113,7 +113,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 6');
+			console.debug('version 7');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -151,7 +151,8 @@
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var fecha = new Date(data.getValue(0,0));
 				console.debug(fecha+"1")
-				console.debug(fecha.getDay()+"2");
+				console.debug(fecha.getDate()+"2");
+				console.debug(fecha.getMonth()+"3")
 				//fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
 				console.debug(fecha+"2");
 				console.debug(fecha.getDate()+"3");
