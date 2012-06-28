@@ -152,7 +152,7 @@
 				var fecha = new Date(data.getValue(0,0));
 				console.debug(fecha+"1")
 				console.debug(fecha.getDay()+"2Jordi");
-				console.debug(fecha.getMonth()+"3Jordi")
+				console.debug(fecha.getMonth()+"3Jordi");
 				//fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
 				//console.debug(fecha+"2");
 				//console.debug(fecha.getDate()+"3");
