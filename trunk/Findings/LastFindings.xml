@@ -113,7 +113,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 4');
+			console.debug('version 5');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -149,8 +149,10 @@
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				var fecha = new Date();
-				fecha = fecha.getDate(data.getValue(0,0)).toString('dd-mm-yyyy');
+				var fecha = new Date(data.getValue(0,0));
+				fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
+				console.debug(fecha);
+				console.debug(fecha.getDate());
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
 				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
 				document.getElementById('place').innerHTML = data.getValue(0,3);
