@@ -151,7 +151,8 @@
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var fecha = new Date(data.getValue(0,0));
 				console.debug(fecha+"1")
-				fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
+				console.debug(fecha.getDay()+"2");
+				//fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
 				console.debug(fecha+"2");
 				console.debug(fecha.getDate()+"3");
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
