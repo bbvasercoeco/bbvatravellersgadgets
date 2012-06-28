@@ -154,7 +154,7 @@
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
 				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
 				document.getElementById('place').innerHTML = data.getValue(0,3);
-				document.getElementById('date').innerHTML = fecha.toString('dd/mm/yyyy');
+				document.getElementById('date').innerHTML = fecha.toString('dd-mm-yyyy');
 				document.getElementById('bbvatraveller').innerHTML = data.getValue(0,4);
 				document.getElementById('imagenTopic').innerHTML ='<img border="0" src="' + data.getValue(0,5) +'">';	
 			}
