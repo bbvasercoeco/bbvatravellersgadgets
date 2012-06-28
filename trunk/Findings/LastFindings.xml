@@ -150,9 +150,10 @@
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var fecha = new Date(data.getValue(0,0));
+				console.debug(fecha+"1")
 				fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
-				console.debug(fecha);
-				console.debug(fecha.getDate());
+				console.debug(fecha+"2");
+				console.debug(fecha.getDate()+"3");
 				document.getElementById('topic').innerHTML = data.getValue(0,1);
 				document.getElementById('nameofevent').innerHTML = data.getValue(0,2);
 				document.getElementById('place').innerHTML = data.getValue(0,3);
