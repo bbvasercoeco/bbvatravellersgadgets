@@ -113,7 +113,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 9');
+			console.debug('version 10');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -152,7 +152,7 @@
 				var fecha = new Date(data.getValue(0,0));
 				console.debug(fecha+"1")
 				console.debug(fecha.getDate()+"2Jordi");
-				console.debug(fecha.getMonth()+"3Jordi");
+				console.debug(fecha.getMonth()+1+"3Jordi");
 				//fecha = fecha.getDate().toString('dddd, mmmm d, yyyy');
 				//console.debug(fecha+"2");
 				//console.debug(fecha.getDate()+"3");
