@@ -100,12 +100,20 @@
 
 		<div id="lastfindings" style="float:left;">
 			
-			<ul id="datoslastfindings" style="float:left;">
-			    <li><b>Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></b></li><li></li>
-                <li><span id="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
-				<li><span id="urlButton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span></li>
+			
+			  <b>Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></b><br/><br/>
+              <span id="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			  
+			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/>
+              <span id="summary1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			  
+			  <b>Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></b><br/><br/>
+              <span id="summary2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 				
-			</ul><div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>
+			<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>
 		</div>
 		
 		<script type="text/javascript"> 
@@ -147,8 +155,12 @@
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				
+				
 				var fecha = new Date(data.getValue(0,0));
-				var mes = fecha.getMonth()+1;
+				var fecha1 = new Date(data.getValue(1,0));
+				var fecha2 = new Date(data.getValue(2,0));
+				
 				var month = new Array();
 				month[0]="January";
 				month[1]="February";
@@ -162,10 +174,25 @@
 				month[9]="October";
 				month[10]="November";
 				month[11]="December";
+				
+				
 			    document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()+1];
 				document.getElementById('titleYear').innerHTML = fecha.getFullYear();
 				document.getElementById('summary').innerHTML = data.getValue(0,1) ;
 				document.getElementById('urlButton').innerHTML = data.getValue(0,2);
+				
+				document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()+1];
+				document.getElementById('titleYear1').innerHTML = fecha1.getFullYear();
+				document.getElementById('summary1').innerHTML = data.getValue(1,1) ;
+				document.getElementById('urlButton1').innerHTML = data.getValue(1,2);
+				
+				document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()+1];
+				document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
+				document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
+				document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
+				
+				
+				
 			}
 			
 			
