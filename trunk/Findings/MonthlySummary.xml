@@ -117,12 +117,12 @@
 			  <div id="urlButton" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  
 			  <div id="titulo1" class="titulo">Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></div>
-              <div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
-			  <div id="urlButton1" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+              <div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="urlButton1" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  
 			  <div id="titulo2" class="titulo">Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></div>
               <div id="summary2" class="summary">img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlButton2" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			  <div id="urlButton2" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				
 			<!--<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>-->
 		</div>
