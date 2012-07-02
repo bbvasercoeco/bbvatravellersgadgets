@@ -90,6 +90,10 @@
 			ul#listaproductos {
 				margin-left: 250px;
 			}
+			.titulo{
+			margin-bottom:15px;
+			font-weigth:bold;
+			}
 			
 		</style>
 	
@@ -101,15 +105,15 @@
 		<div id="lastfindings" style="float:left;">
 			
 			
-			  <b>Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></b><br/><br/>
+			  <div class="titulo">Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></div>
               <span id="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
-			  <span id="urlButton" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/><br/>
 			  
-			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/>
+			  <div class="titulo">Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></div>
               <span id="summary1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
-			  <span id="urlButton1" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			  <span id="urlButton1" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/><br/>
 			  
-			  <b>Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></b><br/><br/>
+			  <div class="titulo">Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></div>
               <span id="summary2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 			  <span id="urlButton2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 				
