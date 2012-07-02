@@ -94,7 +94,7 @@
 		</style>
 	
 		<h2>
-			Last Findings <span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
+			Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
 			<hr>
 		</h2>			
 
@@ -113,7 +113,7 @@
               <span id="summary2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 			  <span id="urlButton2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 				
-			<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>
+			<!--<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>-->
 		</div>
 		
 		<script type="text/javascript"> 
