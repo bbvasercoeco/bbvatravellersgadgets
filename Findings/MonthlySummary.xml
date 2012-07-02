@@ -105,7 +105,7 @@
               <span id="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 			  <span id="urlButton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 			  
-			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/>
+			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/><br/>
               <span id="summary1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 			  <span id="urlButton1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 			  
@@ -176,17 +176,17 @@
 				month[11]="December";
 				
 				
-			    document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()+1];
+			    document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
 				document.getElementById('titleYear').innerHTML = fecha.getFullYear();
 				document.getElementById('summary').innerHTML = data.getValue(0,1) ;
 				document.getElementById('urlButton').innerHTML = data.getValue(0,2);
 				
-				document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()+1];
+				document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()];
 				document.getElementById('titleYear1').innerHTML = fecha1.getFullYear();
 				document.getElementById('summary1').innerHTML = data.getValue(1,1) ;
 				document.getElementById('urlButton1').innerHTML = data.getValue(1,2);
 				
-				document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()+1];
+				document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()];
 				document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
 				document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
 				document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
