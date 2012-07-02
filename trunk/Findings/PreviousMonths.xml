@@ -94,7 +94,7 @@
 		</style>
 	
 		<h2>
-			Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+			Previous Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
 			<hr>
 		</h2>			
 
@@ -167,6 +167,7 @@
 				month[10]="November";
 				month[11]="December";
 				
+			document.getElementById('previousmonths').innerHTML="";	
 				
 			   for (var i=0;i<(filas-3);i++){
 			    var fecha = new Date(data.getValue(i,0));
