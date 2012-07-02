@@ -103,11 +103,11 @@
 			
 			  <b>Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></b><br/><br/>
               <span id="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
-			  <span id="urlButton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
 			  
-			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/><br/>
+			  <b>Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></b><br/><br/>
               <span id="summary1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
-			  <span id="urlButton1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
+			  <span id="urlButton1" style="margin-bottom:15px;"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>
 			  
 			  <b>Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></b><br/><br/>
               <span id="summary2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span><br/>
