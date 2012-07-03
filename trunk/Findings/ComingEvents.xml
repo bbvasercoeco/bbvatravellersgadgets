@@ -159,7 +159,7 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  asc limit 4";
+				var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 4";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
