@@ -159,7 +159,7 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),A,C,K,Q,R group by A,C,K,Q,R order by max(D)  desc limit 4";
+				var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -178,10 +178,10 @@
 				   
 				     document.getElementById('topic'+i).innerHTML = data.getValue(i,1);
 					 console.debug(document.getElementById('topic'+i).innerHTML = data.getValue(i,1));
-					 document.getElementById('urlmoreinfo'+i).innerHTML = data.getValue(i,6);
-				     document.getElementById('place'+i).innerHTML = data.getValue(i,3);
-				     document.getElementById('bbvatraveller'+i).innerHTML = data.getValue(i,4);
-				     document.getElementById('imagefindings'+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';	
+					 document.getElementById('urlmoreinfo'+i).innerHTML = data.getValue(i,5);
+				     document.getElementById('place'+i).innerHTML = data.getValue(i,2);
+				     document.getElementById('bbvatraveller'+i).innerHTML = data.getValue(i,3);
+				     document.getElementById('imagefindings'+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
 				
 				
 				}
