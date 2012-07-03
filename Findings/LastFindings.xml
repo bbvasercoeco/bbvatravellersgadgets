@@ -101,7 +101,7 @@
 		<div id="lastfindings" style="float:left;">
 			
 			<div id="topleft" style="float:left;">
-			  <div class="imagefindings0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+			  <div id="imagefindings0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
 			  <div id="topic0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="place0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="bbvatraveller0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
