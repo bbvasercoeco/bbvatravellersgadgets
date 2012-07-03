@@ -100,37 +100,34 @@
 
 		<div id="lastfindings" style="float:left;">
 			
-			<div id="topleft" style="float:left;">
-			  <div id="imagefindings0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			<div id="top" style="float:left;">
+			  <div id="fecha0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="imageevent0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+			  <div id="event0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="centro0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="urlevent0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="urlmoreinfo0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			</div>
 		
-		   <div id="topright" style="float:left;">
-			  <div id="imagefindings1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+		   <div id="middle" style="float:left;">
+		      <div id="fecha1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="imageevent1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
 			  <div id="topic1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="place1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="bbvatraveller1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="urlmoreinfo1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 		   </div>
 			
-		   <div id="bottomleft" style="float:left;">
-			  <div id="imagefindings2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+		   <div id="bottom" style="float:left;">
+		      <div id="fecha2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			  <div id="imageevent2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
 			  <div id="topic2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="place2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="bbvatraveller2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 			  <div id="urlmoreinfo2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 		   </div>
 		   
-		   <div id="bottomright" style="float:left;">
-			  <div id="imagefindings3"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
+		   
 					
 		</div>
 		
@@ -159,7 +156,7 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
+				var querytosend = "select max(D),B,P,V,W,X,H group by A,C,L,G,R order by max(D)  desc limit 4";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -173,15 +170,30 @@
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				var month = new Array();
+				month[0]="January";
+				month[1]="February";
+				month[2]="March";
+				month[3]="April";
+				month[4]="May";
+				month[5]="June";
+				month[6]="July";
+				month[7]="August";
+				month[8]="September";
+				month[9]="October";
+				month[10]="November";
+				month[11]="December";
 				
-				for(var i=0;i<4;i++){
+				for(var i=0;i<3;i++){
 				    console.debug(i);
-				     document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
-					 console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
-					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,5);
-				     document.getElementById("place"+i).innerHTML = data.getValue(i,2);
-				     document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
-				     document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
+					 var fecha = new Date(data.getValue(i,0));
+					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
+					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
+				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
+				     document.getElementById("urlevent"+i).innerHTML = data.getValue(i,6); 
+					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,3);
+				     document.getElementById("imageevent"+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';	
 				
 				
 				}
