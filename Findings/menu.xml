@@ -42,7 +42,8 @@
 	height:35px;
 }  
 #button li a:hover {  
-	background-color: #2586d7;  
+	background-color: #2586d7; 
+    margin-left:5px;	
 }  
 #button li a:active {  
 	background-color: #2586d7;  
