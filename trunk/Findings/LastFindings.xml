@@ -175,7 +175,7 @@
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				
 				for(var i=0;i<4;i++){
-				   
+				    console.debug(i);
 				     document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 					 console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
 					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,5);
