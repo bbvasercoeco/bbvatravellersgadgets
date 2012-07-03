@@ -10,7 +10,7 @@
 	margin:0;
 	padding: 0;
 	background-repeat: no-repeat;
-	align:top;
+	
 }
 #button {  
 	padding: 4px 0 0 73px;  
@@ -67,7 +67,7 @@
 </style>
 <div id="cabeceramenu">
 <ul id="button"> 
-<li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/" target="_parent" >Home</a></li>   
+<li><a id="Home" href="https://sites.google.com/a/bbva.com/findings/home/" target="_parent" >Home</a></li>   
 <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" target="_parent" >Innovation Topics</a></li>  
 <li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" target="_parent">Coming Events</a></li> 
 <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" target="_parent">Contribute</a></li>  
