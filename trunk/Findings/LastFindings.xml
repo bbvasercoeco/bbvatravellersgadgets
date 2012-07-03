@@ -176,12 +176,12 @@
 				
 				for(var i=0;i<4;i++){
 				   
-				     document.getElementById('topic'+i).innerHTML = data.getValue(i,1);
-					 console.debug(document.getElementById('topic'+i).innerHTML = data.getValue(i,1));
-					 document.getElementById('urlmoreinfo'+i).innerHTML = data.getValue(i,5);
-				     document.getElementById('place'+i).innerHTML = data.getValue(i,2);
-				     document.getElementById('bbvatraveller'+i).innerHTML = data.getValue(i,3);
-				     document.getElementById('imagefindings'+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
+				     document.getElementById('topic$(i)').innerHTML = data.getValue(i,1);
+					 console.debug(document.getElementById('topic$(i)').innerHTML = data.getValue(i,1));
+					 document.getElementById('urlmoreinfo$(i)').innerHTML = data.getValue(i,5);
+				     document.getElementById('place$(i)').innerHTML = data.getValue(i,2);
+				     document.getElementById('bbvatraveller$(i)').innerHTML = data.getValue(i,3);
+				     document.getElementById('imagefindings$(i)').innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
 				
 				
 				}
