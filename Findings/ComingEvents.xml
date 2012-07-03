@@ -187,7 +187,7 @@
 				for(var i=0;i<3;i++){
 				    console.debug(i);
 					 var fecha = new Date(data.getValue(i,0));
-					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
 				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
 					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
 				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
