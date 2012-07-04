@@ -29,7 +29,6 @@
 	padding: 42px 0 0 0;   
 	color: #88c5f1;  
 	width: 126px;
-	height: 35px;
 	font-weight:bold;
 }  
 #button li a.first {  
