@@ -54,6 +54,10 @@ style="margin-bottom:-50px;"
 	display:none !important;
 	margin-top:-50px;
 }
+.sites-chrome-adminfooter-container{
+display:none !important;
+margin-top:-50px;
+}
 
 #button li a#past-travels:hover {  
 	background-color: #FEBB60;  
