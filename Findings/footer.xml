@@ -52,6 +52,7 @@ style="margin-bottom:-50px;"
 }
 .sites-adminfooter {
 	display:none !important;
+	margin-top:-50px;
 }
 
 #button li a#past-travels:hover {  
@@ -69,11 +70,7 @@ style="margin-bottom:-50px;"
 margin-bottom:-150px;
 }
 
-#title-crumbs, body #sites-page-title-header, .sites-tile-name-header, #sites-canvas-main .sites-tile-name-content-1, .sites-tile-name-footer, .sites-subpages, .sites-kix-editor-wrapper, #sites-editor-wrapper {
-    padding-left: 10px;
-    padding-right: 10px;
-	margin-bottom:-50px;
-}
+
 </style>
 <div id="piepagina">
 <ul id="button"> 
