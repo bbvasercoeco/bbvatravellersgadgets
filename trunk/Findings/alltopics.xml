@@ -97,6 +97,12 @@
 			Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
 			<hr>
 		</h2>
+		
+		<div id="alltopics" style="float:left;">
+			
+				
+				
+		</div>
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
@@ -151,25 +157,20 @@
 				data = response.getDataTable();		
 				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var filas = data.getNumberOfRows();
+				
 				for(var i=0;i<filas;i++){
+				     var html="";
+					 html+='<div id="topic" style="float:left;">';
+				     html+='<div id="imagetopic"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+					 html+='<div id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					 html+='<div id="summarytopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					 html+='<div id="lastfindingstopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					 html+='</div>';
 				
-				</script>
-				
-					
-
-		<div id="alltopics" style="float:left;">
-			
-				<div id="topic" style="float:left;">
-			     <div id="imagetopic"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			     <div id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			     <div id="summarytopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			     <div id="lastfindingstopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			    </div>
-		</div>		 
-				 <script>
-				     document.getElementById("imagetopic").innerHTML += data.getValue(i,2);
-					 document.getElementById("topic").innerHTML += data.getValue(i,1);
-					 document.getElementById("summarytopic").innerHTML += data.getValue(i,3);
+					document.getElementById("alltopics").innerHTML += html;
+					document.getElementById("imagetopic").innerHTML += data.getValue(i,2);
+					document.getElementById("topic").innerHTML += data.getValue(i,1);
+					document.getElementById("summarytopic").innerHTML += data.getValue(i,3);
 					
 				
 				
