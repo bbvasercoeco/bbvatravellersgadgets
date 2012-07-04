@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+	<ModulePrefs title="All topics alltopics.xml"
+		description=""
+		author_affiliation="Capgemini">
+		<Require feature="idi"/>
+		<Require feature="locked-domain" />
+	</ModulePrefs>
+	
+	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+	
+	<Content type="html">
+		<![CDATA[
+
+		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+		<style type="text/css">			 
+			img.loading {
+				margin: 0 0 0 20px;
+			}
+			h2 {
+				color: #0B5394;
+				font-family: arial,sans-serif;
+				font-size: x-large;
+				line-height:18px;
+				margin-left: 5px;
+				width: 99%;
+				font-weight: normal;
+			}
+			h2 div {
+				display:inline;
+				float:right;
+			}
+			#imagenTopic {
+				display: inline;
+				float: left;
+				margin-left: 10px;
+				text-align: left;
+				width: 280px;
+			}
+			#imagenTopic img {
+				margin-right: 40px;
+			}
+			hr {
+				background-color: #CCCCCC;
+				border-width: 0;
+				height: 1px;
+			}
+			ul#datosFicha {
+				border-collapse: collapse;
+				color: #666666;
+				font-family: arial,sans-serif;
+				font-size: 13px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				letter-spacing: normal;
+				line-height: 17px;
+				text-align: left;
+				text-indent: 0;
+				text-transform: none;
+				white-space: normal;
+				word-spacing: 0;
+			}
+			ul#datosFicha li {
+				border-collapse: collapse;
+				color: #0b5394;
+				font-family: arial,sans-serif;
+				font-size: 12px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				letter-spacing: normal;
+				line-height: 17px;
+				text-align: left;
+				text-indent: 0;
+				text-transform: none;
+				white-space: normal;
+				word-spacing: 0;
+			}
+			
+			ul#datosFicha li span,
+			ul#listaproductos span li  {
+				font-family: arial,sans-serif;
+				font-size: 12px;
+				line-height: 17px;
+				text-align: justify;
+				color: #666666;
+			}
+			ul#listaproductos {
+				margin-left: 250px;
+			}
+			
+		</style>
+	
+		<h2>
+			Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+			<hr>
+		</h2>
+		<script type="text/javascript"> 
+			
+			//console.debug('lastfindings.xml');
+			console.debug('version 13');
+			
+			var gadgetHelper = null;	
+			var prefs = new _IG_Prefs(); // User preferences			
+			var urlTable = prefs.getString("_table_query_url");		
+						
+			_IG_RegisterOnloadHandler(loadVisualizationAPI);
+			
+			function loadVisualizationAPI() 
+			{
+				google.load("visualization", "1", {"packages": ["table"]});
+				google.setOnLoadCallback(sendQuery);
+			}
+
+			function sendQuery() 
+			{
+				gadgetHelper = new google.visualization.GadgetHelper();
+				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
+				var opts = {dataType:'jsonp'};	
+					
+				
+				var query = new google.visualization.Query(urlTable, opts);	
+				var querytosend = "select max(D),A,F,Y group by A,F,Y order by max(D)";
+				query.setQuery(querytosend);			  
+				query.send(handleQueryResponse);
+				
+				
+			}
+			function sendQuery() 
+			{
+				gadgetHelper = new google.visualization.GadgetHelper();
+				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
+				var opts = {dataType:'jsonp'};	
+					
+				
+				var query = new google.visualization.Query(urlTable, opts);	
+				var querytosend = "select max(D),A,F,Y group by A,F,Y order by max(D)";
+				query.setQuery(querytosend);			  
+				query.send(handleQueryResponse);
+				
+				
+			}
+
+			
+			
+			function handleQueryResponse(response) 
+			{
+				if (!gadgetHelper.validateResponse(response)) { return; }			
+				data = response.getDataTable();		
+				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				var filas = data.getNumberOfRows();
+				for(var i=0;i<filas;i++){
+				
+				</script>
+				
+					
+
+		<div id="alltopics" style="float:left;">
+			
+				<div id="topic" style="float:left;">
+			     <div id="imagetopic"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+			     <div id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			     <div id="summarytopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			     <div id="lastfindingstopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			    </div>
+		</div>		 
+				 <script>
+				     document.getElementById("imagetopic").innerHTML += data.getValue(i,2);
+					 document.getElementById("topic").innerHTML += data.getValue(i,1);
+					 document.getElementById("summarytopic").innerHTML += data.getValue(i,3);
+					
+				
+				
+				}
+			}
+				</script>
+		]]>
+	</Content>
+</Module>
