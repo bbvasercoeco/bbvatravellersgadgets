@@ -64,7 +64,7 @@
 	background-color: #00BEBD;  
 } 
 #sites-chrome-page-wrapper-inside{
-margin-bottom:-50px;
+margin-bottom:-150px;
 }
 </style>
 <div id="piepagina">
