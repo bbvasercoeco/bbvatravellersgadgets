@@ -5,7 +5,7 @@
 <style> 
 #piepagina{
 	width: 970px;
-	height: 70px;
+	height: 80px;
 	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/fondofooter.png);	
 	margin:0;
 	padding: 0;
