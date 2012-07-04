@@ -26,9 +26,9 @@
 	font-size:12px;
 	text-decoration: none;  
 	float:left;  
-	padding: 19px 0 0 0;   
+	padding: 40px 0 0 0;   
 	color: #5cade0;  
-	width: 187px;
+	width: 126px;
 	height: 35px;
 }  
 #button li a.first {  
