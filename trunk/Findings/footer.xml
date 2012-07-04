@@ -63,7 +63,9 @@
 #button li a#traveller-agenda:hover {  
 	background-color: #00BEBD;  
 } 
-
+#sites-chrome-page-wrapper-inside{
+margin-bottom:-50px;
+}
 </style>
 <div id="piepagina">
 <ul id="button"> 
