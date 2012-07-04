@@ -27,7 +27,7 @@
 	text-decoration: none;  
 	float:left;  
 	padding: 40px 0 0 0;   
-	color: #5cade0;  
+	color: #88c5f1;  
 	width: 126px;
 	height: 35px;
 }  
@@ -67,7 +67,7 @@
 </style>
 <div id="piepagina">
 <ul id="button"> 
-<li><a id="acercade" href="" target="_parent" style="margin-left:40px;">Acerca de </a></li>   
+<li><a id="acercade" href="" target="_parent" style="margin-left:56px;">Acerca de </a></li>   
 <li><a id="centro" href="" >Centro de innvovaci&oacute;n</a></li>  
 <li><a id="prensa" href="" target="_parent">Prensa</a></li> 
 <li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
