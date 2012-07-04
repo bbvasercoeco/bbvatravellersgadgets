@@ -161,16 +161,19 @@
 				for(var i=0;i<filas;i++){
 				     var html="";
 					 html+='<div id="topic" style="float:left;">';
-				     html+='<div id="imagetopic"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
-					 html+='<div id="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-					 html+='<div id="summarytopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-					 html+='<div id="lastfindingstopic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+				     html+='<div id="imagetopic"\'+i+\'><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+					 html+='<div id="topic"\'+i+\'><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					 html+='<div id="summarytopic"\'+i+\'><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					 html+='<div id="lastfindingstopic"\'+i+\'><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='</div>';
 				
 					document.getElementById("alltopics").innerHTML += html;
-					document.getElementById("imagetopic").innerHTML += data.getValue(i,2);
-					document.getElementById("topic").innerHTML += data.getValue(i,1);
-					document.getElementById("summarytopic").innerHTML += data.getValue(i,3);
+					
+				}
+				for(var i=0;i<filas;i++){
+					document.getElementById("imagetopic"+i).innerHTML += data.getValue(i,2);
+					document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
+					document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
 					
 				
 				
