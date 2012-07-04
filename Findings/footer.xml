@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="menu findings" />
+<Content type="html"><![CDATA[
+<style> 
+#piepagina{
+	width: 970px;
+	height: 61px;
+	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/fondofooter.png);	
+	margin:0;
+	padding: 0;
+	background-repeat: no-repeat;
+	
+}
+#button {  
+	padding: 4px 0 0 73px;  
+	height:60px;
+	margin: 0 0 0 -15px;
+}  
+#button li {  
+	display: inline; 
+	text-align: center;
+}  
+#button li a {  
+	font-family: Arial;  
+	font-size:18px;
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;   
+	color: #fff;  
+	width: 187px;
+	height: 35px;
+}  
+#button li a.first {  
+	font-family: Arial;  
+	font-size:18px;
+	text-decoration: none;  
+	float:left;  
+	padding: 19px 0 0 0;     
+	color: #fff;  
+	width: 112px;
+	height:35px;
+}  
+#button li a:hover {  
+	background-color: #2586d7; 
+    margin-left:5px;	
+}  
+#button li a:active {  
+	background-color: #2586d7;  
+}
+.sites-adminfooter {
+	display:none !important;
+}
+
+#button li a#past-travels:hover {  
+	background-color: #FEBB60;  
+} 
+
+#button li a#Future-Travels:hover {  
+	background-color: #7ABD5E;  
+} 
+
+#button li a#traveller-agenda:hover {  
+	background-color: #00BEBD;  
+} 
+
+</style>
+<div id="piepagina">
+<ul id="button"> 
+<li><a id="acercade" href="" target="_parent" >Acerca de </a></li>   
+<li><a id="centro" href="" >Centro de innvovación</a></li>  
+<li><a id="prensa" href="" target="_parent">Prensa</a></li> 
+<li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
+<li><a id="contacto" href="" target="_parent">Contacto</a></li>  
+</ul>  
+</div>
+
+]]></Content>
+</Module>
