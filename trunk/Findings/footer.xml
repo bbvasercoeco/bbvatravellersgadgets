@@ -23,7 +23,7 @@
 }  
 #button li a {  
 	font-family: Arial;  
-	font-size:12px;
+	font-size:11px;
 	text-decoration: none;  
 	float:left;  
 	padding: 42px 0 0 0;   
@@ -68,7 +68,7 @@
 </style>
 <div id="piepagina">
 <ul id="button"> 
-<li><a id="acercade" href="" target="_parent" style="margin-left:56px;">Acerca de </a></li>   
+<li><a id="acercade" href="" target="_parent" style="margin-left:57px;">Acerca de </a></li>   
 <li><a id="centro" href="" >Centro de innvovaci&oacute;n</a></li>  
 <li><a id="prensa" href="" target="_parent">Prensa</a></li> 
 <li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
