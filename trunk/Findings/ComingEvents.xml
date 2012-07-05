@@ -137,7 +137,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 13');
+			//console.debug('version 13');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -172,7 +172,7 @@
 			{
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
-				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				var month = new Array();
 				month[0]="January";
 				month[1]="February";
@@ -188,7 +188,7 @@
 				month[11]="December";
 				
 				for(var i=0;i<3;i++){
-				    console.debug(i);
+				    //console.debug(i);
 					 var fecha = new Date(data.getValue(i,0));
 					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
 				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
