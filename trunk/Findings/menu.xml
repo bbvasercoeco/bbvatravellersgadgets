@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="menu travellers" />
-<Content type="html"><![CDATA[
- <style> 
+  <ModulePrefs title="Hello World!" />
+  <Content type="html">
+    <![CDATA[
+      <style> 
 #cabeceramenu {
   width: 960px;
   height: 65px;
@@ -183,5 +184,6 @@ function datospagina()
 
 }
 </script>
-]]></Content>
-</Module>
+    ]]>
+  </Content>
+</Module>​
