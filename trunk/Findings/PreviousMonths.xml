@@ -132,7 +132,7 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select min(D),S,U group by S,T order by min(D)";
+				var querytosend = "select min(D),S,U group by S,U order by min(D)";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
