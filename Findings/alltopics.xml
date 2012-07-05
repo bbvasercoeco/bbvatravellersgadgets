@@ -161,7 +161,7 @@
 				for(var i=0;i<filas;i++){
 				     var html="";
 					 html+='<div id="topic" style="float:left;">';
-				     html+='<div id="imagetopic'+i+'"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+				     html+='<div id="imagetopic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='<div id="topic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='<div id="summarytopic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='</div>';
