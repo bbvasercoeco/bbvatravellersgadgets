@@ -162,7 +162,7 @@
 					document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
 					document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
 					document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
-					document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href="https://sites.google.com/a/bbva.com/findings/home/topic&topicname=security">View last findings of this topic</a>';
+					document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href="https://sites.google.com/a/bbva.com/findings/home/topic">View last findings of this topic</a>';
 					//document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href=https://sites.google.com/a/bbva.com/findings/home/topic&topicname="' + document.getElementById("topic"+i) +'">View last findings of this topic</a>';
 
 				
