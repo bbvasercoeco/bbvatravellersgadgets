@@ -137,7 +137,7 @@
 		<script type="text/javascript"> 
 			
 			//console.debug('lastfindings.xml');
-			console.debug('version 13');
+			//console.debug('version 13');
 			
 			var gadgetHelper = null;	
 			var prefs = new _IG_Prefs(); // User preferences			
@@ -172,12 +172,12 @@
 			{
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
-				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 				
 				for(var i=0;i<4;i++){
-				    console.debug(i);
+				    //console.debug(i);
 				     document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
-					 console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
+					 //console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
 					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,5);
 				     document.getElementById("place"+i).innerHTML = data.getValue(i,2);
 				     document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
