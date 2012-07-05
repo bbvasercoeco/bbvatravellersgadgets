@@ -3,113 +3,187 @@
   <ModulePrefs title="menu findings"/> 
  <Content type="html">
  <![CDATA[ 
-
-<style> 
+      <style> 
 #cabeceramenu {
-	width: 970px;
-	height: 61px;
-	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/fondomenu.png);	
-	margin:0;
-	padding: 0;
-	background-repeat: no-repeat;
+  width: 960px;
+  height: 65px;
+  background-image:url(https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/fondomenu.png);  
+  margin:0;
+  padding: 0;
+  background-repeat: no-repeat;
 }
 #button {  
-	padding: 4px 0 0 73px;  
-	height:60px;
-	margin: 0 0 0 0px;
+  padding: 5px 0 0 5px;
+  height:60px;
+  margin: 0 0 0 0px;
 }  
 #button li {  
-	display: inline; 
-	text-align: center;
+  display: inline; 
+  text-align: center; 
 }  
 #button li a {  
-	font-family: Arial;  
-	font-size:18px;
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;   
-	color: #fff;  
-	width: 187px;
-	height: 35px;
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 0 19px;   
+  color: #fff;  
+  width: 142px;
+  height:48px;
+
+}
+
+#button li a#contribute {
+padding: 19px 0 0 35px;
+}
+
+
+
+img {
+padding-top:3px;
+}
+
+.first {
+
+margin-top:3px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 0 0;   
+  color: #fff;  
+  width: 142px;
+  height:28px;
+
 }  
+
+#button li a#contribute {
+padding: 19px 0 0 0;
+}
+
+img {
+padding-top:0px;
+}
+
+.first {
+
+margin-top:0px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+ } 
+
+
+@-moz-document url-prefix()
+{
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 0 0;   
+  color: #fff;  
+  width: 142px;
+  height:28px;
+
+}  
+
+#button li a#contribute {
+padding: 19px 0 0 0;
+}
+
+img {
+padding-top:0px;
+}
+
+.first {
+
+margin-top:0px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+}
+
+
+#button li a.barralateral {  
+  background-image: url("https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/barralateralmenu.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+} 
 #button li a.first {  
-	font-family: Arial;  
-	font-size:18px;
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;     
-	color: #fff;  
-	width: 112px;
-	height:35px;
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 5px 0 0 0;     
+  color: #fff;  
+  width: 60px;
+  height:48px;
 }  
+
+#button li a.first img {
+  border:none;
+}
+
+
+
+
 #button li a:hover {  
-	background-color: #2586d7;  
+  background-color: #2586d7;  
 }  
 #button li a:active {  
-	background-color: #2586d7;  
-}
-.sites-adminfooter {
-	display:none !important;
+  background-color: #2586d7;  
 }
 
-#button li a#past-travels:hover {  
-	background-color: #FEBB60;  
-} 
-
-#button li a#Future-Travels:hover {  
-	background-color: #7ABD5E;  
-} 
-
-#button li a#traveller-agenda:hover {  
-	background-color: #00BEBD;  
-} 
-
+#cabeceramenu #button li a.desactivado {
+  color: #999;
+}
 </style>
 <div id="cabeceramenu">
-<ul id="button">  
-<li><a id="home" href="https://sites.google.com/a/bbva.com/travellers/" class="first" target="_parent">Home</a></li>  
-<li><a id="Future-Travels" href="https://sites.google.com/a/bbva.com/travellers/home/Future-Travels" target="_parent">Future Travels</a></li>  
-<li><a id="past-travels" href="https://sites.google.com/a/bbva.com/travellers/home/past-travels" target="_parent">Past Travels</a></li> 
-<li><a id="contribute" href="https://sites.google.com/a/bbva.com/travellers/home/contribute" target="_parent">Contribute</a></li>  
-<li><a id="traveller-agenda" href="https://sites.google.com/a/bbva.com/travellers/home/traveller-agenda" target="_parent">Traveller's Agenda</a></li>  
-</ul>  
+  <ul id="button">
+    <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home"/></a></li>
+    <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Innovation Topics</a></li>
+    <li><a id="coming-events" href=https://sites.google.com/a/bbva.com/findings/home/coming-events class="barralateral" target="_parent">Coming Events</a></li>
+    <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
+    <li><a id="Monthly-Summary" href=https://sites.google.com/a/bbva.com/findings/home/monthly-summary class="barralateral" >Monthly Report</a></li> 
+  </ul>  
 </div>
 <script type="text/javascript">
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
-	var parametros = gadgets.util.getUrlParameters()["parent"];	
-	if (parametros.indexOf("future-travel")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}
-	if (parametros.indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}
-	if (parametros.indexOf("past-travels")!=-1)
-	{
-		document.getElementById("past-travels").style.backgroundColor = "#FEBB60";
-	}
-	if (parametros.indexOf("traveller-agenda")!=-1)
-	{
-		document.getElementById("traveller-agenda").style.backgroundColor = "#00BEBD";
-	}
-	if (parametros.indexOf("contribute")!=-1)
-	{
-		document.getElementById("contribute").style.backgroundColor = "#2586d7";
-	}
-	if (gadgets.util.getUrlParameters()["parent"].indexOf("Future-Travels")!=-1)
-	{
-		document.getElementById("Future-Travels").style.backgroundColor = "#7ABD5E";
-	}	
+  var parametros = gadgets.util.getUrlParameters()["parent"];  
+  if (parametros.indexOf("Topics")!=-1)
+  {
+    document.getElementById("Topics").style.backgroundColor = "#2586D7";
+  }
+   if (parametros.indexOf("comming-events")!=-1)
+  {
+    document.getElementById("comming-events").style.backgroundColor = "#2586D7";
+  }
+  if (parametros.indexOf("Monthly-Summary")!=-1)
+  {
+    document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
+  }
+   if (parametros.indexOf("contribute")!=-1)
+  {
+    document.getElementById("contribute").style.backgroundColor = "#2586d7";
+  }
 
-	window.top.parent.document.getElementById("sites-canvas-main").style.paddingTop= "0px";
-	window.top.parent.document.getElementById("sites-canvas").style.paddingTop= "0px";		
 }
 </script>
-
-
   ]]> 
   </Content>
   </Module>
