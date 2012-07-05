@@ -171,7 +171,7 @@
 					
 				}
 				for(var i=0;i<filas;i++){
-					document.getElementById("imagetopic"+i).innerHTML += data.getValue(i,2);
+					document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
 					document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
 					document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
 					
