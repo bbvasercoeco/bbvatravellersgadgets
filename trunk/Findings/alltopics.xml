@@ -118,6 +118,7 @@
 			{
 				google.load("visualization", "1", {"packages": ["table"]});
 				google.setOnLoadCallback(sendQuery);
+				google.setOnLoadCallback(sendQuery1);
 			}
 
 			function sendQuery() 
@@ -134,21 +135,8 @@
 				
 				
 			}
-			function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
-				var opts = {dataType:'jsonp'};	
-					
-				
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),A,F,Y group by A,F,Y order by max(D)";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
-
+		
+			
 			
 			
 			function handleQueryResponse(response) 
@@ -164,6 +152,7 @@
 				     html+='<div id="imagetopic'+i+'"></div>';
 					 html+='<div id="topic'+i+'"></div>';
 					 html+='<div id="summarytopic'+i+'"></div>';
+					 html+='<div id="lastfindingstopic'+i+'"></div>';
 					 html+='</div>';
 				
 					document.getElementById("alltopics").innerHTML += html;
@@ -173,11 +162,15 @@
 					document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
 					document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
 					document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
-					
-				
+					document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href="https://sites.google.com/a/bbva.com/findings/home/topic">View last findings of this topic</a>';
+					//document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href=https://sites.google.com/a/bbva.com/findings/home/topic&topicname="' + document.getElementById("topic"+i) +'">View last findings of this topic</a>';
+
 				
 				}
 			}
+			
+			
+			
 				</script>
 		]]>
 	</Content>
