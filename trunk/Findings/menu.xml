@@ -3,7 +3,7 @@
   <ModulePrefs title="menu findings"/> 
  <Content type="html">
  <![CDATA[ 
-      <style> 
+         <style> 
 #cabeceramenu {
   width: 960px;
   height: 65px;
@@ -41,15 +41,21 @@ padding: 19px 0 0 35px;
 
 img {
 padding-top:3px;
+padding-left:60px;
 }
 
-.first {
 
-margin-top:3px;
-padding-left:10px;
-margin-left:10px;
+#button li a.first {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 8px 0 0 100px;     
+  color: #fff;  
+  width: 142px;
+  height:48px;
+}  
 
-}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
 
@@ -70,7 +76,7 @@ padding: 19px 0 0 0;
 }
 
 img {
-padding-top:0px;
+padding-top:2px;
 }
 
 .first {
@@ -80,6 +86,19 @@ padding-left:10px;
 margin-left:10px;
 
 }
+
+
+#button li a.first {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 5px 0 0 0;     
+  color: #fff;  
+  width: 142px;
+  height:48px;
+}  
+
 
  } 
 
@@ -103,7 +122,7 @@ padding: 19px 0 0 0;
 }
 
 img {
-padding-top:0px;
+padding-top:2px;
 }
 
 .first {
@@ -114,6 +133,18 @@ margin-left:10px;
 
 }
 
+#button li a.first {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 5px 0 0 0;     
+  color: #fff;  
+  width: 142px;
+  height:48px;
+}  
+
+
 }
 
 
@@ -122,16 +153,7 @@ margin-left:10px;
     background-position: right 0;
     background-repeat: no-repeat;
 } 
-#button li a.first {  
-  font-family: Arial;  
-  font-size:15px;  
-  text-decoration: none;  
-  float:left;  
-  padding: 5px 0 0 0;     
-  color: #fff;  
-  width: 60px;
-  height:48px;
-}  
+
 
 #button li a.first img {
   border:none;
@@ -153,7 +175,7 @@ margin-left:10px;
 </style>
 <div id="cabeceramenu">
   <ul id="button">
-    <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home"/></a></li>
+    <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first barralateral" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home"/></a></li>
     <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Innovation Topics</a></li>
     <li><a id="coming-events" href=https://sites.google.com/a/bbva.com/findings/home/coming-events class="barralateral" target="_parent">Coming Events</a></li>
     <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
