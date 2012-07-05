@@ -1,214 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
-		description=""
-		author_affiliation="Capgemini">
-		<Require feature="idi"/>
-		<Require feature="locked-domain" />
-	</ModulePrefs>
-	
-	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	
-	<Content type="html">
-		<![CDATA[
+  <ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
 
-		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 
-		<style type="text/css">			 
-			img.loading {
-				margin: 0 0 0 20px;
-			}
-			h2 {
-				color: #0B5394;
-				font-family: arial,sans-serif;
-				font-size: x-large;
-				line-height:18px;
-				margin-left: 5px;
-				width: 99%;
-				font-weight: normal;
-			}
-			h2 div {
-				display:inline;
-				float:right;
-			}
-			#imagenTopic {
-				display: inline;
-				float: left;
-				margin-left: 10px;
-				text-align: left;
-				width: 280px;
-			}
-			#imagenTopic img {
-				margin-right: 40px;
-			}
-			hr {
-				background-color: #CCCCCC;
-				border-width: 0;
-				height: 1px;
-			}
-			ul#datosFicha {
-				border-collapse: collapse;
-				color: #666666;
-				font-family: arial,sans-serif;
-				font-size: 13px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			ul#datosFicha li {
-				border-collapse: collapse;
-				color: #0b5394;
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			
-			ul#datosFicha li span,
-			ul#listaproductos span li  {
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				line-height: 17px;
-				text-align: justify;
-				color: #666666;
-			}
-			ul#listaproductos {
-				margin-left: 250px;
-			}
-			.titulo{
-			margin-bottom:15px;
-			font-weight:bold;
-			}
-			.summary{
-			margin-bottom:15px;
-			
-			}
-			.boton{
-			margin-bottom:15px;
-			
-			}
-		</style>
-	
-		<h2>
-			Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-			<hr>
-		</h2>			
+  <Content type="html">
+    <![CDATA[
 
-		<div id="lastfindings" style="float:left;">
-			
-			
-			  <div class="titulo">Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></div>
-              <div id="summary" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlButton" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  
-			  <div id="titulo1" class="titulo">Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></div>
-              <div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlButton1" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  
-			  <div id="titulo2" class="titulo">Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></div>
-              <div id="summary2" class="summary">img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlButton2" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-				
-			<!--<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>-->
-		</div>
-		
-		<script type="text/javascript"> 
-			
-			//console.debug('lastfindings.xml');
-			console.debug('version 13');
-			
-			var gadgetHelper = null;	
-			var prefs = new _IG_Prefs(); // User preferences			
-			var urlTable = prefs.getString("_table_query_url");		
-						
-			_IG_RegisterOnloadHandler(loadVisualizationAPI);
-			
-			function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
-			function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
-				var opts = {dataType:'jsonp'};	
-					
-				
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),S,T group by S,T order by max(D) desc limit 3 ";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
+    <style type="text/css">
+      h2 {
+        border-bottom: 1px solid #cacaca;
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+      }
+      h2 span {
+        font-weight: bold;
+      }
+      #lastfindings .item {
+        font-family: arial, sans-serif;
+        border-bottom: 1px solid #b1b1b1;
+        overflow: hidden;
+        padding-top: 40px;
+        padding-bottom: 25px;
+      }
+      #lastfindings .last {
+        border: none;
+        padding-bottom: 0;
+      }
+      h3.titulo {
+        color: #3b3b3b;
+        font-size: 20px;
+        margin: 15px 0;
+      }
+      .summary {
+        color: #7a7a7a;
+        font-size: 12px;
+      }
+      .button {
+        background: #ffffff; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWU5ZTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #ffffff 0%, #e9e9e9 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e9e9e9)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#e9e9e9 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ffffff 0%,#e9e9e9 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9e9e9',GradientType=0 ); /* IE6-8 */
+        border: 1px solid #c0e6f1;
+        -moz-box-shadow: 2px 4px 4px -2px #d7d7d7;
+        -webkit-box-shadow: 2px 4px 4px -2px #d7d7d7;
+        box-shadow: 2px 4px 4px -2px #d7d7d7;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        float: right;
+        margin-right: 2px;
+        padding: 5px 24px;
+      }
+      .button a {
+        color: #000;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+    <![endif]-->
 
-			
-			
-			function handleQueryResponse(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();		
-				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				
-				
-				var fecha = new Date(data.getValue(0,0));
-				var fecha1 = new Date(data.getValue(1,0));
-				var fecha2 = new Date(data.getValue(2,0));
-				
-				var month = new Array();
-				month[0]="January";
-				month[1]="February";
-				month[2]="March";
-				month[3]="April";
-				month[4]="May";
-				month[5]="June";
-				month[6]="July";
-				month[7]="August";
-				month[8]="September";
-				month[9]="October";
-				month[10]="November";
-				month[11]="December";
-				
-				
-			    document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
-				document.getElementById('titleYear').innerHTML = fecha.getFullYear();
-				document.getElementById('summary').innerHTML = data.getValue(0,1) ;
-				document.getElementById('urlButton').innerHTML = data.getValue(0,2);
-				
-				document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()];
-				document.getElementById('titleYear1').innerHTML = fecha1.getFullYear();
-				document.getElementById('summary1').innerHTML = data.getValue(1,1) ;
-				document.getElementById('urlButton1').innerHTML = data.getValue(1,2);
-				
-				document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()];
-				document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
-				document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
-				document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
-				
-				
-				
-			}
-			
-			
-			
-		</script>
-		]]>
-	</Content>
+    <h2>
+      Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+    </h2>
+
+    <div id="lastfindings">
+      <div class="item">
+        <h3 class="titulo">Top Findings of <span id="titleMonth"></span>&nbsp; <span id="titleYear"></span></h3>
+        <div id="summary" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlButton" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      </div>
+      <div class="item">
+        <h3 id="titulo1" class="titulo">Top Findings of <span id="titleMonth1"></span>&nbsp; <span id="titleYear1"></span></h3>
+        <div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlButton1" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      </div>
+      <div class="item last">
+        <h3 id="titulo2" class="titulo">Top Findings of <span id="titleMonth2"></span>&nbsp; <span id="titleYear2"></span></h3>
+        <div id="summary2" class="summary">img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlButton2" class="boton"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      </div>
+      <!--<div id="imagenTopic"><img class="loading" width="36" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif" style="float:left;position:top;"/></div>-->
+    </div>
+
+    <script type="text/javascript">
+
+      //console.debug('lastfindings.xml');
+      console.debug('version 13');
+
+      var gadgetHelper = null;
+      var prefs = new _IG_Prefs(); // User preferences
+      var urlTable = prefs.getString("_table_query_url");
+
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+      function loadVisualizationAPI()
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery()
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);
+        var opts = {dataType:'jsonp'};
+
+
+        var query = new google.visualization.Query(urlTable, opts);
+        var querytosend = "select max(D),S,T group by S,T order by max(D) desc limit 3 ";
+        query.setQuery(querytosend);
+        query.send(handleQueryResponse);
+
+
+      }
+
+
+
+      function handleQueryResponse(response)
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }
+        data = response.getDataTable();
+        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+
+
+        var fecha = new Date(data.getValue(0,0));
+        var fecha1 = new Date(data.getValue(1,0));
+        var fecha2 = new Date(data.getValue(2,0));
+
+        var month = new Array();
+        month[0]="January";
+        month[1]="February";
+        month[2]="March";
+        month[3]="April";
+        month[4]="May";
+        month[5]="June";
+        month[6]="July";
+        month[7]="August";
+        month[8]="September";
+        month[9]="October";
+        month[10]="November";
+        month[11]="December";
+
+
+          document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
+        document.getElementById('titleYear').innerHTML = fecha.getFullYear();
+        document.getElementById('summary').innerHTML = data.getValue(0,1) ;
+        document.getElementById('urlButton').innerHTML = data.getValue(0,2);
+
+        document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()];
+        document.getElementById('titleYear1').innerHTML = fecha1.getFullYear();
+        document.getElementById('summary1').innerHTML = data.getValue(1,1) ;
+        document.getElementById('urlButton1').innerHTML = data.getValue(1,2);
+
+        document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()];
+        document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
+        document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
+        document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
+
+
+
+      }
+
+
+
+    </script>
+    ]]>
+  </Content>
 </Module>
