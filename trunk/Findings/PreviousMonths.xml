@@ -132,7 +132,7 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select min(D),S,T group by S,T order by min(D)";
+				var querytosend = "select min(D),S,U group by S,T order by min(D)";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -171,7 +171,7 @@
 				alert(filas);
 			   for (var i=0;i<(filas-3);i++){
 			    var fecha = new Date(data.getValue(i,0));
-				document.getElementById('previousmonths').innerHTML += "<li><a href="+data.getValue(i,2)+">"+month[fecha.getMonth()]+","+fecha.getFullYear()+"<a></li>";
+				document.getElementById('previousmonths').innerHTML += "<li><a href="+data.getValue(i,2)+">"+month[fecha.getMonth()]+","+fecha.getFullYear()+"</a></li>";
 			  
 			   }
 				
