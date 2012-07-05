@@ -164,7 +164,6 @@
 				     html+='<div id="imagetopic'+i+'"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
 					 html+='<div id="topic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='<div id="summarytopic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-					// html+='<div id="lastfindingstopic'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					 html+='</div>';
 				
 					document.getElementById("alltopics").innerHTML += html;
