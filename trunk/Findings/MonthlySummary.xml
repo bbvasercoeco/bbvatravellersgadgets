@@ -83,7 +83,7 @@
     <![endif]-->
 
     <h2>
-      Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+      Monthly <span>Summary</span> <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
     </h2>
 
     <div id="lastfindings">
