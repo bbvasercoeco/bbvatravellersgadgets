@@ -3,7 +3,7 @@
   <ModulePrefs title="Hello World!" />
   <Content type="html">
     <![CDATA[
-      <style> 
+       <style> 
 #cabeceramenu {
   width: 960px;
   height: 65px;
@@ -26,11 +26,97 @@
   font-size:15px;  
   text-decoration: none;  
   float:left;  
+  padding: 19px 0 0 19px;   
+  color: #fff;  
+  width: 142px;
+  height:48px;
+
+}
+
+#button li a#contribute {
+padding: 19px 0 0 35px;
+}
+
+
+
+img {
+padding-top:3px;
+}
+
+.first {
+
+margin-top:3px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {  
+
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
   padding: 19px 0 0 0;   
   color: #fff;  
   width: 142px;
-  height: 34px;
-} 
+  height:28px;
+
+}  
+
+#button li a#contribute {
+padding: 19px 0 0 0;
+}
+
+img {
+padding-top:0px;
+}
+
+.first {
+
+margin-top:0px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+ } 
+
+
+@-moz-document url-prefix()
+{
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 0 0;   
+  color: #fff;  
+  width: 142px;
+  height:28px;
+
+}  
+
+#button li a#contribute {
+padding: 19px 0 0 0;
+}
+
+img {
+padding-top:0px;
+}
+
+.first {
+
+margin-top:0px;
+padding-left:10px;
+margin-left:10px;
+
+}
+
+}
+
+
 #button li a.barralateral {  
   background-image: url("https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/barralateralmenu.png");
     background-position: right 0;
@@ -51,19 +137,7 @@
   border:none;
 }
 
-#button li a#contribute
-#button li a#coming-events,
-#button li a#Monthly-Summary,
-#button li a#Topics {  
-  font-family: Arial;  
-  font-size:15px;  
-  text-decoration: none;  
-  float:left;  
-  padding: 19px 0 0 0;     
-  color: #fff;  
-  width: 142px;
-  height:34px;
-}
+
 
 
 #button li a:hover {  
@@ -79,7 +153,7 @@
 </style>
 <div id="cabeceramenu">
   <ul id="button">
-    <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehometrasp.png" alt="Home"/></a></li>
+    <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home"/></a></li>
     <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Innovation Topics</a></li>
     <li><a id="coming-events" href=https://sites.google.com/a/bbva.com/findings/home/coming-events class="barralateral" target="_parent">Coming Events</a></li>
     <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
@@ -112,4 +186,4 @@ function datospagina()
 </script>
     ]]>
   </Content>
-</Module>
+</Module>​
