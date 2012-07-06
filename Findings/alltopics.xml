@@ -107,7 +107,7 @@
 
         for(var i = 0; i < filas; i++) {
           var html = "";
-          if (i % 2 != 0) {
+          if (i % 2 == 0) {
             html += '<div class="topic first-row">';
           }
           else {
