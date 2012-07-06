@@ -23,6 +23,10 @@ style="margin-bottom:-50px;"
 	display: inline; 
 	text-align: center;
 }  
+#button li {  
+	display/*\**/: inline\9; 
+	text-align/*\**/: center\9;
+}
 #button li a {  
 	font-family: Arial;  
 	font-size:11px;
@@ -33,15 +37,7 @@ style="margin-bottom:-50px;"
 	width: 126px;
 	font-weight:bold;
 }  
-#button li a {  
-font-weight/*\**/:bold\9;
-width/*\**/: 126px\9;
-font-family/*\**/: Arial\9;  
-font-size/*\**/:11px\9;
-text-decoration/*\**/: none\9;  
-padding/*\**/: 42px 0 0 0 \9;   
-color/*\**/: #88c5f1 \9;  
-}
+
 #button li a.first {  
 	font-family: Arial;  
 	font-size:18px;
@@ -88,9 +84,7 @@ margin-left:57px;
 #acercade{
 margin-left/*\**/:92px\9;
 }
-#prensa{
-margin-left/*\**/:60px\9;
-}
+
 </style>
 <div id="piepagina">
 <ul id="button"> 
