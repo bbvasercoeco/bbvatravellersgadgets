@@ -136,7 +136,7 @@
         month[11]="December";
 
       document.getElementById('previousmonths').innerHTML="";
-        alert(filas);
+       // alert(filas);
          for (var i=0;i<(filas-3);i++){
           var fecha = new Date(data.getValue(i,0));
         document.getElementById('previousmonths').innerHTML += "<li><a href="+data.getValue(i,2)+">"+month[fecha.getMonth()]+","+fecha.getFullYear()+"<a></li>";
