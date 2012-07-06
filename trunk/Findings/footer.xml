@@ -78,7 +78,14 @@ margin-bottom:-150px;
 </style>
 <div id="piepagina">
 <ul id="button"> 
-<li><a id="acercade" href="" target="_parent" style="margin-left:77px;">Acerca de </a></li>   
+<!--[if IE 8]>
+<style type="text/css">
+	#acercade{
+	margin-left:97px;
+	}
+</style>
+<![endif]-->
+<li><a id="acercade" href="" target="_parent" style="margin-left:57px;">Acerca de </a></li>   
 <li><a id="centro" href="" >Centro de innvovaci&oacute;n</a></li>  
 <li><a id="prensa" href="" target="_parent">Prensa</a></li> 
 <li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
