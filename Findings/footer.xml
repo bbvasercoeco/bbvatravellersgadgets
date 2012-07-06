@@ -31,8 +31,11 @@ style="margin-bottom:-50px;"
 	padding: 42px 0 0 0;   
 	color: #88c5f1;  
 	width: 126px;
-	font-weight/*\**/:bold\9;
+	font-weight:bold;
 }  
+#button li a {  
+font-weight/*\**/:bold\9;
+}
 #button li a.first {  
 	font-family: Arial;  
 	font-size:18px;
