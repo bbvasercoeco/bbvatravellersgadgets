@@ -45,9 +45,9 @@
 </style>
 <div id="bloqueContribute">
 	<ul id="button">
-		<li><a id="wantgo" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/ask-an-event" class="first" target="_parent" title="I want to go. I will attend an event listed in the calendar"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1contribute.png" alt="I want to go. I will attend an event listed in the calendar" width="301" height="56"/></a></li>  
-		<li><a id="haveyougo" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/tell-us-new-event" target="_parent" title="Have you found an interesting event that is not on the calendar?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2contribute.png" alt="Have you found an interesting event that is not on the calendar?" width="301" height="56"/></a></li> 
-		<li><a id="wentto" href="https://sites.google.com/a/bbva.com/travellers/home/contribute/share-your-experience" target="_parent" title="I went to an event what should I do now?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3contribute.png" alt="I went to an event, what should I do now?" width="301" height="56"/></a></li> 
+		<li><a id="wantgo" href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event" class="first" target="_parent" title="I want to go. I will attend an event listed in the calendar"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1contribute.png" alt="I want to go. I will attend an event listed in the calendar" width="301" height="56"/></a></li>  
+		<li><a id="haveyougo" href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event" target="_parent" title="Have you found an interesting event that is not on the calendar?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2contribute.png" alt="Have you found an interesting event that is not on the calendar?" width="301" height="56"/></a></li> 
+		<li><a id="wentto" href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience" target="_parent" title="I went to an event what should I do now?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3contribute.png" alt="I went to an event, what should I do now?" width="301" height="56"/></a></li> 
 	</ul>  
 </div>
 ]]></Content>
