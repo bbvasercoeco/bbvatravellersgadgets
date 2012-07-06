@@ -129,7 +129,7 @@
         var opts = {dataType:'jsonp'};
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select max(D),S,T group by S,T order by max(D) desc limit 3 ";
+        var querytosend = "select max(D),S,T,U group by S,T,U order by max(D) desc limit 3 ";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
@@ -162,18 +162,18 @@
 
           document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
         document.getElementById('titleYear').innerHTML = fecha.getFullYear();
-        document.getElementById('summary').innerHTML = data.getValue(0,1) ;
-        document.getElementById('urlButton').innerHTML = data.getValue(0,2);
+        document.getElementById('summary').innerHTML = data.getValue(0,2) ;
+        document.getElementById('urlButton').innerHTML = data.getValue(0,3);
 
         document.getElementById('titleMonth1').innerHTML = month[fecha1.getMonth()];
         document.getElementById('titleYear1').innerHTML = fecha1.getFullYear();
-        document.getElementById('summary1').innerHTML = data.getValue(1,1) ;
-        document.getElementById('urlButton1').innerHTML = data.getValue(1,2);
+        document.getElementById('summary1').innerHTML = data.getValue(1,2) ;
+        document.getElementById('urlButton1').innerHTML = data.getValue(1,3);
 
         document.getElementById('titleMonth2').innerHTML = month[fecha2.getMonth()];
         document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
-        document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
-        document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
+        document.getElementById('summary2').innerHTML = data.getValue(2,2) ;
+        document.getElementById('urlButton2').innerHTML = data.getValue(2,3);
       }
     </script>
     ]]>
