@@ -65,13 +65,21 @@
         border-radius: 8px;
         float: right;
         margin-right: 2px;
-        padding: 5px 24px;
+        padding: 3px 7px 3px 24px;
       }
       .button a {
+        background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Monthly/ico-download.png);
+        background-position: right center;
+        background-repeat: no-repeat;
         color: #000;
+        display: block;
         font-size: 12px;
         font-weight: bold;
+        padding: 3px 29px 3px 0;
         text-decoration: none;
+      }
+      .button:hover {
+        opacity: 0.8;
       }
     </style>
     <!--[if gte IE 9]>
