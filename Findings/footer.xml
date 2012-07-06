@@ -36,7 +36,17 @@ style="margin-bottom:-50px;"
 	color: #88c5f1;  
 	width: 126px;
 	font-weight:bold;
-}  
+} 
+#button li a {  
+	font-family/*\**/: Arial\9;  
+	font-size/*\**/: 11px\9;
+	text-decoration/*\**/: none\9;  
+	float/*\**/:left\9;  
+	padding/*\**/: 42px 0 0 0\9;   
+	color/*\**/: #88c5f1\9;  
+	width/*\**/: 126px\9;
+	font-weight/*\**/:bold\9;
+} 
 
 #button li a.first {  
 	font-family: Arial;  
