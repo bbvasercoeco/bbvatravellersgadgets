@@ -3,7 +3,7 @@
   <ModulePrefs title="menu findings"/> 
  <Content type="html">
  <![CDATA[ 
-         <style> 
+                      <style> 
 #cabeceramenu {
   width: 960px;
   height: 65px;
@@ -17,44 +17,13 @@
   height:60px;
   margin: 0 0 0 0px;
 }  
+
 #button li {  
   display: inline; 
   text-align: center; 
 }  
-#button li a {  
-  font-family: Arial;  
-  font-size:15px;  
-  text-decoration: none;  
-  float:left;  
-  padding: 19px 0 0 19px;   
-  color: #fff;  
-  width: 142px;
-  height:48px;
-
-}
-
-#button li a#contribute {
-padding: 19px 0 0 35px;
-}
 
 
-
-img {
-padding-top:3px;
-padding-left:60px;
-}
-
-
-#button li a.first {  
-  font-family: Arial;  
-  font-size:15px;  
-  text-decoration: none;  
-  float:left;  
-  padding: 8px 0 0 100px;     
-  color: #fff;  
-  width: 142px;
-  height:48px;
-}  
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
@@ -67,7 +36,7 @@ padding-left:60px;
   padding: 19px 0 0 0;   
   color: #fff;  
   width: 142px;
-  height:28px;
+  height:32px;
 
 }  
 
@@ -113,7 +82,7 @@ margin-left:10px;
   padding: 19px 0 0 0;   
   color: #fff;  
   width: 142px;
-  height:28px;
+  height:32px;
 
 }  
 
@@ -173,6 +142,98 @@ margin-left:10px;
   color: #999;
 }
 </style>
+
+
+<!--[if lt IE 9]>
+<style>
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 13px 18px;   
+  color: #fff;  
+  width: 142px;
+  height:23px;
+
+}
+
+#button li a#contribute {
+padding: 19px 0 13px 35px;
+}
+
+
+
+img {
+padding-top:3px;
+padding-left:40px;
+}
+
+
+#button li a.first {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 8px 0 0 60px;     
+  color: #fff;  
+  width: 95px;
+  height: 33px;
+}  
+
+
+
+</style>
+
+
+<![endif]-->
+
+
+<!--[if gt IE 8]>
+
+<style>
+#button li a {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 19px 0 0 20px;   
+  color: #fff;  
+  width: 142px;
+  height:33px;
+
+}
+
+#button li a#contribute {
+padding: 19px 0 0 35px;
+}
+
+
+
+img {
+padding-top:3px;
+padding-left:60px;
+}
+
+
+#button li a.first {  
+  font-family: Arial;  
+  font-size:15px;  
+  text-decoration: none;  
+  float:left;  
+  padding: 8px 0 0 100px;     
+  color: #fff;  
+  width: 95px;
+  height: 43px;
+}  
+
+
+
+</style>
+
+
+<![endif]-->
+
 <div id="cabeceramenu">
   <ul id="button">
     <li><a href=https://sites.google.com/a/bbva.com/findings/home/ class="first barralateral" target="_parent" title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home"/></a></li>
