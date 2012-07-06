@@ -76,13 +76,9 @@ margin-bottom:-150px;
 #acercade{
 margin-left:57px;
 }
-<!--[if IE 8]>
-<style type="text/css">
-	#acercade{
-	margin-left:97px;
-	}
-</style>
-<![endif]-->
+#acercade{
+margin-left:97px; \ 0 / IE 8 + 9 ;
+}
 
 </style>
 <div id="piepagina">
