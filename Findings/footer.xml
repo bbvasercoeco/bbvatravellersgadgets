@@ -89,12 +89,11 @@ margin-left:57px;
 margin-left/*\**/:92px\9;
 }
 #prensa{
-margin-left/*\**/:45px\9;
+margin-left/*\**/:60px\9;
 }
 </style>
 <div id="piepagina">
 <ul id="button"> 
-
 <li><a id="acercade" href="" target="_parent">Acerca de </a></li>   
 <li><a id="centro" href="" target="_parent">Centro de innvovaci&oacute;n</a></li>  
 <li><a id="prensa" href="" target="_parent">Prensa</a></li> 
