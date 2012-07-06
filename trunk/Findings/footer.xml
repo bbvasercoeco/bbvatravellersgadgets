@@ -73,11 +73,9 @@ margin-top:-50px;
 #sites-chrome-page-wrapper-inside{
 margin-bottom:-150px;
 }
-
-
-</style>
-<div id="piepagina">
-<ul id="button"> 
+#acercade{
+margin-left:57px;
+}
 <!--[if IE 8]>
 <style type="text/css">
 	#acercade{
@@ -85,7 +83,12 @@ margin-bottom:-150px;
 	}
 </style>
 <![endif]-->
-<li><a id="acercade" href="" target="_parent" style="margin-left:57px;">Acerca de </a></li>   
+
+</style>
+<div id="piepagina">
+<ul id="button"> 
+
+<li><a id="acercade" href="" target="_parent">Acerca de </a></li>   
 <li><a id="centro" href="" >Centro de innvovaci&oacute;n</a></li>  
 <li><a id="prensa" href="" target="_parent">Prensa</a></li> 
 <li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
