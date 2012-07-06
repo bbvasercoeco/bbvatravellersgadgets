@@ -108,7 +108,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 13');
+      //console.debug('version 13');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -128,13 +128,10 @@
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
 
-
         var query = new google.visualization.Query(urlTable, opts);
         var querytosend = "select max(D),S,T group by S,T order by max(D) desc limit 3 ";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
-
-
       }
 
 
@@ -143,8 +140,7 @@
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
-        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 
         var fecha = new Date(data.getValue(0,0));
         var fecha1 = new Date(data.getValue(1,0));
@@ -164,7 +160,6 @@
         month[10]="November";
         month[11]="December";
 
-
           document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
         document.getElementById('titleYear').innerHTML = fecha.getFullYear();
         document.getElementById('summary').innerHTML = data.getValue(0,1) ;
@@ -179,13 +174,7 @@
         document.getElementById('titleYear2').innerHTML = fecha2.getFullYear();
         document.getElementById('summary2').innerHTML = data.getValue(2,1) ;
         document.getElementById('urlButton2').innerHTML = data.getValue(2,2);
-
-
-
       }
-
-
-
     </script>
     ]]>
   </Content>
