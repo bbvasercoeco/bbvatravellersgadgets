@@ -126,6 +126,7 @@
           document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
           document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
 		  console.debug(document.getElementById("topic"+i).value);
+		  alert(document.getElementById("topic"+i).value);
           //document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href="https://sites.google.com/a/bbva.com/findings/home/topic">View last findings of this topic</a>';
 		  //sleep(2000);
           document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + document.getElementById("topic"+i).value +'>View last findings of this topic</a>';
