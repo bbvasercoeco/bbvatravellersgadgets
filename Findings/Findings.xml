@@ -149,7 +149,7 @@
 				    html += '<div id="findings">';	
 					html += '<div id="imagefindings"+i><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
 					html += '<div id="summary"+i><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-					html += '<div id="urlmoreinfo"+i><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+					html += '<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					html += '<div id="bbvatraveller"+i><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 					html += '</div>';
 
