@@ -68,7 +68,7 @@
     <div id="alltopics"></div>
     <script type="text/javascript">
       //console.debug('lastfindings.xml');
-      console.debug('version 13');
+      //console.debug('version 13');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -102,7 +102,7 @@
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
-        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+       // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 
         for(var i = 0; i < filas; i++) {
@@ -125,11 +125,7 @@
           document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
           document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
           document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
-		  console.debug(document.getElementById("topic"+i).value);
-		  alert(data.getValue(i,1));
-          //document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href="https://sites.google.com/a/bbva.com/findings/home/topic">View last findings of this topic</a>';
-		  //sleep(2000);
-          document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a>';
+		  document.getElementById("lastfindingstopic"+i).innerHTML += '<a  href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a>';
         }
       }
     </script>
