@@ -28,7 +28,7 @@
         font-weight: normal;
       }
 	  
-	   @media screen and (-webkit-min-device-pixel-ratio:0) {  
+	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {	 
 	    margin-top: 10px;
 	    }
@@ -336,11 +336,7 @@
     <script type="text/javascript"> 
       
       //console.debug('lastfindings.xml');
-<<<<<<< .mine
-      //console.debug('version 13');
-=======
      // console.debug('version 13');
->>>>>>> .r506
       
       var gadgetHelper = null;  
       var prefs = new _IG_Prefs(); // User preferences      
@@ -375,25 +371,13 @@
       {
         if (!gadgetHelper.validateResponse(response)) { return; }      
         data = response.getDataTable();    
-<<<<<<< .mine
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-=======
-        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
->>>>>>> .r506
         
         for(var i=0;i<4;i++){
-<<<<<<< .mine
-       //     console.debug(i);
-=======
-            //console.debug(i);
->>>>>>> .r506
+          //  console.debug(i);
              document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 
-<<<<<<< .mine
-       //    console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
-=======
           // console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
->>>>>>> .r506
                 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
              document.getElementById("place"+i).innerHTML = data.getValue(i,2);
              document.getElementById("bbvatraveller"+i).innerHTML = "<b>BBVA Traveller -</b> "+data.getValue(i,3);
