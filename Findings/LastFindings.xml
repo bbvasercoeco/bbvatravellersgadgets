@@ -27,6 +27,13 @@
         width: 99%;
         font-weight: normal;
       }
+	  
+	   @media screen and (-webkit-min-device-pixel-ratio:0) {  
+        h2 {	 
+	    margin-top: 10px;
+	    }
+	  }
+	  
       h2 div {
         display:inline;
         float:right;
