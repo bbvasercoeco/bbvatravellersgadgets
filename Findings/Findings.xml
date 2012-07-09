@@ -159,10 +159,8 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
-				var topic = gadgets.util.getUrlParameters()["parent"].split("=");	
-				alert(topic);
-				alert(topic[1]);
-				var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
+				var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+				var querytosend = "select max(D),A,C,L,G,R where A like '"+topic[1]+"'group by A,C,L,G,R order by max(D)  desc limit 4";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -175,9 +173,9 @@
 			{
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
-				console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				
-				for(var i=0;i<4;i++){
+				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				filas=data.getNumberOfRows();
+				for(var i=0;i<filas;i++){
 				    console.debug(i);
 				     document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 					 console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
