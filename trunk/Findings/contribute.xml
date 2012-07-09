@@ -2,53 +2,95 @@
 <Module>
 <ModulePrefs title="cajetin personalizado bbva contribute findings" />
 <Content type="html"><![CDATA[
-<style> 
-#bloqueContribute {
-	width: 945px;
-	height: 300px;
-	background-image:url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/fondoytextocontribute.png);	
-	margin:0;
-	padding: 0;
-	background-repeat: no-repeat;
-	background-position:left top;
+<style type="text/css"> 
+#header {
+  margin-bottom: 20px;
 }
-#button {  
-	padding: 0 0 0 7px;  
-	height:60px;
-	margin: 0;
-	position:relative;
-	top:200px;
-}  
-#button li {  
-	display: inline; 
-	text-align: center;
-}  
-#button li a {  
-	font-family: Arial;  
-	font-size:15px;  
-	text-decoration: none;  
-	float:left;  
-	padding: 19px 0 0 0;   
-	color: #fff;  
-	width: 310px;
-	height:56px;
-}   
-#button li a:hover {  
-	background-color: none;  
-}  
-#button li a:active {  
-	background-color: none;  
+h2 {
+  border-bottom: 1px solid #cacaca;
+  font-size: 45px;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+  padding-bottom: 13px;
 }
-.sites-adminfooter {
-	display:none !important;
+#contribute {
+  margin: 35px 0;
+  padding: 0;
+}
+.item {
+  background-color: #fff;
+  background-position: center 42px;
+  background-repeat: no-repeat;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px #ddd;
+  display: inline-block;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  list-style: none;
+  margin-right: 25px;
+  width: 290px;
+}
+.last {
+  margin-right: 0;
+}
+#found-event {
+  background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/Contribute_found.png);
+}
+#went-event {
+  background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/Contribute_went.png);
+}
+#want-go-event {
+  background-image: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/Contribute_want.png);
+  background-position: center 29px;
+}
+.item h3 {
+  font-size: 16px;
+  margin: 0;
+  padding: 169px 43px 10px 43px;
+}
+.item .summary {
+  color: #2d2d2d;
+  padding: 0 43px 48px 43px;
+}
+.item .link {
+  border-top: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  text-align: right;
+}
+.item .link a {
+  background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/Contribute_button.png) no-repeat left top;
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  padding-left: 17px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: 0 1px #ddd;
+  width: 112px;
 }
 </style>
-<div id="bloqueContribute">
-	<ul id="button">
-		<li><a id="wantgo" href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event" class="first" target="_parent" title="I want to go. I will attend an event listed in the calendar"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton1contribute.png" alt="I want to go. I will attend an event listed in the calendar" width="301" height="56"/></a></li>  
-		<li><a id="haveyougo" href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event" target="_parent" title="Have you found an interesting event that is not on the calendar?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton2contribute.png" alt="Have you found an interesting event that is not on the calendar?" width="301" height="56"/></a></li> 
-		<li><a id="wentto" href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience" target="_parent" title="I went to an event what should I do now?"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/boton3contribute.png" alt="I went to an event, what should I do now?" width="301" height="56"/></a></li> 
-	</ul>  
-</div>
+<div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/imagenHeader.png" alt="Lorem ipsum" /></div>
+<h2>Contribute</h2>
+<ul id="contribute">
+  <li id="found-event" class="item">
+    <h3>I've found an event</h3>
+    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <div class="link"><a href="#">Contribute</a></div>
+  </li>
+  <li id="went-event" class="item">
+    <h3>I went to an event</h3>
+    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <div class="link"><a href="#">Contribute</a></div>
+  </li>
+  <li id="want-go-event" class="item last">
+    <h3>I want to go to an event</h3>
+    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <div class="link"><a href="#">Contribute</a></div>
+  </li>
+</ul>
 ]]></Content>
 </Module>
