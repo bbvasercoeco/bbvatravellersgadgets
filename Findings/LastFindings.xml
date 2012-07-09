@@ -1,195 +1,389 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
-		description=""
-		author_affiliation="Capgemini">
-		<Require feature="idi"/>
-		<Require feature="locked-domain" />
-	</ModulePrefs>
-	
-	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	
-	<Content type="html">
-		<![CDATA[
+  <ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
+  
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+  
+  <Content type="html">
+    <![CDATA[
 
-		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
-		<style type="text/css">			 
-			img.loading {
-				margin: 0 0 0 20px;
-			}
-			h2 {
-				color: #0B5394;
-				font-family: arial,sans-serif;
-				font-size: x-large;
-				line-height:18px;
-				margin-left: 5px;
-				width: 99%;
-				font-weight: normal;
-			}
-			h2 div {
-				display:inline;
-				float:right;
-			}
-			#imagenTopic {
-				display: inline;
-				float: left;
-				margin-left: 10px;
-				text-align: left;
-				width: 280px;
-			}
-			#imagenTopic img {
-				margin-right: 40px;
-			}
-			hr {
-				background-color: #CCCCCC;
-				border-width: 0;
-				height: 1px;
-			}
-			ul#datosFicha {
-				border-collapse: collapse;
-				color: #666666;
-				font-family: arial,sans-serif;
-				font-size: 13px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			ul#datosFicha li {
-				border-collapse: collapse;
-				color: #0b5394;
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			
-			ul#datosFicha li span,
-			ul#listaproductos span li  {
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				line-height: 17px;
-				text-align: justify;
-				color: #666666;
-			}
-			ul#listaproductos {
-				margin-left: 250px;
-			}
-			
-		</style>
-	
-		<h2>
-			Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-			<hr>
-		</h2>			
+    <style type="text/css">       
+      img.loading {
+        margin: 0 0 0 20px;
+      }
+      h2 {
+        color: #0B5394;
+        font-family: arial,sans-serif;
+        font-size: x-large;
+        line-height:18px;
+        margin-left: 5px;
+        width: 99%;
+        font-weight: normal;
+      }
+      h2 div {
+        display:inline;
+        float:right;
+      }
+      #imagenTopic {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        text-align: left;
+        width: 280px;
+      }
+      #imagenTopic img {
+        margin-right: 40px;
+      }
+      hr {
+        background-color: #CCCCCC;
+        border-width: 0;
+        height: 1px;
+      }
+      ul#datosFicha {
+        border-collapse: collapse;
+        color: #666666;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0;
+      }
+      ul#datosFicha li {
+        border-collapse: collapse;
+        color: #0b5394;
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        word-spacing: 0;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+      }
+      
+      ul#datosFicha li span,
+      ul#listaproductos span li  {
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: justify;
+        color: #666666;
+      }
+      ul#listaproductos {
+        margin-left: 250px;
+      }
+      
+      #izquierda {
+        width: 470px; 
+        float:left; 
+        margin-right:15px;
+        margin-left:45px;
+      }
+      
+      #derecha {
+      
+      width: 470px;
+      float:left;
+      }
+      
+     #topleft {
+      padding-left:20px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+      } 
 
-		<div id="lastfindings" style="float:left;">
-			
-			<div id="topleft" style="float:left;">
-			  <div id="imagefindings0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			</div>
-		
-		   <div id="topright" style="float:left;">
-			  <div id="imagefindings1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-			
-		   <div id="bottomleft" style="float:left;">
-			  <div id="imagefindings2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-		   
-		   <div id="bottomright" style="float:left;">
-			  <div id="imagefindings3"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="topic3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="place3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="bbvatraveller3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo3"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-					
-		</div>
-		
-		<script type="text/javascript"> 
-			
-			//console.debug('lastfindings.xml');
-			//console.debug('version 13');
-			
-			var gadgetHelper = null;	
-			var prefs = new _IG_Prefs(); // User preferences			
-			var urlTable = prefs.getString("_table_query_url");		
-						
-			_IG_RegisterOnloadHandler(loadVisualizationAPI);
-			
-			function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
 
-			function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
-				var opts = {dataType:'jsonp'};	
-					
-				
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
+      #bottomleft {
+      padding-left:20px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+      }
 
-			
-			
-			function handleQueryResponse(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();		
-				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				
-				for(var i=0;i<4;i++){
-				    //console.debug(i);
-				     document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
-					 //console.debug(document.getElementById("topic"+i).innerHTML = data.getValue(i,1));
-					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,5);
-				     document.getElementById("place"+i).innerHTML = data.getValue(i,2);
-				     document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
-				     document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
-				
-				
-				}
-			}
-			
-			
-			
-		</script>
-		]]>
-	</Content>
+      #topright {
+      padding-left:20px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+      }
+
+      #bottomright {
+      padding-left:20px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+      }    
+
+      #izquierdaTL {
+      
+        width:auto;
+        float:left;
+      }
+
+      #derechaTL {
+        width:auto;
+        margin-left:180px;
+      }
+
+      #security1 {
+      padding-top:10px;
+      padding-left:195px;
+      }
+
+ .topic {
+ padding-left:10px;
+        padding-bottom:5px;
+        overflow:hidden;
+        height: 74px; 
+        width: 176px; 
+        font-family:cursive;
+        font-size: 19px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: "550"; 
+        letter-spacing: normal;
+        line-height: 17px; 
+        text-align: left; 
+        text-indent: 0; 
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0; 
+
+}
+
+
+.place {
+ display:none;
+ }   
+
+
+       #infoviajero {
+       overflow:hidden;
+       border-top: 1px solid #d0d0d0;
+       }
+
+       #infoviajero1 {
+       overflow:hidden;
+       border-top: 1px solid #d0d0d0;
+
+       }
+   
+       #infoviajero2 {
+       overflow:hidden;
+       border-top: 1px solid #d0d0d0;
+
+       }
+
+      #infoviajero3 {
+       overflow:hidden;
+       border-top: 1px solid #d0d0d0;
+
+       }
+
+      .bbvatraveller {
+       overflow:hidden;
+       width:180px;
+       padding-left:5px;
+       padding-top:5px;
+       float:left;
+
+       font-family: arial,sans-serif;
+       font-size: 12px;
+       line-height: 17px;
+       text-align: justify;
+}
+
+ .urlmoreinfo {
+   width:55px;
+       height:25px;
+       padding-left: 11px;
+       float:left;
+       color:#00FFFF;  
+       padding-top:5px; 
+
+       font-family: arial,sans-serif;
+       font-size: 12px;
+       line-height: 17px;
+       text-align: justify;
+ } 
+       
+    .urlmoreinfo a {
+       text-decoration: none;
+    }
+
+      
+    </style>
+  
+    <h2>
+      Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+      <hr>
+    </h2>      
+
+    <div id="lastfindings">
+      
+    <div id="izquierda">  
+      
+     <div id="topleft">
+      
+      <div id="izquierdaTL">
+        <div id="imagefindings0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+      </div>
+
+      <div id="derechaTL">
+        <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+        <div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       <div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+     
+     <div id ="infoviajero">
+      <div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      </div>
+     </div>
+
+      </div>
+    
+      
+       <div id="bottomleft">
+       
+<div id="izquierdaTL">
+        <div id="imagefindings2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+</div>
+
+<div id="derechaTL">
+ <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_blue.png"/></div>
+        <div id="topic2" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+    
+    <div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+     
+  <div id="infoviajero1">
+        <div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div> 
+      </div>  
+    </div>
+</div>
+    
+    <div id="derecha">
+    
+       <div id="topright">
+
+       <div id="izquierdaTL">
+        <div id="imagefindings1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+       </div>
+
+        <div id="derechaTL">
+<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_purple.png"/></div>
+        <div id="topic1" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="place1" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+  <div id="infoviajero2">
+        <div id="bbvatraveller1" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo1" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+      </div>
+     </div>
+       
+       <div id="bottomright">
+
+       <div id="izquierdaTL">
+        <div id="imagefindings3"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+       </div>
+
+       <div id="derechaTL">
+       <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png"/></div>
+        <div id="topic3" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+     <div id="place3" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+ <div id="infoviajero3">
+        <div id="bbvatraveller3" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo3" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+       </div>
+      </div>
+    </div>      
+          
+    </div>
+    
+    <script type="text/javascript"> 
+      
+      //console.debug('lastfindings.xml');
+      console.debug('version 13');
+      
+      var gadgetHelper = null;  
+      var prefs = new _IG_Prefs(); // User preferences      
+      var urlTable = prefs.getString("_table_query_url");    
+            
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+      
+      function loadVisualizationAPI() 
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery() 
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);  
+        var opts = {dataType:'jsonp'};  
+          
+        
+        var query = new google.visualization.Query(urlTable, opts);  
+        var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
+        query.setQuery(querytosend);        
+        query.send(handleQueryResponse);
+        
+        
+      }
+
+      
+      
+      function handleQueryResponse(response) 
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }      
+        data = response.getDataTable();    
+        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        
+        for(var i=0;i<4;i++){
+            console.debug(i);
+             document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
+
+           console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
+                document.getElementById("urlmoreinfo"+i).innerHTML = "<a href='+data.getValue(i,5)+'>More Info</a>";
+             document.getElementById("place"+i).innerHTML = data.getValue(i,2);
+             document.getElementById("bbvatraveller"+i).innerHTML = "<b>BBVA Traveller -</b> "+data.getValue(i,3);
+             document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';  
+        
+        
+        }
+      }
+      
+      
+      
+    </script>
+    ]]>
+  </Content>
 </Module>
