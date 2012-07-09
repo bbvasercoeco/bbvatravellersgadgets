@@ -371,7 +371,7 @@
              document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 
            console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
-                document.getElementById("urlmoreinfo"+i).innerHTML = "<a href="'+data.getValue(i,5)+'">More Info</a>";
+                document.getElementById("urlmoreinfo"+i).innerHTML = "<a href='+data.getValue(i,5)+'>More Info</a>";
              document.getElementById("place"+i).innerHTML = data.getValue(i,2);
              document.getElementById("bbvatraveller"+i).innerHTML = "<b>BBVA Traveller -</b> "+data.getValue(i,3);
              document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';  
