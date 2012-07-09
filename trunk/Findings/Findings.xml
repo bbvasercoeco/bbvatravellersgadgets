@@ -129,7 +129,7 @@
 				
 				var query = new google.visualization.Query(urlTable, opts);	
 				var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-				var querytosend = "select max(D),A,C,L,G,R,Y where A like '"+topic[1]+"'group by A,C,L,G,R,Y order by max(D)  desc limit 4";
+				var querytosend = "select max(D),A,C,L,G,R,Y where A like '"+topic[1]+"'group by A,C,L,G,R,Y order by max(D)  desc";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
 				
@@ -159,7 +159,7 @@
 				
 				for(var i=0;i<filas;i++){
 				   
-					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,5);
+					 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
 				     document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
 				     document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
 				     document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';	
