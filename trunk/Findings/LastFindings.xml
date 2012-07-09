@@ -95,7 +95,7 @@
         width: 470px; 
         float:left; 
         margin-right:15px;
-        margin-left:45px;
+        margin-left:5px;
       }
       
       #derecha {
