@@ -27,13 +27,13 @@
         width: 99%;
         font-weight: normal;
       }
-	  
-	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
-        h2 {	 
-	    margin-top: 10px;
-	    }
-	  }
-	  
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {  
+        h2 {   
+      margin-top: 10px;
+      }
+    }
+    
       h2 div {
         display:inline;
         float:right;
@@ -243,6 +243,53 @@
       
     </style>
   
+<!--[if lt IE 9]>
+<style>
+
+
+#derechaTL {
+width:20px;
+}
+
+
+.topic {
+   height: 84px;
+}
+
+#infoviajero {
+width:261px;
+}
+
+#infoviajero1 {
+width:261px;
+}
+
+#infoviajero2 {
+width:261px;
+}
+
+#infoviajero3 {
+width:261px;
+}
+
+.urlmoreinfo {
+float:left;
+width:65px;
+}
+
+#security1 {
+padding-top:10px;
+padding-left:185px;
+}
+
+h2 {   
+ padding-top: 50px;
+}
+
+</style>
+<![endif]-->
+
+
     <h2>
       Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
       <hr>
@@ -392,4 +439,4 @@
     </script>
     ]]>
   </Content>
-</Module>
+</Module>?
