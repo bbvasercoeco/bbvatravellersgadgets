@@ -15,6 +15,19 @@
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
     <style type="text/css">
+      #header {
+        margin-bottom: 20px;
+      }
+      h2 {
+        border-bottom: 1px solid #cacaca;
+        font-size: 60px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+      }
+      h2 span {
+        font-weight: bold;
+      }
       #alltopics {
         color: #2d2d2d;
         font-family: arial, sans-serif;
@@ -61,10 +74,8 @@
       }
     </style>
 
-    <h2>
-      Last Findings <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-    </h2>
-
+    <div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png" alt="Lorem ipsum" /></div>
+    <h2>All <span>Topics</span></h2>
     <div id="alltopics"></div>
     <script type="text/javascript">
       //console.debug('lastfindings.xml');
