@@ -17,7 +17,7 @@
     <style type="text/css">
       h2 {
         border-bottom: 1px solid #cacaca;
-        font-size: 60px;
+        font-size: 45px;
         font-weight: normal;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
