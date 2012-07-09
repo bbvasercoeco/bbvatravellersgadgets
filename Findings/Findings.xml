@@ -159,6 +159,8 @@
 					
 				
 				var query = new google.visualization.Query(urlTable, opts);	
+				var topic = gadgets.util.getUrlParameters()["parent"].split("/");	
+				alert(topic);
 				var querytosend = "select max(D),A,C,L,G,R group by A,C,L,G,R order by max(D)  desc limit 4";
 				query.setQuery(querytosend);			  
 				query.send(handleQueryResponse);
