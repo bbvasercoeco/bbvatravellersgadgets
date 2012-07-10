@@ -133,6 +133,7 @@ margin-left:10px;
 
 #button li a:hover {  
   background-color: #2586d7;  
+   width: 142px;
 }  
 #button li a:active {  
   background-color: #2586d7;  
