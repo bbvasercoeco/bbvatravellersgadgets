@@ -76,14 +76,14 @@ margin-left:10px;
 {
 #button li a {  
   font-family: Arial;  
-  font-size:15px;  
+  font-size:13px;  
   text-decoration: none;  
   float:left;  
   padding: 21px 0 0 0;   
   color: #fff;  
   width: 142px;
   height:32px;
-
+  font-weight:bold;
 }  
 
 #button li a#contribute {
