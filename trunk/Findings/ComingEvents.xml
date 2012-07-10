@@ -192,6 +192,18 @@ display:none;
 
     </style>
   
+<!--[if lt IE 9]>
+<style>
+.event {
+
+width:220px;
+
+}
+
+
+</style>
+<![endif]-->
+  
     <h2>
       Coming Events <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
     </h2>      
