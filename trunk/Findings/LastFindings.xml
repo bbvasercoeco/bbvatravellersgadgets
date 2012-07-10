@@ -291,7 +291,6 @@ h2 {
   
     <h2>
       Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-      <hr>
     </h2>      
 
     <div id="lastfindings">
