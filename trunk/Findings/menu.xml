@@ -239,8 +239,8 @@ background-repeat:no-repeat;
 
 <div id="cabeceramenu">
   <ul id="button">
-    <li><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select" /></li>
-    <li><a href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:5px;"/></a></li>
+   
+    <li><a href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:5px;"/></a> <span><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select" /></span></li>
     <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Innovation Topics</a></li>
     <li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" class="barralateral" target="_parent">Coming Events</a></li>
     <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
