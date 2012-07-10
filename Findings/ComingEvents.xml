@@ -1,210 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Datos de los últimos eventos con los últimos tópics ComingEvents.xml"
-		description=""
-		author_affiliation="Capgemini">
-		<Require feature="idi"/>
-		<Require feature="locked-domain" />
-	</ModulePrefs>
-	
-	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	
-	<Content type="html">
-		<![CDATA[
+  <ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s ComingEvents.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
+  
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+  
+  <Content type="html">
+    <![CDATA[
 
-		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
-		<style type="text/css">			 
-			img.loading {
-				margin: 0 0 0 20px;
-			}
-			h2 {
-				color: #0B5394;
-				font-family: arial,sans-serif;
-				font-size: x-large;
-				line-height:18px;
-				margin-left: 5px;
-				width: 99%;
-				font-weight: normal;
-			}
-			h2 div {
-				display:inline;
-				float:right;
-			}
-			#imagenTopic {
-				display: inline;
-				float: left;
-				margin-left: 10px;
-				text-align: left;
-				width: 280px;
-			}
-			#imagenTopic img {
-				margin-right: 40px;
-			}
-			hr {
-				background-color: #CCCCCC;
-				border-width: 0;
-				height: 1px;
-			}
-			ul#datosFicha {
-				border-collapse: collapse;
-				color: #666666;
-				font-family: arial,sans-serif;
-				font-size: 13px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			ul#datosFicha li {
-				border-collapse: collapse;
-				color: #0b5394;
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			
-			ul#datosFicha li span,
-			ul#listaproductos span li  {
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				line-height: 17px;
-				text-align: justify;
-				color: #666666;
-			}
-			ul#listaproductos {
-				margin-left: 250px;
-			}
-			
-		</style>
-	
-		<h2>
-			Coming Events <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-			<hr>
-		</h2>			
+    <style type="text/css">       
+      img.loading {
+        margin: 0 0 0 20px;
+      }
+      h2 {
+        color: #0B5394;
+        font-family: arial,sans-serif;
+        font-size: x-large;
+        line-height:18px;
+        margin-left: 5px;
+        width: 99%;
+        font-weight: normal;
+      }
+      h2 div {
+        display:inline;
+        float:right;
+      }
+      #imagenTopic {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        text-align: left;
+        width: 280px;
+      }
+      #imagenTopic img {
+        margin-right: 40px;
+      }
+      hr {
+        background-color: #CCCCCC;
+        border-width: 0;
+        height: 1px;
+      }
+      ul#datosFicha {
+        border-collapse: collapse;
+        color: #666666;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0;
+      }
+      ul#datosFicha li {
+        border-collapse: collapse;
+        color: #0b5394;
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0;
+      }
+      
+      ul#datosFicha li span,
+      ul#listaproductos span li  {
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: justify;
+        color: #666666;
+      }
+      ul#listaproductos {
+        margin-left: 250px;
+      }
 
-		<div id="lastfindings" style="float:left;">
-			
-			<div id="top" style="float:left;">
-			  <div id="fecha0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			</div>
-		
-		   <div id="middle" style="float:left;">
-		      <div id="fecha1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-			
-		   <div id="bottom" style="float:left;">
-		      <div id="fecha2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-		   
-		   
-					
-		</div>
-		
-		<script type="text/javascript"> 
-			
-			//console.debug('lastfindings.xml');
-			//console.debug('version 13');
-			
-			var gadgetHelper = null;	
-			var prefs = new _IG_Prefs(); // User preferences			
-			var urlTable = prefs.getString("_table_query_url");		
-						
-			_IG_RegisterOnloadHandler(loadVisualizationAPI);
-			
-			function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
 
-			function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
-				var opts = {dataType:'jsonp'};	
-					
-				
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 4";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
 
-			
-			
-			function handleQueryResponse(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();		
-				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				var month = new Array();
-				month[0]="January";
-				month[1]="February";
-				month[2]="March";
-				month[3]="April";
-				month[4]="May";
-				month[5]="June";
-				month[6]="July";
-				month[7]="August";
-				month[8]="September";
-				month[9]="October";
-				month[10]="November";
-				month[11]="December";
-				
-				for(var i=0;i<3;i++){
-				    //console.debug(i);
-					 var fecha = new Date(data.getValue(i,0));
-					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
-				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
-					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
-				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
-				     document.getElementById("urlevent"+i).innerHTML = data.getValue(i,6); 
-					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,3);
-				     document.getElementById("imageevent"+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';	
-				
-				
-				}
-			}
-			
-			
-			
-		</script>
-		]]>
-	</Content>
+.fecha {
+   border:solid;
+   width:57px;
+   border: 1px solid #d0d0d0;
+   margin-right:8px;
+   float:left;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+   background-color:#B0E0E6;
+}
+
+.dia {
+ 
+   width:35px;
+   height:30px;
+   padding-top:2px;
+   margin-left:10px;
+   font-size:32px;
+ }
+
+ .mes {
+ 
+   width:35px;
+   height:25px;
+   margin-left:11px;
+   font-size:18px;
+   border-bottom: 1px solid #d0d0d0;
+ }
+ 
+ .hora {  
+   width:25px;
+   padding-top:1px;
+   margin-left:18px;
+   font-size:15px;
+  
+}
+
+.eventos {
+width:920px;
+border-bottom: 1px solid #d0d0d0;
+margin-bottom:20px;
+}
+
+.imageevent {
+width:390px;
+margin-right:20px;
+float:left;
+}
+
+.event {
+height:40px;
+padding-top:15px;
+width:200px;
+float:left;
+}
+
+.security {
+width:90px;
+height:55px;
+padding-left:130px;
+padding-top: 10px;
+float:left;
+
+}
+
+.summary {
+font-size:14px;
+font-family: Arial;
+margin-bottom:10px;
+}
+
+.centro {
+font-size:14px;
+font-family: Arial;
+font-weight:bold;
+width:340px;
+height:25px;
+float:left;
+padding-top:5px;
+}
+
+.moreinfo {
+
+padding-top:5px;
+height:26px;
+font-size:14px;
+font-family: Arial;
+}
+
+.moreinfo a {
+text-decoration:none;
+}
+
+.url {
+display:none;
+}
+
+    </style>
+  
+    <h2>
+      Coming Events <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+    </h2>      
+
+    <div id="lastfindings" style="float:left;">
+      
+    <div id="top" style="float:left;">
+
+<div id="eventinicial" class="eventos">
+
+<div id="fechaTotal0" class="fecha">
+ 
+ <div id="dia0" class="dia"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+ <div id="mes0" class="mes"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+ <div id="hora0" class="hora"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+</div>     
+
+        <div id="imageevent0" class="imageevent"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+
+<div id="event0" class="event"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+<div id="security0" class="security"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+   
+
+<div id="summaryevent0" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>     
+
+<div id="centro0" class="centro"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+<div id="urlmoreinfo0" class="moreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      </div>
+
+</div>
+
+  
+        <div id="urlevent0" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+      
+    
+       <div id="middle" style="float:left;">
+       
+<div id="eventmedio" class="eventos">
+
+<div id="fechaTotal1" class="fecha">
+       <div id="dia1" class="dia"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+       <div id="mes1" class="mes"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+       <div id="hora1" class="hora"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+</div>
+
+        <div id="imageevent1" class="imageevent"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+
+        <div id="event1" class="event"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+<div id="security1" class="security"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+
+        <div id="summaryevent1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="centro1" class="centro"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="urlevent1" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="urlmoreinfo1" class="moreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+      
+</div>
+
+       <div id="bottom" style="float:left;">
+
+<div id="eventfin" class="eventos">       
+
+<div id="fechaTotal2" class="fecha">
+ 
+ <div id="dia2" class="dia"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+ <div id="mes2" class="mes"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+ 
+ <div id="hora2" class="hora"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+</div>     
+
+        <div id="imageevent2" class="imageevent"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
+
+        <div id="event2" class="event"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+<div id="security2" class="security"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+
+        <div id="summaryevent2" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="centro2" class="centro"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="urlevent2" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+
+        <div id="urlmoreinfo2" class="moreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+       
+    </div>  
+          
+    </div>
+    
+     <script type="text/javascript">
+      
+      //console.debug('lastfindings.xml');
+     // console.debug('version 13');
+      
+      var gadgetHelper = null;  
+      var prefs = new _IG_Prefs(); // User preferences      
+      var urlTable = prefs.getString("_table_query_url");    
+            
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+      
+      function loadVisualizationAPI()
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery()
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        var query = gadgetHelper.createQueryFromPrefs(prefs);  
+        var opts = {dataType:'jsonp'};  
+          
+        
+        var query = new google.visualization.Query(urlTable, opts);  
+        var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 4";
+        query.setQuery(querytosend);        
+        query.send(handleQueryResponse);
+        
+        
+      }
+
+      
+      
+      function handleQueryResponse(response)
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }      
+        data = response.getDataTable();    
+    //    console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        var month = new Array();
+        month[0]="January";
+        month[1]="February";
+        month[2]="March";
+        month[3]="April";
+        month[4]="May";
+        month[5]="June";
+        month[6]="July";
+        month[7]="August";
+        month[8]="September";
+        month[9]="October";
+        month[10]="November";
+        month[11]="December";
+        
+        for(var i=0;i<3;i++){
+         //   console.debug(i);
+        var fecha = new Date(data.getValue(i,0));
+
+        document.getElementById("dia"+i).innerHTML = fecha.getDate();
+
+        document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
+
+        document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
+
+        document.getElementById("event"+i).innerHTML = data.getValue(i,1);
+
+       document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
+ 
+       document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) +" "+'<a href="'+data.getValue(i,6)+ '">Events website</a>' ;
+ 
+       document.getElementById("urlevent"+i).innerHTML = '<a href="'+data.getValue(i,6)+ '">Events website</a>';
+ 
+       document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '">More info</a>';
+ 
+
+       document.getElementById("imageevent"+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';
+         
+        }
+      }
+      
+      
+      
+    </script>
+    ]]>
+  </Content>
 </Module>
