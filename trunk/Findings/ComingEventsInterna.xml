@@ -98,41 +98,7 @@
 			<hr>
 		</h2>			
 
-		<div id="lastfindings" style="float:left;">
-			
-			<div id="top" style="float:left;">
-			  <div id="fecha0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent0"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo0"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			</div>
-		
-		   <div id="middle" style="float:left;">
-		      <div id="fecha1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent1"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-			
-		   <div id="bottom" style="float:left;">
-		      <div id="fecha2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="imageevent2"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>
-			  <div id="event2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="summaryevent2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="centro2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlevent2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-			  <div id="urlmoreinfo2"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-		   </div>
-		   
-		   
-					
-		</div>
+		<div id="comingevents" style="float:left;"></div>
 		
 		<script type="text/javascript"> 
 			
@@ -173,6 +139,7 @@
 				if (!gadgetHelper.validateResponse(response)) { return; }			
 				data = response.getDataTable();		
 				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+				filas = data.getNumberOfRows();
 				var month = new Array();
 				month[0]="January";
 				month[1]="February";
@@ -187,10 +154,28 @@
 				month[10]="November";
 				month[11]="December";
 				
-				for(var i=0;i<3;i++){
+				for(var i = 0; i < filas; i++) {
+				var html = "";
+              html +='<div id="comingevent'+i+'">';
+              html +='<div id="dia'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="mes'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="hora'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="imageevent'+i+'"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+			  html +='<div id="event'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="summaryevent'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="centro'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="urlevent'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+			  html +='</div>';
+          document.getElementById("comingevents").innerHTML += html;
+        }
+				for(var i=0;i<filas;i++){
 				    //console.debug(i);
 					 var fecha = new Date(data.getValue(i,0));
-					 document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+					 //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+					 document.getElementById("dia"+i).innerHTML = fecha.getDate();
+					 document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
+					 document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
 				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
 					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
 				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
