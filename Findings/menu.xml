@@ -260,21 +260,27 @@ function datospagina()
   }
   if (parametros.indexOf("topics")!=-1)
   {
-    document.getElementById("Topics").style.backgroundColor = "#2586D7";
+    //document.getElementById("Topics").style.backgroundColor = "#2586D7";
 	document.getElementById("Topics").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
 
   }
    if (parametros.indexOf("comming-events")!=-1)
   {
-    document.getElementById("comming-events").style.backgroundColor = "#2586D7";
+    //document.getElementById("comming-events").style.backgroundColor = "#2586D7";
+	document.getElementById("comming-events").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+
   }
   if (parametros.indexOf("Monthly-Summary")!=-1)
   {
-    document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
+    //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
+	document.getElementById("Monthly-Summary").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+
   }
    if (parametros.indexOf("contribute")!=-1)
   {
-    document.getElementById("contribute").style.backgroundColor = "#2586d7";
+    //document.getElementById("contribute").style.backgroundColor = "#2586d7";
+	document.getElementById("contribute").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+
   }
 
 }
