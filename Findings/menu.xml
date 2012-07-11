@@ -253,7 +253,7 @@ gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
   var parametros = gadgets.util.getUrlParameters()["parent"];  
-  alert(parametros.length);
+ 
   if (parametros.length == 50)
   {
     document.getElementById("Topics").style.backgroundColor = "#2586D7";
