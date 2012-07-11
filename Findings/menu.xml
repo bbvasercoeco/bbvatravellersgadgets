@@ -168,6 +168,7 @@ width:120px;
 padding-left:50px;
 border:solid;
 height:10px;
+float:left;
 }
 
 #prueba2 {
