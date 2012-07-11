@@ -232,9 +232,7 @@ padding-left:60px;
 background-repeat:no-repeat;
 padding-right:18px;
 }
-#Topics img{
-margin:5px 5px;
-}
+
 </style>
 
 
@@ -264,7 +262,7 @@ function datospagina()
   if (parametros.indexOf("topics")!=-1)
   {
     document.getElementById("Topics").style.backgroundColor = "#2586D7";
-	document.getElementById("Topics").innerHTML += '<span><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" /></span>';
+	document.getElementById("Topics").innerHTML += '<img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
 
   }
    if (parametros.indexOf("comming-events")!=-1)
