@@ -187,7 +187,7 @@
           document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
           document.getElementById("event"+i).innerHTML = data.getValue(i,1);
           document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
-          document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) + ' <a href="'+data.getValue(i,6)+ '">Event's website</a>';
+          document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) + ' <a href="'+data.getValue(i,6)+ '">Event\'s website</a>';
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
           document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
         }
