@@ -107,7 +107,7 @@ margin-left/*\**/:50px\9;
 margin-left:15px;
 }
 #centro{
-margin-left/*\**/:-25px\9;
+margin-left/*\**/:25px\9;
 }
 
 </style>
