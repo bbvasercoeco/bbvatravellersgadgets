@@ -195,7 +195,7 @@
 					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
 				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
 				     document.getElementById("urlevent"+i).innerHTML = data.getValue(i,6); 
-					 document.getElementById("urlmoreinfo"+i).innerHTML = data.getValue(i,3);
+					 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '">More info</a>';
 				     document.getElementById("imageevent"+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';	
 				
 				
