@@ -12,7 +12,7 @@
   <Content type="html">
     <![CDATA[
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-    <style type="text/css" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
       h2 {
         border-bottom: 1px solid #cacaca;
