@@ -152,7 +152,7 @@ float:left;
 .security {
 width:90px;
 height:55px;
-padding-left:130px;
+padding-left:135px;
 padding-top: 10px;
 float:left;
 
