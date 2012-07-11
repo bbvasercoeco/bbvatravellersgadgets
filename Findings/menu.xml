@@ -90,7 +90,9 @@ margin-left:10px;
 padding: 21px 0 0 0;
 }
 
-
+img {
+padding-top:8px;
+}
 
 .first {
 
