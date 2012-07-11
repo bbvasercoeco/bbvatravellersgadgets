@@ -29,6 +29,16 @@
         font-weight: bold;
       }
 
+	  #all {
+       width:120;
+       font-size:14px;
+       font-family:Arial;
+       float:right;
+     }
+
+     #all a{
+     text-decoration:none;
+    }
 	  
 	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {	 
@@ -293,7 +303,9 @@ h2 {
   
   <h2>Last <span>Findings</span></h2>
 
-    <div id="lastfindings">
+    <div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+    
+	<div id="lastfindings">
       
     <div id="izquierda">  
       
