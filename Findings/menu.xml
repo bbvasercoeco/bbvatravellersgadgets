@@ -270,7 +270,7 @@ function datospagina()
 	document.getElementById("coming-events").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
 
   }
-  if (parametros.indexOf("Monthly-Summary")!=-1)
+  if (parametros.indexOf("monthly-summary")!=-1)
   {
     //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
 	document.getElementById("Monthly-Summary").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
