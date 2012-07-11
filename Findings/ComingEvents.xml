@@ -131,7 +131,7 @@
 }
 
 .eventos {
-width:1000px;
+width:980px;
 border-bottom: 1px solid #d0d0d0;
 margin-bottom:20px;
 }
@@ -145,7 +145,7 @@ float:left;
 .event {
 height:40px;
 padding-top:15px;
-width:280px;
+width:260px;
 float:left;
 }
 
@@ -168,7 +168,7 @@ margin-bottom:10px;
 font-size:14px;
 font-family: Arial;
 font-weight:bold;
-width:400px;
+width:380px;
 height:25px;
 float:left;
 padding-top:5px;
