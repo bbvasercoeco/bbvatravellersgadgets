@@ -163,10 +163,9 @@ margin-left:0px;
 padding: 19px 0 13px 35px;
 }
 
-.select1 {
-
+#prueba {
 border:solid;
-margin-left:60px;
+width:30px;
 }
 
 #button li a.first {  
@@ -262,7 +261,7 @@ function datospagina()
   if (parametros.indexOf("topics")!=-1)
   {
     //document.getElementById("Topics").style.backgroundColor = "#2586D7";
-	document.getElementById("Topics").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+	document.getElementById("Topics").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
    if (parametros.indexOf("coming-events")!=-1)
