@@ -164,29 +164,25 @@ padding: 19px 0 13px 35px;
 }
 
 #prueba1 {
-border:solid;
 width:120px;
 padding-left:50px;
 }
 
 #prueba2 {
-border:solid;
 width:120px;
 padding-left:45px;
 }
 
 
 #prueba4 {
-border:solid;
 width:120px;
 padding-left:25px;
 }
 
 
 #prueba3 {
-border:solid;
 width:120px;
-padding-left:50px;
+padding-left:51px;
 }
 
 
