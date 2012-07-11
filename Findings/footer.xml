@@ -94,7 +94,8 @@ margin-top:-50px;
 margin-bottom:-150px;
 }
 #contribuye{
-margin-left:57px;
+margin-left:77px;
+padding-right:20px;
 }
 #contribuye{
 margin-left/*\**/:92px\9;
