@@ -268,19 +268,19 @@ function datospagina()
    if (parametros.indexOf("coming-events")!=-1)
   {
     //document.getElementById("coming-events").style.backgroundColor = "#2586D7";
-	document.getElementById("coming-events").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+	document.getElementById("coming-events").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
   if (parametros.indexOf("monthly-summary")!=-1)
   {
     //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
-	document.getElementById("Monthly-Summary").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+	document.getElementById("Monthly-Summary").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
    if (parametros.indexOf("contribute")!=-1)
   {
     //document.getElementById("contribute").style.backgroundColor = "#2586d7";
-	document.getElementById("contribute").innerHTML += '<br/><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1" />';
+	document.getElementById("contribute").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
 
