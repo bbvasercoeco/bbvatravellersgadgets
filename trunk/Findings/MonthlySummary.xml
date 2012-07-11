@@ -16,16 +16,18 @@
     <style type="text/css">
       h2 {
         border-bottom: 1px solid #cacaca;
-        font-size: 45px;
+        font-family: "BBVA Web Light", arial, sans-serif;
+        font-size: 53px;
         font-weight: normal;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
       }
       h2 span {
+        font-family: "BBVA Web Semibold";
         font-weight: bold;
       }
       #lastfindings .item {
-        font-family: "Proof Font", arial, sans-serif;
+        font-family: "BBVA Web Book", arial, sans-serif;
         border-bottom: 1px solid #b1b1b1;
         overflow: hidden;
         padding-top: 40px;
