@@ -166,23 +166,31 @@ padding: 19px 0 13px 35px;
 #prueba1 {
 width:120px;
 padding-left:50px;
+border:solid;
+height:10px;
 }
 
 #prueba2 {
 width:120px;
 padding-left:45px;
+border:solid;
+height:10px;
 }
 
 
 #prueba4 {
 width:120px;
 padding-left:25px;
+border:solid;
+height:10px;
 }
 
 
 #prueba3 {
 width:120px;
 padding-left:51px;
+border:solid;
+height:10px;
 }
 
 
