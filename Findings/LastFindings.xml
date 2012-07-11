@@ -28,17 +28,6 @@
       h2 span {
         font-weight: bold;
       }
-
-	  #all {
-       width:120;
-       font-size:14px;
-       font-family:Arial;
-       float:right;
-     }
-
-     #all a{
-     text-decoration:none;
-    }
 	  
 	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {	 

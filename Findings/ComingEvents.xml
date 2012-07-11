@@ -29,7 +29,16 @@
         font-weight: bold;
       }
 
-	  
+	 #all {
+       width:120;
+       font-size:14px;
+       font-family:Arial;
+       float:right;
+     }
+
+     #all a{
+     text-decoration:none;
+    }
 	  
       #imagenTopic {
         display: inline;
@@ -206,6 +215,8 @@ width:262px;
   
   <h2> Coming <span>Events</span> </h2>  
 
+   <div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View all topics</a></div>
+  
     <div id="lastfindings" style="float:left;">
       
     <div id="top" style="float:left;">
