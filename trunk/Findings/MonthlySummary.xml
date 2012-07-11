@@ -23,7 +23,7 @@
         padding-bottom: 13px;
       }
       h2 span {
-        font-family: "BBVA Web Semibold";
+        font-family: "BBVA Web Semibold", arial, sans-serif;
         font-weight: bold;
       }
       #lastfindings .item {
@@ -39,7 +39,7 @@
       }
       h3.titulo {
         color: #3b3b3b;
-        font-size: 20px;
+        font-size: 18px;
         margin: 15px 0;
       }
       .summary {
