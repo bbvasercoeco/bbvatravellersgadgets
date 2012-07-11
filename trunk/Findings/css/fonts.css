@@ -1,9 +1,10 @@
 @font-face {
   font-family: "BBVA Web Book";
-  src: url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.eot?") format("embedded-opentype"),
+  src: url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.eot");
+  src: url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.eot?#iefix") format("embedded-opentype"),
   url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.woff") format("woff"),
   url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.ttf") format("opentype"),
-  url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.svg") format("SVG");
+  url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.svg") format("svg");
   font-style: normal;
   font-weight: 500;
   font-stretch: normal;

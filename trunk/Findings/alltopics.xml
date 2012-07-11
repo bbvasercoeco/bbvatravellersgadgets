@@ -13,24 +13,26 @@
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
       #header {
         margin-bottom: 20px;
       }
       h2 {
         border-bottom: 1px solid #cacaca;
-        font-size: 45px;
+        font-family: "BBVA Web Light", arial, sans-serif;
+        font-size: 53px;
         font-weight: normal;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
       }
       h2 span {
+        font-family: "BBVA Web Semibold", arial, sans-serif;
         font-weight: bold;
       }
       #alltopics {
         color: #2d2d2d;
-        font-family: arial, sans-serif;
+        font-family: "BBVA Web Book", arial, sans-serif;
         font-size: 13px;
         overflow: hidden;
       }

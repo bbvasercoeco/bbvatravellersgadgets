@@ -13,7 +13,7 @@
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
       #previous-month {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
@@ -61,7 +61,7 @@
     </style>
     <!--[if gte IE 9]>
       <style type="text/css">
-        .gradient {
+        #previous-month h2 {
            filter: none;
         }
       </style>

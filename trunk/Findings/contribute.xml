@@ -2,13 +2,15 @@
 <Module>
 <ModulePrefs title="cajetin personalizado bbva contribute findings" />
 <Content type="html"><![CDATA[
+<link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 <style type="text/css"> 
 #header {
   margin-bottom: 20px;
 }
 h2 {
   border-bottom: 1px solid #cacaca;
-  font-size: 45px;
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 53px;
   font-weight: normal;
   margin: 0 0 10px 0;
   padding-bottom: 13px;
@@ -26,7 +28,7 @@ h2 {
   border-radius: 4px;
   box-shadow: 0 1px #ddd;
   display: inline-block;
-  font-family: arial, sans-serif;
+  font-family: "BBVA Web Book", arial, sans-serif;
   font-size: 13px;
   list-style: none;
   margin-right: 25px;
