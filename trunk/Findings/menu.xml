@@ -163,11 +163,32 @@ margin-left:0px;
 padding: 19px 0 13px 35px;
 }
 
-#prueba {
+#prueba1 {
+border:solid;
+width:120px;
+padding-left:50px;
+}
+
+#prueba2 {
 border:solid;
 width:120px;
 padding-left:40px;
 }
+
+
+#prueba3 {
+border:solid;
+width:120px;
+padding-left:20px;
+}
+
+
+#prueba4 {
+border:solid;
+width:120px;
+padding-left:45px;
+}
+
 
 #button li a.first {  
   font-family: Arial;  
@@ -262,25 +283,25 @@ function datospagina()
   if (parametros.indexOf("topics")!=-1)
   {
     //document.getElementById("Topics").style.backgroundColor = "#2586D7";
-	document.getElementById("Topics").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+	document.getElementById("Topics").innerHTML += '<br/><div id="prueba1"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
    if (parametros.indexOf("coming-events")!=-1)
   {
     //document.getElementById("coming-events").style.backgroundColor = "#2586D7";
-	document.getElementById("coming-events").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+	document.getElementById("coming-events").innerHTML += '<br/><div id="prueba2"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
   if (parametros.indexOf("monthly-summary")!=-1)
   {
     //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
-	document.getElementById("Monthly-Summary").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+	document.getElementById("Monthly-Summary").innerHTML += '<br/><div id="prueba3"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
    if (parametros.indexOf("contribute")!=-1)
   {
     //document.getElementById("contribute").style.backgroundColor = "#2586d7";
-	document.getElementById("contribute").innerHTML += '<br/><div id="prueba"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+	document.getElementById("contribute").innerHTML += '<br/><div id="prueba4"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
   }
 
