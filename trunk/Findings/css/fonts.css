@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Proof Font";
-  src: url("../fonts/bbvaweb-book.eot?") format("embedded-opentype"),
-  url("../fonts/bbvaweb-book.woff") format("woff"),
-  url("../fonts/bbvaweb-book.ttf") format("opentype");
-  url("../fonts/bbvaweb-book.svg") format("SVG");
+  src: url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.eot?") format("embedded-opentype"),
+  url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.woff") format("woff"),
+  url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.ttf") format("opentype");
+  url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/fonts/bbvaweb-book.svg") format("SVG");
   font-style: normal;
   font-weight: 500;
   font-stretch: normal;
