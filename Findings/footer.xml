@@ -93,10 +93,10 @@ margin-top:-50px;
 #sites-chrome-page-wrapper-inside{
 margin-bottom:-150px;
 }
-#acercade{
+#contribuye{
 margin-left:57px;
 }
-#acercade{
+#contribuye{
 margin-left/*\**/:92px\9;
 }
 #prensa{
@@ -105,17 +105,13 @@ margin-left/*\**/:50px\9;
 #centro{
 margin-left/*\**/:-25px\9;
 }
-#avisolegal{
-margin-left/*\**/:-25px\9;
-}
+
 </style>
 <div id="piepagina">
 <ul id="button"> 
-<li><a id="acercade" href="" target="_parent">Acerca de </a></li>   
-<li><a id="centro" href="" target="_parent">Centro de innvovaci&oacute;n</a></li>  
-<li><a id="prensa" href="" target="_parent">Prensa</a></li> 
-<li><a id="avisolegal" href="" target="_parent">Aviso Legal</a></li>  
-<li><a id="contacto" href="" target="_parent">Contacto</a></li>  
+<li><a id="contribuye" href="https://sites.google.com/a/bbva.com/findings/home/contribute" target="_parent">Ayúdanos a mejorar</a></li>   
+<li><a id="centro" href="https://www.centrodeinnovacionbbva.com/" target="_parent">Centro de innvovaci&oacute;n</a></li>  
+
 </ul>  
 </div>
 
