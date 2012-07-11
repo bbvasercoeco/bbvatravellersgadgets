@@ -29,6 +29,16 @@
         font-weight: bold;
       }
 	  
+	  #all {
+   padding-left:837px;
+   font-size:14px;
+   font-family:Arial;
+     }
+
+  #all a{
+     text-decoration:none;
+    }
+	  
 	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {	 
 	    margin-top: 10px;
@@ -292,6 +302,9 @@ h2 {
 
   <h2>Last <span>Findings</span></h2>
 
+  <div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+  
+  
 	<div id="lastfindings">
       
     <div id="izquierda">  
