@@ -31,6 +31,19 @@
         display:inline;
         float:right;
       }
+	  
+	   h2 {
+        font-size: 45px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+      }
+      h2 span {
+        font-weight: bold;
+      }
+
+	  
+	  
       #imagenTopic {
         display: inline;
         float: left;
@@ -204,9 +217,7 @@ width:220px;
 </style>
 <![endif]-->
   
-    <h2>
-      Coming Events <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-    </h2>      
+  <h2> Coming <span>Events</span> </h2>  
 
     <div id="lastfindings" style="float:left;">
       
