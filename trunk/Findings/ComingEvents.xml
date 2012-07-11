@@ -18,24 +18,11 @@
       img.loading {
         margin: 0 0 0 20px;
       }
-      h2 {
-        color: #0B5394;
-        font-family: arial,sans-serif;
-        font-size: x-large;
-        line-height:18px;
-        margin-left: 5px;
-        width: 99%;
-        font-weight: normal;
-      }
-      h2 div {
-        display:inline;
-        float:right;
-      }
-	  
+   
 	   h2 {
-        font-size: 45px;
+        font-size: 32px;
         font-weight: normal;
-        margin: 0 0 10px 0;
+        margin: 10px 0 10px 0;
         padding-bottom: 13px;
       }
       h2 span {
