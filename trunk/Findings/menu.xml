@@ -172,21 +172,21 @@ padding-left:50px;
 #prueba2 {
 border:solid;
 width:120px;
-padding-left:50px;
+padding-left:45px;
 }
 
 
 #prueba4 {
 border:solid;
 width:120px;
-padding-left:20px;
+padding-left:25px;
 }
 
 
 #prueba3 {
 border:solid;
 width:120px;
-padding-left:45px;
+padding-left:50px;
 }
 
 
