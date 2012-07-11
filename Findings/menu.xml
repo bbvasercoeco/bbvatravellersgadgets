@@ -165,10 +165,7 @@ padding: 19px 0 13px 35px;
 
 
 
-img {
-padding-top:3px;
-padding-left:40px;
-}
+
 
 
 #button li a.first {  
@@ -232,7 +229,9 @@ padding-left:60px;
 background-repeat:no-repeat;
 padding-right:18px;
 }
-
+#button li a img{
+padding-top:15px;
+}
 </style>
 
 
