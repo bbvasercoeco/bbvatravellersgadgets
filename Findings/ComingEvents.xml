@@ -34,6 +34,7 @@
        font-size:14px;
        font-family:Arial;
        float:right;
+	   height:40px;
      }
 
      #all a{
