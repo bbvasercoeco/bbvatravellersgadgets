@@ -165,7 +165,8 @@ padding: 19px 0 13px 35px;
 
 #prueba {
 border:solid;
-width:30px;
+width:120px;
+padding-left:50px;
 }
 
 #button li a.first {  
