@@ -18,15 +18,17 @@
       img.loading {
         margin: 0 0 0 20px;
       }
-      h2 {
-        color: #0B5394;
-        font-family: arial,sans-serif;
-        font-size: x-large;
-        line-height:18px;
-        margin-left: 5px;
-        width: 99%;
+    
+	h2 {
+        font-size: 32px;
         font-weight: normal;
+        margin: 10px 0 10px 0;
+        padding-bottom: 13px;
       }
+      h2 span {
+        font-weight: bold;
+      }
+
 	  
 	  @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {	 
@@ -289,9 +291,7 @@ h2 {
 </style>
 <![endif]-->
   
-    <h2>
-      Last Findings <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-    </h2>      
+  <h2>Last <span>Findings</span></h2>
 
     <div id="lastfindings">
       
