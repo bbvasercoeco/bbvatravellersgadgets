@@ -1,195 +1,201 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s ComingEvents.xml"
-		description=""
-		author_affiliation="Capgemini">
-		<Require feature="idi"/>
-		<Require feature="locked-domain" />
-	</ModulePrefs>
-	
-	<UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-	
-	<Content type="html">
-		<![CDATA[
+  <ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s ComingEvents.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
 
-		<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
 
-		<style type="text/css">			 
-			img.loading {
-				margin: 0 0 0 20px;
-			}
-			h2 {
-				color: #0B5394;
-				font-family: arial,sans-serif;
-				font-size: x-large;
-				line-height:18px;
-				margin-left: 5px;
-				width: 99%;
-				font-weight: normal;
-			}
-			h2 div {
-				display:inline;
-				float:right;
-			}
-			#imagenTopic {
-				display: inline;
-				float: left;
-				margin-left: 10px;
-				text-align: left;
-				width: 280px;
-			}
-			#imagenTopic img {
-				margin-right: 40px;
-			}
-			hr {
-				background-color: #CCCCCC;
-				border-width: 0;
-				height: 1px;
-			}
-			ul#datosFicha {
-				border-collapse: collapse;
-				color: #666666;
-				font-family: arial,sans-serif;
-				font-size: 13px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			ul#datosFicha li {
-				border-collapse: collapse;
-				color: #0b5394;
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				letter-spacing: normal;
-				line-height: 17px;
-				text-align: left;
-				text-indent: 0;
-				text-transform: none;
-				white-space: normal;
-				word-spacing: 0;
-			}
-			
-			ul#datosFicha li span,
-			ul#listaproductos span li  {
-				font-family: arial,sans-serif;
-				font-size: 12px;
-				line-height: 17px;
-				text-align: justify;
-				color: #666666;
-			}
-			ul#listaproductos {
-				margin-left: 250px;
-			}
-			
-		</style>
-	
-		<h2>
-			Coming Events <span id="nombreCliente"><!--<img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
-			<hr>
-		</h2>			
+  <Content type="html">
+    <![CDATA[
 
-		<div id="comingevents" style="float:left;"></div>
-		
-		<script type="text/javascript"> 
-			
-			//console.debug('lastfindings.xml');
-			//console.debug('version 13');
-			
-			var gadgetHelper = null;	
-			var prefs = new _IG_Prefs(); // User preferences			
-			var urlTable = prefs.getString("_table_query_url");		
-						
-			_IG_RegisterOnloadHandler(loadVisualizationAPI);
-			
-			function loadVisualizationAPI() 
-			{
-				google.load("visualization", "1", {"packages": ["table"]});
-				google.setOnLoadCallback(sendQuery);
-			}
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+    <style type="text/css">
+       h2 {
+        border-bottom: 1px solid #cacaca;
+        font-family: "BBVA Web Light", arial, sans-serif;
+        font-size: 53px;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+      }
+      h2 span {
+        font-family: "BBVA Web Medium", arial, sans-serif;
+      }
+      .finding {
+        background: #fff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 1px #ddd;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        height: 140px;
+        margin-bottom: 16px;
+        position: relative;
+      }
+      .finding .date {
+        background: #dff3ff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 1px #ddd;
+        color: #2d2d2d;
+        left: 9px;
+        padding: 8px 10px;
+        position: absolute;
+        text-align: center;
+        top: 10px;
+        width: 34px;
+      }
+      .finding .date .day {
+        font-size: 30px;
+      }
+      .finding .date .month {
+        font-size: 17px;
+      }
+      .finding .date .time {
+        border-top: 1px solid #cbd5db;
+        margin-top: 2px;
+        padding-top: 2px;
+      }
+      .finding .image {
+        left: 73px;
+        position: absolute;
+      }
+      .finding .text {
+        padding: 20px 20px 10px 480px;
+      }
+      .finding .text h3 {
+        color: #000;
+        font-size: 18px;
+        margin: 0;
+      }
+      .finding .text a {
+        color: #094691;
+      }
+      .finding .text .summary {
+        margin: 15px 0;
+      }
+      .finding .footer {
+        bottom: 10px;
+        position: absolute;
+        text-align: right;
+        width: 440px;
+      }
+      .finding .footer .center {
+        float: left;
+        font-weight: bold;
+      }
+      .finding .footer a.more-link {
+        color: #62b4e6;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .finding .footer a.more-link:hover {
+        text-decoration: underline;
+      }
+    </style>
 
-			function sendQuery() 
-			{
-				gadgetHelper = new google.visualization.GadgetHelper();
-				//var query = gadgetHelper.createQueryFromPrefs(prefs);	
-				var opts = {dataType:'jsonp'};	
-					
-				
-				var query = new google.visualization.Query(urlTable, opts);	
-				var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc";
-				query.setQuery(querytosend);			  
-				query.send(handleQueryResponse);
-				
-				
-			}
+    <h2>Coming <span>Events</span></h2>
 
-			
-			
-			function handleQueryResponse(response) 
-			{
-				if (!gadgetHelper.validateResponse(response)) { return; }			
-				data = response.getDataTable();		
-				//console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-				filas = data.getNumberOfRows();
-				var month = new Array();
-				month[0]="January";
-				month[1]="February";
-				month[2]="March";
-				month[3]="April";
-				month[4]="May";
-				month[5]="June";
-				month[6]="July";
-				month[7]="August";
-				month[8]="September";
-				month[9]="October";
-				month[10]="November";
-				month[11]="December";
-				
-				for(var i = 0; i < filas; i++) {
-				var html = "";
-              html +='<div id="comingevent'+i+'">';
-              html +='<div id="dia'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="mes'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="hora'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="imageevent'+i+'"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
-			  html +='<div id="event'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="summaryevent'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="centro'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="urlevent'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-			  html +='</div>';
+    <div id="comingevents"></div>
+
+    <script type="text/javascript">
+
+      //console.debug('lastfindings.xml');
+      //console.debug('version 13');
+
+      var gadgetHelper = null;
+      var prefs = new _IG_Prefs(); // User preferences
+      var urlTable = prefs.getString("_table_query_url");
+
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+      function loadVisualizationAPI()
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery()
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);
+        var opts = {dataType:'jsonp'};
+
+
+        var query = new google.visualization.Query(urlTable, opts);
+        var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc";
+        query.setQuery(querytosend);
+        query.send(handleQueryResponse);
+
+
+      }
+
+
+
+      function handleQueryResponse(response)
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }
+        data = response.getDataTable();
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        filas = data.getNumberOfRows();
+        var month = new Array();
+        month[0]="January";
+        month[1]="February";
+        month[2]="March";
+        month[3]="April";
+        month[4]="May";
+        month[5]="June";
+        month[6]="July";
+        month[7]="August";
+        month[8]="September";
+        month[9]="October";
+        month[10]="November";
+        month[11]="December";
+
+        for(var i = 0; i < filas; i++) {
+          var html = "";
+          html +='<div id="comingevent'+i+'" class="finding">';
+          html +='<div class="date">';
+          html +='<div class="day" id="dia'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='<div class="month" id="mes'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='<div class="time" id="hora'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='</div>';
+          html +='<div id="imageevent'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+          html +='<div class="text">';
+          html +='<h3 id="event'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
+          html +='<div id="summaryevent'+i+'" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='<div class="footer">';
+          html +='<div id="centro'+i+'" class="center"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html +='</div>';
+          html +='</div>';
+          html +='</div>';
           document.getElementById("comingevents").innerHTML += html;
         }
-				for(var i=0;i<filas;i++){
-				    //console.debug(i);
-					 var fecha = new Date(data.getValue(i,0));
-					 //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
-					 document.getElementById("dia"+i).innerHTML = fecha.getDate();
-					 document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
-					 document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
-				     document.getElementById("event"+i).innerHTML = data.getValue(i,1);
-					 document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
-				     document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
-				     document.getElementById("urlevent"+i).innerHTML = data.getValue(i,6); 
-					 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '">More info</a>';
-				     document.getElementById("imageevent"+i).innerHTML ='<img border="0" src="' + data.getValue(i,5) +'">';	
-				
-				
-				}
-			}
-			
-			
-			
-		</script>
-		]]>
-	</Content>
+        for(var i=0;i<filas;i++){
+          //console.debug(i);
+          var fecha = new Date(data.getValue(i,0));
+          //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
+          document.getElementById("dia"+i).innerHTML = fecha.getDate();
+          document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
+          document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
+          document.getElementById("event"+i).innerHTML = data.getValue(i,1);
+          document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
+          document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) + ' <a href="'+data.getValue(i,6)+ '">Event's website</a></a>;
+          document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
+          document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
+        }
+      }
+
+
+
+    </script>
+    ]]>
+  </Content>
 </Module>
