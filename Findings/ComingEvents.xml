@@ -110,13 +110,13 @@
 
     <script type="text/javascript">
 
-      //console.debug('lastfindings.xml');
-      //console.debug('version 13');
-
+      console.debug('comingevents.xml');
+      console.debug('version -1');
+/*
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
       var urlTable = prefs.getString("_table_query_url");
-
+*/
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
       function loadVisualizationAPI()
