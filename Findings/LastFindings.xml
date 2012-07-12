@@ -191,6 +191,7 @@
         text-transform: none;
         white-space: normal;
         word-spacing: 0;
+        color:#3b3b3b3
 
 }
 
@@ -201,6 +202,7 @@ overflow:hidden;
 padding-left:7px;
 font-size:12px;
 font-family:Arial;
+display:none;
 }
 
 
