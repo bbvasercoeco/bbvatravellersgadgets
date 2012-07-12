@@ -76,7 +76,7 @@
       }
     </style>
 
-    <div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png" alt="Lorem ipsum" /></div>
+    <div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png" width="948" alt="Lorem ipsum" /></div>
     <h2>All <span>Topics</span></h2>
     <div id="alltopics"></div>
     <script type="text/javascript">
