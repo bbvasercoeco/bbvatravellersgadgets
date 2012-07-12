@@ -75,7 +75,7 @@ h2 {
   width: 112px;
 }
 </style>
-<div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/imagenHeader.png" alt="Lorem ipsum" /></div>
+<div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/imagenHeader.png" width="948" alt="Lorem ipsum" /></div>
 <h2>Contribute</h2>
 <ul id="contribute">
   <li id="found-event" class="item">
