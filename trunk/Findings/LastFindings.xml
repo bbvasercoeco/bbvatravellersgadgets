@@ -35,7 +35,8 @@
       h2 span {
         font-weight: bold;
       }
-    
+        body {background-color:transparent;}
+
     #all {
    padding-left:866px;
    font-size:12px;
