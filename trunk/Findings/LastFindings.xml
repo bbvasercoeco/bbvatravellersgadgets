@@ -16,7 +16,7 @@
 
     <style type="text/css">       
       img.loading {
-        margin: 0 0 0 20px;
+        margin: 5px 0 0 20px;
       }
     
   h2 {
@@ -173,11 +173,11 @@
       }
 
  .topic {
-        padding-left:10px;
+        padding-left:20px;
         padding-bottom:5px;
         margin-bottom:4px;
         overflow:hidden;
-        height: 30px;
+        height: 100px;
         width: 216px;
        /* font-family:cursive;*/
         font-size: 19px;
@@ -191,7 +191,9 @@
         text-transform: none;
         white-space: normal;
         word-spacing: 0;
-        color:#3b3b3b3
+        color:#000000
+        margin-top:10px;
+         
 
 }
 
@@ -214,14 +216,15 @@ display:none;
        .infoviajero {
        overflow:hidden;
        border-top: 1px solid #d0d0d0;
+       height:35px;
        }
 
    
       .bbvatraveller {
        overflow:hidden;
        width:220px;
-       padding-left:5px;
-       padding-top:5px;
+       padding-left:20px;
+       padding-top:10px;
        float:left;
 
        font-family: arial,sans-serif;
@@ -233,10 +236,10 @@ display:none;
  .urlmoreinfo {
    width:55px;
        height:25px;
-       padding-left: 11px;
+       padding-right: 12px;
        float:left;
-       color:#00FFFF;  
-       padding-top:5px;
+       color:#62B4E6;  
+       padding-top:10px;
 
        font-family: arial,sans-serif;
        font-size: 12px;
