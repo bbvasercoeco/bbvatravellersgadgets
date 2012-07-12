@@ -280,7 +280,7 @@ display:none;
      <div id="topleft">
       
       <div id="izquierdaTL">
-        <div id="imagefindings0"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings0"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
       </div>
 
       <div id="derechaTL">
@@ -301,7 +301,7 @@ display:none;
        <div id="bottomleft">
        
 <div id="izquierdaTL">
-        <div id="imagefindings2"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings2"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
 </div>
 
 <div id="derechaTL">
@@ -325,7 +325,7 @@ display:none;
        <div id="topright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings1"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings1"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
        </div>
 
         <div id="derechaTL">
@@ -344,7 +344,7 @@ display:none;
        <div id="bottomright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings3"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings3"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
        </div>
 
        <div id="derechaTL">
