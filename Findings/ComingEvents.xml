@@ -385,7 +385,9 @@ width:262px;
 	if(data.getValue(i,6)!=""){
        document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) +" "+'<a href="'+data.getValue(i,6)+ '">Events website</a>' ;
 	   }
-	
+	else{
+	   document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
+	}
        
        document.getElementById("urlevent"+i).innerHTML = '<a href="'+data.getValue(i,6)+ '">Events website</a>';
 		
