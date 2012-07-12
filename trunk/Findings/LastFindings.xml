@@ -179,7 +179,7 @@
         overflow:hidden;
         height: 30px;
         width: 216px;
-        font-family:cursive;
+       /* font-family:cursive;*/
         font-size: 19px;
         font-style: normal;
         font-variant: normal;
