@@ -384,6 +384,7 @@ width:262px;
        document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
  
        document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) +" "+'<a href="'+data.getValue(i,6)+ '">Events website</a>' ;
+	   alert(data.getValue(i,6));
        if(data.getValue(i,6)!=""){
        document.getElementById("urlevent"+i).innerHTML = '<a href="'+data.getValue(i,6)+ '">Events website</a>';
 		}
