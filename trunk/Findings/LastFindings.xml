@@ -22,8 +22,8 @@
   h2 {
         font-size: 32px;
         font-weight: normal;
-        margin: 10px 0 10px 0;
-        padding-bottom: 13px;
+        margin: 2px 0 5px 0;
+        padding-bottom: 5px;
       }
       h2 span {
         font-weight: bold;
