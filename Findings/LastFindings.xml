@@ -198,29 +198,12 @@
  }   
 
 
-       #infoviajero {
+       .infoviajero {
        overflow:hidden;
        border-top: 1px solid #d0d0d0;
        }
 
-       #infoviajero1 {
-       overflow:hidden;
-       border-top: 1px solid #d0d0d0;
-
-       }
    
-       #infoviajero2 {
-       overflow:hidden;
-       border-top: 1px solid #d0d0d0;
-
-       }
-
-      #infoviajero3 {
-       overflow:hidden;
-       border-top: 1px solid #d0d0d0;
-
-       }
-
       .bbvatraveller {
        overflow:hidden;
        width:220px;
@@ -265,24 +248,14 @@ width:20px;
 
 
 .topic {
-   height: 84px;
+   height: 122px;
 }
 
-#infoviajero {
-width:261px;
+.infoviajero {
+width:305px;
+
 }
 
-#infoviajero1 {
-width:261px;
-}
-
-#infoviajero2 {
-width:261px;
-}
-
-#infoviajero3 {
-width:261px;
-}
 
 .urlmoreinfo {
 float:left;
@@ -291,7 +264,7 @@ width:65px;
 
 #security1 {
 padding-top:10px;
-padding-left:185px;
+padding-left:227px;
 }
 
 h2 {   
@@ -321,7 +294,7 @@ h2 {
         <div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        <div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
      
-     <div id ="infoviajero">
+     <div id ="infoviajero" class="infoviajero">
       <div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
       </div>
@@ -342,7 +315,7 @@ h2 {
     
     <div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
      
-  <div id="infoviajero1">
+  <div id="infoviajero1" class="infoviajero">
         <div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
@@ -363,7 +336,7 @@ h2 {
         <div id="topic1" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="place1" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
-  <div id="infoviajero2">
+  <div id="infoviajero2" class="infoviajero">
         <div id="bbvatraveller1" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="urlmoreinfo1" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
@@ -381,7 +354,7 @@ h2 {
         <div id="topic3" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
      <div id="place3" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
- <div id="infoviajero3">
+ <div id="infoviajero3" class="infoviajero">
         <div id="bbvatraveller3" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="urlmoreinfo3" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
