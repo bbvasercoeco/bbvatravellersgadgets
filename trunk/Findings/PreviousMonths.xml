@@ -15,6 +15,7 @@
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
+    body { background-color:transparent !important;}
       #previous-month {
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
         border: 1px solid #d3d3d3;
@@ -68,7 +69,7 @@
     <![endif]-->
     <div id="previous-month">
       <h2>
-        Previous Monthly Summary <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+        Previous Months <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
       </h2>
       <div id="lastfindings">
         <ul id="previousmonths"></ul>
