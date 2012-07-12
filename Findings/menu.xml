@@ -22,9 +22,9 @@
   display: inline; 
   text-align: center; 
 }  
-
-
-
+body{
+ background-color: transparent;
+}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
 
