@@ -366,7 +366,7 @@ display:none;
     <script type="text/javascript">
       
     console.debug('lastfindings.xml');
-    console.debug('version -1');
+    console.debug('version -2');
       
       var gadgetHelper = null;  
       var prefs = new _IG_Prefs(); // User preferences      
@@ -376,24 +376,21 @@ display:none;
       
       function loadVisualizationAPI()
       {
-        //google.load("visualization", "1", {"packages": ["table"]});
-        //google.setOnLoadCallback(sendQuery);
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
       }
 
       function sendQuery()
       {
-	  
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);  
-        var opts = {dataType:'jsonp'};  
-          
+        var opts = {dataType:'jsonp'};            
         
         var query = new google.visualization.Query(urlTable, opts);  
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
         query.setQuery(querytosend);        
-        query.send(handleQueryResponse);
-        
-        
+        //query.send(handleQueryResponse);
+		
       }
 
       
