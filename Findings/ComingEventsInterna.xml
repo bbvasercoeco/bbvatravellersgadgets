@@ -15,7 +15,7 @@
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
-     body{background-color:transparent;} 
+     body{background-color:transparent !important;} 
       h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
