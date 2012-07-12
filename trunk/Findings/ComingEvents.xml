@@ -18,7 +18,7 @@
        h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
-        font-size: 53px;
+        font-size: 32px;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
         font-weight:normal;
@@ -102,7 +102,7 @@
       }
     </style>
 
-    <h2>Coming <span>Events</span></h2>
+    <h2>Coming Events</h2>
 
     <div id="comingevents"></div>
 
