@@ -365,8 +365,8 @@ display:none;
     
     <script type="text/javascript">
       
-    console.debug('lastfindings.xml');
-    console.debug('version -2');
+    console.debug('-2 lastfindings.xml');
+    
       
       var gadgetHelper = null;  
       var prefs = new _IG_Prefs(); // User preferences      
