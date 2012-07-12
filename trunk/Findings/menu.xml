@@ -167,7 +167,7 @@ position:absolute;
 width:120px;
 padding-left:50px;
 height:10px;
-padding-top:3px;
+margin-top:3px;
 }
 
 #prueba2 {
@@ -175,7 +175,7 @@ position:absolute;
 width:120px;
 padding-left:45px;
 height:10px;
-padding-top:3px;
+margin-top:3px;
 }
 
 
@@ -184,7 +184,7 @@ position:absolute;
 width:120px;
 padding-left:25px;
 height:10px;
-padding-top:3px;
+margin-top:3px;
 }
 
 
@@ -193,7 +193,7 @@ position:absolute;
 width:120px;
 padding-left:51px;
 height:10px;
-padding-top:3px;
+margin-top:3px;
 }
 
 
