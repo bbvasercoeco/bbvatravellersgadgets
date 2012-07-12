@@ -18,7 +18,10 @@
       img.loading {
         margin: 5px 0 0 20px;
       }
+      
+      a {color: #62B4E6 !important;}
     
+      a:visited {color: #476BB5 !important;}
   h2 {
         font-size: 32px;
         font-weight: normal;
