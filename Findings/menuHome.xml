@@ -23,7 +23,11 @@
   text-align: center; 
 }  
 
+#sites-header-title{
 
+background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/logo.png);
+
+}
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
