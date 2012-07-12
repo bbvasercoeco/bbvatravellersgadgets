@@ -190,7 +190,7 @@
 		  if(data.getValue(i,6)!=""){
           document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) + ' <a href="'+data.getValue(i,6)+ '">Events website</a>';
 		  }else{document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);}
-          document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
+          document.getElementById("urlmoreinfo"+i).innerHTML = '<a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
           document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
         }
       }
