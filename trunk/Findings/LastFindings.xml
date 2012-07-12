@@ -175,7 +175,7 @@
  padding-left:10px;
         padding-bottom:5px;
         overflow:hidden;
-        height: 112px;
+        height: 114px;
         width: 216px;
         font-family:cursive;
         font-size: 19px;
@@ -248,7 +248,7 @@ width:20px;
 
 
 .topic {
-   height: 122px;
+   height: 124px;
 }
 
 .infoviajero {
