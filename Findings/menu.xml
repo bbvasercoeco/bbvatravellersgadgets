@@ -152,12 +152,17 @@ margin-left:0px;
   font-size:15px;  
   text-decoration: none;  
   float:left;  
-  padding: 19px 0 0px 18px;   
+  padding: 19px 0 13px 18px;   
   color: #fff;  
   width: 142px;
   height:auto;
 
 }
+
+#button li a:focus {  
+  padding: 19px 0 0 18px; 
+}
+
 
 #button li a#contribute {
 padding: 19px 0 13px 35px;
