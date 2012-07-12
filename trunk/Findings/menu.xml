@@ -172,7 +172,6 @@ padding: 19px 0 13px 35px;
 width:120px;
 padding-left:50px;
 height:10px;
-float:left;
 }
 
 #prueba2 {
