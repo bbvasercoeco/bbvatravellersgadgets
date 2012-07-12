@@ -136,7 +136,7 @@
       margin-bottom:20px;
      -moz-border-radius: 10px;
      -webkit-border-radius: 10px;
-     background-color: white;
+     background-color: #FFFFFF;
       }
 
 
@@ -146,7 +146,7 @@
       margin-bottom:20px;
      -moz-border-radius: 10px;
      -webkit-border-radius: 10px;
-     background-color: white;
+     background-color: #FFFFFF;
       }
 
       #topright {
@@ -155,7 +155,7 @@
       margin-bottom:20px;
      -moz-border-radius: 10px;
      -webkit-border-radius: 10px;
-     background-color: white;
+     background-color: #FFFFFF;
       }
 
       #bottomright {
@@ -164,7 +164,7 @@
       margin-bottom:20px;
      -moz-border-radius: 10px;
      -webkit-border-radius: 10px;
-     background-color: white;
+   background-color: #FFFFFF;
       }    
 
       #izquierdaTL {
