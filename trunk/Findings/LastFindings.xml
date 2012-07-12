@@ -29,6 +29,7 @@
         padding-bottom: 5px;
          position:relative;
  top:27px;
+ font-family: "BBVA Web Light", arial, sans-serif;
         `
       }
       h2 span {
