@@ -25,10 +25,10 @@
   h2 {
         font-size: 32px;
         font-weight: normal;
-        margin: 20px 0 5px 0;
+        margin: 0px 0 5px 0;
         padding-bottom: 5px;
          position:relative;
- top:38px;
+ top:27px;
         `
       }
       h2 span {
@@ -48,7 +48,7 @@
     
     @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {   
-      margin-top: 20px;
+      margin-top: 0px;
       }
     }
     
