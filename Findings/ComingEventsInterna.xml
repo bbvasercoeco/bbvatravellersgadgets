@@ -21,7 +21,7 @@
         font-size: 53px;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
-        font-weight:normal
+        font-weight:normal;
       }
       h2 span {
         font-family: "BBVA Web Medium", arial, sans-serif;
