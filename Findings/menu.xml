@@ -157,39 +157,20 @@ margin-left:0px;
 
 }
 
-#button li a:link, #button li a:visited {
-
-}
-
-#button li a:hover {  
-  background-color: #ffffff;  
-
-}  
-
-#button li a:active {  
-  background-color: #2586d7;  
-
-}  
-
-
-#button li a:focus {  
-  padding: 19px 0 0 18px; 
-  color: red;
-  border:solid;
-}
-
 
 #button li a#contribute {
 padding: 19px 0 13px 35px;
 }
 
 #prueba1 {
+position:absolute;
 width:120px;
 padding-left:50px;
 height:10px;
 }
 
 #prueba2 {
+position:absolute;
 width:120px;
 padding-left:45px;
 height:10px;
@@ -197,6 +178,7 @@ height:10px;
 
 
 #prueba4 {
+position:absolute;
 width:120px;
 padding-left:25px;
 height:10px;
@@ -204,6 +186,7 @@ height:10px;
 
 
 #prueba3 {
+position:absolute;
 width:120px;
 padding-left:51px;
 height:10px;
