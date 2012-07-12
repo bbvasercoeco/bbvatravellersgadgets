@@ -144,6 +144,7 @@
 
       function handleQueryResponse(response)
       {
+	  /*
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
@@ -197,6 +198,7 @@
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
           document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
         }
+		*/
       }
 
 
