@@ -376,12 +376,13 @@ display:none;
       
       function loadVisualizationAPI()
       {
-        google.load("visualization", "1", {"packages": ["table"]});
-        google.setOnLoadCallback(sendQuery);
+        //google.load("visualization", "1", {"packages": ["table"]});
+        //google.setOnLoadCallback(sendQuery);
       }
 
       function sendQuery()
       {
+	  
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);  
         var opts = {dataType:'jsonp'};  
