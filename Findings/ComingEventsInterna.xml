@@ -24,6 +24,7 @@
       }
       h2 span {
         font-family: "BBVA Web Medium", arial, sans-serif;
+        font-weight:normal
       }
       .finding {
         background: #fff;
