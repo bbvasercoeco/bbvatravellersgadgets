@@ -251,7 +251,6 @@ width:262px;
 </div>
 
   
-        <div id="urlevent0" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
       
     
        <div id="middle" style="float:left;">
@@ -276,7 +275,6 @@ width:262px;
 
         <div id="centro1" class="centro"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
-        <div id="urlevent1" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
         <div id="urlmoreinfo1" class="moreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
@@ -307,7 +305,6 @@ width:262px;
 
         <div id="centro2" class="centro"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
-        <div id="urlevent2" class="url"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 
         <div id="urlmoreinfo2" class="moreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
@@ -389,7 +386,7 @@ width:262px;
 	   document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);
 	}
        
-       document.getElementById("urlevent"+i).innerHTML = '<a href="'+data.getValue(i,6)+ '">Events website</a>';
+       
 		
        document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,3)+ '">More info</a>';
  
