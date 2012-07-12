@@ -168,9 +168,10 @@
         month[9]="October";
         month[10]="November";
         month[11]="December";
-
+        if(data.getValue(0,2)!=""){
         document.getElementById('titleMonth').innerHTML = month[fecha.getMonth()];
         document.getElementById('titleYear').innerHTML = fecha.getFullYear();
+		
         document.getElementById('summary').innerHTML = data.getValue(0,2) ;
         document.getElementById('urlButton').href = data.getValue(0,3);
 
@@ -184,6 +185,7 @@
         document.getElementById('summary2').innerHTML = data.getValue(2,2) ;
         document.getElementById('urlButton2').href = data.getValue(2,3);
       }
+	}  
     </script>
     ]]>
   </Content>
