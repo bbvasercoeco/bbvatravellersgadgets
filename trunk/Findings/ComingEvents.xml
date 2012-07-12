@@ -23,7 +23,7 @@
         padding-bottom: 13px;
         font-weight:normal;
       }
-      body {background-color:red;}
+      body {background-color:transparent;}
       
       h2 span {
         font-family: "BBVA Web Medium", arial, sans-serif;
