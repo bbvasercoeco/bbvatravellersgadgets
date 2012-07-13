@@ -135,6 +135,8 @@
 		alert(situation);
 		alert(situation.length);
 		alert(situation[2]);
+		alert(situation[situation.length-1]);
+		alert(situation[situation.length-2]);
 		
         var query = new google.visualization.Query(urlTable, opts);
         var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc"; //limit 3 
