@@ -288,6 +288,7 @@ padding-right:18px;
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
+alert("a");
   var parametros = gadgets.util.getUrlParameters()["parent"];  
  
   if (parametros.length == 50)
