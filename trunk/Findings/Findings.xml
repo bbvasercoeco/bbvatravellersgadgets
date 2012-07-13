@@ -110,7 +110,7 @@
         var query = new google.visualization.Query(urlTable, opts);
         var topic = gadgets.util.getUrlParameters()["parent"].split("=");
 
-        var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"'group by A,C,L,G,R,Y order by max(D)  desc";
+        var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
