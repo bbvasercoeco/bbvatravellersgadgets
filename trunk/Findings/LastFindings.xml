@@ -365,7 +365,7 @@ display:none;
     
     <script type="text/javascript">
       
-    console.debug('-2 lastfindings.xml');
+    console.debug('-3 lastfindings.xml');
     
       
       var gadgetHelper = null;  
@@ -389,7 +389,7 @@ display:none;
         var query = new google.visualization.Query(urlTable, opts);  
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
         query.setQuery(querytosend);        
-        //query.send(handleQueryResponse);
+       query.send(handleQueryResponse);
 		
       }
 
@@ -397,7 +397,7 @@ display:none;
       
       function handleQueryResponse(response)
       {
-	  /*
+	 
         if (!gadgetHelper.validateResponse(response)) { return; }      
         data = response.getDataTable();    
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
@@ -415,7 +415,7 @@ display:none;
         
         
         }
-		*/
+		
       }
       
       
