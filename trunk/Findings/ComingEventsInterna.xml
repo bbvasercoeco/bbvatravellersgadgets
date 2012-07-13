@@ -131,7 +131,7 @@
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
 
-		var situation = gadgets.util.getUrlParameters()["parent"];
+		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		alert(situation);
 		alert(situation[7]);
 		alert(situation[situation.length-2]);
