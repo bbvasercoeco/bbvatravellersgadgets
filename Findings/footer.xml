@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="menu findings" 
+<ModulePrefs title="footer.xml" 
 style="margin-bottom:-50px;"
 />
 <Content type="html"><![CDATA[
@@ -19,19 +19,12 @@ style="margin-bottom:-50px;"
 	height:70px;
 	margin: 0 0 0 -15px;
 }  
-#button {  
-	padding/*\**/: 4px 0 0 0px\9;  
-	height/*\**/:70px\9;
-	margin/*\**/: 0 0 0 -15px\9;
-}  
+ 
 #button li {  
 	display: inline; 
 	text-align: center;
 }  
-#button li {  
-	display/*\**/: inline\9; 
-	text-align/*\**/: center\9;
-}
+
 #button li a {  
 	font-family: Arial;  
 	font-size:11px;
@@ -42,16 +35,7 @@ style="margin-bottom:-50px;"
 	width: 126px;
 	font-weight:bold;
 } 
-#button li a {  
-	font-family/*\**/: Arial\9;  
-	font-size/*\**/: 11px\9;
-	text-decoration/*\**/: none\9;  
-	float/*\**/:left\9;  
-	padding/*\**/: 42px 0 0 0\9;   
-	color/*\**/: #88c5f1\9;  
-	width/*\**/: 126px\9;
-	font-weight/*\**/:bold\9;
-} 
+
 
 #button li a.first {  
 	font-family: Arial;  
@@ -96,19 +80,13 @@ margin-bottom:-150px;
 #contribuye{
 margin-left:85px;
 }
-#contribuye{
-margin-left/*\**/:92px\9;
-}
 
-#prensa{
-margin-left/*\**/:50px\9;
-}
+
+
 #centro{
 margin-left:15px;
 }
-#centro{
-margin-left/*\**/:25px\9;
-}
+
 
 </style>
 <div id="piepagina">
