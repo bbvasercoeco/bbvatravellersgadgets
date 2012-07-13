@@ -141,7 +141,7 @@
 
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		
-		if(situation[situation.length-2]=="home" || situation[situation.length-1]=="home" || situation[situation.length-1]=="findings" && (situation.indexOf('coming-events')== -1)){
+		if(situation.indexOf('coming-events')== -1){
 		document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 		var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 3"; 
 		}else{
