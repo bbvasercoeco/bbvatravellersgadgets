@@ -133,7 +133,7 @@
 
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		alert(situation);
-		alert(situation.length-1);
+		alert(situation[7]);
         var query = new google.visualization.Query(urlTable, opts);
         var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc"; //limit 3 
         query.setQuery(querytosend);
