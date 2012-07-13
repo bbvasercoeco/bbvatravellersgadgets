@@ -275,6 +275,8 @@ padding-right:18px;
     <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
     <li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary"  target="_parent" >Monthly Report</a></li> 
   </ul>  
+   <div id="logoHeader"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/logoHomeFindings.png"/></div> 
+
 </div>
 <script type="text/javascript">
 gadgets.util.registerOnLoadHandler(datospagina);
