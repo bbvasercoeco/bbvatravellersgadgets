@@ -47,13 +47,13 @@
   #all a{
      text-decoration:none;
     }
-    /*
+    
     @media screen and (-webkit-min-device-pixel-ratio:0) {  
         h2 {   
       margin-top: 0px;
       }
     }
-    */
+    
       h2 div {
         display:inline;
         float:right;
@@ -169,7 +169,7 @@
 
       #izquierdaTL {
       
-        padding-top:1px;
+        padding-top:0px;
         width:auto;
         float:left;
       }
@@ -189,7 +189,7 @@
         padding-bottom:5px;
         margin-bottom:4px;
         overflow:hidden;
-        height: 58px;
+        height: 59px;
         width: 216px;
        /* font-family:cursive;*/
         font-size: 19px;
@@ -273,7 +273,58 @@ display:none;
 	 }
     </style>
   
+<!--[if lt IE 9]>
+<style>
 
+#izquierdaTL {
+    padding-top:3px;
+}
+
+
+#derechaTL {
+width:20px;
+}
+
+
+.topic {
+        margin-bottom:4px;
+        overflow:hidden;
+        height: 30px;
+}
+
+.summary {
+width:260px;
+height:95px;
+overflow:hidden;
+padding-left:7px;
+font-size:12px;
+font-family:Arial;
+}
+
+
+.infoviajero {
+width:305px;
+
+}
+
+
+.urlmoreinfo {
+float:left;
+width:65px;
+}
+
+#security1 {
+padding-top:10px;
+padding-left:227px;
+}
+
+h2 {   
+ padding-top: 20px;
+
+}
+
+</style>
+<![endif]-->
 
 <h2>Last <span>Findings</span></h2>
 
@@ -371,7 +422,7 @@ display:none;
     
     <script type="text/javascript">
       
-    console.debug('-4 lastfindings.xml');
+    console.debug('-5 lastfindings.xml');
     
       
       var gadgetHelper = null;  
