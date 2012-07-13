@@ -133,6 +133,7 @@
 
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		alert(situation);
+		alert(situation.length);
 		alert(situation[2]);
 		
         var query = new google.visualization.Query(urlTable, opts);
