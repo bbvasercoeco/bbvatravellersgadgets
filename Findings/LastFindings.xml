@@ -337,7 +337,7 @@ h2 {
 			<div id="topleft">
       
 				<div id="izquierdaTL">
-					<div id="imagefindings0"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+					<div id="imagefindings0"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				</div>
 
       <div id="derechaTL">
@@ -358,7 +358,7 @@ h2 {
        <div id="bottomleft">
        
 <div id="izquierdaTL">
-        <div id="imagefindings2"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings2"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 </div>
 
 <div id="derechaTL">
@@ -382,7 +382,7 @@ h2 {
        <div id="topright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings1"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings1"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
         <div id="derechaTL">
@@ -401,7 +401,7 @@ h2 {
        <div id="bottomright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings3"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings3"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
        <div id="derechaTL">
