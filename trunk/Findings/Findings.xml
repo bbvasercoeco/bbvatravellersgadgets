@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
+  <ModulePrefs title="Datos de los Ãºltimos eventos con los Ãºltimos tÃ³pics lastFindings.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -16,12 +16,14 @@
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 
     <style type="text/css">
+    body{background-color:transparent !important;}
       h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
         font-size: 53px;
         margin: 0 0 10px 0;
         padding-bottom: 13px;
+        box-shadow: 0px 1px white;
       }
       h2 span {
         font-family: "BBVA Web Medium", arial, sans-serif;
