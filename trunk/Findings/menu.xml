@@ -290,7 +290,7 @@ function datospagina()
 {
  
   var parametros = gadgets.util.getUrlParameters()["parent"];  
- alert (parametros);
+ console.debug(parametros);
   if (parametros.length == 50)
   {
    
