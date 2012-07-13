@@ -234,7 +234,7 @@ display:none;
    
       .bbvatraveller {
        overflow:hidden;
-       width:220px;
+       width:185px;
        padding-left:20px;
        padding-top:10px;
        float:left;
