@@ -261,6 +261,12 @@ padding-right:18px;
 #button li a img{
 padding-right:18px;
 }
+
+#logoHeader,
+#logoHeader img {
+	margin:0;
+	padding:0;
+}
 </style>
 
 
