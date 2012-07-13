@@ -8,7 +8,7 @@
   </ModulePrefs>
 
   <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-
+ 
   <Content type="html">
     <![CDATA[
 
@@ -50,6 +50,7 @@
         border-bottom: 1px dotted #d3d3d3;
         list-style: none;
         padding: 6px 25px;
+        background-color:#FFFFFF;
       }
       #previous-month ul li:last-child {
         border-bottom: none;
