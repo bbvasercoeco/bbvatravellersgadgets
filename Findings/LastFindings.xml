@@ -267,7 +267,7 @@ display:none;
     #imagefindings0 img,
 #imagefindings1 img,
 #imagefindings2 img,
-#imagefindings3 img,	{
+#imagefindings3 img	{
 		width: 182px;
 		height: 140px;
 	 }
@@ -286,7 +286,7 @@ display:none;
 			<div id="topleft">
       
 				<div id="izquierdaTL">
-					<div id="imagefindings0"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+					<div id="imagefindings0"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				</div>
 
       <div id="derechaTL">
@@ -307,7 +307,7 @@ display:none;
        <div id="bottomleft">
        
 <div id="izquierdaTL">
-        <div id="imagefindings2"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings2"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 </div>
 
 <div id="derechaTL">
@@ -331,7 +331,7 @@ display:none;
        <div id="topright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings1"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings1"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
         <div id="derechaTL">
@@ -350,7 +350,7 @@ display:none;
        <div id="bottomright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings3"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="imagefindings3"><img class="loading" height="100" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
        <div id="derechaTL">
@@ -371,7 +371,7 @@ display:none;
     
     <script type="text/javascript">
       
-    console.debug('-3 lastfindings.xml');
+    console.debug('-4 lastfindings.xml');
     
       
       var gadgetHelper = null;  
