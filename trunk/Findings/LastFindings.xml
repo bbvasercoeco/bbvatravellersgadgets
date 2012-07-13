@@ -328,7 +328,7 @@ h2 {
 
 <h2>Last <span>Findings</span></h2>
 
-	<div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+	<div id="all"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
 	
 	<div id="lastfindings">
       
