@@ -110,19 +110,18 @@
 
     <script type="text/javascript">
 
-      console.debug('comingevents.xml');
-      console.debug('version -1');
-/*
+      console.debug(' -2 comingevents.xml');
+    
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
       var urlTable = prefs.getString("_table_query_url");
-*/
+
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
       function loadVisualizationAPI()
       {
-        //google.load("visualization", "1", {"packages": ["table"]});
-        //google.setOnLoadCallback(sendQuery);
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
       }
 
       function sendQuery()
@@ -144,7 +143,7 @@
 
       function handleQueryResponse(response)
       {
-	  /*
+	  
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
@@ -198,7 +197,7 @@
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
           document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
         }
-		*/
+		
       }
 
 
