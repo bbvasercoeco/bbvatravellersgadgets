@@ -263,25 +263,31 @@ display:none;
        text-decoration: none;
     }
 
-      
+	/*JDLL*/
+    #imagefindings0 img,
+#imagefindings1 img,
+#imagefindings2 img,
+#imagefindings3 img,	{
+		width: 182px;
+		height: 140px;
+	 }
     </style>
   
 
 
-  <h2>Last <span>Findings</span></h2>
+<h2>Last <span>Findings</span></h2>
 
-  <div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
-  
-  
-  <div id="lastfindings">
+	<div id="all"><a href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+	
+	<div id="lastfindings">
       
-    <div id="izquierda">  
+		<div id="izquierda">  
       
-     <div id="topleft">
+			<div id="topleft">
       
-      <div id="izquierdaTL">
-        <div id="imagefindings0"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
-      </div>
+				<div id="izquierdaTL">
+					<div id="imagefindings0"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				</div>
 
       <div id="derechaTL">
         <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
@@ -301,7 +307,7 @@ display:none;
        <div id="bottomleft">
        
 <div id="izquierdaTL">
-        <div id="imagefindings2"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings2"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 </div>
 
 <div id="derechaTL">
@@ -325,7 +331,7 @@ display:none;
        <div id="topright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings1"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings1"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
         <div id="derechaTL">
@@ -344,7 +350,7 @@ display:none;
        <div id="bottomright">
 
        <div id="izquierdaTL">
-        <div id="imagefindings3"><img class="loading" height="140" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/lastfindings.jpg"/></div>
+        <div id="imagefindings3"><img class="loading" height="140" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
        </div>
 
        <div id="derechaTL">
