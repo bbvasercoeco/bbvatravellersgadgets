@@ -83,17 +83,17 @@ h2 {
   <li id="found-event" class="item">
     <h3>I've found an event</h3>
     <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
-    <div class="link"><a href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event">Contribute</a></div>
+    <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event">Contribute</a></div>
   </li>
   <li id="went-event" class="item">
     <h3>I went to an event</h3>
     <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
-    <div class="link"><a href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience">Contribute</a></div>
+    <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience">Contribute</a></div>
   </li>
   <li id="want-go-event" class="item last">
     <h3>I want to go to an event</h3>
     <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
-    <div class="link"><a href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event">Contribute</a></div>
+    <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event">Contribute</a></div>
   </li>
 </ul>
 ]]></Content>
