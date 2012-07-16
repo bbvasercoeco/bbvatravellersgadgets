@@ -178,13 +178,13 @@
 		
 		  var topic = data.getValue(i,0);
 		  switch(topic){
-		  case 'Security': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Banking': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Haptic Systems': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Mobility': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Devices': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Social Media': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
-		  case 'Internet': document.getElementById("topic"+i).innerHTML = '<img src=""/>';break;
+		  case 'Security': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Banking': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Haptic Systems': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Mobility': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Devices': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Social Media': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Internet': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
 		  
 		  }
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
