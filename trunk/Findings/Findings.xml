@@ -17,7 +17,7 @@
 
     <style type="text/css">
     body{background-color:transparent !important;}
-      h2 {
+     #findings h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
         font-size: 53px;
@@ -26,9 +26,23 @@
         box-shadow: 0px 1px white;
         color:#3B3B3B;
       }
-      h2 span {
+     #findings h2 span {
         font-family: "BBVA Web Medium", arial, sans-serif;
       }
+	 #home h2 {
+		font-size: 32px;
+        font-weight: normal;
+        margin: 0px 0 5px 0;
+        padding-bottom: 5px;
+        position:relative;
+		top:27px;
+		font-family: "BBVA Web Light", arial, sans-serif;
+		width:300px;   
+	 }
+	 #home h2 span{
+		font-weight: bold;
+	 }
+	 
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
@@ -83,7 +97,8 @@
       }
     </style>
 
-    <h2>Last <span>Findings</span></h2>
+    <div id="home"></div>
+	<div id="findings"></div>
     <div id="findingstopic"></div>
     
     <script type="text/javascript">
@@ -109,8 +124,15 @@
 
         var query = new google.visualization.Query(urlTable, opts);
         var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-
-        var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc";
+		alert(topic);
+		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
+		if(situation.indexOf('topics')== -1){
+		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
+        var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
+		}else{
+		document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
+		var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
+		}
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
