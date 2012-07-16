@@ -125,9 +125,9 @@
 
         var query = new google.visualization.Query(urlTable, opts);
         var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-		alert(topic[1]);
+		//alert(topic[1]);
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
-		if(situation.indexOf('topics')== -1){
+		if(situation.indexOf('topic')== -1){
 		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
 		}else{
