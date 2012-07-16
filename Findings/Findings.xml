@@ -44,6 +44,17 @@
 		font-weight: bold;
 	 }
 	 
+    #all {
+		padding-left:866px;
+		font-size:12px;
+		font-family:Arial;
+		height:30px;
+		}
+
+	#all a{
+		text-decoration:none;
+		}
+	 
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
@@ -98,7 +109,7 @@
       }
     </style>
 
-    <div id="home"></div>
+    <div id="home"></div><div id="all"></div>
 	<div id="findings"></div>
     <div id="findingstopic"></div>
     
@@ -128,6 +139,7 @@
 		var situation = gadgets.util.getUrlParameters()["parent"];
 		if(situation.indexOf('topic')== -1){
 		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
+		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
 		}else{
 		document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
