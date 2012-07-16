@@ -177,15 +177,15 @@
         for(var i = 0; i < filas; i++) {
 		
 		  var topicname = data.getValue(i,0);
-		  
+		  alert(data.getValue(i,0));
 		  switch(topicname){
-		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Banking': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Haptic Systems': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Mobility': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Devices': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Social Media': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Internet': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Banking': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Haptic Systems': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Mobility': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Devices': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Social Media': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
+		  case 'Internet': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+topicname;break;
 		  }
 		  
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
