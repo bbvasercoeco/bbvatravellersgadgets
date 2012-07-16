@@ -54,7 +54,10 @@
 	#all a{
 		text-decoration:none;
 		}
-	 
+	 #topicname{
+	 padding-top:10px;
+	 padding-left:227px;
+	 }
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
