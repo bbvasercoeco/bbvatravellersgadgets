@@ -164,7 +164,7 @@
           }
           html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
-		  html += '<div id="topic'+i+'"></div>';
+		  html += '<div id="topicname'+i+'"></div>';
           html += '<div class="footer">';
           html += '<div id="bbvatraveller'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
           html += '<div id="urlmoreinfo'+i+'" class="more-link"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
@@ -176,17 +176,18 @@
 
         for(var i = 0; i < filas; i++) {
 		
-		  var topic = data.getValue(i,0);
-		  switch(topic){
-		  case 'Security': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Banking': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Haptic Systems': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Mobility': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Devices': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Social Media': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
-		  case 'Internet': document.getElementById("topic"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  var topicname = data.getValue(i,0);
 		  
+		  switch(topicname){
+		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Banking': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Haptic Systems': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Mobility': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Devices': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Social Media': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
+		  case 'Internet': document.getElementById("topicname"+i).innerHTML = '<img src=""/>'+data.getValue(i,0);break;
 		  }
+		  
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
           document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
           document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
