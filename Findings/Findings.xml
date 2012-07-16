@@ -128,7 +128,7 @@
 		alert(topic[1]);
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		alert(situation);
-		alert (situation.indexOf('topic'));
+		alert (situation.indexOf('topicname'));
 		if(situation.indexOf('topic')== -1){
 		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
