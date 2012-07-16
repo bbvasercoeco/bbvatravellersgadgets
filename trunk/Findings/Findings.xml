@@ -124,8 +124,8 @@
         var opts = {dataType:'jsonp'};
 
         var query = new google.visualization.Query(urlTable, opts);
-        var topic = gadgets.util.getUrlParameters()["parent"].split(",");
-		alert(topic);
+        var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+		alert(topic[1]);
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		if(situation.indexOf('topics')== -1){
 		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
