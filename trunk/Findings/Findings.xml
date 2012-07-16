@@ -57,6 +57,8 @@
 	 #topicname{
 	 padding-top:10px;
 	 padding-left:227px;
+	 float:right;
+	 margin-top:-87px;
 	 }
 	#security1 {
       padding-top:10px;
