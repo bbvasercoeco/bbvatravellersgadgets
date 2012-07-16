@@ -58,6 +58,10 @@
 	 padding-top:10px;
 	 padding-left:227px;
 	 }
+	#security1 {
+      padding-top:10px;
+      padding-left:235px;
+      }
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
@@ -180,7 +184,7 @@
         for(var i = 0; i < filas; i++) {
 		
 		  var topicname = data.getValue(i,1);
-		  alert(data.getValue(i,1));
+		  //alert(data.getValue(i,1));
 		  switch(topicname){
 		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<div style="background-image:https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png">'+topicname+'</div>';break;
 		  case 'Banking':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png">'+topicname+'</div>';break;
