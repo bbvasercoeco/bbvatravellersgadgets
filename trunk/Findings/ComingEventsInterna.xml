@@ -211,7 +211,7 @@
         }
         for(var i=0;i<filas;i++){
 		
-		 var topicname = data.getValue(i,1);
+		 var topicname = data.getValue(i,6);
 		  //alert(data.getValue(i,1));
 		  switch(topicname){
 		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;margin-top:-87px;">'+topicname+'</div>';break;
@@ -223,7 +223,7 @@
 		  case 'Internet':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;margin-top:-87px;">'+topicname+'</div>';break;
 		  }
           //console.debug(i);
-          var fecha = new Date(data.getValue(i,6));
+          var fecha = new Date(data.getValue(i,0));
           //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
           document.getElementById("dia"+i).innerHTML = fecha.getDate();
           document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
