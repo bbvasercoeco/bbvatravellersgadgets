@@ -58,14 +58,8 @@
 	 padding-top:10px;
 	 padding-left:227px;
 	 }
-	 #topicname #topics{
-	 float:right;
-	 margin-top:-87px;
-	 }
-	#security1 {
-      padding-top:10px;
-      padding-left:235px;
-      }
+	 
+	
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
