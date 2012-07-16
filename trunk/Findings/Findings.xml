@@ -57,6 +57,9 @@
 	 #topicname{
 	 padding-top:10px;
 	 padding-left:227px;
+	 
+	 }
+	 #topicname img{
 	 float:right;
 	 margin-top:-87px;
 	 }
