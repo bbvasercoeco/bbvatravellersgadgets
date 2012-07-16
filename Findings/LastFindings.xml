@@ -330,52 +330,43 @@ h2 {
 
 	<div id="all"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
 	
-	<div id="lastfindings">
-      
-		<div id="izquierda">  
-      
-			<div id="topleft">
-      
-				<div id="izquierdaTL">
+<div id="lastfindings">
+      <div id="izquierda">  
+		<div id="topleft">
+                <div id="izquierdaTL">
 					<div id="imagefindings0"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				</div>
 
-      <div id="derechaTL">
-        <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
-        <div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-       <div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-        <div id="summary0" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
-
-     <div id ="infoviajero" class="infoviajero">
-      <div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-        <div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-      </div>
-     </div>
+			<div id="derechaTL">
+				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+				<div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="summary0" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+				<div id ="infoviajero" class="infoviajero">
+				<div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			</div>
+		</div>
 
       </div>
     
-      
-       <div id="bottomleft">
-       
-<div id="izquierdaTL">
-        <div id="imagefindings2"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-</div>
+	<div id="bottomleft">
+		<div id="izquierdaTL">
+			<div id="imagefindings2"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+		</div>
 
-<div id="derechaTL">
- <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_blue.png"/></div>
-        <div id="topic2" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-    
-    <div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-
-<div id="summary2" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
-     
-  <div id="infoviajero1" class="infoviajero">
-        <div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-        <div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
-       </div>
-      </div>  
-    </div>
-</div>
+			<div id="derechaTL">
+				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_blue.png"/></div>
+				<div id="topic2" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="summary2" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+				<div id="infoviajero1" class="infoviajero">
+				<div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				</div>
+			</div>  
+		</div>
+	</div>
     
     <div id="derecha">
     
@@ -442,7 +433,8 @@ h2 {
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);  
         var opts = {dataType:'jsonp'};            
-        
+       
+		
         var query = new google.visualization.Query(urlTable, opts);  
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
         query.setQuery(querytosend);        
