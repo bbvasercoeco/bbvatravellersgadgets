@@ -38,6 +38,7 @@
 		top:27px;
 		font-family: "BBVA Web Light", arial, sans-serif;
 		width:300px;   
+		padding-top: 20px;
 	 }
 	 #home h2 span{
 		font-weight: bold;
