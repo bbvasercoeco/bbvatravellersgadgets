@@ -30,7 +30,7 @@
    
       }
 	  #home h2{
-	  border-bottom: 1px solid #cacaca;
+	 
         font-family: "BBVA Web Light", arial, sans-serif;
         font-size: 32px;
         margin: 0 0 10px 0;
