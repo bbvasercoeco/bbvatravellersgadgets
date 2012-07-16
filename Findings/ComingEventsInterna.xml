@@ -158,7 +158,7 @@
 		document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
 
-		var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 3"; 
+		var querytosend = "select max(D),B,P,V,W,X,H,A group by B,P,V,W,X,H,A order by max(D)  desc limit 3"; 
 		}else{
 		document.getElementById("ceventsinterna").innerHTML = "<h2>Coming <span>Events</span></h2>";
 		var querytosend = "select max(D),B,P,V,W,X,H,A group by B,P,V,W,X,H,A order by max(D)  desc";
@@ -215,7 +215,7 @@
         }
         for(var i=0;i<filas;i++){
 		
-		 var topicname = data.getValue(i,6);
+		 var topicname = data.getValue(i,7);
 		 alert(data.getValue(i,6));
 		  switch(topicname){
 		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
