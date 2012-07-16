@@ -37,6 +37,16 @@
         padding-bottom: 13px;
         font-weight:normal;
 	  }
+	    #all {
+		padding-left:866px;
+		font-size:12px;
+		font-family:Arial;
+		height:30px;
+		}
+
+	    #all a{
+		text-decoration:none;
+		}
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
@@ -112,7 +122,7 @@
       }
     </style>
 
-    <div id="home"></div>
+    <div id="home"></div><div id="all"></div>
 	<div id="ceventsinterna"></div>
     <div id="comingevents"></div>
 
@@ -143,6 +153,8 @@
 		
 		if(situation.indexOf('coming-events')== -1){
 		document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
+		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
+
 		var querytosend = "select max(D),B,P,V,W,X,H group by B,P,V,W,X,H order by max(D)  desc limit 3"; 
 		}else{
 		document.getElementById("ceventsinterna").innerHTML = "<h2>Coming <span>Events</span></h2>";
