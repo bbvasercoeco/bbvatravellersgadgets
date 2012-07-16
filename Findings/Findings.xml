@@ -57,12 +57,11 @@
 	 #topicname{
 	 padding-top:10px;
 	 padding-left:227px;
-	 
-	 }
-	 #topicname img{
 	 float:right;
 	 margin-top:-87px;
+	 
 	 }
+	 
 	#security1 {
       padding-top:10px;
       padding-left:235px;
