@@ -130,8 +130,8 @@
 		padding-left:12px;
 		border: 1px solid #d0d0d0;
 		margin-bottom:20px;
-	  -moz-border-radius: 10px;
-	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
 	  background-color: #FFFFFF;
 		}
 
@@ -140,8 +140,8 @@
 		padding-left:12px;
 		border: 1px solid #d0d0d0;
 		margin-bottom:20px;
-	  -moz-border-radius: 10px;
-	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
 	  background-color: #FFFFFF;
 		}
 
@@ -149,8 +149,8 @@
 		padding-left:12px;
 		border: 1px solid #d0d0d0;
 		margin-bottom:20px;
-	  -moz-border-radius: 10px;
-	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
 	  background-color: #FFFFFF;
 		}
 
@@ -158,8 +158,8 @@
 		padding-left:12px;
 		border: 1px solid #d0d0d0;
 		margin-bottom:20px;
-	  -moz-border-radius: 10px;
-	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
 	background-color: #FFFFFF;
 		}    
 
@@ -301,8 +301,8 @@ display:none;
 		padding-left: 12px;
 		border: 1px solid #D0D0D0;
 		margin-bottom: 20px;
-		-moz-border-radius: 10px;
-		-webkit-border-radius: 10px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
 		background-color: white;
 		width: 47%;
 		margin-right: 15px;
@@ -328,11 +328,11 @@ display:none;
 		padding-top: 10px;
 		padding-left: 235px;
 		color: white;
-font-weight: normal;
-font-size: 10px;
-text-align: left;
-line-height: 17px;
-height: 25px;
+		font-weight: normal;
+		font-size: 10px;
+		text-align: left;
+		line-height: 17px;
+		height: 25px;
 	}
 
 	.blockFinding .blockData .brown {
@@ -341,7 +341,7 @@ height: 25px;
 
 	.blockFinding .blockData .label-summary {
 		padding-top: 10px;
-padding-left: 255px;
+		padding-left: 255px;
 
 
 	}
@@ -416,7 +416,7 @@ padding-left: 255px;
 	 
 <script type="text/javascript">
 		
-	console.debug('46 findings.xml'); 
+	console.debug('47 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
