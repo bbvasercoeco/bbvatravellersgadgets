@@ -47,8 +47,8 @@
 		text-decoration:none;
 		}
 	.topicname{
-			padding-top:10px;
-			padding-left:227px;
+			padding-top:2px;
+			padding-left:1px;
 			width:55px;
 			font-size:10px;
 			color:#fff;
