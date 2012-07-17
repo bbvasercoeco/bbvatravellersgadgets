@@ -293,18 +293,89 @@ display:none;
 		height: 140px;
 	 }
 	 
+
+	/**************** JDLL *****************/
+
 	.blockFinding {
 		float: left;
 		padding-left: 12px;
-border: 1px solid #D0D0D0;
-margin-bottom: 20px;
--moz-border-radius: 10px;
--webkit-border-radius: 10px;
-background-color: white;
-width: 47%;
-margin-right: 15px;
+		border: 1px solid #D0D0D0;
+		margin-bottom: 20px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		background-color: white;
+		width: 47%;
+		margin-right: 15px;
 	}
 	
+	.blockFinding .container-imageFindings {
+		padding-top: 0px;
+		width: auto;
+		float: left;
+	}
+
+	.blockFinding .container-imageFindings img {
+		width: 182px;
+		height: 140px;
+	}
+
+	.blockFinding .blockData {
+		width: auto;
+		margin-left: 140px;
+	}
+
+	.blockFinding .blockData .label-topicName {
+		padding-top: 10px;
+		padding-left: 235px;
+	}
+
+	.blockFinding .blockData .brown {
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png) 0 0;
+	}
+
+	.blockFinding .blockData .label-summary {
+		width: 260px;
+		height: 80px;
+		overflow: hidden;
+		padding-left: 7px;
+		font-size: 12px;
+		font-family: Arial;
+	}
+
+	.blockFinding .blockData .infoviajero {
+		overflow: hidden;
+		border-top: 1px solid #D0D0D0;
+		height: 35px;
+	}
+
+	.blockFinding .blockData .infoviajero .label-bbvatraveller {
+		overflow: hidden;
+		width: 185px;
+		padding-left: 20px;
+		padding-top: 10px;
+		float: left;
+		font-family: arial,sans-serif;
+		font-size: 12px;
+		line-height: 17px;
+		text-align: justify;
+	}
+
+	.blockFinding .blockData .infoviajero .more-link {
+		width: 55px;
+		height: 25px;
+		padding-right: 12px;
+		float: left;
+		color: #62B4E6;
+		padding-top: 10px;
+		font-family: arial,sans-serif;
+		font-size: 12px;
+		line-height: 17px;
+		text-align: justify;
+	}
+
+	.blockFinding .blockData .infoviajero .more-link a {
+		text-decoration: none;
+	}
 	
 </style>
 
@@ -312,14 +383,42 @@ margin-right: 15px;
 		
 	
 
+	<div class="blockFinding">
+	
+		<div id="imageFindings0" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"></div>
+
+		<div class="blockData">
+			
+			<div class="label-topicName brown"><span id="topicName0">security</span></div>
+			
+			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
+			
+			<div class="infoviajero">
+
+				<div id="bbvatraveller0" class="label-bbvatraveller">BBVA Traveller - John Snow</div>
+
+				<div id="urlmoreinfo0" class="more-link">
+					<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
 </div>
 
 	 
 <script type="text/javascript">
 		
-	console.debug('38 findings.xml'); 
+	console.debug('39 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
+
+	 //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
+
+
 	
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -329,8 +428,8 @@ margin-right: 15px;
 		
 	 function loadVisualizationAPI()
 	{
-		google.load("visualization", "1", {"packages": ["table"]});
-		google.setOnLoadCallback(sendQuery);
+		//google.load("visualization", "1", {"packages": ["table"]});
+		//google.setOnLoadCallback(sendQuery);
 	}
  
 	function sendQuery()
