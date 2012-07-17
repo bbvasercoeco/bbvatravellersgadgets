@@ -330,16 +330,22 @@ display:none;
 	}
 
 	.blockFinding .blockData .brown {
-		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png) 0 0;
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png) right 0 no-repeat;
 	}
 
 	.blockFinding .blockData .label-summary {
-		width: 260px;
-		height: 80px;
-		overflow: hidden;
-		padding-left: 7px;
-		font-size: 12px;
-		font-family: Arial;
+		width: 240px;
+height: 70px;
+overflow: hidden;
+padding: 0;
+font-size: 12px;
+font-family: Arial;
+border: 1px solid;
+margin: 0;
+padding: 0;
+color: white;
+font-weight: normal;
+font-size: 8px;
 	}
 
 	.blockFinding .blockData .infoviajero {
@@ -389,7 +395,7 @@ display:none;
 
 		<div class="blockData">
 			
-			<div class="label-topicName brown"><span id="topicName0">security</span></div>
+			<div class="label-topicName brown">Security</div>
 			
 			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
 			
@@ -412,7 +418,7 @@ display:none;
 	 
 <script type="text/javascript">
 		
-	console.debug('44 findings.xml'); 
+	console.debug('45 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
