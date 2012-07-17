@@ -389,7 +389,7 @@ margin-right: 15px;
     
 <script type="text/javascript">
       
-	console.debug('17 findings.xml');
+	console.debug('18 findings.xml');
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -456,8 +456,8 @@ margin-right: 15px;
 		//console.debug('findings.xml , data -> '+data);
 		
 		
-		var topicname = data.getValue(i,1);
-/*
+	/*	var topicname = data.getValue(i,1);
+
 		switch(topicname)
 		{
 			case 'Security': document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
@@ -475,7 +475,7 @@ margin-right: 15px;
 		for(var i = 0; i < filas; i++) 
 		{
           var html = "";
-		  /*
+		  
 		  html += '<div class="blockFinding">';
 			
 		  html += '<div id="security' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
@@ -485,8 +485,8 @@ margin-right: 15px;
           html += '<div id="bbvatraveller' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html += '<div id="urlmoreinfo' + i + '" class="more-link"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html += '</div></div>';
-		  */
 		  
+		  /*
 		  html += '<div class="blockFinding">';		
 		  
 		  html += '<div id="topicValue' + i + '" class="labelTopicValue brown" >' + topicname + '</div>';
@@ -497,7 +497,7 @@ margin-right: 15px;
           html += '<div id="urlmoreinfo' + i + '" class="more-link"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
          
 		 html += '</div></div>';
-		  
+		  */
 
           document.getElementById("lastfindings").innerHTML += html;
         }
