@@ -296,6 +296,10 @@ display:none;
 
 	/**************** JDLL *****************/
 
+	#titleHome {
+		padding-bottom: 10px;
+	}
+
 	#titleHome h2 {
 			font-size: 32px;
 			font-weight: normal;
@@ -305,14 +309,15 @@ display:none;
 	}
 
 	#titleHome #showAll {
-		margin: 0px 0 0 830px;
+		margin: 0px 0 0 855px;
 		padding: 0 0 5px 0;
-		width: 300px;
+		width: 90px;
 	}
 
 	#titleHome #showAll a {
 		text-decoration: none;
 		font-size: 12px;
+		line-height: 25px;
 	}
 
 	.blockFinding {
