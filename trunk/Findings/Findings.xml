@@ -353,7 +353,7 @@ h2 {
 
 <div id="home"></div><div id="all"></div>
 	<div id="findings"></div>
-    <div id="findingstopic"></div>
+    
 	
 <div id="lastfindings">
       <div id="izquierda">  
@@ -485,9 +485,37 @@ h2 {
         data = response.getDataTable();    
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
+		
+		for(var i = 4; i < filas; i++) {
+          var html = "";
+          html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+          html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
+		  html += '<div id="topic'+i+'"></div>';
+          html += '<div id="bbvatraveller'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html += '<div id="urlmoreinfo'+i+'" class="more-link"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html += '</div>';
+
+          document.getElementById("lastfindings").innerHTML += html;
+        }
+
+		
         for(var i = 0; i < filas; i++) {
+					  
+		    var topicname = data.getValue(i,1);
+		 
+			switch(topicname){
+				case 'Security': document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Banca':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Scouting':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Mobility':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Boundaries':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Technology':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Innovation':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Enterprise 2.0':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Payments':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+			}
           
-             document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
+            // document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 			 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'" target="_top">More Info</a>';
              document.getElementById("place"+i).innerHTML = data.getValue(i,2);
              document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
