@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Datos de los últimos eventos con los últimos tópics lastFindings.xml"
-    description=""
-    author_affiliation="Capgemini">
+	<ModulePrefs title="lastFindings.xml Datos de los últimos eventos con los últimos tópics."
+		description=""
+		author_affiliation="Capgemini">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
   </ModulePrefs>
@@ -351,10 +351,22 @@ h2 {
 </style>
 <![endif]-->
 
-<div id="home"></div><div id="all"></div>
-	<div id="findings"></div>
-    
+<!--
+<div id="home">
 	
+</div>
+
+<div id="all">
+	
+</div>
+	
+<div id="findings">
+	
+</div>
+-->    
+
+
+<!--	
 <div id="lastfindings">
       <div id="izquierda">  
 		<div id="topleft">
@@ -435,10 +447,15 @@ h2 {
     </div>      
           
     </div>
+ -->   
+ 
+<div id="lastfindings">
+
+</div>
     
-    <script type="text/javascript">
+<script type="text/javascript">
       
-    console.debug('-5 lastfindings.xml');
+    console.debug('-6 findings.xml');
     
       
       var gadgetHelper = null;  
@@ -486,7 +503,7 @@ h2 {
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
-		for(var i = 4; i < filas; i++) {
+		for(var i = 0; i < filas; i++) {
           var html = "";
 		  html += '<div id="security1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 		  html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
