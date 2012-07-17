@@ -363,7 +363,7 @@ h2 {
 				</div>
 
 			<div id="derechaTL">
-				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+				<div id="security1"></div>
 				<div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				<div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				<div id="summary0" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
@@ -381,7 +381,7 @@ h2 {
 		</div>
 
 			<div id="derechaTL">
-				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_blue.png"/></div>
+				<div id="security1"></div>
 				<div id="topic2" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				<div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 				<div id="summary2" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
@@ -402,7 +402,7 @@ h2 {
        </div>
 
         <div id="derechaTL">
-<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_purple.png"/></div>
+<div id="security1"></div>
         <div id="topic1" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
         <div id="place1" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 <div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
@@ -421,7 +421,7 @@ h2 {
        </div>
 
        <div id="derechaTL">
-       <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png"/></div>
+       <div id="security1"></div>
         <div id="topic3" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
      <div id="place3" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
 <div id="summary3" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
@@ -488,7 +488,8 @@ h2 {
 		
 		for(var i = 4; i < filas; i++) {
           var html = "";
-          html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+		  html += '<div id="security1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+		  html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
 		  html += '<div id="topic'+i+'"></div>';
           html += '<div id="bbvatraveller'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
@@ -504,15 +505,15 @@ h2 {
 		    var topicname = data.getValue(i,1);
 		 
 			switch(topicname){
-				case 'Security': document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Banca':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Scouting':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Mobility':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Boundaries':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Technology':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Innovation':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Enterprise 2.0':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-				case 'Payments':  document.getElementById("topic"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
+				case 'Security': document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Banca':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Scouting':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Mobility':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Boundaries':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Technology':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Innovation':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Enterprise 2.0':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
+				case 'Payments':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
 			}
           
             // document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
