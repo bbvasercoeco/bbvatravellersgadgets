@@ -235,7 +235,11 @@
           html +='<div class="text">';
           html +='<h3 id="event'+i+'">'+data.getValue(i,1)+'</h3>';
 		  html += '<div id="topicname'+i+'" class="topicname '+ classname +'">'+topicname+'</div>';
-          html +='<div id="summaryevent'+i+'" class="summary"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+		  if(data.getValue(i,6)!=""){
+          html +='<div id="summaryevent'+i+'" class="summary">'+data.getValue(i,2) + ' <a style="color:#094691" href="'+data.getValue(i,6)+ '">Events website</a></div>';
+		  }else{
+		  html +='<div id="summaryevent'+i+'" class="summary">'+data.getValue(i,2)+'</div>';
+		  }
           html +='<div class="footer">';
           html +='<div id="centro'+i+'" class="center"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
