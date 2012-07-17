@@ -18,6 +18,9 @@
 
     <style type="text/css">
      body{background-color:transparent !important;} 
+     a {color: #62B4E6 !important;}
+     
+        a:visited {color: #62B4E6 !important;}
       #ceventsinterna h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
@@ -163,7 +166,7 @@ color: white;
       }
       .finding .footer .center {
         float: left;
-        font-weight: bold;
+        font-weight: normal;
       }
       .finding .footer a.more-link {
         color: #62b4e6;
