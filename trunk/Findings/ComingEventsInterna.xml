@@ -108,6 +108,7 @@
       .finding .image {
         left: 73px;
         position: absolute;
+		background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif);
       }
       .finding .text {
         padding: 20px 20px 10px 480px;
