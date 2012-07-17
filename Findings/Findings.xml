@@ -418,7 +418,7 @@ background-color: white;
 			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
 		</div>
 		
-	</div>-->
+	</div>
 
 			
 	<div id="izquierda">  
@@ -505,7 +505,7 @@ background-color: white;
        </div>
       </div>
     </div>      
-       
+       -->
 	   
 	   
 				
@@ -514,7 +514,7 @@ background-color: white;
     
 <script type="text/javascript">
       
-	console.debug('-11 findings.xml');
+	console.debug('0 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -579,7 +579,7 @@ background-color: white;
           document.getElementById("lastfindings").innerHTML += html;
         }
 
-		
+		/*
         for(var i = 0; i < filas; i++) {
 					  
 		    var topicname = data.getValue(i,1);
@@ -606,6 +606,8 @@ background-color: white;
         
         }
 		
+		
+		*/
       }
       
       
