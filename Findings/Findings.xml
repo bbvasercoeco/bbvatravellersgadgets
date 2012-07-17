@@ -355,6 +355,14 @@ display:none;
 		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green.png) right 9px no-repeat;
 	}
 
+	.blockFinding .blockData .blue {
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png) right 9px no-repeat;
+	}
+
+	.blockFinding .blockData .pink {
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
+	}
+
 	.blockFinding .blockData .label-summary {
 		padding-top: 0px;
 		padding-left: 20px;
