@@ -55,10 +55,7 @@
 	.topicname img{
 		margin-top:-42px;
 		margin-right:-20px;
-		
-		
-		
-	}
+		}
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
