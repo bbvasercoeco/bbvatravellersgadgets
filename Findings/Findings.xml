@@ -262,7 +262,32 @@ display:none;
     .urlmoreinfo a {
        text-decoration: none;
     }
-
+ #findings h2 {
+        border-bottom: 1px solid #cacaca;
+        font-family: "BBVA Web Light", arial, sans-serif;
+        font-size: 53px;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+        box-shadow: 0px 1px white;
+        color:#3B3B3B;
+      }
+     #findings h2 span {
+        font-family: "BBVA Web Medium", arial, sans-serif;
+      }
+	 #home h2 {
+		font-size: 32px;
+        font-weight: normal;
+        margin: 0px 0 5px 0;
+        padding-bottom: 5px;
+        position:relative;
+		top:27px;
+		font-family: "BBVA Web Light", arial, sans-serif;
+		width:300px;   
+		padding-top: 20px;
+	 }
+	 #home h2 span{
+		font-weight: bold;
+	 }
 	/*JDLL*/
     #imagefindings0 img,
 #imagefindings1 img,
@@ -326,9 +351,9 @@ h2 {
 </style>
 <![endif]-->
 
-<h2>Last <span>Findings</span></h2>
-
-	<div id="all"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+<div id="home"></div><div id="all"></div>
+	<div id="findings"></div>
+    <div id="findingstopic"></div>
 	
 <div id="lastfindings">
       <div id="izquierda">  
@@ -436,9 +461,18 @@ h2 {
        
 		
         var query = new google.visualization.Query(urlTable, opts);  
+        var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+		var situation = gadgets.util.getUrlParameters()["parent"];
+		if(situation.indexOf('topic')== -1){
+		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
+		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
         var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
+		}else{
+		document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
+		var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
+		}
         query.setQuery(querytosend);        
-       query.send(handleQueryResponse);
+		query.send(handleQueryResponse);
 		
       }
 
@@ -451,12 +485,10 @@ h2 {
         data = response.getDataTable();    
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         
-        for(var i=0;i<4;i++){
-          //  console.debug(i);
+        for(var i = 0; i < filas; i++) {
+          
              document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
-
-          // console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
-                document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'" target="_top">More Info</a>';
+			 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'" target="_top">More Info</a>';
              document.getElementById("place"+i).innerHTML = data.getValue(i,2);
              document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
              document.getElementById("bbvatraveller"+i).innerHTML = "<b>BBVA Traveller -</b> "+data.getValue(i,3);
