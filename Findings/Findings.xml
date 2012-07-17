@@ -369,13 +369,19 @@ h2 {
 	
 	.blockFinding {
 		float: left;
+		padding-left: 12px;
+border: 1px solid #D0D0D0;
+margin-bottom: 20px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+background-color: white;
 	}
 	
 	
 </style>
 <div id="lastfindings">
       
-	<div class="blockFinding">
+	<!--<div class="blockFinding">
 				
 		<div id="security0"></div>
 		<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
@@ -412,7 +418,7 @@ h2 {
 			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
 		</div>
 		
-	</div>
+	</div>-->
 
 			
 	<div id="izquierda">  
@@ -508,7 +514,7 @@ h2 {
     
 <script type="text/javascript">
       
-	console.debug('-9 findings.xml');
+	console.debug('-10 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
