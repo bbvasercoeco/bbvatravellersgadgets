@@ -432,7 +432,7 @@ line-height: 18px;
 	 
 <script type="text/javascript">
 		
-	console.debug('50 findings.xml'); 
+	console.debug('51 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -531,7 +531,7 @@ line-height: 18px;
 			
 			//html += '<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
 			
-			html += '<div class="infoviajero">
+			html += '<div class="infoviajero">';
 
 			//html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>';
 
