@@ -338,8 +338,7 @@ display:none;
 
 	.blockFinding .blockData .label-topicName span{
 		padding-left: 217px;
-		color: white;
-		color: black;
+		color: white;		
 		font-weight: normal;
 		font-size: 11px;
 		text-align: left;
@@ -523,20 +522,20 @@ line-height: 18px;
 
 			html += '<div class="blockFinding">';
 
-			//html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
+			html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
 
 			html += '<div class="blockData">';
 
-			//html += '<div class="label-topicName brown"><span>Security</span></div>';
+			html += '<div class="label-topicName brown"><span>Security</span></div>';
 			
-			//html += '<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+			html += '<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
 			
 			html += '<div class="infoviajero">';
 
-			//html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>';
+			html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>';
 
 			html += '<div id="urlmoreinfo0" class="more-link">';
-			//html += '<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>';
+			html += '<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>';
 			html += '</div>';
 
 			html += '</div>';
