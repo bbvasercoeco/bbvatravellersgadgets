@@ -484,7 +484,7 @@ h2 {
         if (!gadgetHelper.validateResponse(response)) { return; }      
         data = response.getDataTable();    
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-        
+        var filas = data.getNumberOfRows();
         for(var i = 0; i < filas; i++) {
           
              document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
