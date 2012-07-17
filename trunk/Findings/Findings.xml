@@ -364,6 +364,15 @@ h2 {
 	
 </div>
 	
+	
+<style>
+	
+	.blockFinding {
+		float: left;
+	}
+	
+	
+</style>
 <div id="lastfindings">
       
 	<div class="blockFinding">
@@ -499,7 +508,7 @@ h2 {
     
 <script type="text/javascript">
       
-	console.debug('-8 findings.xml');
+	console.debug('-9 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
