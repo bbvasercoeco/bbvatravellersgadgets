@@ -241,8 +241,8 @@
 		  html +='<div id="summaryevent'+i+'" class="summary">'+data.getValue(i,2)+'</div>';
 		  }
           html +='<div class="footer">';
-          html +='<div id="centro'+i+'" class="center"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          html +='<div id="urlmoreinfo'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+          html +='<div id="centro'+i+'" class="center">'+data.getValue(i,4)+'</div>';
+          html +='<div id="urlmoreinfo'+i+'"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a></div>';
           html +='</div>';
           html +='</div>';
           html +='</div>';
