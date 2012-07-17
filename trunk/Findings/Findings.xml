@@ -423,11 +423,8 @@ display:none;
 	var gadgetHelper = null;  
 	//var prefs = new _IG_Prefs(); // User preferences   
 	var prefs = new gadgets.Prefs(); // User preferences  
-
-	var urlTable = prefs.getString("_table_query_url");    
-				
+	var urlTable = prefs.getString("_table_query_url"); 
 	 //_IG_RegisterOnloadHandler(loadVisualizationAPI);
-
 	 gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
 		
 	 function loadVisualizationAPI()
