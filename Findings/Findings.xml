@@ -388,7 +388,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('7 findings.xml');
+	console.debug('9 findings.xml');
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -401,9 +401,9 @@ width: 48%;
     function loadVisualizationAPI()
 	{
 		google.load("visualization", "1", {"packages": ["table"]});
-		//google.setOnLoadCallback(sendQuery);
+		google.setOnLoadCallback(sendQuery);
 	}
- /* 
+ 
 	function sendQuery()
 	{
 		gadgetHelper = new google.visualization.GadgetHelper();
@@ -426,12 +426,12 @@ width: 48%;
 			var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
 		}
 		
-		query.setQuery(querytosend);        
-		query.send(handleQueryResponse);
+		//query.setQuery(querytosend);        
+		//query.send(handleQueryResponse);
 	}
 
       
-      
+  /*     
     function handleQueryResponse(response)
     {
 	 
