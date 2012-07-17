@@ -478,7 +478,7 @@ margin-right: 15px;
 		 
 		  html += '<div class="blockFinding">';
 			
-		  html += '<div id="security' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+		  html += '<div id="security' + i + '">security</div>';
 		  html += '<div id="imagefindings' + i + '" class="image"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html += '<h3 id="summary' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
 		  html += '<div id="topic' + i + '"></div>';
