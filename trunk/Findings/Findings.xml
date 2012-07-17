@@ -447,11 +447,11 @@ margin-right: 15px;
 		
         data = response.getDataTable();    
 		
-        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 	   
         var filas = data.getNumberOfRows();
 		
-		console.debug('findings.xml , filas -> '+filas);
+		//console.debug('findings.xml , filas -> '+filas);
 		
 		//console.debug('findings.xml , data -> '+data);
 		
