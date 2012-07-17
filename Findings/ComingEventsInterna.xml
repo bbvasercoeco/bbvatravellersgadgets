@@ -231,9 +231,9 @@
           html +='<div class="month" id="mes'+i+'">'+month[fecha.getMonth()]+'</div>';
           html +='<div class="time" id="hora'+i+'">'+fecha.getHours()+":"+fecha.getMinutes()+'</div>';
           html +='</div>';
-          html +='<div id="imageevent'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+          html +='<div id="imageevent'+i+'" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
           html +='<div class="text">';
-          html +='<h3 id="event'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
+          html +='<h3 id="event'+i+'">'+data.getValue(i,1)+'</h3>';
 		  html += '<div id="topicname'+i+'" class="topicname '+ classname +'">'+topicname+'</div>';
           html +='<div id="summaryevent'+i+'" class="summary"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='<div class="footer">';
