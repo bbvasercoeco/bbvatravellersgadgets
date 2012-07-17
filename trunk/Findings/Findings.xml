@@ -412,7 +412,7 @@ display:none;
 	 
 <script type="text/javascript">
 		
-	console.debug('41 findings.xml'); 
+	console.debug('42 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -433,7 +433,7 @@ display:none;
 	 function loadVisualizationAPI()
 	{
 		google.load("visualization", "1", {"packages": ["table"]});
-		//google.setOnLoadCallback(sendQuery);
+		google.setOnLoadCallback(sendQuery);
 	}
  
 	function sendQuery()
