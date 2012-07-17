@@ -6,201 +6,469 @@
     <Require feature="idi"/>
     <Require feature="locked-domain" />
   </ModulePrefs>
-
+  
   <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-
+  
   <Content type="html">
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 
-    <style type="text/css">
-    body{background-color:transparent !important;}
-     #findings h2 {
-        border-bottom: 1px solid #cacaca;
-        font-family: "BBVA Web Light", arial, sans-serif;
-        font-size: 53px;
-        margin: 0 0 10px 0;
-        padding-bottom: 13px;
-        box-shadow: 0px 1px white;
-        color:#3B3B3B;
+    <style type="text/css">       
+      img.loading {
+        margin: 5px 0 0 29px;
       }
-     #findings h2 span {
-        font-family: "BBVA Web Medium", arial, sans-serif;
-      }
-	 #home h2 {
-		font-size: 32px;
+      
+      a {color: #62B4E6 !important;}
+    
+      a:visited {color: #476BB5 !important;}
+  h2 {
+        font-size: 32px;
         font-weight: normal;
         margin: 0px 0 5px 0;
         padding-bottom: 5px;
-        position:relative;
-		top:27px;
-		font-family: "BBVA Web Light", arial, sans-serif;
-		width:300px;   
-		padding-top: 20px;
-	 }
-	 #home h2 span{
-		font-weight: bold;
-	 }
-	 
-    #all {
-		padding-left:866px;
-		font-size:12px;
-		font-family:Arial;
-		height:30px;
-		}
-
-	#all a{
-		text-decoration:none;
-		}
-	 #topicname{
-	 padding-top:10px;
-	 padding-left:227px;
-	 }
-	 
-	
-      .finding {
-        background: #fff;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        box-shadow: 0 1px #ddd;
-        font-family: arial, sans-serif;
-        font-size: 12px;
-        float: left;
-        height: 142px;
-        margin-bottom: 16px;
-        margin-left: 29px;
-        position: relative;
-        width: 455px;
+         position:relative;
+ top:27px;
+ font-family: "BBVA Web Light", arial, sans-serif;
+ width:300px;       `
       }
-      .first-row {
-        clear: left;
-        margin-left: 0;
-      }
-      .finding .image {
-        position: absolute;
-        left: 13px;
-        z-index: 10;
-      }
-      .finding h3 {
-        font-size: 18px;
-        font-weight: normal;
-        margin: 0;
-        padding: 38px 80px 10px 216px
-      }
-      .finding .footer {
-        border-top: 1px solid #e6e6e6;
-        bottom: 0;
-        padding: 10px 20px;
-        position: absolute;
-        text-align: right;
-        width: 415px;
-      }
-      .finding .footer div {
-        display: inline;
-      }
-      .finding .footer .more-link {
-        margin-left: 17px;
-      }
-      .finding .footer a {
-        color: #62b4e6;
+      h2 span {
         font-weight: bold;
-        text-decoration: none;
       }
-      .finding .footer a:hover {
-        text-decoration: underline;
-      }
-    </style>
+        body {background-color:transparent;}
 
-    <div id="home"></div><div id="all"></div>
-	<div id="findings"></div>
-    <div id="findingstopic"></div>
+    #all {
+   padding-left:866px;
+   font-size:12px;
+   font-family:Arial;
+   height:30px;
+     }
+
+  #all a{
+     text-decoration:none;
+    }
+    
+    @media screen and (-webkit-min-device-pixel-ratio:0) {  
+        h2 {   
+      margin-top: 0px;
+      }
+    }
+    
+      h2 div {
+        display:inline;
+        float:right;
+      }
+      #imagenTopic {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        text-align: left;
+        width: 280px;
+      }
+      #imagenTopic img {
+        margin-right: 40px;
+      }
+      hr {
+        background-color: #CCCCCC;
+        border-width: 0;
+        height: 1px;
+      }
+      ul#datosFicha {
+        border-collapse: collapse;
+        color: #666666;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0;
+      }
+      ul#datosFicha li {
+        border-collapse: collapse;
+        color: #0b5394;
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 17px;
+        word-spacing: 0;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+      }
+      
+      ul#datosFicha li span,
+      ul#listaproductos span li  {
+        font-family: arial,sans-serif;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: justify;
+        color: #666666;
+      }
+      ul#listaproductos {
+        margin-left: 250px;
+      }
+      
+      #izquierda {
+        width: 470px;
+        float:left;
+        margin-right:8px;
+      }
+      
+      #derecha {
+      
+      width: 470px;
+      float:left;
+      }
+      
+     #topleft {
+      padding-left:12px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     background-color: #FFFFFF;
+      }
+
+
+      #bottomleft {
+      padding-left:12px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     background-color: #FFFFFF;
+      }
+
+      #topright {
+      padding-left:12px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     background-color: #FFFFFF;
+      }
+
+      #bottomright {
+      padding-left:12px;
+      border: 1px solid #d0d0d0;
+      margin-bottom:20px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+   background-color: #FFFFFF;
+      }    
+
+      #izquierdaTL {
+      
+        padding-top:0px;
+        width:auto;
+        float:left;
+      }
+
+      #derechaTL {
+        width:auto;
+        margin-left:140px;
+      }
+
+      #security1 {
+      padding-top:10px;
+      padding-left:235px;
+      }
+
+ .topic {
+        padding-left:20px;
+        padding-bottom:5px;
+        margin-bottom:4px;
+        overflow:hidden;
+        height: 59px;
+        width: 216px;
+       /* font-family:cursive;*/
+        font-size: 19px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: "550";
+        letter-spacing: normal;
+        line-height: 17px;
+        text-align: left;
+        text-indent: 0;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0;
+        color:#000000
+        margin-top:10px;
+         
+
+}
+
+.summary {
+width:260px;
+height:80px;
+overflow:hidden;
+padding-left:7px;
+font-size:12px;
+font-family:Arial;
+display:none;
+}
+
+
+.place {
+ display:none;
+ }   
+
+
+       .infoviajero {
+       overflow:hidden;
+       border-top: 1px solid #d0d0d0;
+       height:35px;
+       }
+
+   
+      .bbvatraveller {
+       overflow:hidden;
+       width:185px;
+       padding-left:20px;
+       padding-top:10px;
+       float:left;
+
+       font-family: arial,sans-serif;
+       font-size: 12px;
+       line-height: 17px;
+       text-align: justify;
+}
+
+ .urlmoreinfo {
+   width:55px;
+       height:25px;
+       padding-right: 12px;
+       float:left;
+       color:#62B4E6;  
+       padding-top:10px;
+
+       font-family: arial,sans-serif;
+       font-size: 12px;
+       line-height: 17px;
+       text-align: justify;
+ }
+       
+    .urlmoreinfo a {
+       text-decoration: none;
+    }
+
+	/*JDLL*/
+    #imagefindings0 img,
+#imagefindings1 img,
+#imagefindings2 img,
+#imagefindings3 img	{
+		width: 182px;
+		height: 140px;
+	 }
+    </style>
+  
+<!--[if lt IE 9]>
+<style>
+
+#izquierdaTL {
+    padding-top:3px;
+}
+
+
+#derechaTL {
+width:20px;
+}
+
+
+.topic {
+        margin-bottom:4px;
+        overflow:hidden;
+        height: 30px;
+}
+
+.summary {
+width:260px;
+height:95px;
+overflow:hidden;
+padding-left:7px;
+font-size:12px;
+font-family:Arial;
+}
+
+
+.infoviajero {
+width:305px;
+
+}
+
+
+.urlmoreinfo {
+float:left;
+width:65px;
+}
+
+#security1 {
+padding-top:10px;
+padding-left:227px;
+}
+
+h2 {   
+ padding-top: 20px;
+
+}
+
+</style>
+<![endif]-->
+
+<h2>Last <span>Findings</span></h2>
+
+	<div id="all"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>
+	
+<div id="lastfindings">
+      <div id="izquierda">  
+		<div id="topleft">
+                <div id="izquierdaTL">
+					<div id="imagefindings0"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				</div>
+
+			<div id="derechaTL">
+				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png"/></div>
+				<div id="topic0" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="place0" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="summary0" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+				<div id ="infoviajero" class="infoviajero">
+				<div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+			</div>
+		</div>
+
+      </div>
+    
+	<div id="bottomleft">
+		<div id="izquierdaTL">
+			<div id="imagefindings2"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+		</div>
+
+			<div id="derechaTL">
+				<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_blue.png"/></div>
+				<div id="topic2" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="place2" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="summary2" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+				<div id="infoviajero1" class="infoviajero">
+				<div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				<div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+				</div>
+			</div>  
+		</div>
+	</div>
+    
+    <div id="derecha">
+    
+       <div id="topright">
+
+       <div id="izquierdaTL">
+        <div id="imagefindings1"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+
+        <div id="derechaTL">
+<div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_purple.png"/></div>
+        <div id="topic1" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="place1" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+<div id="summary1" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+
+  <div id="infoviajero2" class="infoviajero">
+        <div id="bbvatraveller1" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo1" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+      </div>
+     </div>
+       
+       <div id="bottomright">
+
+       <div id="izquierdaTL">
+        <div id="imagefindings3"><img class="loading" height="80" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+
+       <div id="derechaTL">
+       <div id="security1"><img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png"/></div>
+        <div id="topic3" class="topic"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+     <div id="place3" class="place"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+<div id="summary3" class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>  
+
+ <div id="infoviajero3" class="infoviajero">
+        <div id="bbvatraveller3" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+        <div id="urlmoreinfo3" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>
+       </div>
+       </div>
+      </div>
+    </div>      
+          
+    </div>
     
     <script type="text/javascript">
-
-      //console.debug('lastfindings.xml');
-      //console.debug('version 13');
-
-      var gadgetHelper = null;
-      var prefs = new _IG_Prefs(); // User preferences
-      var urlTable = prefs.getString("_table_query_url");
-
+      
+    console.debug('-5 lastfindings.xml');
+    
+      
+      var gadgetHelper = null;  
+      var prefs = new _IG_Prefs(); // User preferences      
+      var urlTable = prefs.getString("_table_query_url");    
+            
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
-
-      function loadVisualizationAPI() {
+      
+      function loadVisualizationAPI()
+      {
         google.load("visualization", "1", {"packages": ["table"]});
         google.setOnLoadCallback(sendQuery);
       }
 
-      function sendQuery() {
+      function sendQuery()
+      {
         gadgetHelper = new google.visualization.GadgetHelper();
-        //var query = gadgetHelper.createQueryFromPrefs(prefs);
-        var opts = {dataType:'jsonp'};
-
-        var query = new google.visualization.Query(urlTable, opts);
-        var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-		var situation = gadgets.util.getUrlParameters()["parent"];
-		if(situation.indexOf('topic')== -1){
-		document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
-		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
-        var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
-		}else{
-		document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
-		var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
-		}
-        query.setQuery(querytosend);
-        query.send(handleQueryResponse);
-      }
-
-      function handleQueryResponse(response) {
-        if (!gadgetHelper.validateResponse(response)) { return; }
-        data = response.getDataTable();
-        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-        filas = data.getNumberOfRows();
-        for(var i = 0; i < filas; i++) {
-          var html = "";
-          if (i % 2 == 0) {
-            html += '<div class="finding first-row">';
-          }
-          else {
-            html += '<div class="finding">';
-          }
-          html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
-          html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
-		  html += '<div id="topicname'+i+'"></div>';
-          html += '<div class="footer">';
-          html += '<div id="bbvatraveller'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-          html += '<div id="urlmoreinfo'+i+'" class="more-link"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-          html += '</div>';
-          html += '</div>';
-
-          document.getElementById("findingstopic").innerHTML += html;
-        }
-
-        for(var i = 0; i < filas; i++) {
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);  
+        var opts = {dataType:'jsonp'};            
+       
 		
-		  var topicname = data.getValue(i,1);
-		  //alert(data.getValue(i,1));
-		 switch(topicname){
-		  case 'Security': document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Banca':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Scouting':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Mobility':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Boundaries':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Technology':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Innovation':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Enterprise 2.0':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		  case 'Payments':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
-		}
-		  
-          document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'">More Info</a>';
-          document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
-          document.getElementById("bbvatraveller"+i).innerHTML = data.getValue(i,3);
-          document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';
-        }
+        var query = new google.visualization.Query(urlTable, opts);  
+        var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
+        query.setQuery(querytosend);        
+       query.send(handleQueryResponse);
+		
       }
+
+      
+      
+      function handleQueryResponse(response)
+      {
+	 
+        if (!gadgetHelper.validateResponse(response)) { return; }      
+        data = response.getDataTable();    
+       // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        
+        for(var i=0;i<4;i++){
+          //  console.debug(i);
+             document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
+
+          // console.debug(document.getElementById("topic"+i).innerHTML =data.getValue(i,1));
+                document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'" target="_top">More Info</a>';
+             document.getElementById("place"+i).innerHTML = data.getValue(i,2);
+             document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
+             document.getElementById("bbvatraveller"+i).innerHTML = "<b>BBVA Traveller -</b> "+data.getValue(i,3);
+             document.getElementById("imagefindings"+i).innerHTML ='<img border="0" src="' + data.getValue(i,4) +'">';  
+        
+        
+        }
+		
+      }
+      
+      
+      
     </script>
     ]]>
   </Content>
