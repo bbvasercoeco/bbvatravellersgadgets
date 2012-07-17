@@ -410,6 +410,8 @@ display:none;
 	
 </style>
 
+<div id="titleHome"></div>
+
 <div id="lastfindings">
 
 	<!--<div class="blockFinding">	
@@ -466,8 +468,7 @@ display:none;
 
 		if(situation.indexOf('topic')== -1)
 		{
-			//document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
-			//document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
+			document.getElementById("titleHome").innerHTML = "<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
 			var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
 		}
 		else
