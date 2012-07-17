@@ -317,7 +317,7 @@ margin-right: 15px;
     
 <script type="text/javascript">
       
-	console.debug('35 findings.xml'); 
+	console.debug('36 findings.xml'); 
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -387,8 +387,8 @@ margin-right: 15px;
 			html += '<div id="topicName' + i + '" class="label-topicName">security</div>';
 
 
-			//html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
-			//html += '<h3 id="summary' + i + '" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+			html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
+			html += '<h3 id="summary' + i + '" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
 
 			//html += '<div class="infoviajero">';
 			//html += '<div id="bbvatraveller' + i + '" class="label-bbvatraveller">BBVA Traveller - John Snow</div>';
