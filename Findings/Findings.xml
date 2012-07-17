@@ -69,6 +69,10 @@
 		padding-top:10px;
 		padding-left:227px;
 		} 
+	.urlmoreinfo {
+		float:left;
+		width:65px;
+		}	
 	
       .finding {
         background: #fff;
@@ -182,7 +186,7 @@
 		  html += '<div id="topicname'+i+'"></div>';
           html += '<div class="footer">';
           html += '<div id="bbvatraveller'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
-          html += '<div id="urlmoreinfo'+i+'" class="more-link"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
+          html += '<div id="urlmoreinfo'+i+'" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
           html += '</div>';
           html += '</div>';
 
