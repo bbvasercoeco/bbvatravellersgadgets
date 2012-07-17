@@ -389,7 +389,7 @@ margin-right: 15px;
     
 <script type="text/javascript">
       
-	console.debug('29 findings.xml'); 
+	console.debug('30 findings.xml'); 
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -432,18 +432,13 @@ margin-right: 15px;
 		query.setQuery(querytosend);        
 		query.send(handleQueryResponse);
 	}
-
-      
-   
-   
 	
     function handleQueryResponse(response)
-    {
-	 
+    {	 
 		if (!gadgetHelper.validateResponse(response)) 
 		{ 
 			return; 
-		}      
+		}
 		
         data = response.getDataTable();    
 		
