@@ -49,7 +49,7 @@
 	.topicname{
 			padding-top:10px;
 			padding-left:227px;
-			width:20px;
+			width:55px;
 			font-size:10px;
 			color:#fff;
 			text-align:center;
@@ -60,7 +60,7 @@
    .brown{
 	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png);
 	background-repeat:no-repeat;
-	width:64px;
+	width:55px;
 	text-align:center;
 	}
       .finding {
