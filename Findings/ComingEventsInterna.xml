@@ -211,7 +211,7 @@
         month[11]="Dec";
 
         for(var i = 0; i < filas; i++) {
-		  	 
+		 var fecha = new Date(data.getValue(i,0));
 		 var topicname = data.getValue(i,7);
 		 switch(topicname){
 				case 'Security': var classname="brown";break;
@@ -244,7 +244,7 @@
           html +='</div>';
           document.getElementById("comingevents").innerHTML += html;
 		  
-		  var fecha = new Date(data.getValue(i,0));
+		  
           //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
           //document.getElementById("dia"+i).innerHTML = fecha.getDate();
           document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
