@@ -388,7 +388,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('5 findings.xml');
+	console.debug('6 findings.xml');
 	
      /* 
 	//var gadgetHelper = null;  
