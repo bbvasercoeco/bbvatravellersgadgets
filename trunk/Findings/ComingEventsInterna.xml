@@ -228,8 +228,8 @@
           html +='<div id="comingevent'+i+'" class="finding">';
           html +='<div class="date">';
           html +='<div class="day" id="dia'+i+'">'+fecha.getDate()+'</div>';
-          html +='<div class="month" id="mes'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          html +='<div class="time" id="hora'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+          html +='<div class="month" id="mes'+i+'">'+month[fecha.getMonth()]+'</div>';
+          html +='<div class="time" id="hora'+i+'">'+fecha.getHours()+":"+fecha.getMinutes()+'</div>';
           html +='</div>';
           html +='<div id="imageevent'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html +='<div class="text">';
