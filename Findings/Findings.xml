@@ -439,7 +439,9 @@ width: 48%;
 		{ 
 			return; 
 		}      
+		
         data = response.getDataTable();    
+		
         console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
 	   
 	   /*
