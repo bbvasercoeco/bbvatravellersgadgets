@@ -388,21 +388,21 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('6 findings.xml');
+	console.debug('7 findings.xml');
 	
-     /* 
-	//var gadgetHelper = null;  
-	//var prefs = new _IG_Prefs(); // User preferences      
-	//var urlTable = prefs.getString("_table_query_url");    
+    
+	var gadgetHelper = null;  
+	var prefs = new _IG_Prefs(); // User preferences      
+	var urlTable = prefs.getString("_table_query_url");    
             
-    //_IG_RegisterOnloadHandler(loadVisualizationAPI);
+    _IG_RegisterOnloadHandler(loadVisualizationAPI);
       
     function loadVisualizationAPI()
 	{
-		//google.load("visualization", "1", {"packages": ["table"]});
+		google.load("visualization", "1", {"packages": ["table"]});
 		//google.setOnLoadCallback(sendQuery);
 	}
-
+ /* 
 	function sendQuery()
 	{
 		gadgetHelper = new google.visualization.GadgetHelper();
