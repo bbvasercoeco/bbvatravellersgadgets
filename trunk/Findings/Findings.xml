@@ -375,6 +375,7 @@ margin-bottom: 20px;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 background-color: white;
+width: 48%;
 	}
 	
 	
@@ -514,7 +515,7 @@ background-color: white;
     
 <script type="text/javascript">
       
-	console.debug('0 findings.xml');
+	console.debug('1 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -564,6 +565,7 @@ background-color: white;
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
+		console.debug('findings.xml , filas -> '+filas);
 		for(var i = 0; i < filas; i++) 
 		{
           var html = "";
