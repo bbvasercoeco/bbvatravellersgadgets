@@ -58,7 +58,13 @@
 	 padding-top:10px;
 	 padding-left:227px;
 	 }
-	 
+	#imagefindings0 img,
+	#imagefindings1 img,
+	#imagefindings2 img,
+	#imagefindings3 img	{
+		width: 182px;
+		height: 140px;
+	 }
 	
       .finding {
         background: #fff;
