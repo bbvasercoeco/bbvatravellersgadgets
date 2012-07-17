@@ -333,19 +333,18 @@ font-size: 8px;
 	}
 
 	.blockFinding .blockData .brown {
-		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png) right 10px no-repeat;
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 10px no-repeat;
 	}
 
 	.blockFinding .blockData .label-summary {
-		width: 240px;
-height: 70px;
-overflow: hidden;
-padding: 0;
-font-size: 12px;
-font-family: Arial;
-border: 1px solid;
-margin: 0;
-padding: 0;
+		padding-top: 10px;
+padding-left: 255px;
+color: white;
+font-weight: normal;
+font-size: 10px;
+text-align: left;
+line-height: 17px;
+height: 25px;
 
 	}
 
