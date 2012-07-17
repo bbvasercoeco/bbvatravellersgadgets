@@ -432,7 +432,7 @@ line-height: 18px;
 	 
 <script type="text/javascript">
 		
-	console.debug('49 findings.xml'); 
+	console.debug('50 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -450,7 +450,7 @@ line-height: 18px;
 	 function loadVisualizationAPI()
 	{
 		google.load("visualization", "1", {"packages": ["table"]});
-		//google.setOnLoadCallback(sendQuery);
+		google.setOnLoadCallback(sendQuery);
 	}
  
 	function sendQuery()
@@ -502,21 +502,67 @@ line-height: 18px;
 		{
 			var html = "";
 
+			//html += '<div class="blockFinding">';
+
+			//html += '<div id="topicName' + i + '" class="label-topicName">security</div>';
+
+
+			//html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
+			//html += '<h3 id="summary' + i + '" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+
+			//html += '<div class="infoviajero">';
+			//html += '<div id="bbvatraveller' + i + '" class="label-bbvatraveller">BBVA Traveller - John Snow</div>';
+			//html += '<div id="urlmoreinfo' + i + '" class="more-link">More Info</div>';
+			//html += '</div>';
+
+
+			html += '</div>';
+
 			html += '<div class="blockFinding">';
 
-			html += '<div id="topicName' + i + '" class="label-topicName">security</div>';
+			html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
 
+			html += '<div class="blockData">';
 
-			html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
-			html += '<h3 id="summary' + i + '" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+			html += '<div class="label-topicName brown"><span>Security</span></div>';
+			
+			html += '<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+			
+			html += '<div class="infoviajero">
 
-			html += '<div class="infoviajero">';
-			html += '<div id="bbvatraveller' + i + '" class="label-bbvatraveller">BBVA Traveller - John Snow</div>';
-			html += '<div id="urlmoreinfo' + i + '" class="more-link">More Info</div>';
+			html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>';
+
+			html += '<div id="urlmoreinfo0" class="more-link">';
+			html += '<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>';
+			html += '</div>';
+
 			html += '</div>';
 
 
-			html += '</div>';
+			/*<div class="blockFinding">
+	
+		<div id="imageFindings0" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"></div>
+
+		<div class="blockData">
+			
+			<div class="label-topicName brown"><span>Security</span></div>
+			
+			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
+			
+			<div class="infoviajero">
+
+				<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>
+
+				<div id="urlmoreinfo0" class="more-link">
+					<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>
+				</div>
+
+			</div>
+
+		</div>
+	</div>*/
+
+
 
 			document.getElementById("lastfindings").innerHTML += html;
 		  }
