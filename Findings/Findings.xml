@@ -515,7 +515,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('3 findings.xml');
+	console.debug('4 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -560,13 +560,17 @@ width: 48%;
     function handleQueryResponse(response)
     {
 	 
-        if (!gadgetHelper.validateResponse(response)) { return; }      
+		if (!gadgetHelper.validateResponse(response)) 
+		{ 
+			return; 
+		}      
         data = response.getDataTable();    
-       // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+       
+	    console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
-		console.debug('findings.xml , filas -> '+filas);
-		console.debug('findings.xml , data -> '+data);
+		//console.debug('findings.xml , filas -> '+filas);
+		//console.debug('findings.xml , data -> '+data);
 		
 		for(var i = 0; i < filas; i++) 
 		{
