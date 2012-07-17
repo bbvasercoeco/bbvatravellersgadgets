@@ -60,6 +60,8 @@
    .brown{
 	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png);
 	background-repeat:no-repeat;
+	width:64px;
+	text-align:center;
 	}
       .finding {
         background: #fff;
