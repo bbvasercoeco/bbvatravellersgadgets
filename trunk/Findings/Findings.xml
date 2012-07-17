@@ -337,7 +337,7 @@ display:none;
 	}
 
 	.blockFinding .blockData .label-topicName span{
-		padding-left: 217px;
+		padding-left: 208px;
 		color: white;		
 		font-weight: normal;
 		font-size: 11px;
@@ -348,7 +348,7 @@ display:none;
 	}
 
 	.blockFinding .blockData .brown {
-		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 10px no-repeat;
+		background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 9px no-repeat;
 	}
 
 	.blockFinding .blockData .label-summary {
@@ -513,20 +513,20 @@ line-height: 18px;
 
 			html += '<div class="blockFinding">';
 
-			html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
+			html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
 
 			html += '<div class="blockData">';
 
 			html += '<div class="label-topicName brown"><span>' + topicName + '</span></div>';
 			
-			html += '<h3 id="summary" class="label-summary">' + summary + '</h3>';
+			html += '<h3 class="label-summary">' + summary + '</h3>';
 			
 			html += '<div class="infoviajero">';
 
-			html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
+			html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
-			html += '<div id="urlmoreinfo0" class="more-link">';
-			html += '<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>';
+			html += '<div class="more-link">';
+			html += '<a href="#" target="_top">More Info</a>';
 			html += '</div>';
 
 			html += '</div>';
