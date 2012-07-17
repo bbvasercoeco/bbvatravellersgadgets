@@ -321,18 +321,18 @@ display:none;
 
 	.blockFinding .blockData {
 		width: auto;
-		margin-left: 140px;
+		margin-left: 182px;
 	}
 
 	.blockFinding .blockData .label-topicName {
 		padding-top: 10px;
-		padding-left: 235px;
-		color: white;
-		font-weight: normal;
-		font-size: 10px;
-		text-align: left;
-		line-height: 17px;
-		height: 25px;
+padding-left: 212px;
+color: white;
+font-weight: normal;
+font-size: 11px;
+text-align: left;
+line-height: 17px;
+height: 25px;
 	}
 
 	.blockFinding .blockData .brown {
@@ -340,10 +340,13 @@ display:none;
 	}
 
 	.blockFinding .blockData .label-summary {
-		padding-top: 10px;
-		padding-left: 255px;
-
-
+		padding-top: 0px;
+padding-left: 20px;
+margin: 0;
+height: 68px;
+font-size: 18px;
+font-weight: normal;
+line-height: 18px;
 	}
 
 	.blockFinding .blockData .infoviajero {
@@ -399,7 +402,7 @@ display:none;
 			
 			<div class="infoviajero">
 
-				<div id="bbvatraveller0" class="label-bbvatraveller">BBVA Traveller - John Snow</div>
+				<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>
 
 				<div id="urlmoreinfo0" class="more-link">
 					<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>
@@ -416,7 +419,7 @@ display:none;
 	 
 <script type="text/javascript">
 		
-	console.debug('47 findings.xml'); 
+	console.debug('48 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
