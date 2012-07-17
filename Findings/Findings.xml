@@ -337,8 +337,8 @@ display:none;
 	}
 
 	.blockFinding .blockData .label-topicName span{
-		padding-top: 10px;
-		padding-left: 212px;
+		padding-left: 217px;
+		color: white;
 		color: black;
 		font-weight: normal;
 		font-size: 11px;
