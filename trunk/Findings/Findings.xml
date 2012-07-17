@@ -399,39 +399,27 @@ line-height: 18px;
 </style>
 
 <div id="lastfindings">
-		
-	
 
-	<div class="blockFinding">
-	
+	<!--<div class="blockFinding">	
 		<div id="imageFindings0" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"></div>
-
-		<div class="blockData">
-			
-			<div class="label-topicName brown"><span>Security</span></div>
-			
-			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
-			
+		<div class="blockData">			
+			<div class="label-topicName brown"><span>Security</span></div>			
+			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>			
 			<div class="infoviajero">
-
 				<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>
-
 				<div id="urlmoreinfo0" class="more-link">
 					<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>
 				</div>
-
 			</div>
-
 		</div>
-	</div>
-
+	</div>-->
 
 </div>
 
 	 
 <script type="text/javascript">
 		
-	console.debug('52 findings.xml'); 
+	console.debug('53 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -510,29 +498,32 @@ line-height: 18px;
 			//html += '<h3 id="summary' + i + '" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
 
 			//html += '<div class="infoviajero">';
-			//html += '<div id="bbvatraveller' + i + '" class="label-bbvatraveller">BBVA Traveller - John Snow</div>';
+			//html += '<div id="bbvatraveller' + i + '" class="label-bbvatraveller">BBVA Traveller - ' + data.getValue(i,3) + '</div>';
 			//html += '<div id="urlmoreinfo' + i + '" class="more-link">More Info</div>';
 			//html += '</div>';
 
 
 			//html += '</div>';
 
-
+			var topicName = data.getValue(i,1);
+			var traveller = data.getValue(i,3);
+			var imageFinding = data.getValue(i,4);
+			var summary = data.getValue(i,6);
 
 
 			html += '<div class="blockFinding">';
 
-			html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
+			html += '<div id="imagefindings' + i + '" class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
 
 			html += '<div class="blockData">';
 
-			html += '<div class="label-topicName brown"><span>Security</span></div>';
+			html += '<div class="label-topicName brown"><span>' + topicName + '</span></div>';
 			
-			html += '<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>';
+			html += '<h3 id="summary" class="label-summary">' + summary + '</h3>';
 			
 			html += '<div class="infoviajero">';
 
-			html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>';
+			html += '<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
 			html += '<div id="urlmoreinfo0" class="more-link">';
 			html += '<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>';
@@ -541,32 +532,6 @@ line-height: 18px;
 			html += '</div>';
 			html += '</div>';
 			html += '</div>';
-
-
-			/*<div class="blockFinding">
-	
-		<div id="imageFindings0" class="container-imageFindings"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"></div>
-
-		<div class="blockData">
-			
-			<div class="label-topicName brown"><span>Security</span></div>
-			
-			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
-			
-			<div class="infoviajero">
-
-				<div id="bbvatraveller0" class="label-bbvatraveller"><strong>BBVA Traveller</strong> - John Snow</div>
-
-				<div id="urlmoreinfo0" class="more-link">
-					<a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a>
-				</div>
-
-			</div>
-
-		</div>
-	</div>*/
-
-
 
 			document.getElementById("lastfindings").innerHTML += html;
 		  }
