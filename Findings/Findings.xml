@@ -480,11 +480,12 @@ margin-right: 15px;
 			
 		  html += '<div id="topicName' + i + '" class="labelTopicName">security</div>';
 		  html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
-          html += '<h3 id="summary' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
-		  html += '<div id="topic' + i + '"></div>';
-          html += '<div id="bbvatraveller' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          html += '<div id="urlmoreinfo' + i + '" class="more-link"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          html += '</div></div>';
+          html += '<h3 id="summary' + i + '">Lorem ipsum dolor consectetur elit.</h3>';
+		  html += '<div class="infoviajero">';
+          html += '<div id="bbvatraveller' + i + '">BBVA Traveller - John Snow</div>';
+          html += '<div id="urlmoreinfo' + i + '" class="more-link">More Info</div>';
+          html += '</div>';
+		  html += '</div>';
 		  
 		  
 		  
@@ -501,6 +502,13 @@ margin-right: 15px;
           html += '</div></div>';
 		  */
 		  
+		  
+		  <div class="infoviajero" id="infoviajero1">
+				<div class="bbvatraveller" id="bbvatraveller2"><b>BBVA Traveller -</b> John Snow</div>
+				<div class="urlmoreinfo" id="urlmoreinfo2"><a href="https://sites.google.com/a/bbva.com/travellers/home/past-travels/epic-europe" target="_top">More Info</a></div>
+				</div>
+				
+				
 		  
 		  /*
 		  html += '<div id="topicValue' + i + '" class="labelTopicValue brown" >' + topicname + '</div>';
