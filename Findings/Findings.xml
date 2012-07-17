@@ -98,58 +98,7 @@
     .urlmoreinfo a {
        text-decoration: none;
     }
-      .finding {
-        background: #fff;
-        -moz-border-radius: 4px;
-        -webkit-border-radius: 4px;
-        border-radius: 4px;
-        box-shadow: 0 1px #ddd;
-        font-family: arial, sans-serif;
-        font-size: 12px;
-        float: left;
-        height: 142px;
-        margin-bottom: 16px;
-        margin-left: 29px;
-        position: relative;
-        width: 455px;
-      }
-      .first-row {
-        clear: left;
-        margin-left: 0;
-      }
-      .finding .image {
-        position: absolute;
-        left: 13px;
-        z-index: 10;
-      }
-      .finding h3 {
-        font-size: 18px;
-        font-weight: normal;
-        margin: 0;
-        padding: 38px 80px 10px 216px
-      }
-      .finding .footer {
-        border-top: 1px solid #e6e6e6;
-        bottom: 0;
-        padding: 10px 20px;
-        position: absolute;
-        text-align: right;
-        width: 415px;
-      }
-      .finding .footer div {
-        display: inline;
-      }
-      .finding .footer .more-link {
-        margin-left: 17px;
-      }
-      .finding .footer a {
-        color: #62b4e6;
-        font-weight: bold;
-        text-decoration: none;
-      }
-      .finding .footer a:hover {
-        text-decoration: underline;
-      }
+     
     </style>
 
     <div id="home"></div><div id="all"></div>
