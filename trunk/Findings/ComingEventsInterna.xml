@@ -232,7 +232,7 @@
           html +='<div class="month" id="mes'+i+'">'+month[fecha.getMonth()]+'</div>';
           html +='<div class="time" id="hora'+i+'">'+fecha.getHours()+":"+fecha.getMinutes()+'</div>';
           html +='</div>';
-          html +='<div id="imageevent'+i+'" class="image" style="background-image:url('+data.getValue(i,5)+');background-repeat:no-repeat;"></div>';
+          html +='<div id="imageevent'+i+'" class="image" style="background-image:url("'+data.getValue(i,5)+'");background-repeat:no-repeat;"></div>';
           html +='<div class="text">';
           html +='<h3 id="event'+i+'">'+data.getValue(i,1)+'</h3>';
 		  html += '<div id="topicname'+i+'" class="topicname '+ classname +'">'+topicname+'</div>';
