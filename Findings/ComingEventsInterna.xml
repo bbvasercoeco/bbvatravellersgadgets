@@ -48,13 +48,16 @@
 		}
 	.topicname{
 			padding-top:2px;
-			padding-left:1px;
+			padding-left:0px;
 			width:55px;
 			font-size:10px;
 			color:#fff;
 			text-align:center;
 			background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif);
 			background-repeat:no-repeat;
+			float:right;
+			margin-right:-23px;
+			margin-top:-20px;
 	 }
 	
    .brown{
