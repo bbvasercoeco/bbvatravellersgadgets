@@ -248,18 +248,7 @@
           html +='</div>';
           document.getElementById("comingevents").innerHTML += html;
 		  
-		  /*
-          //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
-          //document.getElementById("dia"+i).innerHTML = fecha.getDate();
-          document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
-          document.getElementById("hora"+i).innerHTML = fecha.getHours()+":"+fecha.getMinutes();
-          document.getElementById("event"+i).innerHTML = data.getValue(i,1);
-          document.getElementById("centro"+i).innerHTML = data.getValue(i,4);
-		  if(data.getValue(i,6)!=""){
-          document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2) + ' <a style="color:#094691" href="'+data.getValue(i,6)+ '">Events website</a>';
-		  }else{document.getElementById("summaryevent"+i).innerHTML = data.getValue(i,2);}
-          document.getElementById("urlmoreinfo"+i).innerHTML = '<a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
-          document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';*/
+		 
         }
      }
 
