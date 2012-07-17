@@ -351,7 +351,7 @@ h2 {
 </style>
 <![endif]-->
 
-<!--
+
 <div id="home">
 	
 </div>
@@ -363,10 +363,7 @@ h2 {
 <div id="findings">
 	
 </div>
--->    
-
-
-<!--	
+	
 <div id="lastfindings">
       <div id="izquierda">  
 		<div id="topleft">
@@ -447,51 +444,49 @@ h2 {
     </div>      
           
     </div>
- -->   
- 
-<div id="lastfindings">
 
-</div>
     
 <script type="text/javascript">
       
-    console.debug('-7 findings.xml');
-    
+	console.debug('-8 findings.xml');
       
-      var gadgetHelper = null;  
-      var prefs = new _IG_Prefs(); // User preferences      
-      var urlTable = prefs.getString("_table_query_url");    
+	var gadgetHelper = null;  
+	var prefs = new _IG_Prefs(); // User preferences      
+	var urlTable = prefs.getString("_table_query_url");    
             
-      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+    _IG_RegisterOnloadHandler(loadVisualizationAPI);
       
-      function loadVisualizationAPI()
-      {
-        google.load("visualization", "1", {"packages": ["table"]});
-        google.setOnLoadCallback(sendQuery);
-      }
+    function loadVisualizationAPI()
+	{
+		google.load("visualization", "1", {"packages": ["table"]});
+		google.setOnLoadCallback(sendQuery);
+	}
 
-      function sendQuery()
-      {
-        gadgetHelper = new google.visualization.GadgetHelper();
-        //var query = gadgetHelper.createQueryFromPrefs(prefs);  
-        var opts = {dataType:'jsonp'};            
-       
-		
-        var query = new google.visualization.Query(urlTable, opts);  
-        var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+	function sendQuery()
+	{
+		gadgetHelper = new google.visualization.GadgetHelper();
+		//var query = gadgetHelper.createQueryFromPrefs(prefs);  
+		var opts = {dataType:'jsonp'};     
+
+		var query = new google.visualization.Query(urlTable, opts);  
+		var topic = gadgets.util.getUrlParameters()["parent"].split("=");
 		var situation = gadgets.util.getUrlParameters()["parent"];
-		if(situation.indexOf('topic')== -1){
-		//document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
-		//document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
-        var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
-		}else{
-		document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
-		var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
+
+		if(situation.indexOf('topic')== -1)
+		{
+			//document.getElementById("home").innerHTML = "<h2>Last <span>Findings</span></h2>";
+			//document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
+			var querytosend = "select max(D),A,C,L,G,R,Y group by A,C,L,G,R,Y order by max(D) desc limit 4";
 		}
-        query.setQuery(querytosend);        
-		query.send(handleQueryResponse);
+		else
+		{
+			document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
+			var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
+		}
 		
-      }
+		query.setQuery(querytosend);        
+		query.send(handleQueryResponse);
+	}
 
       
       
@@ -503,7 +498,7 @@ h2 {
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
-		for(var i = 0; i < filas; i++) {
+		for(var i = 4; i < filas; i++) {
           var html = "";
 		  html += '<div id="security1"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
 		  html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
