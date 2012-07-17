@@ -388,7 +388,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('13 findings.xml');
+	console.debug('14 findings.xml');
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -456,17 +456,17 @@ width: 48%;
 		for(var i = 0; i < filas; i++) 
 		{
           var html = "";
-		  html += '<div class="blockFinding">
+		  html += '<div class="blockFinding">';
 			
-		  //html += '<div id="security1' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-		  //html += '<div id="imagefindings' + i + '" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
-          //html += '<h3 id="summary' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
-		  //html += '<div id="topic' + i + '"></div>';
-          //html += '<div id="bbvatraveller' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          //html += '<div id="urlmoreinfo' + i + '" class="more-link"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-          //html += '</div></div>';
+		  html += '<div id="security1' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+		  html += '<div id="imagefindings' + i + '" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+          html += '<h3 id="summary' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
+		  html += '<div id="topic' + i + '"></div>';
+          html += '<div id="bbvatraveller' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+          html += '<div id="urlmoreinfo' + i + '" class="more-link"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+          html += '</div></div>';
 		  
-		  html += '</div>';
+		  
 
           document.getElementById("lastfindings").innerHTML += html;
         }
