@@ -362,7 +362,8 @@ margin-bottom: 20px;
 -moz-border-radius: 10px;
 -webkit-border-radius: 10px;
 background-color: white;
-width: 48%;
+width: 47%;
+margin-right: 15px;
 	}
 	
 	
@@ -370,7 +371,7 @@ width: 48%;
 
 <div id="lastfindings">
       
-	<div class="blockFinding">
+	<!--<div class="blockFinding">
 				
 		<div id="security0"></div>
 		<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
@@ -381,14 +382,14 @@ width: 48%;
 			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
 		</div>
 		
-	</div>	
+	</div>	-->
 
 </div>
 
     
 <script type="text/javascript">
       
-	console.debug('14 findings.xml');
+	console.debug('15 findings.xml');
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -458,8 +459,8 @@ width: 48%;
           var html = "";
 		  html += '<div class="blockFinding">';
 			
-		  html += '<div id="security1' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
-		  html += '<div id="imagefindings' + i + '" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
+		  html += '<div id="security' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+		  html += '<div id="imagefindings' + i + '" class="image"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html += '<h3 id="summary' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
 		  html += '<div id="topic' + i + '"></div>';
           html += '<div id="bbvatraveller' + i + '"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
