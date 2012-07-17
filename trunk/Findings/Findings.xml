@@ -326,13 +326,26 @@ display:none;
 
 	.blockFinding .blockData .label-topicName {
 		padding-top: 10px;
-padding-left: 212px;
-color: white;
-font-weight: normal;
-font-size: 11px;
-text-align: left;
-line-height: 17px;
-height: 25px;
+		/*padding-left: 212px;*/
+		color: black;
+		font-weight: normal;
+		font-size: 11px;
+		text-align: left;
+		line-height: 17px;
+		height: 25px;
+		width: 268px;
+	}
+
+	.blockFinding .blockData .label-topicName span{
+		padding-top: 10px;
+		padding-left: 212px;
+		color: black;
+		font-weight: normal;
+		font-size: 11px;
+		text-align: left;
+		line-height: 17px;
+		height: 25px;
+		
 	}
 
 	.blockFinding .blockData .brown {
@@ -396,7 +409,7 @@ line-height: 18px;
 
 		<div class="blockData">
 			
-			<div class="label-topicName brown">Security</div>
+			<div class="label-topicName brown"><span>Security</span></div>
 			
 			<h3 id="summary0" class="label-summary">Lorem ipsum dolor consectetur elit.</h3>
 			
@@ -419,7 +432,7 @@ line-height: 18px;
 	 
 <script type="text/javascript">
 		
-	console.debug('48 findings.xml'); 
+	console.debug('49 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
