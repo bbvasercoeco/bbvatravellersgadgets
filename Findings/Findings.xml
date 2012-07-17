@@ -516,7 +516,7 @@ h2 {
 				case 'Payments':  document.getElementById("security1").innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img></div>';break;
 			}
           
-            // document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
+             document.getElementById("topic"+i).innerHTML = data.getValue(i,1);
 			 document.getElementById("urlmoreinfo"+i).innerHTML = '<a href="'+data.getValue(i,5)+'" target="_top">More Info</a>';
              document.getElementById("place"+i).innerHTML = data.getValue(i,2);
              document.getElementById("summary"+i).innerHTML = data.getValue(i,6);
