@@ -221,7 +221,7 @@
 		 var topicname = data.getValue(i,7);
 		
 		 switch(topicname){
-				case 'Security': document.getElementById(""topicname"+i).innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
+				case 'Security': document.getElementById("topicname"+i).innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
 				case 'Banca':  document.getElementById("topicname"+i).innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
 				case 'Scouting':  document.getElementById("topicname"+i).innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
 				case 'Mobility':  document.getElementById("topicname"+i).innerHTML = '<img class="loading" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
