@@ -58,45 +58,45 @@
 			background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif);
 			background-repeat:no-repeat;
 			float:right;
-			margin-right:-23px;
+			margin-right:-25px;
 			margin-top:-20px;
 	 }
 	
    .brown{
 	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png);
 	background-repeat:no-repeat;
-	width:60px;
-	height:22px;
-	text-align:center;
-	color:#fff;
+	width: 70px;
+height: 22px;
+text-align: center;
+color: white;
 	}
 
      
    .green {
         background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green.png);
     background-repeat:no-repeat;
-    width:60px;
-    height:22px;
-    text-align:center;
-    color:#fff;
+   width: 70px;
+height: 22px;
+text-align: center;
+color: white;
     }
 
      .blue {
         background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png);
     background-repeat:no-repeat;
-    width:60px;
-    height:22px;
-    text-align:center;
-    color:#fff;
+    width: 70px;
+height: 22px;
+text-align: center;
+color: white;
     }
 
    .pink {
         background-image: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png);
     background-repeat:no-repeat;
-    width:60px;
-    height:22px;
-    text-align:center;
-    color:#fff;
+   width: 70px;
+height: 22px;
+text-align: center;
+color: white;
     }
 
       .finding {
