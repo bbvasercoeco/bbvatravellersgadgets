@@ -388,7 +388,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('10 findings.xml');
+	console.debug('11 findings.xml');
 	
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
@@ -427,11 +427,11 @@ width: 48%;
 		}
 		
 		query.setQuery(querytosend);        
-		//query.send(handleQueryResponse);
+		query.send(handleQueryResponse);
 	}
 
       
-  /*     
+   
     function handleQueryResponse(response)
     {
 	 
@@ -440,7 +440,9 @@ width: 48%;
 			return; 
 		}      
         data = response.getDataTable();    
-       
+        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+	   
+	   /*
 	    console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
@@ -490,11 +492,11 @@ width: 48%;
         }
 		
 		
-		
+		*/
       }
       
       
-      */
+      
     </script>
     ]]>
   </Content>
