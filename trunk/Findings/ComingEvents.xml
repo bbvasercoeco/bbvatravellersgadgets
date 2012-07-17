@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s ComingEvents.xml"
+  <ModulePrefs title="ComingEvents.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -13,7 +13,9 @@
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+
     <style type="text/css">
      body{background-color:transparent !important;} 
       #ceventsinterna h2 {
@@ -216,34 +218,35 @@
 		 var topicname = data.getValue(i,7);
 		 switch(topicname){
 				case 'Security': var classname="brown";break;
-				case 'Banca':  var classname="brown";break;
-				case 'Scouting':  var classname="brown";break;
-				case 'Mobility':  var classname="brown";break;
-				case 'Boundaries':  var classname="brown";break;
-				case 'Technology':  var classname="brown";break;
-				case 'Innovation':  var classname="brown";break;
-				case 'Enterprise 2.0': var classname="brown";break;
-				case 'Payments':  var classname="brown";break;
+                case 'Banca':  var classname="green";break;
+                case 'Scouting':  var classname="brown";break;
+                case 'Mobility':  var classname="brown";break;
+                case 'Boundaries':  var classname="blue";break;
+                case 'Technology':  var classname="brown";break;
+                case 'Innovation':  var classname="pink";break;
+                case 'Enterprise 2.0': var classname="brown";break;
+                case 'Payments':  var classname="brown";break;
+                default: var classname="brown";break;
 			}
           var html = "";
-          html +='<div id="comingevent'+i+'" class="finding">';
+          html +='<div id="comingevent" class="finding">';
           html +='<div class="date">';
-          html +='<div class="day" id="dia'+i+'">'+fecha.getDate()+'</div>';
-          html +='<div class="month" id="mes'+i+'">'+month[fecha.getMonth()]+'</div>';
-          html +='<div class="time" id="hora'+i+'">'+fecha.getHours()+":"+fecha.getMinutes()+'</div>';
+          html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
+          html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
+          html +='<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
           html +='</div>';
-          html +='<div id="imageevent'+i+'" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
+          html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
           html +='<div class="text">';
-          html +='<h3 id="event'+i+'">'+data.getValue(i,1)+'</h3>';
-		  html += '<div id="topicname'+i+'" class="topicname '+ classname +'">'+topicname+'</div>';
+          html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
+		  html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';
 		  if(data.getValue(i,6)!=""){
-          html +='<div id="summaryevent'+i+'" class="summary">'+data.getValue(i,2) + ' <a style="color:#094691" href="'+data.getValue(i,6)+ '">Events website</a></div>';
+          html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + ' <a style="color:#094691" href="'+data.getValue(i,6)+ '">Events website</a></div>';
 		  }else{
-		  html +='<div id="summaryevent'+i+'" class="summary">'+data.getValue(i,2)+'</div>';
+		  html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';
 		  }
           html +='<div class="footer">';
-          html +='<div id="centro'+i+'" class="center">'+data.getValue(i,4)+'</div>';
-          html +='<div id="urlmoreinfo'+i+'"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a></div>';
+          html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
+          html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a></div>';
           html +='</div>';
           html +='</div>';
           html +='</div>';
