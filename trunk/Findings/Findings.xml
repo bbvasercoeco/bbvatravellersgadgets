@@ -320,6 +320,10 @@ display:none;
 		line-height: 25px;
 	}
 
+	#lastfindings {
+		margin-top:15px;
+	}
+
 	.blockFinding {
 		float: left;
 		padding-left: 12px;
@@ -457,7 +461,7 @@ display:none;
 	 
 <script type="text/javascript">
 		
-	console.debug('54 findings.xml'); 
+	console.debug('55 findings.xml'); 
 	
 	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -497,7 +501,7 @@ display:none;
 		}
 		else
 		{
-			document.getElementById("titleHome").innerHTML = '<h2>Last <strong>'+topic[1]+'</strong></h2>';
+			document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic[1]+'</strong></h2>';
 			var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
 		}
 		
