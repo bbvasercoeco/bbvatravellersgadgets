@@ -479,8 +479,8 @@ margin-right: 15px;
 		  html += '<div class="blockFinding">';
 			
 		  html += '<div id="topicName' + i + '" class="labelTopicName">security</div>';
-		  html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
-          /*html += '<h3 id="summary' + i + '">Lorem ipsum dolor consectetur elit.</h3>';
+		  /* html += '<div id="imagefindings' + i + '" class="image"><img width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/Enterprise%202.0.jpg"/></div>';
+         html += '<h3 id="summary' + i + '">Lorem ipsum dolor consectetur elit.</h3>';
 		  html += '<div class="infoviajero">';
           html += '<div id="bbvatraveller' + i + '">BBVA Traveller - John Snow</div>';
           html += '<div id="urlmoreinfo' + i + '" class="more-link">More Info</div>';
