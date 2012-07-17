@@ -3,205 +3,205 @@
 	<ModulePrefs title="Findings.xml Datos de los últimos eventos con los últimos tópics."
 		description=""
 		author_affiliation="Capgemini">
-    <Require feature="idi"/>
-    <Require feature="locked-domain" />
+	 <Require feature="idi"/>
+	 <Require feature="locked-domain" />
   </ModulePrefs>
   
   <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
   
   <Content type="html">
-    <![CDATA[
+	 <![CDATA[
 
-    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	 <script src="https://www.google.com/jsapi" type="text/javascript"></script>
 
-    <style type="text/css">       
-      img.loading {
-        margin: 5px 0 0 29px;
-      }
-      
-      a {color: #62B4E6 !important;}
-    
-      a:visited {color: #476BB5 !important;}
+	 <style type="text/css">       
+		img.loading {
+		  margin: 5px 0 0 29px;
+		}
+		
+		a {color: #62B4E6 !important;}
+	 
+		a:visited {color: #476BB5 !important;}
   h2 {
-        font-size: 32px;
-        font-weight: normal;
-        margin: 0px 0 5px 0;
-        padding-bottom: 5px;
-         position:relative;
+		  font-size: 32px;
+		  font-weight: normal;
+		  margin: 0px 0 5px 0;
+		  padding-bottom: 5px;
+			position:relative;
  top:27px;
  font-family: "BBVA Web Light", arial, sans-serif;
  width:300px;       `
-      }
-      h2 span {
-        font-weight: bold;
-      }
-        body {background-color:transparent;}
+		}
+		h2 span {
+		  font-weight: bold;
+		}
+		  body {background-color:transparent;}
 
-    #all {
-   padding-left:866px;
-   font-size:12px;
-   font-family:Arial;
-   height:30px;
-     }
+	 #all {
+	padding-left:866px;
+	font-size:12px;
+	font-family:Arial;
+	height:30px;
+	  }
 
   #all a{
-     text-decoration:none;
-    }
-    
+	  text-decoration:none;
+	 }
+	 
   
-    
-      h2 div {
-        display:inline;
-        float:right;
-      }
-      #imagenTopic {
-        display: inline;
-        float: left;
-        margin-left: 10px;
-        text-align: left;
-        width: 280px;
-      }
-      #imagenTopic img {
-        margin-right: 40px;
-      }
-      hr {
-        background-color: #CCCCCC;
-        border-width: 0;
-        height: 1px;
-      }
-      ul#datosFicha {
-        border-collapse: collapse;
-        color: #666666;
-        font-family: arial,sans-serif;
-        font-size: 13px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        letter-spacing: normal;
-        line-height: 17px;
-        text-align: left;
-        text-indent: 0;
-        text-transform: none;
-        white-space: normal;
-        word-spacing: 0;
-      }
-      ul#datosFicha li {
-        border-collapse: collapse;
-        color: #0b5394;
-        font-family: arial,sans-serif;
-        font-size: 12px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: normal;
-        letter-spacing: normal;
-        line-height: 17px;
-        word-spacing: 0;
-        text-align: left;
-        text-indent: 0;
-        text-transform: none;
-        white-space: normal;
-      }
-      
-      ul#datosFicha li span,
-      ul#listaproductos span li  {
-        font-family: arial,sans-serif;
-        font-size: 12px;
-        line-height: 17px;
-        text-align: justify;
-        color: #666666;
-      }
-      ul#listaproductos {
-        margin-left: 250px;
-      }
-      
-      #izquierda {
-        width: 470px;
-        float:left;
-        margin-right:8px;
-      }
-      
-      #derecha {
-      
-      width: 470px;
-      float:left;
-      }
-      
-     #topleft {
-      padding-left:12px;
-      border: 1px solid #d0d0d0;
-      margin-bottom:20px;
-     -moz-border-radius: 10px;
-     -webkit-border-radius: 10px;
-     background-color: #FFFFFF;
-      }
+	 
+		h2 div {
+		  display:inline;
+		  float:right;
+		}
+		#imagenTopic {
+		  display: inline;
+		  float: left;
+		  margin-left: 10px;
+		  text-align: left;
+		  width: 280px;
+		}
+		#imagenTopic img {
+		  margin-right: 40px;
+		}
+		hr {
+		  background-color: #CCCCCC;
+		  border-width: 0;
+		  height: 1px;
+		}
+		ul#datosFicha {
+		  border-collapse: collapse;
+		  color: #666666;
+		  font-family: arial,sans-serif;
+		  font-size: 13px;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  letter-spacing: normal;
+		  line-height: 17px;
+		  text-align: left;
+		  text-indent: 0;
+		  text-transform: none;
+		  white-space: normal;
+		  word-spacing: 0;
+		}
+		ul#datosFicha li {
+		  border-collapse: collapse;
+		  color: #0b5394;
+		  font-family: arial,sans-serif;
+		  font-size: 12px;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: normal;
+		  letter-spacing: normal;
+		  line-height: 17px;
+		  word-spacing: 0;
+		  text-align: left;
+		  text-indent: 0;
+		  text-transform: none;
+		  white-space: normal;
+		}
+		
+		ul#datosFicha li span,
+		ul#listaproductos span li  {
+		  font-family: arial,sans-serif;
+		  font-size: 12px;
+		  line-height: 17px;
+		  text-align: justify;
+		  color: #666666;
+		}
+		ul#listaproductos {
+		  margin-left: 250px;
+		}
+		
+		#izquierda {
+		  width: 470px;
+		  float:left;
+		  margin-right:8px;
+		}
+		
+		#derecha {
+		
+		width: 470px;
+		float:left;
+		}
+		
+	  #topleft {
+		padding-left:12px;
+		border: 1px solid #d0d0d0;
+		margin-bottom:20px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  background-color: #FFFFFF;
+		}
 
 
-      #bottomleft {
-      padding-left:12px;
-      border: 1px solid #d0d0d0;
-      margin-bottom:20px;
-     -moz-border-radius: 10px;
-     -webkit-border-radius: 10px;
-     background-color: #FFFFFF;
-      }
+		#bottomleft {
+		padding-left:12px;
+		border: 1px solid #d0d0d0;
+		margin-bottom:20px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  background-color: #FFFFFF;
+		}
 
-      #topright {
-      padding-left:12px;
-      border: 1px solid #d0d0d0;
-      margin-bottom:20px;
-     -moz-border-radius: 10px;
-     -webkit-border-radius: 10px;
-     background-color: #FFFFFF;
-      }
+		#topright {
+		padding-left:12px;
+		border: 1px solid #d0d0d0;
+		margin-bottom:20px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  background-color: #FFFFFF;
+		}
 
-      #bottomright {
-      padding-left:12px;
-      border: 1px solid #d0d0d0;
-      margin-bottom:20px;
-     -moz-border-radius: 10px;
-     -webkit-border-radius: 10px;
-   background-color: #FFFFFF;
-      }    
+		#bottomright {
+		padding-left:12px;
+		border: 1px solid #d0d0d0;
+		margin-bottom:20px;
+	  -moz-border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	background-color: #FFFFFF;
+		}    
 
-      #izquierdaTL {
-      
-        padding-top:0px;
-        width:auto;
-        float:left;
-      }
+		#izquierdaTL {
+		
+		  padding-top:0px;
+		  width:auto;
+		  float:left;
+		}
 
-      #derechaTL {
-        width:auto;
-        margin-left:140px;
-      }
+		#derechaTL {
+		  width:auto;
+		  margin-left:140px;
+		}
 
-      #security1 {
-      padding-top:10px;
-      padding-left:235px;
-      }
+		#security1 {
+		padding-top:10px;
+		padding-left:235px;
+		}
 
  .topic {
-        padding-left:20px;
-        padding-bottom:5px;
-        margin-bottom:4px;
-        overflow:hidden;
-        height: 59px;
-        width: 216px;
-       /* font-family:cursive;*/
-        font-size: 19px;
-        font-style: normal;
-        font-variant: normal;
-        font-weight: "550";
-        letter-spacing: normal;
-        line-height: 17px;
-        text-align: left;
-        text-indent: 0;
-        text-transform: none;
-        white-space: normal;
-        word-spacing: 0;
-        color:#000000
-        margin-top:10px;
-         
+		  padding-left:20px;
+		  padding-bottom:5px;
+		  margin-bottom:4px;
+		  overflow:hidden;
+		  height: 59px;
+		  width: 216px;
+		 /* font-family:cursive;*/
+		  font-size: 19px;
+		  font-style: normal;
+		  font-variant: normal;
+		  font-weight: "550";
+		  letter-spacing: normal;
+		  line-height: 17px;
+		  text-align: left;
+		  text-indent: 0;
+		  text-transform: none;
+		  white-space: normal;
+		  word-spacing: 0;
+		  color:#000000
+		  margin-top:10px;
+			
 
 }
 
@@ -221,61 +221,61 @@ display:none;
  }   
 
 
-       .infoviajero {
-       overflow:hidden;
-       border-top: 1px solid #d0d0d0;
-       height:35px;
-       }
+		 .infoviajero {
+		 overflow:hidden;
+		 border-top: 1px solid #d0d0d0;
+		 height:35px;
+		 }
 
-   
-      .bbvatraveller {
-       overflow:hidden;
-       width:185px;
-       padding-left:20px;
-       padding-top:10px;
-       float:left;
+	
+		.bbvatraveller {
+		 overflow:hidden;
+		 width:185px;
+		 padding-left:20px;
+		 padding-top:10px;
+		 float:left;
 
-       font-family: arial,sans-serif;
-       font-size: 12px;
-       line-height: 17px;
-       text-align: justify;
+		 font-family: arial,sans-serif;
+		 font-size: 12px;
+		 line-height: 17px;
+		 text-align: justify;
 }
 
  .urlmoreinfo {
-   width:55px;
-       height:25px;
-       padding-right: 12px;
-       float:left;
-       color:#62B4E6;  
-       padding-top:10px;
+	width:55px;
+		 height:25px;
+		 padding-right: 12px;
+		 float:left;
+		 color:#62B4E6;  
+		 padding-top:10px;
 
-       font-family: arial,sans-serif;
-       font-size: 12px;
-       line-height: 17px;
-       text-align: justify;
+		 font-family: arial,sans-serif;
+		 font-size: 12px;
+		 line-height: 17px;
+		 text-align: justify;
  }
-       
-    .urlmoreinfo a {
-       text-decoration: none;
-    }
+		 
+	 .urlmoreinfo a {
+		 text-decoration: none;
+	 }
  #findings h2 {
-        border-bottom: 1px solid #cacaca;
-        font-family: "BBVA Web Light", arial, sans-serif;
-        font-size: 53px;
-        margin: 0 0 10px 0;
-        padding-bottom: 13px;
-        box-shadow: 0px 1px white;
-        color:#3B3B3B;
-      }
-     #findings h2 span {
-        font-family: "BBVA Web Medium", arial, sans-serif;
-      }
+		  border-bottom: 1px solid #cacaca;
+		  font-family: "BBVA Web Light", arial, sans-serif;
+		  font-size: 53px;
+		  margin: 0 0 10px 0;
+		  padding-bottom: 13px;
+		  box-shadow: 0px 1px white;
+		  color:#3B3B3B;
+		}
+	  #findings h2 span {
+		  font-family: "BBVA Web Medium", arial, sans-serif;
+		}
 	 #home h2 {
 		font-size: 32px;
-        font-weight: normal;
-        margin: 0px 0 5px 0;
-        padding-bottom: 5px;
-        position:relative;
+		  font-weight: normal;
+		  margin: 0px 0 5px 0;
+		  padding-bottom: 5px;
+		  position:relative;
 		top:27px;
 		font-family: "BBVA Web Light", arial, sans-serif;
 		width:300px;   
@@ -285,14 +285,14 @@ display:none;
 		font-weight: bold;
 	 }
 	/*JDLL*/
-    #imagefindings0 img,
+	 #imagefindings0 img,
 #imagefindings1 img,
 #imagefindings2 img,
 #imagefindings3 img	{
 		width: 182px;
 		height: 140px;
 	 }
-    
+	 
 	.blockFinding {
 		float: left;
 		padding-left: 12px;
@@ -309,25 +309,25 @@ margin-right: 15px;
 </style>
 
 <div id="lastfindings">
-      
+		
 	
 
 </div>
 
-    
+	 
 <script type="text/javascript">
-      
-	console.debug('37 findings.xml'); 
+		
+	console.debug('38 findings.xml'); 
 	
-    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
+	 //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 	
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
 	var urlTable = prefs.getString("_table_query_url");    
-            
-    _IG_RegisterOnloadHandler(loadVisualizationAPI);
-      
-    function loadVisualizationAPI()
+				
+	 _IG_RegisterOnloadHandler(loadVisualizationAPI);
+		
+	 function loadVisualizationAPI()
 	{
 		google.load("visualization", "1", {"packages": ["table"]});
 		google.setOnLoadCallback(sendQuery);
@@ -361,18 +361,18 @@ margin-right: 15px;
 		query.send(handleQueryResponse);
 	}
 	
-    function handleQueryResponse(response)
-    {	 
+	 function handleQueryResponse(response)
+	 {	 
 		if (!gadgetHelper.validateResponse(response)) 
 		{ 
 			return; 
 		}
 		
-        data = response.getDataTable();    
+		  data = response.getDataTable();    
 		
-        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
-	   
-        var filas = data.getNumberOfRows();
+		  //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+		
+		  var filas = data.getNumberOfRows();
 		
 		//console.debug('findings.xml , filas -> '+filas);
 		
@@ -399,13 +399,13 @@ margin-right: 15px;
 			html += '</div>';
 
 			document.getElementById("lastfindings").innerHTML += html;
-        }
+		  }
 		
-    }
-      
-      
-      
-    </script>
-    ]]>
+	 }
+		
+		
+		
+	 </script>
+	 ]]>
   </Content>
 </Module>
