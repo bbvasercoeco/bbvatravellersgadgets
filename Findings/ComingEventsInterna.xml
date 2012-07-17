@@ -227,7 +227,7 @@
           var html = "";
           html +='<div id="comingevent'+i+'" class="finding">';
           html +='<div class="date">';
-          html +='<div class="day" id="dia'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
+          html +='<div class="day" id="dia'+i+'">'+fecha.getDate()+'</div>';
           html +='<div class="month" id="mes'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='<div class="time" id="hora'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='</div>';
