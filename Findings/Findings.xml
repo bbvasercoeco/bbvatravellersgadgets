@@ -515,7 +515,7 @@ width: 48%;
     
 <script type="text/javascript">
       
-	console.debug('1 findings.xml');
+	console.debug('3 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -547,7 +547,7 @@ width: 48%;
 		}
 		else
 		{
-			document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
+			//document.getElementById("findings").innerHTML = "<h2>Last <span>Findings</span></h2>";
 			var querytosend = "select max(D),A,C,L,G,R,Y where A like '%"+topic[1]+"%'group by A,C,L,G,R,Y order by max(D)  desc ";
 		}
 		
@@ -557,8 +557,8 @@ width: 48%;
 
       
       
-      function handleQueryResponse(response)
-      {
+    function handleQueryResponse(response)
+    {
 	 
         if (!gadgetHelper.validateResponse(response)) { return; }      
         data = response.getDataTable();    
@@ -566,6 +566,8 @@ width: 48%;
         var filas = data.getNumberOfRows();
 		
 		console.debug('findings.xml , filas -> '+filas);
+		console.debug('findings.xml , data -> '+data);
+		
 		for(var i = 0; i < filas; i++) 
 		{
           var html = "";
