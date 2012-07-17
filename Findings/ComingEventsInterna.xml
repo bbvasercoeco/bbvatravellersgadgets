@@ -143,7 +143,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 1 coming events');
+      console.debug('version 8 coming events');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
