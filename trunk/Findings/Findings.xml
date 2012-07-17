@@ -81,7 +81,23 @@
        line-height: 17px;
        text-align: justify;
 	}	
-	
+	 .urlmoreinfo {
+	   width:55px;
+       height:25px;
+       padding-right: 12px;
+       float:left;
+       color:#62B4E6;  
+       padding-top:10px;
+
+       font-family: arial,sans-serif;
+       font-size: 12px;
+       line-height: 17px;
+       text-align: justify;
+	}
+       
+    .urlmoreinfo a {
+       text-decoration: none;
+    }
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
