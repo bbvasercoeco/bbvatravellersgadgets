@@ -94,10 +94,24 @@
        line-height: 17px;
        text-align: justify;
 	}
+	
        
     .urlmoreinfo a {
        text-decoration: none;
     }
+	.summary {
+		width:260px;
+		height:95px;
+		overflow:hidden;
+		padding-left:7px;
+		font-size:12px;
+		font-family:Arial;
+		}
+	.topic {
+        margin-bottom:4px;
+        overflow:hidden;
+        height: 30px;
+	}	
      
     </style>
 
@@ -155,7 +169,7 @@
             html += '<div class="finding">';
           }*/
           html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
-          html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
+          html += '<h3 id="summary'+i+'"class="summary"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
 		  html += '<div id="topicname'+i+'" class="topic"></div>';
          // html += '<div class="footer">';
           html += '<div id="bbvatraveller'+i+'" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
