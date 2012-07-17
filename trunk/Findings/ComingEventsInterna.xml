@@ -146,7 +146,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 10 coming events');
+      console.debug('version 11 coming events');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -230,7 +230,7 @@
           html +='<div id="imageevent'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html +='<div class="text">';
           html +='<h3 id="event'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
-		  html += '<div id="topicname'+i+'" class="topicname'+ classname +'">'+topicname+'</div>';
+		  html += '<div id="topicname'+i+'" class="topicname '+ classname +'">'+topicname+'</div>';
           html +='<div id="summaryevent'+i+'" class="summary"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='<div class="footer">';
           html +='<div id="centro'+i+'" class="center"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
