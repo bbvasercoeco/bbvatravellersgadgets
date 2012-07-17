@@ -352,19 +352,6 @@ h2 {
 <![endif]-->
 
 
-<div id="home">
-	
-</div>
-
-<div id="all">
-	
-</div>
-	
-<div id="findings">
-	
-</div>
-	
-	
 <style>
 	
 	.blockFinding {
@@ -380,6 +367,7 @@ width: 48%;
 	
 	
 </style>
+
 <div id="lastfindings">
       
 	<div class="blockFinding">
@@ -393,130 +381,16 @@ width: 48%;
 			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
 		</div>
 		
-	</div>
-	<!--
-	<div class="blockFinding">
-				
-		<div id="security0"></div>
-		<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		<div id="place0" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		<div id="summary0" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-		<div id ="infoviajero" class="infoviajero">
-			<div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		</div>
-		
-	</div>
-	
-	<div class="blockFinding">
-				
-		<div id="security0"></div>
-		<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		<div id="place0" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		<div id="summary0" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-		<div id ="infoviajero" class="infoviajero">
-			<div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-			<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		</div>
-		
-	</div>
+	</div>	
 
-			
-	<div id="izquierda">  
-	
-		<div id="topleft">
-        
-			<div id="izquierdaTL">
-				<div id="imagefindings0"><img class="loading" height="80" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-			</div>
-
-			<div id="derechaTL">
-				
-				<div id="security1"></div>
-				<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				<div id="place0" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				<div id="summary0" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-				<div id ="infoviajero" class="infoviajero">
-					<div id="bbvatraveller0" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-					<div id="urlmoreinfo0" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				</div>
-				
-			</div>
-
-		</div>
-    
-	
-	
-	
-	<div id="bottomleft">
-		<div id="izquierdaTL">
-			<div id="imagefindings2"><img class="loading" height="80" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-		</div>
-
-			<div id="derechaTL">
-				<div id="security1"></div>
-				<div id="topic2" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				<div id="place2" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				<div id="summary2" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-				<div id="infoviajero1" class="infoviajero">
-				<div id="bbvatraveller2" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				<div id="urlmoreinfo2" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-				</div>
-			</div>  
-		</div>
-	</div>
-    
-    <div id="derecha">
-    
-       <div id="topright">
-
-       <div id="izquierdaTL">
-        <div id="imagefindings1"><img class="loading" height="80" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-       </div>
-
-        <div id="derechaTL">
-<div id="security1"></div>
-        <div id="topic1" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-        <div id="place1" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-<div id="summary1" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-
-  <div id="infoviajero2" class="infoviajero">
-        <div id="bbvatraveller1" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-        <div id="urlmoreinfo1" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-       </div>
-      </div>
-     </div>
-       
-       <div id="bottomright">
-
-       <div id="izquierdaTL">
-        <div id="imagefindings3"><img class="loading" height="80" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-       </div>
-
-       <div id="derechaTL">
-       <div id="security1"></div>
-        <div id="topic3" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-     <div id="place3" class="place"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-<div id="summary3" class="summary"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>  
-
- <div id="infoviajero3" class="infoviajero">
-        <div id="bbvatraveller3" class="bbvatraveller"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-        <div id="urlmoreinfo3" class="urlmoreinfo"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
-       </div>
-       </div>
-      </div>
-    </div>      
-       -->
-	   
-	   
-				
-    </div>
+</div>
 
     
 <script type="text/javascript">
       
-	console.debug('4 findings.xml');
-      
+	console.debug('5 findings.xml');
+	
+     /* 
 	//var gadgetHelper = null;  
 	//var prefs = new _IG_Prefs(); // User preferences      
 	//var urlTable = prefs.getString("_table_query_url");    
@@ -587,7 +461,7 @@ width: 48%;
           document.getElementById("lastfindings").innerHTML += html;
         }
 
-		/*
+		
         for(var i = 0; i < filas; i++) {
 					  
 		    var topicname = data.getValue(i,1);
@@ -615,11 +489,11 @@ width: 48%;
         }
 		
 		
-		*/
+		
       }
       
       
-      
+      */
     </script>
     ]]>
   </Content>
