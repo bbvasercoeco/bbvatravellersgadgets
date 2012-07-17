@@ -207,6 +207,19 @@
         month[11]="Dec";
 
         for(var i = 0; i < filas; i++) {
+		  	 
+		 var topicname = data.getValue(i,7);
+		 switch(topicname){
+				case 'Security': var classname="brown";break;
+				case 'Banca':  var classname="brown";break;
+				case 'Scouting':  var classname="brown";break;
+				case 'Mobility':  var classname="brown";break;
+				case 'Boundaries':  var classname="brown";break;
+				case 'Technology':  var classname="brown";break;
+				case 'Innovation':  var classname="brown";break;
+				case 'Enterprise 2.0': var classname="brown";break;
+				case 'Payments':  var classname="brown";break;
+			}
           var html = "";
           html +='<div id="comingevent'+i+'" class="finding">';
           html +='<div class="date">';
@@ -217,7 +230,7 @@
           html +='<div id="imageevent'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html +='<div class="text">';
           html +='<h3 id="event'+i+'"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></h3>';
-		  html += '<div id="topicname'+i+'" class="topicname"></div>';
+		  html += '<div id="topicname'+i+'" class="topicname'+ classname +'">'+topicname+'</div>';
           html +='<div id="summaryevent'+i+'" class="summary"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
           html +='<div class="footer">';
           html +='<div id="centro'+i+'" class="center"><img class="loading" width="15" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>';
@@ -226,24 +239,8 @@
           html +='</div>';
           html +='</div>';
           document.getElementById("comingevents").innerHTML += html;
-        }
-        for(var i=0;i<filas;i++){
-		
-		 var topicname = data.getValue(i,7);
-		
-		 switch(topicname){
-				case 'Security': document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Banca':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Scouting':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Mobility':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Boundaries':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Technology':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Innovation':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Enterprise 2.0':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-				case 'Payments':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
-			}
-          //console.debug(i);
-          var fecha = new Date(data.getValue(i,0));
+		  
+		  var fecha = new Date(data.getValue(i,0));
           //document.getElementById("fecha"+i).innerHTML = fecha.getDate()+"/"+month[fecha.getMonth()]+"/"+fecha.getFullYear()+" "+fecha.getHours()+":"+fecha.getMinutes()+":"+fecha.getSeconds();
           document.getElementById("dia"+i).innerHTML = fecha.getDate();
           document.getElementById("mes"+i).innerHTML = month[fecha.getMonth()];
@@ -256,7 +253,7 @@
           document.getElementById("urlmoreinfo"+i).innerHTML = '<a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a>';
           document.getElementById("imageevent"+i).innerHTML ='<img src="' + data.getValue(i,5) +'" />';
         }
-      }
+     }
 
 
 
