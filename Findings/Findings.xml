@@ -381,7 +381,7 @@ background-color: white;
 </style>
 <div id="lastfindings">
       
-	<!--<div class="blockFinding">
+	<div class="blockFinding">
 				
 		<div id="security0"></div>
 		<div id="topic0" class="topic"><img class="loading" width="15" src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif"/></div>
@@ -393,7 +393,7 @@ background-color: white;
 		</div>
 		
 	</div>
-	
+	<!--
 	<div class="blockFinding">
 				
 		<div id="security0"></div>
@@ -514,7 +514,7 @@ background-color: white;
     
 <script type="text/javascript">
       
-	console.debug('-10 findings.xml');
+	console.debug('-11 findings.xml');
       
 	var gadgetHelper = null;  
 	var prefs = new _IG_Prefs(); // User preferences      
@@ -564,7 +564,7 @@ background-color: white;
        // console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 		
-		for(var i = 4; i < filas; i++) 
+		for(var i = 0; i < filas; i++) 
 		{
           var html = "";
 		  html += '<div class="blockFinding">
