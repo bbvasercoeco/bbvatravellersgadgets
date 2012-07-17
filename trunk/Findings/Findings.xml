@@ -156,7 +156,7 @@
           }
           html += '<div id="imagefindings'+i+'" class="image"><img class="loading" width="15" src="https://code.google.com/p/bbvatravellersgadgets/source/browse/trunk/Findings/images/lastfindings.jpg"/></div>';
           html += '<h3 id="summary'+i+'"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></h3>';
-		  html += '<div id="topicname'+i+'"></div>';
+		  html += '<div id="topicname'+i+'" class="topic"></div>';
           html += '<div class="footer">';
           html += '<div id="bbvatraveller'+i+'" class="bbvatraveller"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
           html += '<div id="urlmoreinfo'+i+'" class="urlmoreinfo"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></div>';
