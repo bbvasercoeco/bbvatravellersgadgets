@@ -57,9 +57,9 @@
 			background-repeat:no-repeat;
 	 }
 	
-	.topicname .brown img{
-	margin-top:-42px;
-	margin-right:-20px;
+   .brown{
+	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png);
+	background-repeat:no-repeat;
 	}
       .finding {
         background: #fff;
@@ -229,15 +229,15 @@
 		 var topicname = data.getValue(i,7);
 		
 		 switch(topicname){
-				case 'Security': document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Banca':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Scouting':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Mobility':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Boundaries':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Technology':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Innovation':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Enterprise 2.0':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
-				case 'Payments':  document.getElementById("topicname"+i).innerHTML = '<img class="brown" src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_brown.png">'+topicname+'</img>';break;
+				case 'Security': document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Banca':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Scouting':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Mobility':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Boundaries':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Technology':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Innovation':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Enterprise 2.0':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
+				case 'Payments':  document.getElementById("topicname"+i).innerHTML = '<div class="brown">'+topicname+'</div>';break;
 			}
           //console.debug(i);
           var fecha = new Date(data.getValue(i,0));
