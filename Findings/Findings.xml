@@ -17,6 +17,8 @@
 	<link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     
 	 <style type="text/css">       
+
+	 	 body{background-color:transparent !important;} 
 		img.loading {
 		  margin: 5px 0 0 29px;
 		}
@@ -31,16 +33,17 @@
 
 	#titleHome h2 {
 			font-size: 32px;
-			font-weight: normal;
-			margin: 0px;
-			padding: 0 0 5px 0;			
-			width:300px;
+font-weight: normal;
+margin: 0px;
+padding: 0 0 5px 0;
+width: 500px;
+float: left;
 	}
 
 	#titleHome #showAll {
-		margin: 0px 0 0 855px;
 		padding: 0 0 5px 0;
-		width: 90px;
+width: 90px;
+float: right;	
 	}
 
 	#titleHome #showAll a {
