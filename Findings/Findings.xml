@@ -54,10 +54,7 @@
 	#all a{
 		text-decoration:none;
 		}
-	 #topicname{
-	 padding-top:10px;
-	 padding-left:227px;
-	 }
+	
 	#imagefindings0 img,
 	#imagefindings1 img,
 	#imagefindings2 img,
