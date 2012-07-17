@@ -166,11 +166,11 @@ color: white;
       }
       .finding .footer .center {
         float: left;
-        font-weight: normal;
+        font-weight: bold;
       }
       .finding .footer a.more-link {
         color: #62b4e6;
-        font-weight: bold;
+        font-weight: normal;
         text-decoration: none;
       }
       .finding .footer a.more-link:hover {
