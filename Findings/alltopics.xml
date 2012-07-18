@@ -104,10 +104,11 @@ margin-left: 258px;
     }
 
  .label-topicName span {
-    color: brown;
-font-size: 10px;
+  color: white;
+font-size: 9px;
 font-weight: normal;
 margin-left: 138px;
+line-height: 35px;
  }
 
  .blockData {
