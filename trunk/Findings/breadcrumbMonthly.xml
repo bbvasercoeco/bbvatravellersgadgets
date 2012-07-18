@@ -68,7 +68,7 @@ margin-bottom:25px;
 	}		
     </style>
 
-    <h2>Monthly<span>Summary</span></h2>
+    <h2>Monthly<span> Summary</span></h2>
 	<div id="title-crumbs">breadcrumbs</div>
 	<script type="text/javascript">
 	 var gadgetHelper = null;
