@@ -90,7 +90,7 @@
             {	
 				
                 prefs.set(variable,document.getElementById(variable).value);
-				if (variable == 'textBanner1'){prefs.set(document.getElementById(variable).defaultvalue,document.getElementById(variable).value);}
+				
 			
             } 
 			
