@@ -214,14 +214,13 @@ margin-bottom:25px;
     </style>
 
     <div id="home"></div><div id="all"></div>
-	<div id="ceventsinterna"></div>
-	<div id="title-crumbs">breadcrumbs</div>
+	<div id="ceventsinterna"></div>	
     <div id="comingevents"></div>
 
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 11 coming events');
+      console.debug('version 12 coming events');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
