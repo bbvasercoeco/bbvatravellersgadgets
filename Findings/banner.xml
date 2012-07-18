@@ -95,8 +95,8 @@
             } 
 			  function changeBack(variable)
             {	
-				
-                document.myForm.myTextArea.value = document.myForm.myTextArea.defaultValue;
+				  document.getElementById(variable).defaultValue = document.getElementById(variable).value;
+              //  document.myForm.myTextArea.value = document.myForm.myTextArea.defaultValue;
 				
 			
             } 
