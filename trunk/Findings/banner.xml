@@ -10,10 +10,12 @@
   </ModulePrefs>
 <UserPref name="titleBanner1" display_name="Title Banner1" required="true" />
 <UserPref name="textBanner1" display_name="Text Banner1" required="true" />
-<UserPref name="urlBanner1" display_name="Url Banner1" required="true" />
+<UserPref name="urlbanner1" display_name="Url Banner1" required="true" />
+<UserPref name="urlimagebanner1" display_name="Url Banner1" required="true" />
 <UserPref name="titleBanner2" display_name="Title Banner2" required="true" />
 <UserPref name="textBanner2" display_name="Text Banner2" required="true" />
-<UserPref name="urlBanner2" display_name="Url Banner2" required="true" />
+<UserPref name="urlbanner2" display_name="Url Banner2" required="true" />
+<UserPref name="urlimagebanner2" display_name="Url Banner1" required="true" 
 <Content type="html" view="configuration" preferred_height="480">
 
  <![CDATA[
@@ -128,7 +130,7 @@
       <div class="banner banner-interest">
         <div id="titleBanner2"></div>
         <div id="textBanner2"></div>
-        <div id="urlBanner2">Contribute</div>
+        <div id="urlBanner2"></div>
       </div>
     </div>
     <script type="text/javascript">
