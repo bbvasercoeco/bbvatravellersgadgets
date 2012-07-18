@@ -15,7 +15,7 @@
 <UserPref name="titleBanner2" display_name="Title Banner2" required="true" />
 <UserPref name="textBanner2" display_name="Text Banner2" required="true" />
 <UserPref name="urlbanner2" display_name="Url Banner2" required="true" />
-<UserPref name="urlimagebanner2" display_name="Url Banner1" required="true" 
+<UserPref name="urlimagebanner2" display_name="Url Banner1" required="true" />
 <Content type="html" view="configuration" preferred_height="480">
 
  <![CDATA[
