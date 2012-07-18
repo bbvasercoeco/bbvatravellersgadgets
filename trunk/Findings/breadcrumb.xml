@@ -88,11 +88,11 @@ margin-bottom:25px;
 			color:#ababab;
 			margin-top: 7px;
 			margin-bottom:25px;
-			fon-weight: bold;
+			font-weight: bold;
 		}
 	a.linkBreadCrumb,
 	a:visited.linkBreadCrumb {
-		fon-weight: bold;
+		font-weight: bold;
 		font-family:arial, sans-serif;
 		font-size:11px;
 		color:#ababab;
@@ -110,7 +110,7 @@ margin-bottom:25px;
 		font-family:arial, sans-serif;
 	} 
 	.currentBreadCrumb {
-		fon-weight: bold;
+		font-weight: bold;
 		font-size:11px;
 		color:#616161;
 		text-decoration:none;
