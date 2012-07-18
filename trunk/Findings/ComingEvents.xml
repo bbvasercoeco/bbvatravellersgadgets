@@ -240,8 +240,7 @@ color: white;
 
     <script type="text/javascript">
 
-      //console.debug('lastfindings.xml');
-      console.debug('version 12 coming events');
+      console.debug('13 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
