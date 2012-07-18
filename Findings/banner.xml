@@ -123,33 +123,33 @@
       <div class="banner banner-schedule">
         <h2 id="titleBanner1">Calendario</h2>
         <p id="textBanner1"></p>
-        <a id="urlBanner1" href="#">Ver calendario</a>
+        <div id="urlBanner1">Ver calendario</div>
       </div>
       <div class="banner banner-interest">
-        <h2 id="titleBanner2">¿Te interesa?</h2>
-        <p id="textBanner2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a id="urlBanner2" href="#">Contribute</a>
+        <div id="titleBanner2"></div>
+        <div id="textBanner2"></div>
+        <div id="urlBanner2">Contribute</div>
       </div>
     </div>
     <script type="text/javascript">
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
-	var titlebanner1 = prefs.getString("titlebanner1");
-	var textbanner1 = prefs.getString("textbanner1");
+	var titlebanner1 = prefs.getString("titleBanner1");
+	var textbanner1 = prefs.getString("textBanner1");
 	var urlbanner1 = prefs.getString("urlbanner1");
 	var urlimagebanner1 = prefs.getString("urlimagebanner1");
-	var titlebanner2 = prefs.getString("titlebanner2");
-	var textbanner2 = prefs.getString("textbanner2");
+	var titlebanner2 = prefs.getString("titleBanner2");
+	var textbanner2 = prefs.getString("textBanner2");
 	var urlbanner2 = prefs.getString("urlbanner2");
 	var urlimagebanner2 = prefs.getString("urlimagebanner2");
 	
-	document.getElementById("titleBanner1").innerHTML = titlebanner1;
-	document.getElementById("textBanner1").innerHTML = textbanner1;
-	document.getElementById("urlBanner1").innerHTML = urlbanner1;
+	document.getElementById("titleBanner1").innerHTML = '<h2>'+titlebanner1+'</h2>';
+	document.getElementById("textBanner1").innerHTML = '<p>'+textbanner1+'</p>';
+	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'"></a>';
 	document.getElementById("banner banner-schedule").style.background ='background-image: url("'+urlimagebanner1+'")no-repeat';
-	document.getElementById("titleBanner2").innerHTML = titlebanner2;
-	document.getElementById("textBanner2").innerHTML = textbanner2;
-	document.getElementById("urlBanner2").innerHTML = urlbanner2;
+	document.getElementById("titleBanner2").innerHTML = '<h2>'+titlebanner2+'</h2>';
+	document.getElementById("textBanner2").innerHTML = '<p>'+textbanner2+'</p>';
+	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'"></a>';
 	document.getElementById("banner banner-interest").style.background ='background-image: url("'+urlimagebanner2+'")no-repeat';
 	
   </script>
