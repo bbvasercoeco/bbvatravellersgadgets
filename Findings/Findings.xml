@@ -310,16 +310,16 @@
 		
       switch(topicName)
       {
-        case 'Security': var classname="brown";break;
-        case 'Banca':  var classname="green";break;
-        case 'Scouting':  var classname="brown";break;
-        case 'Mobility':  var classname="brown";break;
-        case 'Boundaries':  var classname="blue";break;
-        case 'Technology':  var classname="brown";break;
-        case 'Innovation':  var classname="pink";break;
-        case 'Enterprise 2.0': var classname="brown";break;
-        case 'Payments':  var classname="brown";break;
-        default: var classname="brown";break;
+         case 'Security': var classname="green2";break;
+                case 'Banca':  var classname="brown";break;
+                case 'Scouting':  var classname="green";break;
+                case 'Mobility':  var classname="blue";break;
+                case 'Boundaries':  var classname="pink";break;
+                case 'Technology':  var classname="blue2";break;
+                case 'Innovation':  var classname="brown2";break;
+                case 'Enterprise 2.0': var classname="blue3";break;
+                case 'Payments':  var classname="green3";break;
+                default: var classname="brown";break;
       }
 		
       html += '<div class="blockFinding">';
