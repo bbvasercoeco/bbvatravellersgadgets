@@ -104,7 +104,7 @@ margin-bottom:25px;
 		font-style: normal;
 		font-size:11px;
 		color:#ababab;
-		fon-weight: bold;
+		font-weight: bold;
 		text-decoration:none;		
 		text-transform: capitalize;
 		font-family:arial, sans-serif;
@@ -121,7 +121,7 @@ margin-bottom:25px;
     <div id="titulo"></div>
 	<div id="title-crumbs">breadcrumbs</div>
 	<script type="text/javascript">
-	console.debug('version 1');
+	console.debug('version 2');
 	 var gadgetHelper = null;
      var prefs = new gadgets.Prefs();  // User preferences
 	 var titulo = prefs.getString("pageTitle");
