@@ -200,7 +200,7 @@ color: white;
         padding: 0;
       }
       .banner a {
-        color: #000;
+        color: #000 !important;
         font-size: 14px;
         font-weight: bold;
         left: 11px;
