@@ -127,7 +127,7 @@ margin-bottom:25px;
 	 var size = prefs.getInt("sizeTitle");
 	
 	 document.getElementById("titulo").innerHTML ='<h2>'+titulo+'<span>'+titulodestacado+'</span></h2>';
-	 document.getElementById("titulo").style.fontSize = size;
+	 document.getElementById("titulo").getElementsByTagName('h2').style.fontSize = size;
 	 gadgets.util.registerOnLoadHandler(showBreadcrumbs);
 	 		
 	 
