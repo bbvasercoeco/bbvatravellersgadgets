@@ -175,42 +175,7 @@ color: white;
       }
       .finding .footer a.more-link:hover {
         text-decoration: underline;
-      }
-	  //JMC
-body, td, div, span, p {
-margin-bottom:25px;
-}
- #title-crumbs {
-			font-size:12px;
-			color:#3F78B2;
-			text-transform: capitalize;
-			margin-top: 7px;
-			margin-bottom:25px;
-		}
-	a.linkBreadCrumb,
-	a:visited.linkBreadCrumb {
-		fon-weight: normal;
-		font-size:12px;
-		color:#3F78B2;
-		text-decoration:none;
-		text-transform: capitalize;
-	}
-	a:hover.linkBreadCrumb,
-	a:active.linkBreadCrumb {
-		font-style: normal;
-		font-size:12px;
-		color:#009EE5;
-		fon-weight: normal;
-		text-decoration:none;		
-		text-transform: capitalize;
-	} 
-	.currentBreadCrumb {
-		fon-weight: bold;
-		font-size:12px;
-		color:#009EE5;
-		text-decoration:none;
-		text-transform: capitalize;		
-	}		
+      }	
     </style>
 
     <div id="home"></div><div id="all"></div>
@@ -225,10 +190,7 @@ margin-bottom:25px;
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
       var urlTable = prefs.getString("_table_query_url");
-      var situacion = gadgets.util.getUrlParameters()["parent"].split("/");
-	  if(situacion.indexOf('coming-events')> -1){
-	  _IG_RegisterOnloadHandler(showBreadcrumbs);
-	  }
+     
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
       function loadVisualizationAPI()
