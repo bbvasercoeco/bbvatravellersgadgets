@@ -37,7 +37,7 @@
 			 <tr>       
                 <td>
 					<form name="myForm">
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="changeBack('textBanner1')"></textarea> 
+                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> 
 					</form>
                 </td>
             </tr>
@@ -90,16 +90,10 @@
             {	
 				
                 prefs.set(variable,document.getElementById(variable).value);
-				
+				if (variable == 'textBanner1'){prefs.set(document.getElementById(variable).defaultvalue,document.getElementById(variable).value);
 			
             } 
-			  function changeBack(variable)
-            {	
-				  document.getElementById(variable).defaultValue = document.getElementById(variable).value;
-              //  document.myForm.myTextArea.value = document.myForm.myTextArea.defaultValue;
-				
 			
-            } 
 			
             gadgets.window.adjustHeight();
         </script>   
