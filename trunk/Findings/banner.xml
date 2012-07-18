@@ -37,7 +37,8 @@
 			 <tr>       
                 <td>
 					<form name="myForm">
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> 
+                    //Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> 
+					Text of Banner1: <input  size="300" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"></textarea> 
 					</form>
                 </td>
             </tr>
