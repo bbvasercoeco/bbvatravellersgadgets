@@ -107,21 +107,47 @@
 
   }
 
-  .blockFinding .blockData .brown {
-    background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 9px no-repeat;
-  }
 
-  .blockFinding .blockData .green {
-    background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green.png) right 9px no-repeat;
-  }
 
-  .blockFinding .blockData .blue {
-    background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png) right 9px no-repeat;
-  }
 
-  .blockFinding .blockData .pink {
-    background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
-  }
+
+       .brown {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 9px no-repeat;
+    }
+
+   .green {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green.png) right 9px no-repeat;
+    }
+
+    .blue {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png) right 9px no-repeat;
+    }
+
+     .brown2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown2.png) right 9px no-repeat;
+    }
+
+   .green2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green2.png) right 9px no-repeat;
+    }
+
+    .blue2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue2.png) right 9px no-repeat;
+    }
+
+.green3 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green3.png) right 9px no-repeat;
+    }
+
+    .blue3 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue3.png) right 9px no-repeat;
+    }
+
+     .pink {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
+    }
+
+
 
   .blockFinding .blockData .label-summary {
     padding-top: 0px;
