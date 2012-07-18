@@ -115,6 +115,26 @@ height: 25px;
         background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png) right 9px no-repeat;
     }
 
+     .brown2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown2.png) right 9px no-repeat;
+    }
+
+   .green2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green2.png) right 9px no-repeat;
+    }
+
+    .blue2 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue2.png) right 9px no-repeat;
+    }
+
+.green3 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green3.png) right 9px no-repeat;
+    }
+
+    .blue3 {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue3.png) right 9px no-repeat;
+    }
+
      .pink {
         background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
     }
@@ -191,15 +211,15 @@ line-height: 35px;
           
             switch(topicName)
             {
-                case 'Security': var classname="brown";break;
-                case 'Banca':  var classname="green";break;
-                case 'Scouting':  var classname="brown";break;
-                case 'Mobility':  var classname="brown";break;
-                case 'Boundaries':  var classname="blue";break;
-                case 'Technology':  var classname="brown";break;
-                case 'Innovation':  var classname="pink";break;
-                case 'Enterprise 2.0': var classname="brown";break;
-                case 'Payments':  var classname="brown";break;
+                case 'Security': var classname="green2";break;
+                case 'Banca':  var classname="brown";break;
+                case 'Scouting':  var classname="green";break;
+                case 'Mobility':  var classname="blue";break;
+                case 'Boundaries':  var classname="pink";break;
+                case 'Technology':  var classname="blue2";break;
+                case 'Innovation':  var classname="brown2";break;
+                case 'Enterprise 2.0': var classname="blue3";break;
+                case 'Payments':  var classname="green3";break;
                 default: var classname="brown";break;
             }
            
