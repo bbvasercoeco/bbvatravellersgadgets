@@ -215,6 +215,7 @@ margin-bottom:25px;
 
     <div id="home"></div><div id="all"></div>
 	<div id="ceventsinterna"></div>
+	<div id="title-crumbs">breadcrumbs</div>
     <div id="comingevents"></div>
 
     <script type="text/javascript">
