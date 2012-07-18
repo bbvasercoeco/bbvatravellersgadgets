@@ -62,7 +62,7 @@
     <style type="text/css">
       
       body {background-color:transparent;}
-      #titulo h2 {
+      #titulo h2{
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
         font-weight: normal;
@@ -71,10 +71,10 @@
         color:#3B3B3B;
         box-shadow: 0px 1px white;
       }
-      #titulo h2 span {
+      #titulo h2 span{
         font-family: "BBVA Web Semibold", arial, sans-serif;
         font-weight: bold;
-		margin-left:5px;
+		margin-left:20px;
       }
       
  //JMC
@@ -123,7 +123,7 @@ margin-bottom:25px;
 	 var titulodestacado = prefs.getString("titleProminent");
 	 var size = prefs.getInt("sizeTitle");
 	
-	 document.getElementById("titulo").innerHTML ='<h2>'+titulo+'<span>' +titulodestacado+'</span></h2>';
+	 document.getElementById("titulo").innerHTML ='<h2>'+titulo+'<span>'+titulodestacado+'</span></h2>';
 	 document.getElementById("titulo").style.fontSize = size;
 	 gadgets.util.registerOnLoadHandler(showBreadcrumbs);
 	 		
