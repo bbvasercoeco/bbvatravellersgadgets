@@ -83,9 +83,9 @@ body, td, div, span, p {
 margin-bottom:25px;
 }
  #title-crumbs {
-			font-size:12px;
+			font-size:11px;
 			font-family: "BBVA Web Semibold", arial, sans-serif;
-			color:#acacac;
+			color:#ababab;
 			margin-top: 7px;
 			margin-bottom:25px;
 		}
@@ -93,7 +93,7 @@ margin-bottom:25px;
 	a:visited.linkBreadCrumb {
 		fon-weight: normal;
 		font-size:11px;
-		color:#acacac;
+		color:#ababab;
 		text-decoration:none;
 		text-transform: capitalize;
 	}
@@ -101,15 +101,15 @@ margin-bottom:25px;
 	a:active.linkBreadCrumb {
 		font-style: normal;
 		font-size:11px;
-		color:#acacac;
+		color:#ababab;
 		fon-weight: normal;
 		text-decoration:none;		
 		text-transform: capitalize;
 	} 
 	.currentBreadCrumb {
 		fon-weight: bold;
-		font-size:12px;
-		color:#626262;
+		font-size:11px;
+		color:#616161;
 		text-decoration:none;
 		text-transform: capitalize;		
 	}		
