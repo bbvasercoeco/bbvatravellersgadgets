@@ -148,7 +148,7 @@
 	document.getElementById("titleBanner1").innerHTML = '<h2>'+titlebanner1+'</h2>';
 	document.getElementById("textBanner1").innerHTML = '<p>'+textbanner1+'</p>';
 	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'"></a>';
-	document.getElementById("banner banner-schedule").style.background ='background-image: url("'+urlimagebanner1+'")no-repeat';
+	document.getElementById("banner banner-schedule").innerHTML ='style:background-image: url("'+urlimagebanner1+'")no-repeat';
 	document.getElementById("titleBanner2").innerHTML = '<h2>'+titlebanner2+'</h2>';
 	document.getElementById("textBanner2").innerHTML = '<p>'+textbanner2+'</p>';
 	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'"></a>';
