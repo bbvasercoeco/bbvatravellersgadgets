@@ -98,21 +98,16 @@ height: 25px;
     }
 
     .label-topicName {
-
-    position: relative;
-top: -33px;
-width: 80px;
-left: 379px;
 height: 35px;
+width: 200px;
+margin-left: 258px;
     }
 
  .label-topicName span {
-    position: relative;
-top: -48px;
-color: white;
-font-size: 11px;
+    color: brown;
+font-size: 10px;
 font-weight: normal;
-left: 20px;
+margin-left: 138px;
  }
 
  .blockData {
