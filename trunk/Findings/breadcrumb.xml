@@ -56,7 +56,6 @@
       #titulo h2 {
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
-        font-size: 53px;
         font-weight: normal;
         margin: 0 0 5px 0;
         padding-bottom: 0px;
