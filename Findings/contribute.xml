@@ -17,6 +17,7 @@
 }
 .banner h2 {
   border: none;
+  box-shadow: none;
   font-size: 29px;
   font-weight: bold;
   line-height: 0.9em;
