@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="breadcrumb Monthly Summary"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
+
+
+  <Content type="html">
+    <![CDATA[
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+    <style type="text/css">
+      
+      body {background-color:transparent;}
+      h2 {
+        border-bottom: 1px solid #cacaca;
+        font-family: "BBVA Web Light", arial, sans-serif;
+        font-size: 53px;
+        font-weight: normal;
+        margin: 0 0 10px 0;
+        padding-bottom: 13px;
+        color:#3B3B3B;
+        box-shadow: 0px 1px white;
+      }
+      h2 span {
+        font-family: "BBVA Web Semibold", arial, sans-serif;
+        font-weight: bold;
+      }
+      
+ //JMC
+body, td, div, span, p {
+margin-bottom:25px;
+}
+ #title-crumbs {
+			font-size:12px;
+			color:#3F78B2;
+			text-transform: capitalize;
+			margin-top: 7px;
+			margin-bottom:25px;
+		}
+	a.linkBreadCrumb,
+	a:visited.linkBreadCrumb {
+		fon-weight: normal;
+		font-size:12px;
+		color:#3F78B2;
+		text-decoration:none;
+		text-transform: capitalize;
+	}
+	a:hover.linkBreadCrumb,
+	a:active.linkBreadCrumb {
+		font-style: normal;
+		font-size:12px;
+		color:#009EE5;
+		fon-weight: normal;
+		text-decoration:none;		
+		text-transform: capitalize;
+	} 
+	.currentBreadCrumb {
+		fon-weight: bold;
+		font-size:12px;
+		color:#009EE5;
+		text-decoration:none;
+		text-transform: capitalize;		
+	}		
+    </style>
+
+    <h2>Monthly<span>Summary</span></h2>
+	<div id="title-crumbs">breadcrumbs</div>
+	<script type="text/javascript">
+	 var gadgetHelper = null;
+     var prefs = new _IG_Prefs(); // User preferences
+	 _IG_RegisterOnloadHandler(showBreadcrumbs);
+     
+	function indice (parametros, rootSite)
+	{	
+		for(var i=0; i<parametros.length; i++)
+		{
+			if(parametros[i]== rootSite)
+			{
+				return i;
+			} 
+		}	
+	}
+	
+	function showBreadcrumbs()
+	{
+		// Construct the breadcrumb string
+		//var rootSite = prefs.getString("VarrootSite");
+		var rootSite = "home";
+		var s ="";
+		var i,j,k = 0;
+		var base = "";
+		var barra = "/";
+		var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
+		var indexroot = indice(parametros, rootSite);   
+		
+		for (i=0;i<parametros.length;i++)
+		{				
+			if(i<indexroot)
+			{
+				base = base + parametros[i]+ "/";				
+			}
+			if (parametros[i] == rootSite) 
+			{	
+				s = "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>home</a>";
+			
+				for(j=i+1;j<parametros.length;++j)
+				{   
+					var aux = parametros[j].replace(/-/g," ");						
+					
+					if (aux.indexOf("?")>1)
+					{
+						var auxMov = aux.split("?");
+						var litEnlace = auxMov[0];
+					}
+					else
+					{							
+						if (aux.indexOf("ficha")>-1)
+						{								
+							var litEnlace = "Ficha";
+						}
+						else if (aux.indexOf("detalle proyecto")>-1)
+						{								
+							var litEnlace = "Detalle Proyecto";
+						}
+						else if (aux.indexOf("contactos")>-1)
+						{
+							var litEnlace = "Contactos";
+						}
+						else
+						{								
+							var litEnlace = aux;
+						}
+					}
+					if (j<parametros.length-1)
+					{
+						s = s + "<a class=\'linkBreadCrumb\' href=\'"+ base  + rootSite + barra  + parametros[j] + barra + "\' target=\'_parent\' title=\'" + litEnlace + "\'> >&nbsp;" + litEnlace + "</a>";
+						rootSite = rootSite + "/" + parametros[j];
+					}
+					else
+					{						
+						s = s + " ><span class=\'currentBreadCrumb\' + parametros[j] + barra + \' >&nbsp;" + litEnlace + "</span>";
+					}
+				}
+			}
+		}
+		document.getElementById("title-crumbs").innerHTML = s;     
+	}
+    </script>
+    ]]>
+  </Content>
+</Module>
