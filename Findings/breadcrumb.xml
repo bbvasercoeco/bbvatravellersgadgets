@@ -88,6 +88,7 @@ margin-bottom:25px;
 			color:#ababab;
 			margin-top: 7px;
 			margin-bottom:25px;
+			fon-weight: bold;
 		}
 	a.linkBreadCrumb,
 	a:visited.linkBreadCrumb {
