@@ -209,7 +209,7 @@ color: white;
 		
 		if(situation.indexOf('coming-events')== -1){
 		document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
-		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
+		document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View coming events</a></div>';
 
 		var querytosend = "select max(D),B,P,V,W,X,H,A group by B,P,V,W,X,H,A order by max(D)  desc limit 3"; 
 		}else{
@@ -268,13 +268,13 @@ color: white;
           html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
 		  html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';
 		  if(data.getValue(i,6)!=""){
-          html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + ' <a style="color:#094691" href="'+data.getValue(i,6)+ '">Events website</a></div>';
+          html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + '></div>';
 		  }else{
 		  html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';
 		  }
           html +='<div class="footer">';
           html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-          html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">More info</a></div>';
+          html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
           html +='</div>';
           html +='</div>';
           html +='</div>';
