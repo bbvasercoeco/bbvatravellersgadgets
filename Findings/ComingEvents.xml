@@ -318,7 +318,7 @@ color: white;
 			}
 			
 			var html = "";
-			html +='<div id="comingevent" class="finding" onclick="javascript:alert(\''+ data.getValue(i,3) +'\');">';
+			html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\');">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
 			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
