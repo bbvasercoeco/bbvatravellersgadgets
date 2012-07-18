@@ -176,6 +176,41 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
+	  //JMC
+body, td, div, span, p {
+margin-bottom:25px;
+}
+ #title-crumbs {
+			font-size:12px;
+			color:#3F78B2;
+			text-transform: capitalize;
+			margin-top: 7px;
+			margin-bottom:25px;
+		}
+	a.linkBreadCrumb,
+	a:visited.linkBreadCrumb {
+		fon-weight: normal;
+		font-size:12px;
+		color:#3F78B2;
+		text-decoration:none;
+		text-transform: capitalize;
+	}
+	a:hover.linkBreadCrumb,
+	a:active.linkBreadCrumb {
+		font-style: normal;
+		font-size:12px;
+		color:#009EE5;
+		fon-weight: normal;
+		text-decoration:none;		
+		text-transform: capitalize;
+	} 
+	.currentBreadCrumb {
+		fon-weight: bold;
+		font-size:12px;
+		color:#009EE5;
+		text-decoration:none;
+		text-transform: capitalize;		
+	}		
     </style>
 
     <div id="home"></div><div id="all"></div>
@@ -190,7 +225,10 @@ color: white;
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
       var urlTable = prefs.getString("_table_query_url");
-
+      var situacion = gadgets.util.getUrlParameters()["parent"].split("/");
+	  if(situacion.indexOf('coming-events')> -1){
+	  _IG_RegisterOnloadHandler(showBreadcrumbs);
+	  }
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
       function loadVisualizationAPI()
@@ -287,7 +325,81 @@ color: white;
 		 
         }
      }
-
+	function indice (parametros, rootSite)
+	{	
+		for(var i=0; i<parametros.length; i++)
+		{
+			if(parametros[i]== rootSite)
+			{
+				return i;
+			} 
+		}	
+	}
+	
+	function showBreadcrumbs()
+	{
+		// Construct the breadcrumb string
+		//var rootSite = prefs.getString("VarrootSite");
+		var rootSite = "home";
+		var s ="";
+		var i,j,k = 0;
+		var base = "";
+		var barra = "/";
+		var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
+		var indexroot = indice(parametros, rootSite);   
+		
+		for (i=0;i<parametros.length;i++)
+		{				
+			if(i<indexroot)
+			{
+				base = base + parametros[i]+ "/";				
+			}
+			if (parametros[i] == rootSite) 
+			{	
+				s = "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>home</a>";
+			
+				for(j=i+1;j<parametros.length;++j)
+				{   
+					var aux = parametros[j].replace(/-/g," ");						
+					
+					if (aux.indexOf("?")>1)
+					{
+						var auxMov = aux.split("?");
+						var litEnlace = auxMov[0];
+					}
+					else
+					{							
+						if (aux.indexOf("ficha")>-1)
+						{								
+							var litEnlace = "Ficha";
+						}
+						else if (aux.indexOf("detalle proyecto")>-1)
+						{								
+							var litEnlace = "Detalle Proyecto";
+						}
+						else if (aux.indexOf("contactos")>-1)
+						{
+							var litEnlace = "Contactos";
+						}
+						else
+						{								
+							var litEnlace = aux;
+						}
+					}
+					if (j<parametros.length-1)
+					{
+						s = s + "<a class=\'linkBreadCrumb\' href=\'"+ base  + rootSite + barra  + parametros[j] + barra + "\' target=\'_parent\' title=\'" + litEnlace + "\'> >&nbsp;" + litEnlace + "</a>";
+						rootSite = rootSite + "/" + parametros[j];
+					}
+					else
+					{						
+						s = s + " ><span class=\'currentBreadCrumb\' + parametros[j] + barra + \' >&nbsp;" + litEnlace + "</span>";
+					}
+				}
+			}
+		}
+		document.getElementById("title-crumbs").innerHTML = s;     
+	}
 
 
     </script>
