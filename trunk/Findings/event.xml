@@ -102,7 +102,7 @@ h2 {
 
     var query = new google.visualization.Query(urlTable, opts);
     var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-	alert(topic[1].replace("+"/g," "));
+	alert(topic[1].replaceAll("+"," "));
     var querytosend = "select max(D),B,C,L,N,O,P,S,Z,AA,AB,AC where B like '"+topic[1]+"'group by B,C,L,N,O,P,S,Z,AA,AB,AC order by max(D)  desc ";
       query.setQuery(querytosend);
     query.send(handleQueryResponse);
