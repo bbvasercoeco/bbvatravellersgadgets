@@ -140,7 +140,7 @@
         for(var i = 0; i < filas; i++) 
         {
 
-            var topicname = data.getValue(i,1);
+            var topicName = data.getValue(i,1);
             var html = "";
           
             switch(topicName)
