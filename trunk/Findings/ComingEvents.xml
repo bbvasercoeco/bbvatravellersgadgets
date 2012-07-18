@@ -42,10 +42,10 @@
         font-weight:normal;
 	  }
 	    #all {
-		padding-left:866px;
-		font-size:12px;
-		font-family:Arial;
-		height:30px;
+			padding-left: 840px;
+			font-size: 12px;
+			font-family: Arial;
+			height: 30px;
 		}
 
 	    #all a{
@@ -221,7 +221,7 @@ color: white;
     </style>
 
     <div id="home"></div><div id="all"></div>
-    <div class="banners-container">
+    <!--<div class="banners-container">
       <div class="banner banner-schedule">
         <h2>Calendario</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -232,7 +232,7 @@ color: white;
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <a href="#">Contribute</a>
       </div>
-    </div>
+    </div>-->
     <div id="ceventsinterna"></div>	
     <div id="comingevents"></div>
 
@@ -295,10 +295,12 @@ color: white;
         month[10]="Nov";
         month[11]="Dec";
 
-        for(var i = 0; i < filas; i++) {
-		 var fecha = new Date(data.getValue(i,0));
-		 var topicname = data.getValue(i,7);
-		 switch(topicname){
+        for(var i = 0; i < filas; i++) 
+		{
+			var fecha = new Date(data.getValue(i,0));
+			var topicname = data.getValue(i,7);
+			switch(topicname)
+			{
 				case 'Security': var classname="brown";break;
                 case 'Banca':  var classname="green";break;
                 case 'Scouting':  var classname="brown";break;
@@ -310,31 +312,35 @@ color: white;
                 case 'Payments':  var classname="brown";break;
                 default: var classname="brown";break;
 			}
-          var html = "";
-          html +='<div id="comingevent" class="finding">';
-          html +='<div class="date">';
-          html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
-          html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
-          html +='<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
-          html +='</div>';
-          html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
-          html +='<div class="text">';
-          html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
-		  html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';
-		  if(data.getValue(i,6)!=""){
-          html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + '></div>';
-		  }else{
-		  html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';
-		  }
-          html +='<div class="footer">';
-          html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-          html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
-          html +='</div>';
-          html +='</div>';
-          html +='</div>';
-          document.getElementById("comingevents").innerHTML += html;
-		  
-		 
+			
+			var html = "";
+			html +='<div id="comingevent" class="finding">';
+			html +='<div class="date">';
+			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
+			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
+			html +='<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
+			html +='</div>';
+			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
+			html +='<div class="text">';
+			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
+			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';
+			
+			if(data.getValue(i,6)!="")
+			{
+				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + '></div>';
+			}
+			else
+			{
+				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';
+			}
+			
+			html +='<div class="footer">';
+			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
+			html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
+			html +='</div>';
+			html +='</div>';
+			html +='</div>';
+			document.getElementById("comingevents").innerHTML += html;
         }
      }
 	
