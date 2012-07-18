@@ -243,7 +243,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('14 ComingEvents.xml');
+      console.debug('15 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -318,7 +318,7 @@ color: white;
 			}
 			
 			var html = "";
-			html +='<div id="comingevent" class="finding" onclick="javascript:abrir("'+ data.getValue(i,3) +'");">';
+			html +='<div id="comingevent" class="finding" onclick="javascript:alert("'+ data.getValue(i,3) +'");">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
 			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
@@ -327,17 +327,8 @@ color: white;
 			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
 			html +='<div class="text">';
 			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
-			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';
-			
-			if(data.getValue(i,6)!="")
-			{
-				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2) + '></div>';
-			}
-			else
-			{
-				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';
-			}
-			
+			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
+			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
 			html +='<div id="urlmoreinfo"><a target="_blank" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
