@@ -121,6 +121,7 @@ line-height: 35px;
 			color:#3F78B2;
 			text-transform: capitalize;
 			margin-top: 7px;
+			margin-bottom:15px;
 		}
 	a.linkBreadCrumb,
 	a:visited.linkBreadCrumb {
