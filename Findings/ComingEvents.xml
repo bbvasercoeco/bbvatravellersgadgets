@@ -350,6 +350,7 @@ color: white;
 	
 		function abrir(url)
 		{
+			alert(url);
 			window.open(url);
 		}
     </script>
