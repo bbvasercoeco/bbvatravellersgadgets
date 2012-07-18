@@ -36,7 +36,7 @@
             </tr>
 			 <tr>       
                 <td>
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1"  onchange="registra('textBanner1')"><script>document.getElementById('textBanner1').value</script></textarea>                  
+                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" value="<script>document.getElementById('textBanner1').value</script>" onchange="registra('textBanner1')"></textarea>                  
                 </td>
             </tr>
 			<tr>       
@@ -148,6 +148,7 @@
     <script type="text/javascript">
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
+	document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
 	var titlebanner1 = prefs.getString("titleBanner1");
 	var textbanner1 = prefs.getString("textBanner1");
 	var urlbanner1 = prefs.getString("urlbanner1");
