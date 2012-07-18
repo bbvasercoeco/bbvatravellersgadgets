@@ -288,7 +288,7 @@ float: right;
 			html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
 			html += '<div class="more-link">';
-			html += '<a href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event" target="_top">More Info</a>';
+			html += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'>More Info</a>';
 			html += '</div>';
 
 			html += '</div>';
