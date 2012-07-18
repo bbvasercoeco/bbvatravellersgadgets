@@ -84,14 +84,15 @@ margin-bottom:25px;
 }
  #title-crumbs {
 			font-size:11px;
-			font-family: "BBVA Web Semibold", arial, sans-serif;
+			font-family:arial, sans-serif;
 			color:#ababab;
 			margin-top: 7px;
 			margin-bottom:25px;
 		}
 	a.linkBreadCrumb,
 	a:visited.linkBreadCrumb {
-		fon-weight: normal;
+		fon-weight: bold;
+		font-family:arial, sans-serif;
 		font-size:11px;
 		color:#ababab;
 		text-decoration:none;
@@ -102,9 +103,10 @@ margin-bottom:25px;
 		font-style: normal;
 		font-size:11px;
 		color:#ababab;
-		fon-weight: normal;
+		fon-weight: bold;
 		text-decoration:none;		
 		text-transform: capitalize;
+		font-family:arial, sans-serif;
 	} 
 	.currentBreadCrumb {
 		fon-weight: bold;
