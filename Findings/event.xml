@@ -1,145 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-	<ModulePrefs title="events.xml información del evento."
-		description=""
-		author_affiliation="Capgemini">
+  <ModulePrefs title="events.xml información del evento."
+    description=""
+    author_affiliation="Capgemini">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
   </ModulePrefs>
-  
+
   <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
-  
+
   <Content type="html">
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-
-<style type="text/css">       
-img.loading {
-        margin: 5px 0 0 29px;
-      }
-	.title_page{
-		font-weight:bold;
-		font-family: arial,sans-serif;
-		font-size:15px;
-	}
-	.title_summary{
-		font-weight:bold;
-		font-family: arial,sans-serif;
-		font-size:32px;
-		margin-bottom:15px;
-	}	  
-	.summary{
-		font-family: arial,sans-serif;
-		font-size:12px;
-		margin-bottom:15px;
-	}
-	.fecha_event{
-		font-family: arial,sans-serif;
-		font-weight:bold;
-		margin-bottom:25px;
-		font-size:13px;
-	}
-	.title_details{
-		font-weight:bold;
-		font-family: arial,sans-serif;
-		font-size:14px;
-		margin-bottom:15px;
-	}
-	.fecha,
-	.horario,
-	.lugar,
-	.inscripcion{
-		font-family: arial,sans-serif;
-	}
-	.fecha,
-	.horario,
-	.lugar,
-	.inscripcion span{
-		font-weight:bold;
-		font-family: arial,sans-serif;
-		font-size:14px;
-	}
-	.inscripcion{
-	margin-bottom:15px;
-	}
-	.userBBVA{
-	float:left;
-	font-family: arial,sans-serif;
-	}
-	.imageBBVA{
-	float:left;
-	width:55px;
-	height:55px;
-	margin-right:10px;
-	}
-	.nameBBVA{
-	float:left;
-	font-weight:bold;
-	font-size:14px;
-	margin-bottom:5px;
-	}
-	.rolBBVA{
-	float:left;
-	font-weight:bold;
-	font-size:13px;
-	margin-bottom:15px;
-	}
-	.summaryBBVA{
-	width:300px;
-	font-size:13px;
-	}
-	
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+<style type="text/css">
+#event {
+  color: #7a7a7a;
+  font-family: arial, sans-serif;
+  font-size: 12px;
+}
+h2,
+h3,
+.title-page,
+.event-date {
+  color: #3b3b3b;
+}
+.title-page {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.event-date {
+  font-size: 12px;
+  font-weight: bold;
+}
+h2 {
+  font-family: "BBVA Web Light", arial, sans-serif;
+  font-size: 32px;
+  margin: 20px 0;
+}
+.event-detail {
+  border-bottom: 1px solid #b1b1b1;
+  border-top: 1px solid #b1b1b1;
+  margin-top: 30px;
+  padding: 12px 5px 30px 5px;
+}
+.event-detail h3 {
+  margin: 0 0 15px 0;
+}
+.event-detail span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.user-bbva {
+  border-bottom: 1px solid #b1b1b1;
+  overflow: hidden;
+  padding: 14px 5px 25px 2px;
+}
+.user-bbva img {
+  float: left;
+  margin: 0 17px 5px 0;
+}
+.user-bbva h3 {
+  margin: 0;
+}
+.user-bbva .role {
+  color: #626262;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
 </style>
 
-<div id="event">
-      
-	
+<div id="event"></div>
 
-</div>
-
-    
 <script type="text/javascript">
-      
-	console.debug('37 findings.xml'); 
-	
-    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
-	
-	var gadgetHelper = null;  
-	var prefs = new _IG_Prefs(); // User preferences      
-	var urlTable = prefs.getString("_table_query_url");    
-            
-    _IG_RegisterOnloadHandler(loadVisualizationAPI);
-      
-    function loadVisualizationAPI()
-	{
-		google.load("visualization", "1", {"packages": ["table"]});
-		google.setOnLoadCallback(sendQuery);
-	}
- 
-	function sendQuery()
-	{
-		gadgetHelper = new google.visualization.GadgetHelper();
-		
-		var query = gadgetHelper.createQueryFromPrefs(prefs);  
-		
-		var opts = {dataType:'jsonp'};     
 
-		var query = new google.visualization.Query(urlTable, opts);  
-		var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-		var querytosend = "select max(D),B,C,L,N,O,P,S,Z,AA,AB,AC where B like '%"+topic[1]+"%'group by B,C,L,N,O,P,S,Z,AA,AB,AC order by max(D)  desc ";
-	    query.setQuery(querytosend);        
-		query.send(handleQueryResponse);
-	}
-	
+  console.debug('37 findings.xml');
+
+    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
+
+  var gadgetHelper = null;
+  var prefs = new _IG_Prefs(); // User preferences
+  var urlTable = prefs.getString("_table_query_url");
+
+    _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+    function loadVisualizationAPI()
+  {
+    google.load("visualization", "1", {"packages": ["table"]});
+    google.setOnLoadCallback(sendQuery);
+  }
+
+  function sendQuery()
+  {
+    gadgetHelper = new google.visualization.GadgetHelper();
+
+    var query = gadgetHelper.createQueryFromPrefs(prefs);
+
+    var opts = {dataType:'jsonp'};
+
+    var query = new google.visualization.Query(urlTable, opts);
+    var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+    var querytosend = "select max(D),B,C,L,N,O,P,S,Z,AA,AB,AC where B like '%"+topic[1]+"%'group by B,C,L,N,O,P,S,Z,AA,AB,AC order by max(D)  desc ";
+      query.setQuery(querytosend);
+    query.send(handleQueryResponse);
+  }
+
     function handleQueryResponse(response)
-    {	 
-		if (!gadgetHelper.validateResponse(response)) 
-		{ 
-			return; 
-		}
-		data = response.getDataTable();	
-		var month = new Array();
+    {
+    if (!gadgetHelper.validateResponse(response))
+    {
+      return;
+    }
+    data = response.getDataTable();
+    var month = new Array();
         month[0]="Enero";
         month[1]="Febrero";
         month[2]="Marzo";
@@ -152,33 +127,30 @@ img.loading {
         month[9]="Octubre";
         month[10]="Noviembre";
         month[11]="Diciembre";
-			data = response.getDataTable();		
-		    var fecha = new Date(data.getValue(0,0));
-			var time1 = new Date(data.getValue(0,8));
-			var time2 = new Date(data.getValue(0,9));
-			var html = "";
-			html +='<div class="title_page">'+data.getValue(0,1)+'</div>';
-			html +='<div class="fecha_event">'+fecha.getDate()+' "/" '+month[fecha.getMonth()]+' "/" '+fecha.getFullYear()+'</div>';
-			html += '<div class="title_summary">'+data.getValue(0,7)+'</div>';
-			html += '<div class="summary">'+data.getValue(0,6)+'</div><hr>';
-			html += '<div class="title_details">Event detail</div>';
-			html += '<div class="fecha"><span>FECHA:</span> '+fecha.getDate()+' "de" '+month[fecha.getMonth()]+' "de" '+fecha.getFullYear()+'</div>';
-			html += '<div class="horario"><span>HORARIO:</span> '+time1.getHours()+'":"'+time1.getMinutes()+' "-" '+time2.getHours()+'":"'+time2.getMinutes()+' "horas"</div>';
-			html += '<div class="lugar"><span>LUGAR:</span> '+data.getValue(0,2)+'</div>';
-			html += '<div class="inscripcion"><span>INSCRIPCIÓN:</span> '+data.getValue(0,10)+'</div><hr>';
-			html += '<div class="userBBVA">';
-			html += '<div class="imageBBVA"><img src="'+data.getValue(0,5)+'"/></div>';
-			html += '<div class="nameBBVA">'+data.getValue(0,3)+'</div>';
-			html += '<div class="rolBBVA">'+data.getValue(0,4)+'</div>';
-			html += '<div class="summaryBBVA">'+data.getValue(0,11)+'</div><hr>';
-			html += '</div>';
-			document.getElementById("event").innerHTML += html;
-        
-		
+      data = response.getDataTable();
+        var fecha = new Date(data.getValue(0,0));
+      var time1 = new Date(data.getValue(0,8));
+      var time2 = new Date(data.getValue(0,9));
+      var html = "";
+      html +='<div class="title-page">'+data.getValue(0,1)+'</div>';
+      html +='<div class="event-date">'+fecha.getDate()+' "/" '+month[fecha.getMonth()]+' "/" '+fecha.getFullYear()+'</div>';
+      html += '<h2>'+data.getValue(0,7)+'</h2>';
+      html += '<div class="summary">'+data.getValue(0,6)+'</div>';
+      html += '<div class="event-details">';
+      html += '<h3>Event detail</h3>';
+      html += '<div class="date-detail"><span>Fecha:</span> '+fecha.getDate()+' "de" '+month[fecha.getMonth()]+' "de" '+fecha.getFullYear()+'</div>';
+      html += '<div class="time"><span>Horario:</span> '+time1.getHours()+'":"'+time1.getMinutes()+' "-" '+time2.getHours()+'":"'+time2.getMinutes()+' "horas"</div>';
+      html += '<div class="place"><span>Lugar:</span> '+data.getValue(0,2)+'</div>';
+      html += '<div class="registration"><span>Inscripción:</span> '+data.getValue(0,10)+'</div>';
+      html += '</div>';
+      html += '<div class="user-bbva">';
+      html += '<div><img src="'+data.getValue(0,5)+'" /></div>';
+      html += '<h3>'+data.getValue(0,3)+'</h3>';
+      html += '<div class="role">'+data.getValue(0,4)+'</div>';
+      html += '<div class="summary">'+data.getValue(0,11)+'</div>';
+      html += '</div>';
+      document.getElementById("event").innerHTML += html;
     }
-      
-      
-      
     </script>
     ]]>
   </Content>
