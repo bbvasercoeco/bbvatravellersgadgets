@@ -36,7 +36,7 @@
             </tr>
 			 <tr>       
                 <td>
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1"  onchange="registra('textBanner1')">__UP_textBanner1_</textarea>                  
+                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1"  onchange="registra('textBanner1')"><script>document.getElementById('textBanner1').value</script></textarea>                  
                 </td>
             </tr>
 			<tr>       
