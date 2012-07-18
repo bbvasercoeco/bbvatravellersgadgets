@@ -36,7 +36,7 @@
             </tr>
 			 <tr>       
                 <td>
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')">Aquí tu texto para el Banner</textarea>                  
+                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onclick="registraArea('textBanner1')"></textarea>                  
                 </td>
             </tr>
 			<tr>       
@@ -90,7 +90,14 @@
                 prefs.set(variable,document.getElementById(variable).value);
 				
 			
-            }  
+            } 
+			  function registraArea(variable)
+            {	
+				
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            } 
 			
             gadgets.window.adjustHeight();
         </script>   
