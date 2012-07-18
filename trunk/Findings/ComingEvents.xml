@@ -113,6 +113,9 @@ color: white;
         height: 140px;
         margin-bottom: 16px;
         position: relative;
+		cursor:hand; 
+		cursor:pointer;
+		
       }
       .finding .date {
         background: #dff3ff;
@@ -240,7 +243,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('13 ComingEvents.xml');
+      console.debug('14 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -315,7 +318,7 @@ color: white;
 			}
 			
 			var html = "";
-			html +='<div id="comingevent" class="finding" onclick="javascript:abrir();">';
+			html +='<div id="comingevent" class="finding" onclick="javascript:abrir("'+ data.getValue(i,3) +'");">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
 			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
@@ -337,7 +340,7 @@ color: white;
 			
 			html +='<div class="footer">';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-			html +='<div id="urlmoreinfo"><a target="_parent" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
+			html +='<div id="urlmoreinfo"><a target="_blank" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			html +='</div>';
 			html +='</div>';
 			html +='</div>';
@@ -345,9 +348,9 @@ color: white;
         }
      }
 	
-		function abrir()
+		function abrir(url)
 		{
-			alert('abriendo');
+			window.open(url);
 		}
     </script>
     ]]>
