@@ -5,6 +5,8 @@
     author_affiliation="Capgemini">
     <Require feature="idi"/>
     <Require feature="locked-domain" />
+	<Require feature="dynamic-height"/>   
+	<Require feature="setprefs" />   
   </ModulePrefs>
 <UserPref name="pageTitle" display_name="Title Page" required="true" />
 <UserPref name="sizeTitle" display_name="Title Page Size" required="true" />
@@ -26,7 +28,7 @@
             </tr>
 			 <tr>       
                 <td>
-                    Size of Title: <input type="int" id="sizeTitle" value="__UP_sizeTitle__"   onchange="registra('sizeTitle')"/>                   
+                    Size of Title: <input type="number" id="sizeTitle" value="__UP_sizeTitle__"   onchange="registra('sizeTitle')"/>                   
                 </td>
             </tr>
   </table>	
@@ -36,6 +38,7 @@
             var prefs = new gadgets.Prefs();           
             function registra(variable)
             {	
+				
                 prefs.set(variable,document.getElementById(variable).value);
 				
 			
@@ -108,12 +111,15 @@ margin-bottom:25px;
 	<div id="title-crumbs">breadcrumbs</div>
 	<script type="text/javascript">
 	 var gadgetHelper = null;
-     var prefs = new _IG_Prefs(); // User preferences
+     var prefs = new gadgets.Prefs();  // User preferences
 	 var titulo = prefs.getString("pageTitle");
-	 var size = prefs.getInt("pageSize");
-	 document.getElementById('titulo').innerHTML ='<h2>'+titulo+'</h2>';
-	 document.getElementById('titulo').style.fontSize = size;
-	 _IG_RegisterOnloadHandler(showBreadcrumbs);
+	 var size = prefs.getInt("sizeTitle");
+	
+	 document.getElementById("titulo").innerHTML ='<h2>'+titulo+'</h2>';
+	 document.getElementById("titulo").style.fontSize = size;
+	 gadgets.util.registerOnLoadHandler(showBreadcrumbs);
+	 		
+	 
      
 	function indice (parametros, rootSite)
 	{	
