@@ -70,9 +70,11 @@
         text-align: right;
       }
       .topic .last-findings-link a {
-        color: #62b4e6;
+        color: #62B4E6;
         font-weight: bold;
         text-decoration: none;
+        font-size: 12px;
+        font-family: arial;
       }
       .topic .last-findings-link a:hover {
         text-decoration: underline;
