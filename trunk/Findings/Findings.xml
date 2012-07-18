@@ -280,7 +280,7 @@
       var traveller = data.getValue(i,3);
       var imageFinding = data.getValue(i,4);
       var summary = data.getValue(i,6);
-
+		alert(data.getColumnType(7));
       switch(topicName)
       {
         case 'Security': var classname="brown";break;
@@ -310,7 +310,7 @@
       html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
       html += '<div class="more-link">';
-      html += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValues(i,7) +'>More Info</a>';
+      html += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'>More Info</a>';
       html += '</div>';
 
       html += '</div>';
