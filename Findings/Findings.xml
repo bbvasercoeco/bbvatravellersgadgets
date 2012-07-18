@@ -294,7 +294,7 @@
         case 'Payments':  var classname="brown";break;
         default: var classname="brown";break;
       }
-
+		
       html += '<div class="blockFinding">';
 
       html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
@@ -310,7 +310,7 @@
       html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
       html += '<div class="more-link">';
-      html += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'>More Info</a>';
+      html += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValues(i,7) +'>More Info</a>';
       html += '</div>';
 
       html += '</div>';
