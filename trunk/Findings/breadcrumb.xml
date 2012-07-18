@@ -112,7 +112,7 @@ margin-bottom:25px;
 	 var titulo = prefs.getString("pageTitle");
 	 var size = prefs.getInt("pageSize");
 	 document.getElementById('titulo').innerHTML ='<h2>'+titulo+'</h2>';
-	 document.getElementById('titulo').style.fontSize = size+'px';
+	 document.getElementById('titulo').style.fontSize = size;
 	 _IG_RegisterOnloadHandler(showBreadcrumbs);
      
 	function indice (parametros, rootSite)
