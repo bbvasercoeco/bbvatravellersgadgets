@@ -40,9 +40,14 @@
                     Url of Banner1: <input type="text" id="urlbanner1" value="__UP_urlbanner1__"   onchange="registra('urlbanner1')"/>                   
                 </td>
             </tr>
+				<tr>       
+                <td>
+                    Url image of Banner1: <input type="text" id="urlimagebanner1" value="__UP_urlimagebanner1__"   onchange="registra('urlimagebanner1')"/>                   
+                </td>
+            </tr>
 			 <tr>       
                 <td>
-                    Title of Banner2: <input type="number" id="titleBanner2" value="__UP_titleBanner2__"   onchange="registra('titleBanner2')"/>                   
+                    Title of Banner2: <input type="text" id="titleBanner2" value="__UP_titleBanner2__"   onchange="registra('titleBanner2')"/>                   
                 </td>
             </tr>
 			<tr>       
@@ -53,6 +58,11 @@
 			<tr>       
                 <td>
                     Url of Banner1: <input type="text" id="urlbanner2" value="__UP_urlbanner2__"   onchange="registra('urlbanner2')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                    Url image of Banner2: <input type="text" id="urlimagebanner2" value="__UP_urlimagebanner2__"   onchange="registra('urlimagebanner2')"/>                   
                 </td>
             </tr>
   </table>	
@@ -126,16 +136,20 @@
 	var titlebanner1 = prefs.getString("titlebanner1");
 	var textbanner1 = prefs.getString("textbanner1");
 	var urlbanner1 = prefs.getString("urlbanner1");
+	var urlimagebanner1 = prefs.getString("urlimagebanner1");
 	var titlebanner2 = prefs.getString("titlebanner2");
 	var textbanner2 = prefs.getString("textbanner2");
 	var urlbanner2 = prefs.getString("urlbanner2");
+	var urlimagebanner2 = prefs.getString("urlimagebanner2");
 	
 	document.getElementById("titleBanner1").innerHTML = titlebanner1;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
 	document.getElementById("urlBanner1").innerHTML = urlbanner1;
+	document.getElementById("banner banner-schedule").style.background ='background-image: url("'+urlimagebanner1+'")no-repeat';
 	document.getElementById("titleBanner2").innerHTML = titlebanner2;
 	document.getElementById("textBanner2").innerHTML = textbanner2;
 	document.getElementById("urlBanner2").innerHTML = urlbanner2;
+	document.getElementById("banner banner-interest").style.background ='background-image: url("'+urlimagebanner2+'")no-repeat';
 	
   </script>
     ]]>
