@@ -36,7 +36,9 @@
             </tr>
 			 <tr>       
                 <td>
-                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onclick="registraArea('textBanner1')"></textarea>                  
+					<form name="myForm">
+                    Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="changeBack('textBanner1')"></textarea> 
+					</form>
                 </td>
             </tr>
 			<tr>       
@@ -91,10 +93,10 @@
 				
 			
             } 
-			  function registraArea(variable)
+			  function changeBack(variable)
             {	
 				
-                prefs.set(variable,document.getElementById(variable).value);
+                document.myForm.myTextArea.value = document.myForm.myTextArea.defaultValue;
 				
 			
             } 
