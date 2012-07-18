@@ -55,9 +55,10 @@
         margin-left: 0;
       }
       .topic h3 {
-        color: #000;
-        font-size: 20px;
-        margin: 20px 0 10px;
+        color: black;
+font-size: 20px;
+margin: 20px 0 10px;
+height: 25px;
       }
       .topic img {
         float: left;
@@ -100,11 +101,19 @@
 
     position: relative;
 top: -33px;
-width: 100px;
-left: 359px;
-eight: 35px;
+width: 80px;
+left: 379px;
+height: 35px;
     }
 
+ .label-topicName span {
+    position: relative;
+top: -48px;
+color: white;
+font-size: 11px;
+font-weight: normal;
+left: 20px;
+ }
     </style>
 
     <div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png" width="948" alt="Lorem ipsum" /></div>
