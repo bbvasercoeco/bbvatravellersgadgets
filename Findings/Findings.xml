@@ -280,7 +280,8 @@
       var traveller = data.getValue(i,3);
       var imageFinding = data.getValue(i,4);
       var summary = data.getValue(i,6);
-		alert(data.getColumnType(7));
+		// alert(data.getColumnType(7));
+		
       switch(topicName)
       {
         case 'Security': var classname="brown";break;
@@ -316,7 +317,7 @@
       html += '</div>';
       html += '</div>';
       html += '</div>';
-
+		alert(data.getValue(i,7));
       document.getElementById("lastfindings").innerHTML += html;
       }
 
