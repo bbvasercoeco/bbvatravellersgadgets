@@ -131,6 +131,10 @@ h2 {
   </li>
 </ul>
 <script type="text/javascript">
+	  var gadgetHelper = null;
+      var prefs = new _IG_Prefs(); // User preferences
+	  _IG_RegisterOnloadHandler(showBreadcrumbs);
+	  
 function indice (parametros, rootSite)
 	{	
 		for(var i=0; i<parametros.length; i++)
