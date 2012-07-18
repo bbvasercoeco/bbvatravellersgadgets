@@ -26,7 +26,7 @@
             </tr>
 			 <tr>       
                 <td>
-                    Size of Title: <input type="text" id="sizeTitle" value="__UP_sizeTitle__"   onchange="registra('sizeTitle')"/>                   
+                    Size of Title: <input type="int" id="sizeTitle" value="__UP_sizeTitle__"   onchange="registra('sizeTitle')"/>                   
                 </td>
             </tr>
   </table>	
