@@ -121,9 +121,9 @@
 
 	<div class="banners-container">
       <div class="banner banner-schedule">
-        <h2 id="titleBanner1">Calendario</h2>
-        <p id="textBanner1"></p>
-        <div id="urlBanner1">Ver calendario</div>
+        <div id="titleBanner1"></div>
+        <div id="textBanner1"></div>
+        <div id="urlBanner1"></div>
       </div>
       <div class="banner banner-interest">
         <div id="titleBanner2"></div>
