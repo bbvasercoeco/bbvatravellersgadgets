@@ -12,10 +12,12 @@
 <UserPref name="textBanner1" display_name="Text Banner1" required="true" />
 <UserPref name="urlbanner1" display_name="Url Banner1" required="true" />
 <UserPref name="urlimagebanner1" display_name="Url image Banner1" required="true" />
+<UserPref name="urlinkname1" display_name="Url link name Banner1" required="true" />
 <UserPref name="titleBanner2" display_name="Title Banner2" required="true" />
 <UserPref name="textBanner2" display_name="Text Banner2" required="true" />
 <UserPref name="urlbanner2" display_name="Url Banner2" required="true" />
 <UserPref name="urlimagebanner2" display_name="Url image Banner2" required="true" />
+<UserPref name="urlinkname2" display_name="Url link name Banner2" required="true" />
 <Content type="html" view="configuration" preferred_height="480">
 
  <![CDATA[
@@ -42,6 +44,11 @@
                     Url of Banner1: <input type="text" id="urlbanner1" value="__UP_urlbanner1__"   onchange="registra('urlbanner1')"/>                   
                 </td>
             </tr>
+			<tr>       
+                <td>
+                   Title of link of Banner1: <input type="text" id="urlinkname1" value="__UP_urlinkname1__"   onchange="registra('urlinkname1')"/>                   
+                </td>
+            </tr>
 				<tr>       
                 <td>
                     Url image of Banner1: <input type="text" id="urlimagebanner1" value="__UP_urlimagebanner1__"   onchange="registra('urlimagebanner1')"/>                   
@@ -60,6 +67,11 @@
 			<tr>       
                 <td>
                     Url of Banner1: <input type="text" id="urlbanner2" value="__UP_urlbanner2__"   onchange="registra('urlbanner2')"/>                   
+                </td>
+            </tr>
+			<tr>       
+                <td>
+                   Title of link of Banner2: <input type="text" id="urlinkname2" value="__UP_urlinkname2__"   onchange="registra('urlinkname2')"/>                   
                 </td>
             </tr>
 			<tr>       
@@ -140,18 +152,20 @@
 	var textbanner1 = prefs.getString("textBanner1");
 	var urlbanner1 = prefs.getString("urlbanner1");
 	var urlimagebanner1 = prefs.getString("urlimagebanner1");
+	var urlinkname1 = prefs.getString("urlinkname1");
 	var titlebanner2 = prefs.getString("titleBanner2");
 	var textbanner2 = prefs.getString("textBanner2");
 	var urlbanner2 = prefs.getString("urlbanner2");
 	var urlimagebanner2 = prefs.getString("urlimagebanner2");
+	var urlinkname2 = prefs.getString("urlinkname2");
 	
 	document.getElementById("titleBanner1").innerHTML = '<h2>'+titlebanner1+'</h2>';
 	document.getElementById("textBanner1").innerHTML = '<p>'+textbanner1+'</p>';
-	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'"></a>';
+	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'">'+urlinkname1+'</a>';
 	document.getElementById("banner banner-schedule").innerHTML ='style:background-image: url("'+urlimagebanner1+'")no-repeat';
 	document.getElementById("titleBanner2").innerHTML = '<h2>'+titlebanner2+'</h2>';
 	document.getElementById("textBanner2").innerHTML = '<p>'+textbanner2+'</p>';
-	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'"></a>';
+	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'">'+urlinkname2+'</a>';
 	document.getElementById("banner banner-interest").style.background ='background-image: url("'+urlimagebanner2+'")no-repeat';
 	
   </script>
