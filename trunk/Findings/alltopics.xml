@@ -154,7 +154,7 @@ line-height: 35px;
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
       var urlTable = prefs.getString("_table_query_url");
-	  _IG_RegisterOnloadHandler(showBreadcrumbs);
+	  
       _IG_RegisterOnloadHandler(loadVisualizationAPI);
 
       function loadVisualizationAPI()
