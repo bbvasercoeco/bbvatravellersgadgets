@@ -96,6 +96,14 @@
         background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
     }
 
+    .label-topicName {
+
+    position: relative;
+top: -33px;
+width: 100px;
+left: 359px;
+    }
+
     </style>
 
     <div id="header"><img src="http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png" width="948" alt="Lorem ipsum" /></div>
@@ -167,8 +175,7 @@
             }
           
             html += '<div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
-            html += '<h3>'+data.getValue(i,1)+'</h3>';
-		    html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
+            html += '<h3>'+data.getValue(i,1)+ '<div class="label-topicName ' + classname + '">' + topicName + '</div></h3>';
             html += '<div id="summarytopic">'+data.getValue(i,3)+'</div>';
             html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a></div>';
             html += '</div>';
