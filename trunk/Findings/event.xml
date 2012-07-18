@@ -134,15 +134,15 @@ h2 {
       var time2 = new Date(data.getValue(0,9));
       var html = "";
       html +='<div class="title-page">'+data.getValue(0,1)+'</div>';
-      html +='<div class="event-date">'+fecha.getDate()+' "/" '+month[fecha.getMonth()]+' "/" '+fecha.getFullYear()+'</div>';
+      html +='<div class="event-date">'+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+'</div>';
       html += '<h2>'+data.getValue(0,7)+'</h2>';
       html += '<div class="summary">'+data.getValue(0,6)+'</div>';
       html += '<div class="event-details">';
       html += '<h3>Event detail</h3>';
-      html += '<div class="date-detail"><span>Fecha:</span> '+fecha.getDate()+' "de" '+month[fecha.getMonth()]+' "de" '+fecha.getFullYear()+'</div>';
+      html += '<div class="date-detail"><span>Fecha:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+'</div>';
       html += '<div class="time"><span>Horario:</span> '+time1.getHours()+'":"'+time1.getMinutes()+' "-" '+time2.getHours()+'":"'+time2.getMinutes()+' "horas"</div>';
       html += '<div class="place"><span>Lugar:</span> '+data.getValue(0,2)+'</div>';
-      html += '<div class="registration"><span>Inscripción:</span> '+data.getValue(0,10)+'</div>';
+      html += '<div class="registration"><span>InscripciÃ³n:</span> '+data.getValue(0,10)+'</div>';
       html += '</div>';
       html += '<div class="user-bbva">';
       html += '<div><img src="'+data.getValue(0,5)+'" /></div>';
