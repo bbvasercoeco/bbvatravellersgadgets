@@ -258,11 +258,7 @@ margin-bottom:25px;
         var query = new google.visualization.Query(urlTable, opts);
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
-		
-
       }
-
-
 
       function handleQueryResponse(response)
       {
@@ -326,83 +322,7 @@ margin-bottom:25px;
 		 
         }
      }
-	function indice (parametros, rootSite)
-	{	
-		for(var i=0; i<parametros.length; i++)
-		{
-			if(parametros[i]== rootSite)
-			{
-				return i;
-			} 
-		}	
-	}
 	
-	function showBreadcrumbs()
-	{
-		// Construct the breadcrumb string
-		//var rootSite = prefs.getString("VarrootSite");
-		var rootSite = "home";
-		var s ="";
-		var i,j,k = 0;
-		var base = "";
-		var barra = "/";
-		var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
-		var indexroot = indice(parametros, rootSite);   
-		
-		for (i=0;i<parametros.length;i++)
-		{				
-			if(i<indexroot)
-			{
-				base = base + parametros[i]+ "/";				
-			}
-			if (parametros[i] == rootSite) 
-			{	
-				s = "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>home</a>";
-			
-				for(j=i+1;j<parametros.length;++j)
-				{   
-					var aux = parametros[j].replace(/-/g," ");						
-					
-					if (aux.indexOf("?")>1)
-					{
-						var auxMov = aux.split("?");
-						var litEnlace = auxMov[0];
-					}
-					else
-					{							
-						if (aux.indexOf("ficha")>-1)
-						{								
-							var litEnlace = "Ficha";
-						}
-						else if (aux.indexOf("detalle proyecto")>-1)
-						{								
-							var litEnlace = "Detalle Proyecto";
-						}
-						else if (aux.indexOf("contactos")>-1)
-						{
-							var litEnlace = "Contactos";
-						}
-						else
-						{								
-							var litEnlace = aux;
-						}
-					}
-					if (j<parametros.length-1)
-					{
-						s = s + "<a class=\'linkBreadCrumb\' href=\'"+ base  + rootSite + barra  + parametros[j] + barra + "\' target=\'_parent\' title=\'" + litEnlace + "\'> >&nbsp;" + litEnlace + "</a>";
-						rootSite = rootSite + "/" + parametros[j];
-					}
-					else
-					{						
-						s = s + " ><span class=\'currentBreadCrumb\' + parametros[j] + barra + \' >&nbsp;" + litEnlace + "</span>";
-					}
-				}
-			}
-		}
-		document.getElementById("title-crumbs").innerHTML = s;     
-	}
-
-
     </script>
     ]]>
   </Content>
