@@ -121,6 +121,7 @@ margin-bottom:25px;
     <div id="titulo"></div>
 	<div id="title-crumbs">breadcrumbs</div>
 	<script type="text/javascript">
+	console.debug('version 1');
 	 var gadgetHelper = null;
      var prefs = new gadgets.Prefs();  // User preferences
 	 var titulo = prefs.getString("pageTitle");
