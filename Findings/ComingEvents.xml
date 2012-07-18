@@ -221,6 +221,7 @@ color: white;
     </style>
 
     <div id="home"></div><div id="all"></div>
+	
     <!--<div class="banners-container">
       <div class="banner banner-schedule">
         <h2>Calendario</h2>
@@ -233,6 +234,7 @@ color: white;
         <a href="#">Contribute</a>
       </div>
     </div>-->
+	
     <div id="ceventsinterna"></div>	
     <div id="comingevents"></div>
 
@@ -314,7 +316,7 @@ color: white;
 			}
 			
 			var html = "";
-			html +='<div id="comingevent" class="finding">';
+			html +='<div id="comingevent" class="finding" onclick="javascript:abrir();">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
 			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
@@ -344,6 +346,10 @@ color: white;
         }
      }
 	
+		function abrir()
+		{
+			alert('abriendo');
+		}
     </script>
     ]]>
   </Content>
