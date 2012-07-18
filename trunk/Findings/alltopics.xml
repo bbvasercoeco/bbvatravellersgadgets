@@ -129,11 +129,11 @@
           else {
             html += '<div class="topic">';
           }
-          html += '<div id="imagetopic'+i+'"></div>';
-          html += '<h3 id="topic'+i+'"></h3>';
-		  html += '<div id="topicname'+i+'"></div>';
-          html += '<div id="summarytopic'+i+'"></div>';
-          html += '<div class="last-findings-link" id="lastfindingstopic'+i+'"></div>';
+          html += '<div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
+          html += '<h3 id="topic">'+data.getValue(i,1)+'</h3>';
+		      html += '<div id="topicname'+i+'"></div>';
+          html += '<div id="summarytopic">'+data.getValue(i,3)+'</div>';
+          html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a></div>';
           html += '</div>';
 
           document.getElementById("alltopics").innerHTML += html;
@@ -152,10 +152,10 @@
 		  case 'Payments':  document.getElementById("topicname"+i).innerHTML = '<div style="background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/security_green.png);background-repeat:no-repeat;float:right;">'+topicname+'</div>';break;
 		}
 		
-          document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
-          document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
-          document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
-		  document.getElementById("lastfindingstopic"+i).innerHTML += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a>';
+          //document.getElementById("imagetopic"+i).innerHTML += '<img border="0" src="' + data.getValue(i,2) +'">';
+          //document.getElementById("topic"+i).innerHTML += data.getValue(i,1);
+         // document.getElementById("summarytopic"+i).innerHTML += data.getValue(i,3);
+		  //document.getElementById("lastfindingstopic"+i).innerHTML += '<a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a>';
         }
       }
     </script>
