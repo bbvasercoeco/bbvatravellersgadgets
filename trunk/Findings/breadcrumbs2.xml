@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs
+   title="breadcrumbs2.0"
+   height="50"
+   description="Script que genera los breadcrumbs de forma automática"
+   
+   >
+<Require feature="dynamic-height"/>   
+<Require feature="setprefs" />   
+    </ModulePrefs>  
+	
+<UserPref name="VarrootSite" display_name="Root del Site" required="true" />
+<Content type="html" view="configuration" preferred_height="480">
+
+ <![CDATA[
+ <style>
+    input#VarrootSite {
+           width: 300px;
+          }
+		  
+  </style>
+  
+  <table width="100%" border="0" id="tablaconfig">           
+            <tr>       
+                <td>
+                    Root del Site: <input type="text" id="VarrootSite" value="__UP_VarrootSite__"   onchange="registra('VarrootSite')"/>                   
+                </td>
+            </tr>
+  </table>	
+  
+<script type="text/javascript">           
+            // Get userprefs
+            var prefs = new gadgets.Prefs();           
+            function registra(variable)
+            {	
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            }  
+			
+            gadgets.window.adjustHeight();
+        </script>   
+ ]]>
+ </Content>
+ <Content type="html">
+ <![CDATA[
+ 
+	<div id="title-crumbs">valor de title</div>
+	
+	<style>		
+		#title-crumbs {
+			font-size:13px;
+			color:#3F78B2;
+			text-transform: capitalize;
+		}
+		.currentBreadCrumb{
+		fon-weight: bold;
+		font-size:13px;
+		color:#000099;
+		text-decoration:none;
+		text-transform: capitalize;		
+		}
+		
+		a.linkBreadCrumb,
+		a:visited.linkBreadCrumb {
+			fon-weight: normal;
+			font-size:13px;
+			color:#3F78B2;
+			text-decoration:none;
+			text-transform: capitalize;
+		}
+		a:hover.linkBreadCrumb,
+		a:active.linkBreadCrumb {
+			font-style: normal;
+			font-size:13px;
+			color:#009EE5;
+			fon-weight: normal;
+			text-decoration:none;		
+			text-transform: capitalize;
+		} 
+		
+	</style>
+	
+	<script type="text/javascript">	
+		var prefs = new gadgets.Prefs();
+		gadgets.util.registerOnLoadHandler(showBreadcrumbs);
+		
+	function indice (parametros, rootSite){
+			
+				for(var i=0; i<parametros.length; i++){
+					if(parametros[i]== rootSite)
+					{
+					return i;
+					}
+					  
+				}	
+			}
+				
+		
+		function showBreadcrumbs()
+		{
+			// Construct the breadcrumb string
+			
+			
+			
+		    var rootSite = prefs.getString("VarrootSite");			
+		    // alert(rootSite);
+			// alert("aki entro");
+			var s ="";
+			var i,j,k = 0;
+			var base = "";
+			var barra = "/";
+			var parametros = gadgets.util.getUrlParameters()["parent"].split("/");  
+			var indexroot = indice(parametros, rootSite);   //parametros.indexOf(rootSite);
+			
+			
+			
+			
+			for (i=0;i<parametros.length;i++)
+			{				
+				if(i<indexroot)
+				{
+					base = base + parametros[i]+ "/";				
+				}
+				if (parametros[i] == rootSite) 
+				{	
+					s = "&nbsp;<a class=\'linkBreadCrumb\' href=\'"+ base + rootSite + barra + "\' target=\'_parent\' title=\' " + parametros[i].replace(/-/g," ") + "  \'>home</a>";
+				
+					for(j=i+1;j<parametros.length;++j)
+					{   
+						var aux = parametros[j].replace(/-/g," ");
+						if (aux.indexOf("?")>1)
+						{
+							var auxMov = aux.split("?");
+							var litEnlace = auxMov[0]
+						}
+						else
+						{
+							var litEnlace = aux;
+						}
+						if (j<parametros.length-1){
+						s = s + "<a class=\'linkBreadCrumb\' href=\'"+ base  + rootSite + barra  + parametros[j] + barra + "\' target=\'_parent\' title=\'" + litEnlace + "\'> >&nbsp;" + litEnlace + "</a>";
+						rootSite = rootSite + "/" + parametros[j];
+						}else{
+						
+						s = s + " ><span class=\'currentBreadCrumb\' + parametros[j] + barra + \' >&nbsp;" + litEnlace + "</span>";
+
+						
+						}
+					}
+				}
+			}
+			document.getElementById("title-crumbs").innerHTML = s;    
+		}
+	</script>
+ ]]>
+ 
+ </Content>
+</Module>
