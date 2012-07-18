@@ -144,11 +144,11 @@
         background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen2.png) no-repeat left top;
         float: right;
       }
-   
+
 	
  </style>
 
-	<div class="banners-container">
+	<!--<div class="banners-container">
       <div class="banner banner-schedule">
         <div id="titleBanner1"></div>
         <div id="textBanner1"></div>
@@ -159,7 +159,21 @@
         <div id="textBanner2"></div>
         <div id="urlBanner2"></div>
       </div>
+    </div>-->
+
+    <div class="banners-container">
+      <div class="banner banner-schedule">
+        <h2 id="titleBanner1">Calendario</h2>
+        <p id="textBanner1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <a href="#">Ver calendario</a>
+      </div>
+      <div class="banner banner-interest">
+        <h2 id="titleBanner2">¿Te interesa?</h2>
+        <p id="textBanner2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <a href="#">Contribute</a>
+      </div>
     </div>
+
     <script type="text/javascript">
 
 	var gadgetHelper = null;
