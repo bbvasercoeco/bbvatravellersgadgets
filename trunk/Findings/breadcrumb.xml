@@ -62,6 +62,9 @@
     <style type="text/css">
       
       body {background-color:transparent;}
+	  #titulo{
+	  font-family: "BBVA Web Light", arial, sans-serif;
+	  }
       #titulo h2{
         border-bottom: 1px solid #cacaca;
         font-family: "BBVA Web Light", arial, sans-serif;
