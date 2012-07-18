@@ -223,7 +223,8 @@ color: white;
       }
     </style>
 
-    <div id="home"></div><div id="all"></div>
+    <div id="home"></div>
+	<div id="all"></div>
 	
     <!--<div class="banners-container">
       <div class="banner banner-schedule">
@@ -273,7 +274,8 @@ color: white;
 		}
 		else
 		{
-			//document.getElementById("ceventsinterna").innerHTML = "<h2>Coming <span>Events</span></h2>";
+			document.getElementById("home").style.display = "none";
+			document.getElementById("all").style.display = "none";
 			var querytosend = "select max(D),B,P,V,W,X,H,A group by B,P,V,W,X,H,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
