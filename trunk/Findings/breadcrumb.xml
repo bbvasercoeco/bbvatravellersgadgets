@@ -74,6 +74,7 @@
       #titulo h2 span {
         font-family: "BBVA Web Semibold", arial, sans-serif;
         font-weight: bold;
+		margin-left:5px;
       }
       
  //JMC
