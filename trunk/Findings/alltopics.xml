@@ -144,7 +144,7 @@ line-height: 35px;
       <h2>About your contribution</h2>
       <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum varius tellus.</div>
     </div>
-    <h2>All <span>Topics</span></h2>
+    
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
