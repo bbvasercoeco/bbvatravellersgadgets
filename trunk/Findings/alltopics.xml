@@ -102,6 +102,7 @@
 top: -33px;
 width: 100px;
 left: 359px;
+eight: 35px;
     }
 
     </style>
@@ -175,7 +176,7 @@ left: 359px;
             }
           
             html += '<div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
-            html += '<h3>'+data.getValue(i,1)+ '<div class="label-topicName ' + classname + '">' + topicName + '</div></h3>';
+            html += '<h3>'+data.getValue(i,1)+ '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div></h3>';
             html += '<div id="summarytopic">'+data.getValue(i,3)+'</div>';
             html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a></div>';
             html += '</div>';
