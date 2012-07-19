@@ -270,9 +270,6 @@ padding-right:18px;
 }
 </style>
 <![endif]-->
-<script>
-	console.debug('2 menu.xml');
-</script>
 <div id="cabeceramenu">
   <ul id="button">   
 	<li><a id="Home" href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:6px;margin-right:-21px;"/></a></li>
@@ -282,7 +279,46 @@ padding-right:18px;
 	<li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary"  target="_parent" >Monthly Report</a></li> 
   </ul>    
 </div>
+<script type="text/javascript">
+	console.debug('3 menu.xml');
+gadgets.util.registerOnLoadHandler(datospagina);
+function datospagina()
+{
+ 
+  var parametros = gadgets.util.getUrlParameters()["parent"];  
+ console.debug(parametros);
+  if (parametros.length == 50)
+  {
+   
+	document.getElementById("Home").innerHTML += '<span ><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select" /></span>';
+  }
+  if (parametros.indexOf("topics")!=-1)
+  {
+    //document.getElementById("Topics").style.backgroundColor = "#2586D7";
+	document.getElementById("Topics").innerHTML += '<br/><div id="prueba1"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
+  }
+   if (parametros.indexOf("coming-events")!=-1)
+  {
+    //document.getElementById("coming-events").style.backgroundColor = "#2586D7";
+	document.getElementById("coming-events").innerHTML += '<br/><div id="prueba2"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+
+  }
+  if (parametros.indexOf("monthly-summary")!=-1)
+  {
+    //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
+	document.getElementById("Monthly-Summary").innerHTML += '<br/><div id="prueba3"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+
+  }
+   if (parametros.indexOf("contribute")!=-1)
+  {
+    //document.getElementById("contribute").style.backgroundColor = "#2586d7";
+	document.getElementById("contribute").innerHTML += '<br/><div id="prueba4"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
+
+  }
+
+}
+</script>
   ]]> 
   </Content>
   </Module>
