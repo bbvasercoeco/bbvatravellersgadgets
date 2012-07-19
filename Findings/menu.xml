@@ -3,7 +3,8 @@
   <ModulePrefs title="menu findings"/> 
  <Content type="html">
  <![CDATA[ 
-                      <style> 
+  <style> 
+  	body{background-color:transparent !important;}
 #cabeceramenu {
   width: 960px;
   height: 65px;
@@ -119,8 +120,8 @@ margin-left:0px;
 
 #button li a.barralateral {  
   background-image: url("https://gsites-labs-capgemini-valencia.googlecode.com/svn/trunk/barralateralmenu.png");
-    background-position: right 0;
-    background-repeat: no-repeat;
+	background-position: right 0;
+	background-repeat: no-repeat;
 } 
 
 
@@ -275,54 +276,16 @@ padding-right:18px;
 <div id="cabeceramenu">
   <ul id="button">
    
-    <li><a id="Home" href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:6px;margin-right:-21px;"/></a> </li>
-    <li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Topics</a></li>
-    <li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" class="barralateral" target="_parent">Coming Events</a></li>
-    <li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
-    <li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary"  target="_parent" >Monthly Report</a></li> 
+	<li><a id="Home" href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:6px;margin-right:-21px;"/></a></li>
+	<li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Topics</a></li>
+	<li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" class="barralateral" target="_parent">Coming Events</a></li>
+	<li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
+	<li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary"  target="_parent" >Monthly Report</a></li> 
   </ul>  
    <div id="logoHeader"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/logo.png"/></div> 
 
 </div>
-<script type="text/javascript">
-gadgets.util.registerOnLoadHandler(datospagina);
-function datospagina()
-{
- 
-  var parametros = gadgets.util.getUrlParameters()["parent"];  
- console.debug(parametros);
-  if (parametros.length == 50)
-  {
-   
-	document.getElementById("Home").innerHTML += '<span ><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select" /></span>';
-  }
-  if (parametros.indexOf("topics")!=-1)
-  {
-    //document.getElementById("Topics").style.backgroundColor = "#2586D7";
-	document.getElementById("Topics").innerHTML += '<br/><div id="prueba1"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
 
-  }
-   if (parametros.indexOf("coming-events")!=-1)
-  {
-    //document.getElementById("coming-events").style.backgroundColor = "#2586D7";
-	document.getElementById("coming-events").innerHTML += '<br/><div id="prueba2"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
-
-  }
-  if (parametros.indexOf("monthly-summary")!=-1)
-  {
-    //document.getElementById("Monthly-Summary").style.backgroundColor = "#2586D7";
-	document.getElementById("Monthly-Summary").innerHTML += '<br/><div id="prueba3"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
-
-  }
-   if (parametros.indexOf("contribute")!=-1)
-  {
-    //document.getElementById("contribute").style.backgroundColor = "#2586d7";
-	document.getElementById("contribute").innerHTML += '<br/><div id="prueba4"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/triangle.png" class="select1"/></div>';
-
-  }
-
-}
-</script>
   ]]> 
   </Content>
   </Module>
