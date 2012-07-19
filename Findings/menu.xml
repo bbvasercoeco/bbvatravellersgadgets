@@ -28,7 +28,7 @@ body{
 }
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {  
-
+body{background-color:transparent !important;}
 #button li a {  
   font-family: Arial;  
   font-size:15px;  
@@ -113,7 +113,7 @@ margin-left:0px;
   height:48px;
 }  
 
-
+body{background-color:transparent !important;}
 }
 
 
@@ -219,6 +219,7 @@ margin-top:7px;
 <!--[if gt IE 8]>
 
 <style>
+	body{background-color:transparent !important;}
 #button li a {  
   font-family: Arial;  
   font-size:15px;  
@@ -270,7 +271,7 @@ padding-right:18px;
 </style>
 <![endif]-->
 <script>
-	console.debug('1 menu.xml');
+	console.debug('2 menu.xml');
 </script>
 <div id="cabeceramenu">
   <ul id="button">   
