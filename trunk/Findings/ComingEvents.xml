@@ -270,13 +270,13 @@ color: white;
 		{
 			document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 			document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View coming events</a></div>';
-			var querytosend = "select max(D),B,P,V,W,X,H,A where dateDiff(now(),D)>0 group by B,P,V,W,X,H,A order by max(D)  desc limit 3"; 
+			var querytosend = "select max(D),B,P,V,W,X,H,A where dateDiff(D,now())>0 group by B,P,V,W,X,H,A order by max(D)  desc limit 3"; 
 		}
 		else
 		{
 			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
-			var querytosend = "select max(D),B,P,V,W,X,H,A where dateDiff(now(),D)>0 group by B,P,V,W,X,H,A order by max(D)  desc";
+			var querytosend = "select max(D),B,P,V,W,X,H,A where dateDiff(D,now())>0 group by B,P,V,W,X,H,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
         query.setQuery(querytosend);
