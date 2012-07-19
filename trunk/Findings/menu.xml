@@ -273,16 +273,13 @@ padding-right:18px;
 	console.debug('1 menu.xml');
 </script>
 <div id="cabeceramenu">
-  <ul id="button">
-   
+  <ul id="button">   
 	<li><a id="Home" href="https://sites.google.com/a/bbva.com/findings/home/" class="first barralateral" target="_parent"  title="home"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/enlacehome.png" alt="Home" style="padding-top:6px;margin-right:-21px;"/></a></li>
 	<li><a id="Topics" href="https://sites.google.com/a/bbva.com/findings/home/topics" class="barralateral" target="_parent">Topics</a></li>
 	<li><a id="coming-events" href="https://sites.google.com/a/bbva.com/findings/home/coming-events" class="barralateral" target="_parent">Coming Events</a></li>
 	<li><a id="contribute" href="https://sites.google.com/a/bbva.com/findings/home/contribute" class="barralateral" target="_parent">Contribute</a></li>  
 	<li><a id="Monthly-Summary" href="https://sites.google.com/a/bbva.com/findings/home/monthly-summary"  target="_parent" >Monthly Report</a></li> 
-  </ul>  
-   <div id="logoHeader"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/logo.png"/></div> 
-
+  </ul>    
 </div>
 
   ]]> 
