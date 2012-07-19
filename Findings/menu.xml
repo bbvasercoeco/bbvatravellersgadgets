@@ -57,7 +57,6 @@ margin-left:10px;
 
 }
 
-
 #button li a.first {  
   font-family: Arial;  
   font-size:15px;  
@@ -269,10 +268,10 @@ padding-right:18px;
 	padding:0;
 }
 </style>
-
-
 <![endif]-->
-
+<script>
+	console.debug('1 menu.xml');
+</script>
 <div id="cabeceramenu">
   <ul id="button">
    
