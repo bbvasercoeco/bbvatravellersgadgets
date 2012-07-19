@@ -232,66 +232,13 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
-      .banners-container {
-        margin-bottom: 25px;
-        overflow: hidden;
-      }
-      .banner {
-        color: #fff;
-        font-family: arial, sans-serif;
-        font-size: 13px;
-        height: 133px;
-        padding: 18px 260px 15px 15px;
-        position: relative;
-        width: 180px;
-      }
-      .banner h2 {
-        border: none;
-        font-size: 29px;
-        font-weight: bold;
-        letter-spacing: -1;
-        line-height: 0.9em;
-        margin: 0;
-        margin-bottom: 10px;
-        padding: 0;
-      }
-      .banner a {
-        color: #000 !important;
-        font-size: 14px;
-        font-weight: bold;
-        left: 11px;
-        padding: 8px 45px 8px 13px;
-        position: absolute;
-        top: 116px;
-        text-decoration: none;
-        text-shadow: 0 1px #ddd;
-      }
-      .banner-schedule {
-        background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen1.png) no-repeat left top;
-        float: left;
-      }
-      .banner-interest {
-        background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen2.png) no-repeat left top;
-        float: right;
-      }
+     
     </style>
 
     <div id="home"></div>
 	<div id="all"></div>
 	
-    <!--<div class="banners-container">
-      <div class="banner banner-schedule">
-        <h2>Calendario</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a href="#">Ver calendario</a>
-      </div>
-      <div class="banner banner-interest">
-        <h2>¿Te interesa?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a href="#">Contribute</a>
-      </div>
-    </div>-->
-	
+   
     <div id="ceventsinterna"></div>	
     <div id="comingevents"></div>
 
