@@ -258,12 +258,12 @@
     if(situation.indexOf('topic')== -1)
     {
       document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
-      var querytosend = "select max(D),A,C,L,G,R,Y,B group by A,C,L,G,R,Y,B order by max(D) desc limit 4";
+      var querytosend = "select max(D),A,C,K,F,Q,W,B group by A,C,K,F,Q,W,B order by max(D) desc limit 4";
     }
     else
     {
       document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic[1]+'</strong></h2>';
-      var querytosend = "select max(D),A,C,L,G,R,Y,B where (A like '%"+topic[1]+"%')  group by A,C,L,G,R,Y,B order by max(D)  desc ";
+      var querytosend = "select max(D),A,C,K,F,Q,W,B where (A like '%"+topic[1]+"%')  group by A,C,K,F,Q,W,B order by max(D)  desc ";
     }
 
     query.setQuery(querytosend);
