@@ -276,7 +276,7 @@ color: white;
 		{
 			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
-			var querytosend = "select max(D),B,P,V,W,X,H,A where dateDiff(D,now())>0 group by B,P,V,W,X,H,A order by max(D)  desc";
+			var querytosend = "select max(D),B,O,U,V,W,G,A where dateDiff(D,now())>0 group by B,O,U,V,W,G,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
         query.setQuery(querytosend);
