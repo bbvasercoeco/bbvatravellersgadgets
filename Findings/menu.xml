@@ -280,7 +280,7 @@ padding-right:18px;
   </ul>    
 </div>
 <script type="text/javascript">
-	console.debug('3 menu.xml');
+	console.debug('4 menu.xml');
 gadgets.util.registerOnLoadHandler(datospagina);
 function datospagina()
 {
