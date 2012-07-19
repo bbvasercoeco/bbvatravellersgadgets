@@ -143,7 +143,7 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      console.debug('19 alltopics.xml');
+      console.debug('20 alltopics.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
