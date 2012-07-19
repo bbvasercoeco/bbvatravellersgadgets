@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-<ModulePrefs title="cajetin personalizado bbva contribute findings" />
+<ModulePrefs title="contribute.xml" />
 <Content type="html"><![CDATA[
 <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 <style type="text/css"> 
