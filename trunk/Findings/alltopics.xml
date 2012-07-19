@@ -143,7 +143,7 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      console.debug('17 alltopics.xml');
+      console.debug('18 alltopics.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -163,7 +163,7 @@ line-height: 35px;
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select max(A),B,C group by B,C order by max(A)";
+        var querytosend = "select max(B),C,D group by C,D order by max(B)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
@@ -199,18 +199,18 @@ line-height: 35px;
            
             if (i % 2 == 0) 
             {
-                html += '<div class="topic first-row" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,0) +'\';">';
+                html += '<div class="topic first-row" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
             }
             else 
             {
-                html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,0) +'\';">';
+                html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
             }
           
-            html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
+            html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,3) +'"></div>';
             html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
-            html += '<h3>'+data.getValue(i,0)+ '</h3>';
-            html += '<div id="summarytopic">'+data.getValue(i,1)+'</div></div>';
-            html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,2) +'>View last findings of this topic</a></div>';
+            html += '<h3>'+data.getValue(i,1)+ '</h3>';
+            html += '<div id="summarytopic">'+data.getValue(i,2)+'</div></div>';
+            html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a></div>';
             html += '</div>';
 
             document.getElementById("alltopics").innerHTML += html;
