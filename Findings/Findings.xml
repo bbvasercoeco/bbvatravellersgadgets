@@ -224,36 +224,33 @@
 
 <script type="text/javascript">
 
-  console.debug('79 findings.xml');
+    console.debug('80 findings.xml');
 
-   //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
+    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
-   //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
+    //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
 
-  var gadgetHelper = null;
-  //var prefs = new _IG_Prefs(); // User preferences
-  var prefs = new gadgets.Prefs(); // User preferences
-  var urlTable = prefs.getString("_table_query_url");
-  //_IG_RegisterOnloadHandler(loadVisualizationAPI);
-  gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
+    var gadgetHelper = null;
+    //var prefs = new _IG_Prefs(); // User preferences
+    var prefs = new gadgets.Prefs(); // User preferences
+    var urlTable = prefs.getString("_table_query_url");
+    //_IG_RegisterOnloadHandler(loadVisualizationAPI);
+    gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
 
-  function loadVisualizationAPI()
-  {
-    google.load("visualization", "1", {"packages": ["table"]});
-    google.setOnLoadCallback(sendQuery);
-  }
+    function loadVisualizationAPI()
+    {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+    }
 
   function sendQuery()
   {
-    gadgetHelper = new google.visualization.GadgetHelper();
-
-    var query = gadgetHelper.createQueryFromPrefs(prefs);
-
-    var opts = {dataType:'jsonp'};
-
-    var query = new google.visualization.Query(urlTable, opts);
-    var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-    var situation = gadgets.util.getUrlParameters()["parent"];
+        gadgetHelper = new google.visualization.GadgetHelper();
+        var query = gadgetHelper.createQueryFromPrefs(prefs);
+        var opts = {dataType:'jsonp'};
+        var query = new google.visualization.Query(urlTable, opts);
+        var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+        var situation = gadgets.util.getUrlParameters()["parent"];
 
     if(situation.indexOf('topic')== -1)
     {
@@ -280,7 +277,9 @@
     data = response.getDataTable();
 
     var filas = data.getNumberOfRows();
-   
+
+    console.debug('filas:'+filas);
+
     for(var i = 0; i < filas; i++)
     {
       var html = "";
