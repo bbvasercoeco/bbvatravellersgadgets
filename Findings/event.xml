@@ -89,7 +89,7 @@ h2 {
 
 <script type="text/javascript">
 
-  console.debug('3 event.xml');
+  console.debug('4 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -117,8 +117,11 @@ h2 {
     var topic = gadgets.util.getUrlParameters()["parent"].split("=");
 	//alert(topic[1].replace(/\+/g," "));
     //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where B like '"+topic[1].replace(/\+/g," ")+"'and dateDiff(D,now())>0 group by B,C,L,N,O,P,S,X,Y,Z,AA  order by max(D)  desc ";
-     var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') and (dateDiff(D,now())>0) group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
+     //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') and (dateDiff(D,now())>0) group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
     
+    var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
+    
+
       query.setQuery(querytosend);
     query.send(handleQueryResponse);
   }
