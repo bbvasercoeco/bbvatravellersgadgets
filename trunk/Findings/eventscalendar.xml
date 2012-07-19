@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Calendario de eventos"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
+
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+ 
+  <Content type="html">
+    <![CDATA[
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+    <style type="text/css">
+		body { background-color:transparent !important;}
+      .finding {
+        background: #fff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 1px #ddd;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+        height: 140px;
+        margin-bottom: 16px;
+        position: relative;
+		cursor:hand; 
+		cursor:pointer;
+		
+      }
+      .finding .date {
+        background: #dff3ff;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        border-radius: 4px;
+        box-shadow: 0 1px #ddd;
+        color: #2d2d2d;
+        left: 9px;
+        padding: 8px 10px;
+        position: absolute;
+        text-align: center;
+        top: 10px;
+        width: 34px;
+      }
+      .finding .date .day {
+        font-size: 30px;
+      }
+      .finding .date .month {
+        font-size: 17px;
+      }
+      .finding .date .time {
+        border-top: 1px solid #cbd5db;
+        margin-top: 2px;
+        padding-top: 2px;
+      }
+      .finding .image {
+        left: 73px;
+        position: absolute;
+		background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif);
+      }
+      .finding .text {
+        padding: 20px 20px 10px 480px;
+      }
+      .finding .text h3 {
+        color: #000;
+        font-size: 18px;
+        margin: 0;
+      }
+      .finding .text a {
+        color: #094691;
+      }
+      .finding .text .summary {
+        margin: 15px 0;
+      }
+      .finding .footer {
+        bottom: 10px;
+        position: absolute;
+        text-align: right;
+        width: 440px;
+      }
+      .finding .footer .center {
+        float: left;
+        font-weight: bold;
+      }
+      .finding .footer a.more-link {
+        color: #62b4e6;
+        font-weight: normal;
+        text-decoration: none;
+      }
+      .finding .footer a.more-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+   
+    <div id="previous-month">
+      <h2>
+        Calendario de eventos<!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+      </h2>
+      
+        <div id="futureevents"></div>
+     
+    </div>
+
+    <script type="text/javascript">
+
+      //console.debug('lastfindings.xml');
+      //console.debug('version 14');
+
+      var gadgetHelper = null;
+      var prefs = new _IG_Prefs(); // User preferences
+      var urlTable = prefs.getString("_table_query_url");
+
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+      function loadVisualizationAPI()
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery()
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);
+        var opts = {dataType:'jsonp'};
+
+
+        var query = new google.visualization.Query(urlTable, opts);
+        var querytosend = "select min(D),S,V group by S,V order by min(D)";
+        query.setQuery(querytosend);
+        query.send(handleQueryResponse);
+
+
+
+      }
+
+
+
+      function handleQueryResponse(response)
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }
+        data = response.getDataTable();
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        var filas = data.getNumberOfRows();
+	
+		for(var i=0;i<filas;i++){
+        var fecha = new Date(data.getValue(i,0));
+       
+
+        var month = new Array();
+        month[0]="Jan";
+        month[1]="Feb";
+        month[2]="Mar";
+        month[3]="Apr";
+        month[4]="May";
+        month[5]="Jun";
+        month[6]="Jul";
+        month[7]="Aug";
+        month[8]="Sep";
+        month[9]="Oct";
+        month[10]="Nov";
+        month[11]="Dec";
+		
+		var html="";
+		html += '<div id=comingevent" class="findings">';
+		html += '<div class="date">';
+		html += '<div class="day" id="dia">'+fecha.getDate()+'</div>';
+		html += '<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
+		html += '<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
+		html += '</div>';
+		html += '<div class="titleevent">'+data.getValue(i,1)+'</div>';
+		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'">More Info</a></div>';
+		html += '</div>';
+		
+		document.getElementById('futureevents').innerHTML= html;
+		
+
+        }
+	}
+
+
+
+    </script>
+    ]]>
+  </Content>
+</Module>
