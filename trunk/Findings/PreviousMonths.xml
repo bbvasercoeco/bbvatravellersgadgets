@@ -80,7 +80,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 14');
+      //console.debug('version 14');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -116,7 +116,7 @@
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
-        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
 
         var fecha = new Date(data.getValue(0,0));
