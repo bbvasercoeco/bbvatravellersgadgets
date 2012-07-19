@@ -31,47 +31,47 @@
   <table width="100%" border="0" id="tablaconfig">           
             <tr>       
                 <td>
-                    Title - Banner1: <input type="text" id="titleBanner1" value="__UP_titleBanner1__"   onchange="registra('titleBanner1')"/>                   
+                    Title - Banner1: <input type="text" size="100" id="titleBanner1" value="__UP_titleBanner1__"   onchange="registra('titleBanner1')"/>                   
                 </td>
             </tr>
 			 <tr>       
                 <td>
 					
                     <!--Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> -->
-					Text - Banner1: <input type="text" size="150" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
+					Text - Banner1: <input type="text" size="100" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
 					</form>
                 </td>
             </tr>
 			<tr>       
                 <td>
-                    Url to banner1: <input type="text" id="urlbanner1" value="__UP_urlbanner1__"   onchange="registra('urlbanner1')"/>                   
+                    Url to banner1: <input type="text" size="100" id="urlbanner1" value="__UP_urlbanner1__"   onchange="registra('urlbanner1')"/>                   
                 </td>
             </tr>
 			<tr>       
                 <td>
-                   Text - link banner1: <input type="text" id="urlinkname1" value="__UP_urlinkname1__"   onchange="registra('urlinkname1')"/>                   
+                   Text - link banner1: <input type="text" size="100" id="urlinkname1" value="__UP_urlinkname1__"   onchange="registra('urlinkname1')"/>                   
                 </td>
             </tr>
 			
 			 <tr>       
                 <td>
-                    Title - Banner2: <input type="text" id="titleBanner2" value="__UP_titleBanner2__"   onchange="registra('titleBanner2')"/>                   
+                    Title - Banner2: <input type="text" size="100" id="titleBanner2" value="__UP_titleBanner2__"   onchange="registra('titleBanner2')"/>                   
                 </td>
             </tr>
 			<tr>       
                 <td>
                    <!-- Text of Banner2: <textarea rows="5" cols="40" id="textBanner2" value="__UP_textBanner2__"   onchange="registra('textBanner2')"/>-->               
-					Text - Banner2: <input type="text" size="150" id="textBanner2" value="__UP_textBanner2__" onchange="registra('textBanner2')"/>
+					Text - Banner2: <input type="text" size="100" id="textBanner2" value="__UP_textBanner2__" onchange="registra('textBanner2')"/>
                 </td>
             </tr>
 			<tr>       
                 <td>
-                    Url to banner2 : <input type="text" id="urlbanner2" value="__UP_urlbanner2__"   onchange="registra('urlbanner2')"/>                   
+                    Url to banner2 : <input type="text" size="100" id="urlbanner2" value="__UP_urlbanner2__"   onchange="registra('urlbanner2')"/>                   
                 </td>
             </tr>
 			<tr>       
                 <td>
-                   Title - link banner2: <input type="text" id="urlinkname2" value="__UP_urlinkname2__"   onchange="registra('urlinkname2')"/>                   
+                   Title - link banner2: <input type="text" size="100" id="urlinkname2" value="__UP_urlinkname2__"   onchange="registra('urlinkname2')"/>                   
                 </td>
             </tr>
 			
@@ -125,16 +125,19 @@
         margin-bottom: 10px;
         padding: 0;
       }
-      .banner a {
-        color: #000 !important;
-        font-size: 14px;
-        font-weight: bold;
-        left: 11px;
-        padding: 8px 45px 8px 13px;
-        position: absolute;
-        top: 116px;
-        text-decoration: none;
-        text-shadow: 0 1px #ddd;
+      .banner a {       
+
+        color: black !important;
+font-size: 14px;
+font-weight: bold;
+left: 0px;
+padding: 8px 45px 8px 13px;
+position: absolute;
+
+text-decoration: none;
+text-shadow: 0 1px #DDD;
+width: 156px;
+
       }
       .banner-schedule {
         background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen1.png) no-repeat left top;
@@ -147,8 +150,12 @@
 
       p.button {
  background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/button.png) no-repeat left top;
-      height: 32px;
-      width: 156px;
+height: 32px;
+width: 156px;
+margin: 0;
+padding: 0;
+position: absolute;
+top: 116px;
       }
 	
  </style>
@@ -197,11 +204,11 @@
 	
 	document.getElementById("titleBanner1").innerHTML = titlebanner1;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
-	document.getElementById("button1").innerHTML = '<a href="'+urlbanner1+'">'+urlinkname1+'</a>';
+	document.getElementById("button1").innerHTML = '<a href="'+urlbanner1+'" target="_parent">'+urlinkname1+'</a>';
 
 	document.getElementById("titleBanner2").innerHTML = titlebanner2;
 	document.getElementById("textBanner2").innerHTML = textbanner2;
-	document.getElementById("button2").innerHTML = '<a href="'+urlbanner2+'">'+urlinkname2+'</a>';
+	document.getElementById("button2").innerHTML = '<a href="'+urlbanner2+'" target="_parent" >'+urlinkname2+'</a>';
 	
 
   </script>
