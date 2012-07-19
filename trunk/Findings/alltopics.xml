@@ -15,31 +15,7 @@
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
-      .banner {
-        background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
-        color: #fff;
-        font-family: arial, sans-serif;
-        height: 133px;
-        margin-bottom: 20px;
-        padding-left: 684px;
-        padding-right: 30px;
-        padding-top: 30px;
-        width: 227px;
-      }
-      .banner h2 {
-        border: none;
-        box-shadow: none;
-        color: #fff;
-        font-size: 29px;
-        font-weight: bold;
-        line-height: 0.9em;
-        margin: 0;
-        margin-bottom: 10px;
-        padding: 0;
-      }
-      .banner .text {
-        font-size: 14px;
-      }
+    
       body {background-color:transparent;}
       h2 {
         border-bottom: 1px solid #cacaca;
@@ -160,10 +136,6 @@ line-height: 35px;
  
     </style>
 
-    <div class="banner">
-      <h2>About your contribution</h2>
-      <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum varius tellus.</div>
-    </div>
     
 	
     <div id="alltopics"></div>
@@ -225,11 +197,11 @@ line-height: 35px;
            
             if (i % 2 == 0) 
             {
-                html += '<div class="topic first-row">';
+                html += '<div class="topic first-row" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
             }
             else 
             {
-                html += '<div class="topic">';
+                html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
             }
           
             html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
