@@ -224,7 +224,7 @@
 
 <script type="text/javascript">
 
-    console.debug('82 findings.xml');
+    console.debug('83 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -246,8 +246,8 @@
         google.setOnLoadCallback(sendQuery);
     }
 
-  function sendQuery()
-  {
+    function sendQuery()
+    {
         gadgetHelper = new google.visualization.GadgetHelper();
         var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
@@ -268,41 +268,39 @@
             //esta query funciona
             //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
             //añadiendo la validación de F==Yes
-            //var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
-            
-
+            var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
         }
 
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
-  }
+    }
 
    function handleQueryResponse(response)
    {
-    if (!gadgetHelper.validateResponse(response))
-    {
-      return;
-    }
+        if (!gadgetHelper.validateResponse(response))
+        {
+            return;
+        }
 
-    data = response.getDataTable();
+        data = response.getDataTable();
 
-    var filas = data.getNumberOfRows();
+        var filas = data.getNumberOfRows();
 
-    console.debug('filas:'+filas);
+        console.debug('filas:'+filas);
 
-    for(var i = 0; i < filas; i++)
-    {
-      var html = "";
+        for(var i = 0; i < filas; i++)
+        {
+            var html = "";
 
-      var topicName = data.getValue(i,1);
-      var traveller = data.getValue(i,3);
-      var imageFinding = data.getValue(i,4);
-      var summary = data.getValue(i,6);
-		// alert(data.getColumnType(7));
-		
-      switch(topicName)
-      {
-         case 'Security': var classname="green2";break;
+            var topicName = data.getValue(i,1);
+            var traveller = data.getValue(i,3);
+            var imageFinding = data.getValue(i,4);
+            var summary = data.getValue(i,6);
+            // alert(data.getColumnType(7));
+
+            switch(topicName)
+            {
+                case 'Security': var classname="green2";break;
                 case 'Banca':  var classname="brown";break;
                 case 'Scouting':  var classname="green";break;
                 case 'Mobility':  var classname="blue";break;
@@ -312,34 +310,34 @@
                 case 'Enterprise 2.0': var classname="blue3";break;
                 case 'Payments':  var classname="green3";break;
                 default: var classname="brown";break;
-      }
+            }
 		
-      html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
+            html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
 
-      html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
+            html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
 
-      html += '<div class="blockData">';
+            html += '<div class="blockData">';
 
-      html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
+            html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
 
-      html += '<h3 class="label-summary">' + summary + '</h3>';
+            html += '<h3 class="label-summary">' + summary + '</h3>';
 
-      html += '<div class="infoviajero">';
+            html += '<div class="infoviajero">';
 
-      html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
+            html += '<div class="label-bbvatraveller"><strong>BBVA Traveller</strong> - ' + traveller + '</div>';
 
-      html += '<div class="more-link">';
-      html += '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'">More Info</a>';
-      html += '</div>';
+            html += '<div class="more-link">';
+            html += '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'">More Info</a>';
+            html += '</div>';
 
-      html += '</div>';
-      html += '</div>';
-      html += '</div>';
-		//alert(data.getValue(i,7));
-      document.getElementById("lastfindings").innerHTML += html;
-      }
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+            //alert(data.getValue(i,7));
+            document.getElementById("lastfindings").innerHTML += html;
+        }
 
-   }
+    }
    </script>
    ]]>
   </Content>
