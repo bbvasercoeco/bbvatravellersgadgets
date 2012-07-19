@@ -302,7 +302,7 @@
                 default: var classname="brown";break;
       }
 		
-      html += '<div class="blockFinding">';
+      html += '<div class="blockFinding" onclick="javascript:window.open(\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\');">';
 
       html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
 
