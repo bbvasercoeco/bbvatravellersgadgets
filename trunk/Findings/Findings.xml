@@ -224,7 +224,7 @@
 
 <script type="text/javascript">
 
-  console.debug('59 findings.xml');
+  console.debug('60 findings.xml');
 
    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -263,7 +263,7 @@
     else
     {
       document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic[1]+'</strong></h2>';
-      var querytosend = "select max(D),A,C,L,G,R,Y,B where A like '%"+topic[1]+"%'and (DATEDIFF(now(),D)>0) group by A,C,L,G,R,Y,B order by max(D)  desc ";
+      var querytosend = "select max(D),A,C,L,G,R,Y,B where A like '%"+topic[1]+"%'and (datediff(now(),D)>0) group by A,C,L,G,R,Y,B order by max(D)  desc ";
     }
 
     query.setQuery(querytosend);
