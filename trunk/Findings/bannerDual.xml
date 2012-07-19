@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="banners"
+  <ModulePrefs title="bannerDual.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -159,19 +159,6 @@ top: 116px;
       }
 	
  </style>
-
-	<!--<div class="banners-container">
-      <div class="banner banner-schedule">
-        <div id="titleBanner1"></div>
-        <div id="textBanner1"></div>
-        <div id="urlBanner1"></div>
-      </div>
-      <div class="banner banner-interest">
-        <div id="titleBanner2"></div>
-        <div id="textBanner2"></div>
-        <div id="urlBanner2"></div>
-      </div>
-    </div>-->
 
     <div class="banners-container">
       <div class="banner banner-schedule">

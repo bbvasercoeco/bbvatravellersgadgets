@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="banners"
+  <ModulePrefs title="banner.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -8,16 +8,10 @@
 	<Require feature="dynamic-height"/>   
 	<Require feature="setprefs" />   
   </ModulePrefs>
-<UserPref name="titleBanner1" display_name="Title Banner1" required="true" />
-<UserPref name="textBanner1" display_name="Text Banner1" required="true" />
-<UserPref name="urlbanner1" display_name="Url Banner1" required="true" />
-<UserPref name="urlimagebanner1" display_name="Url image Banner1" required="true" />
-<UserPref name="urlinkname1" display_name="Url link name Banner1" required="true" />
-<UserPref name="titleBanner2" display_name="Title Banner2" required="true" />
-<UserPref name="textBanner2" display_name="Text Banner2" required="true" />
-<UserPref name="urlbanner2" display_name="Url Banner2" required="true" />
-<UserPref name="urlimagebanner2" display_name="Url image Banner2" required="true" />
-<UserPref name="urlinkname2" display_name="Url link name Banner2" required="true" />
+<UserPref name="titleBanner1" display_name="Title Banner" required="true" />
+<UserPref name="textBanner1" display_name="Text Banner" required="true" />
+
+
 <Content type="html" view="configuration" preferred_height="480">
 
  <![CDATA[
@@ -28,61 +22,21 @@
 		  
   </style>
   
-  <table width="100%" border="0" id="tablaconfig">           
+  <table width="100%" border="0" id="tablaconfig">    
+  <form name="myForm">       
             <tr>       
                 <td>
-                    Title of Banner1: <input type="text" id="titleBanner1" value="__UP_titleBanner1__"   onchange="registra('titleBanner1')"/>                   
+                    Title - Banner1: <input type="text" size="100" id="titleBanner1" value="__UP_titleBanner1__"   onchange="registra('titleBanner1')"/>                   
                 </td>
             </tr>
 			 <tr>       
                 <td>
-					<form name="myForm">
+					
                     <!--Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> -->
-					Text of Banner1: <input type="text" size="300" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
+					Text - Banner1: <input type="text" size="100" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
 					</form>
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Url of Banner1: <input type="text" id="urlbanner1" value="__UP_urlbanner1__"   onchange="registra('urlbanner1')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                   Title of link of Banner1: <input type="text" id="urlinkname1" value="__UP_urlinkname1__"   onchange="registra('urlinkname1')"/>                   
-                </td>
-            </tr>
-				<tr>       
-                <td>
-                    Url image of Banner1: <input type="text" id="urlimagebanner1" value="__UP_urlimagebanner1__"   onchange="registra('urlimagebanner1')"/>                   
-                </td>
-            </tr>
-			 <tr>       
-                <td>
-                    Title of Banner2: <input type="text" id="titleBanner2" value="__UP_titleBanner2__"   onchange="registra('titleBanner2')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                   <!-- Text of Banner2: <textarea rows="5" cols="40" id="textBanner2" value="__UP_textBanner2__"   onchange="registra('textBanner2')"/>-->               
-					Text of Banner2: <input type="text" size="300" id="textBanner2" value="__UP_textBanner2__" onchange="registra('textBanner2')"/>
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Url of Banner1: <input type="text" id="urlbanner2" value="__UP_urlbanner2__"   onchange="registra('urlbanner2')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                   Title of link of Banner2: <input type="text" id="urlinkname2" value="__UP_urlinkname2__"   onchange="registra('urlinkname2')"/>                   
-                </td>
-            </tr>
-			<tr>       
-                <td>
-                    Url image of Banner2: <input type="text" id="urlimagebanner2" value="__UP_urlimagebanner2__"   onchange="registra('urlimagebanner2')"/>                   
-                </td>
-            </tr>
+              
+			
   </table>	
   
 <script type="text/javascript">           
@@ -110,69 +64,46 @@
       
       body {background-color:transparent;}
 	  
-     .banners-container{
-		float:left;
-	 }
-     .banner banner-schedule{
-		float:left;
-		background:url();
-	}
-	.banner banner-schedule #titleBanner1,
-	.banner banner-schedule #titleBanner2 h2{
-	border: medium none;
-    box-shadow: none;
-    font-size: 29px;
-    font-weight: bold;
-    line-height: 0.9em;
-    margin: 0 0 10px;
+  .banner-home {
+    background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Home/ImagenHeader.png) no-repeat left top;
+    color: #fff;
+    font-family: arial, sans-serif;
+    height: 204px;
+    padding: 40px 15px;
+    width: 912px;
+  }
+  .banner-home h2 {
+    border: none;
+    font-family: "BBVA Web Medium", arial, sans-serif;
+    font-size: 72px;
+    margin: 0;
     padding: 0;
-	}
-	.banner banner-schedule #textBanner1
-	.banner banner-schedule #textBanner2 p{
-	font-size:14px;
-	}
-	 .banner banner-interest{
-		float:left;
-		background:url();
-	 }
+  }
+  .banner-home p {
+    margin: 0 5px;
+    width: 325px;
+  }
 	
  </style>
 
-	<div class="banners-container">
-      <div class="banner banner-schedule">
-        <div id="titleBanner1"></div>
-        <div id="textBanner1"></div>
-        <div id="urlBanner1"></div>
-      </div>
-      <div class="banner banner-interest">
-        <div id="titleBanner2"></div>
-        <div id="textBanner2"></div>
-        <div id="urlBanner2"></div>
-      </div>
-    </div>
+<div class="banner-home">
+  <h2 id="titleBanner1"></h2>
+  <p id="textBanner1"></p>
+</div>
+
+
+
     <script type="text/javascript">
+
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
-	document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
-	var titlebanner1 = prefs.getString("titleBanner1");
-	var textbanner1 = prefs.getString("textBanner1");
-	var urlbanner1 = prefs.getString("urlbanner1");
-	var urlimagebanner1 = prefs.getString("urlimagebanner1");
-	var urlinkname1 = prefs.getString("urlinkname1");
-	var titlebanner2 = prefs.getString("titleBanner2");
-	var textbanner2 = prefs.getString("textBanner2");
-	var urlbanner2 = prefs.getString("urlbanner2");
-	var urlimagebanner2 = prefs.getString("urlimagebanner2");
-	var urlinkname2 = prefs.getString("urlinkname2");
+	//document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
 	
-	document.getElementById("titleBanner1").innerHTML = '<h2>'+titlebanner1+'</h2>';
-	document.getElementById("textBanner1").innerHTML = '<p>'+textbanner1+'</p>';
-	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'">'+urlinkname1+'</a>';
-	document.getElementById("banner banner-schedule").innerHTML ='style:background-image: url("'+urlimagebanner1+'")no-repeat';
-	document.getElementById("titleBanner2").innerHTML = '<h2>'+titlebanner2+'</h2>';
-	document.getElementById("textBanner2").innerHTML = '<p>'+textbanner2+'</p>';
-	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'">'+urlinkname2+'</a>';
-	document.getElementById("banner banner-interest").style.background ='background-image: url("'+urlimagebanner2+'")no-repeat';
+  var titlebanner1 = prefs.getString("titleBanner1");
+	var textbanner1 = prefs.getString("textBanner1");
+		
+	document.getElementById("titleBanner1").innerHTML = titlebanner1;
+	document.getElementById("textBanner1").innerHTML = textbanner1;
 	
   </script>
     ]]>
