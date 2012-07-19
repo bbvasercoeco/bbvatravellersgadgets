@@ -142,7 +142,6 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      //console.debug('lastfindings.xml');
       //console.debug('version 13');
 
       var gadgetHelper = null;
