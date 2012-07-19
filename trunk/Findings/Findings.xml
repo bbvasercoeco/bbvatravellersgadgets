@@ -67,6 +67,8 @@
     background-color: white;
     width: 47%;
     margin-right: 15px;
+    cursor: hand;
+    cursor: pointer;
   }
 
   .blockFinding .container-imageFindings {
@@ -195,6 +197,7 @@
     text-decoration: none;
   }
   
+
 </style>
 
 
