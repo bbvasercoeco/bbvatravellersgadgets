@@ -38,7 +38,7 @@
                 <td>
 					
                     <!--Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> -->
-					Text - Banner1: <input type="text" size="200" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
+					Text - Banner1: <input type="text" size="150" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
 					</form>
                 </td>
             </tr>
@@ -61,7 +61,7 @@
 			<tr>       
                 <td>
                    <!-- Text of Banner2: <textarea rows="5" cols="40" id="textBanner2" value="__UP_textBanner2__"   onchange="registra('textBanner2')"/>-->               
-					Text - Banner2: <input type="text" size="200" id="textBanner2" value="__UP_textBanner2__" onchange="registra('textBanner2')"/>
+					Text - Banner2: <input type="text" size="150" id="textBanner2" value="__UP_textBanner2__" onchange="registra('textBanner2')"/>
                 </td>
             </tr>
 			<tr>       
