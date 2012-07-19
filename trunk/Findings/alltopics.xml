@@ -206,7 +206,7 @@ line-height: 35px;
                 html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
             }
           
-            html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
+            html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,3) +'"></div>';
             html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
             html += '<h3>'+data.getValue(i,1)+ '</h3>';
             html += '<div id="summarytopic">'+data.getValue(i,2)+'</div></div>';
