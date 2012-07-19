@@ -143,7 +143,7 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      console.debug('21 alltopics.xml');
+      console.debug('22 alltopics.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -199,11 +199,11 @@ line-height: 35px;
            
             if (i % 2 == 0) 
             {
-                html += '<div class="topic first-row" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
+                html += '<div class="topic first-row" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,0) +'\';">';
             }
             else 
             {
-                html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,1) +'\';">';
+                html += '<div class="topic" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/topic?topicname='+ data.getValue(i,0) +'\';">';
             }
           
             html += '<div class="blockData"><div id="imagetopic"><img border="0" src="' + data.getValue(i,2) +'"></div>';
@@ -212,8 +212,8 @@ line-height: 35px;
              html += '<h3>'+data.getValue(i,1)+ '</h3>';
               html += '<h3>'+data.getValue(i,2)+ '</h3>';
               // html += '<h3>'+data.getValue(i,3)+ '</h3>';
-            html += '<div id="summarytopic">'+data.getValue(i,2)+'</div></div>';
-            html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,1) +'>View last findings of this topic</a></div>';
+            html += '<div id="summarytopic">'+data.getValue(i,1)+'</div></div>';
+            html += '<div class="last-findings-link" id="lastfindingstopic"><a target="_parent" href=https://sites.google.com/a/bbva.com/findings/home/topic?topicname=' + data.getValue(i,0) +'>View last findings of this topic</a></div>';
             html += '</div>';
 
             document.getElementById("alltopics").innerHTML += html;
