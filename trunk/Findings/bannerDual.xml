@@ -113,7 +113,7 @@
         height: 133px;
         padding: 18px 260px 15px 15px;
         position: relative;
-        width: 180px;
+        width: 190px;
       }
       .banner h2 {
         border: none;
@@ -145,6 +145,11 @@
         float: right;
       }
 
+      p.button {
+ background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/button.png) no-repeat left top;
+      height: 32px;
+      width: 156px;
+      }
 	
  </style>
 
@@ -165,12 +170,12 @@
       <div class="banner banner-schedule">
         <h2 id="titleBanner1">Calendario</h2>
         <p id="textBanner1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a href="#">Ver calendario</a>
+        <p id="button1" class="button"><a href="#"></a></p>
       </div>
       <div class="banner banner-interest">
         <h2 id="titleBanner2">¿Te interesa?</h2>
         <p id="textBanner2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <a href="#">Contribute</a>
+        <p id="button2" class="button"><a href="#">Contribute</a></p>
       </div>
     </div>
 
@@ -192,11 +197,11 @@
 	
 	document.getElementById("titleBanner1").innerHTML = titlebanner1;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
-	document.getElementById("urlBanner1").innerHTML = '<a href="'+urlbanner1+'">'+urlinkname1+'</a>';
+	document.getElementById("button1").innerHTML = '<a href="'+urlbanner1+'">'+urlinkname1+'</a>';
 
 	document.getElementById("titleBanner2").innerHTML = titlebanner2;
 	document.getElementById("textBanner2").innerHTML = textbanner2;
-	document.getElementById("urlBanner2").innerHTML = '<a href="'+urlbanner2+'">'+urlinkname2+'</a>';
+	document.getElementById("button2").innerHTML = '<a href="'+urlbanner2+'">'+urlinkname2+'</a>';
 	
 
   </script>
