@@ -54,6 +54,9 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
 }
+.event-detail div {
+  line-height: 20px;
+}
 .user-bbva {
   border-bottom: 1px solid #b1b1b1;
   overflow: hidden;
@@ -152,7 +155,7 @@ h2 {
       html += '<div class="date-detail"><span>FECHA:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+'</div>';
       html += '<div class="time"><span>HORARIO:</span> '+time1.getHours()+'":"'+time1.getMinutes()+' "-" '+time2.getHours()+'":"'+time2.getMinutes()+' "horas"</div>';
       html += '<div class="place"><span>LUGAR:</span> '+data.getValue(0,2)+'</div>';
-      html += '<div class="registration"><span>INSCRIPCIÓN:</span> '+data.getValue(0,10)+'</div>';
+      html += '<div class="registration"><span>INSCRIPCION:</span> '+data.getValue(0,10)+'</div>';
       html += '</div>';
       html += '<div class="user-bbva">';
       html += '<div><img src="'+data.getValue(0,5)+'" /></div>';
