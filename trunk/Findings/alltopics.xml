@@ -47,6 +47,8 @@
         margin-bottom: 16px;
         margin-left: 29px;
         width: 455px;
+        cursor: hand;
+        cursor: pointer;
       }
       .first-row {
         clear: left;
