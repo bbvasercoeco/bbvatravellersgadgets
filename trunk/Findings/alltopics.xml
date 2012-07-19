@@ -143,7 +143,7 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      console.debug('14 alltopics');
+      console.debug('15 alltopics');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -163,7 +163,7 @@ line-height: 35px;
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select A,B,C group by A order by max(A)";
+        var querytosend = "select max(A),B,C group by A order by max(A)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
