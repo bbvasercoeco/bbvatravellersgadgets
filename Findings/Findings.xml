@@ -280,7 +280,7 @@
     data = response.getDataTable();
 
     var filas = data.getNumberOfRows();
-    alert(data.getColumnType(0));
+   
     for(var i = 0; i < filas; i++)
     {
       var html = "";
