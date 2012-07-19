@@ -97,7 +97,6 @@
     <![CDATA[
 
     <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
       
       body {background-color:transparent;}
@@ -140,16 +139,16 @@ width: 156px;
 
       }
       .banner-schedule {
-        background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen1.png) no-repeat left top;
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen1.png) no-repeat left top;
         float: left;
       }
       .banner-interest {
-        background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen2.png) no-repeat left top;
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_CommingEvents/imagen2.png) no-repeat left top;
         float: right;
       }
 
       p.button {
- background: url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/button.png) no-repeat left top;
+ background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/button.png) no-repeat left top;
 height: 32px;
 width: 156px;
 margin: 0;
