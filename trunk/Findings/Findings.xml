@@ -224,7 +224,7 @@
 
 <script type="text/javascript">
 
-  console.debug('71 findings.xml');
+  console.debug('72 findings.xml');
 
    //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -280,7 +280,7 @@
     data = response.getDataTable();
 
     var filas = data.getNumberOfRows();
-    alert(data.getColumnType(0));
+   // alert(data.getColumnType(0));
     for(var i = 0; i < filas; i++)
     {
       var html = "";
