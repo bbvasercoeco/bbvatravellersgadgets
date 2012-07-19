@@ -38,6 +38,8 @@
         overflow: hidden;
       }
       .topic {
+      cursor: hand;
+        cursor: pointer;
         background: #fff;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
@@ -47,8 +49,7 @@
         margin-bottom: 16px;
         margin-left: 29px;
         width: 455px;
-        cursor: hand;
-        cursor: pointer;
+        
       }
       .first-row {
         clear: left;
