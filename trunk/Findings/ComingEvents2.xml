@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('34 ComingEvents.xml');
+      console.debug('38 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -285,6 +285,7 @@ color: white;
 			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
+		query.itemsPerPage(1);
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
