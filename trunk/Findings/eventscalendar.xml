@@ -74,6 +74,9 @@
       }
       .finding .text .summary {
         margin: 15px 0;
+		font-family: arial, sans-serif;
+		font-weight:bold;
+		font-size:14px;
       }
       .finding .footer {
         bottom: 10px;
@@ -89,7 +92,7 @@
         color: #62b4e6;
         font-weight: normal;
         text-decoration: none;
-		margin:right:600px;
+		margin-right:600px;
       }
       .finding .footer a.more-link:hover {
         text-decoration: underline;
@@ -108,7 +111,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 18');
+      console.debug('version 19');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
