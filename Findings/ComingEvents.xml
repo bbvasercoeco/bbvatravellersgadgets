@@ -248,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('17 ComingEvents.xml');
+      console.debug('18 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -280,7 +280,7 @@ color: white;
 		{
 			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
-			var querytosend = "select max(D),B,P,U,V,W,G,A where dateDiff(D,now())>0 group by B,P,U,V,W,G,A order by max(D)  desc";
+			var querytosend = "select max(D),B,E,U,V,W,G,A where dateDiff(D,now())>0 group by B,E,U,V,W,G,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
         query.setQuery(querytosend);
