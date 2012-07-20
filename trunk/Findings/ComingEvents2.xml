@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('33 ComingEvents.xml');
+      console.debug('34 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -292,7 +292,7 @@ color: white;
       function handleQueryResponse(response)
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
-		alert(response);
+		alert(response['itemsPerPage']);
         data = response.getDataTable();
 		
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
