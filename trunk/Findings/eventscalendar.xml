@@ -111,7 +111,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 22');
+      console.debug('version 23');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -149,7 +149,7 @@
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
-	
+		alert(filas);
 		for(var i=0;i<filas;i++){
         var fecha = new Date(data.getValue(i,0));
        
