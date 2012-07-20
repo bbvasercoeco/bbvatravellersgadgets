@@ -173,10 +173,10 @@
 		html += '</div>';
 		html += '<div class="text">';
 		html += '<div class="summary">'+data.getValue(i,1)+'</div>';
-		html += '</div>';
 		html +='<div class="footer">';
 		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
 		html +='</div>';
+		html += '</div>';
 		html += '</div>';
 		
 		document.getElementById('futureevents').innerHTML= html;
