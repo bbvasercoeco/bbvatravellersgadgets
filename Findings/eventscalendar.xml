@@ -29,7 +29,7 @@
         position: relative;
 		cursor:hand; 
 		cursor:pointer;
-		width:300px;
+		width:220px;
 		
       }
       .finding .date {
@@ -74,11 +74,11 @@
         color: #094691;
       }
       .finding .text .summary {
-        margin: 10px 0px 0px -15px;
+        margin: 0px -20px;
 		font-family: arial, sans-serif;
 		font-weight:bold;
 		font-size:14px;
-		width:200px;
+		width:155px;
       }
       .finding .footer {
         bottom: 10px;
@@ -94,7 +94,7 @@
         color: #62b4e6;
         font-weight: bold;
         text-decoration: none;
-		margin-right:265px;
+		margin-right:325px;
       }
       .finding .footer a.more-link:hover {
         text-decoration: underline;
@@ -113,7 +113,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 26');
+      console.debug('version 27');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -171,7 +171,7 @@
         month[11]="Dec";
 		
 		var html="";
-		html += '<div id=comingevent" class="finding">';
+		html += '<div id=comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\');">';
 		html += '<div class="date">';
 		html += '<div class="day" id="dia">'+fecha.getDate()+'</div>';
 		html += '<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
@@ -180,7 +180,7 @@
 		html += '<div class="text">';
 		html += '<div class="summary">'+data.getValue(i,1)+'</div>';
 		html +='<div class="footer">';
-		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
+		html += '<div class="More Info"><a target="_blank" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
 		html +='</div>';
 		html += '</div>';
 		html += '</div>';
