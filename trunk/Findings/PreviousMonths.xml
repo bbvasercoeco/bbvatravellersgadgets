@@ -80,7 +80,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 18');
+      console.debug('version 19');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -139,7 +139,7 @@
 
       
       
-         for (var i=0;i<(filas-3);i++){
+         for (var i=0;i<(filas);i++){
           var fecha = new Date(data.getValue(i,0));
 		  document.getElementById('previousmonths').innerHTML += '<li><a target="_parent" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
 
