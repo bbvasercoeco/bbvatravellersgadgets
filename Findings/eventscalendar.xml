@@ -107,7 +107,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 15');
+      console.debug('version 16');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -176,6 +176,7 @@
 		html +='<div class="footer">';
 		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
 		html +='</div>';
+		html += '</div>';
 		html += '</div>';
 		
 		
