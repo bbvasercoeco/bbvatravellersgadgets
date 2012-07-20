@@ -94,7 +94,7 @@
         color: #62b4e6;
         font-weight: bold;
         text-decoration: none;
-		margin-right:255px;
+		margin-right:265px;
       }
       .finding .footer a.more-link:hover {
         text-decoration: underline;
