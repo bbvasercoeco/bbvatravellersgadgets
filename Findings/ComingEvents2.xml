@@ -292,9 +292,9 @@ color: white;
       function handleQueryResponse(response)
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
-		alert(response['itemsPerPage']);
-        data = response.getDataTable();
 		
+        data = response.getDataTable();
+		google.gdata.opensearch.ItemsPerPage(1);
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
 		/*var paginas = (filas)/10;
