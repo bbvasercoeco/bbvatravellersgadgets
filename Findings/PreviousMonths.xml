@@ -80,7 +80,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 16');
+      console.debug('version 17');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -137,8 +137,8 @@
         month[10]="November";
         month[11]="December";
 
-      document.getElementById('previousmonths').innerHTML="";
-       // alert(filas);
+      
+      
          for (var i=0;i<(filas-3);i++){
           var fecha = new Date(data.getValue(i,0));
 		  document.getElementById('previousmonths').innerHTML += '<li><a target="_parent" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
