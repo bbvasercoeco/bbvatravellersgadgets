@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('25 ComingEvents.xml');
+      console.debug('26 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -269,7 +269,7 @@ color: white;
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp','itemsPerPage':1};
-
+		google.gdata.opensearch.ItemsPerPage(1);
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		
 		if(situation.indexOf('coming-events')== -1)
