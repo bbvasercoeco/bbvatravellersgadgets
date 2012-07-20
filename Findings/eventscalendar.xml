@@ -24,7 +24,7 @@
         box-shadow: 0 1px #ddd;
         font-family: arial, sans-serif;
         font-size: 12px;
-        height: 140px;
+        height: 115px;
         margin-bottom: 16px;
         position: relative;
 		cursor:hand; 
@@ -111,7 +111,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 21');
+      console.debug('version 22');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
