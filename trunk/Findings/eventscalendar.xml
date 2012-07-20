@@ -16,6 +16,11 @@
     <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
     <style type="text/css">
 		body { background-color:transparent !important;}
+	  h2{
+		font-size:18px;
+		font-family: arial, sans-serif;
+		font-weight:bold;
+		}
       .finding {
         background: #fff;
         -moz-border-radius: 4px;
@@ -113,7 +118,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 27');
+      console.debug('version 28');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -171,7 +176,7 @@
         month[11]="Dec";
 		
 		var html="";
-		html += '<div id=comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\');">';
+		html += '<div id=comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,2) +'\');">';
 		html += '<div class="date">';
 		html += '<div class="day" id="dia">'+fecha.getDate()+'</div>';
 		html += '<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
