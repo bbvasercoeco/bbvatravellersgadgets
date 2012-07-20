@@ -248,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('18 ComingEvents.xml');
+      console.debug('19 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -314,9 +314,9 @@ color: white;
 			switch(topicname)
 			{
 			 case 'Security': var classname="green2";break;
-                case 'Banca':  var classname="brown";break;
+                case 'Banking':  var classname="brown";break;
                 case 'Scouting':  var classname="green";break;
-                case 'Mobility':  var classname="blue";break;
+                case 'Mobile':  var classname="blue";break;
                 case 'Boundaries':  var classname="pink";break;
                 case 'Technology':  var classname="blue2";break;
                 case 'Innovation':  var classname="brown2";break;

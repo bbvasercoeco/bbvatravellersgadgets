@@ -224,7 +224,7 @@
 
 <script type="text/javascript">
 
-    console.debug('83 findings.xml');
+    console.debug('84 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -300,10 +300,10 @@
 
             switch(topicName)
             {
-                case 'Security': var classname="green2";break;
-                case 'Banca':  var classname="brown";break;
+                 case 'Security': var classname="green2";break;
+                case 'Banking':  var classname="brown";break;
                 case 'Scouting':  var classname="green";break;
-                case 'Mobility':  var classname="blue";break;
+                case 'Mobile':  var classname="blue";break;
                 case 'Boundaries':  var classname="pink";break;
                 case 'Technology':  var classname="blue2";break;
                 case 'Innovation':  var classname="brown2";break;
