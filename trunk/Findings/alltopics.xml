@@ -143,7 +143,7 @@ line-height: 35px;
 	
     <div id="alltopics"></div>
     <script type="text/javascript">
-      console.debug('23 alltopics.xml');
+      console.debug('24 alltopics.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -186,9 +186,9 @@ line-height: 35px;
             switch(topicName)
             {
                 case 'Security': var classname="green2";break;
-                case 'Banca':  var classname="brown";break;
+                case 'Banking':  var classname="brown";break;
                 case 'Scouting':  var classname="green";break;
-                case 'Mobility':  var classname="blue";break;
+                case 'Mobile':  var classname="blue";break;
                 case 'Boundaries':  var classname="pink";break;
                 case 'Technology':  var classname="blue2";break;
                 case 'Innovation':  var classname="brown2";break;
