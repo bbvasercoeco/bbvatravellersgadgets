@@ -90,9 +90,9 @@
       }
       .finding .footer a.more-link {
         color: #62b4e6;
-        font-weight: normal;
+        font-weight: bold;
         text-decoration: none;
-		margin-right:600px;
+		margin-right:160px;
       }
       .finding .footer a.more-link:hover {
         text-decoration: underline;
@@ -111,7 +111,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 20');
+      console.debug('version 21');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
