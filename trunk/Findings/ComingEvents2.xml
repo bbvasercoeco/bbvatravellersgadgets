@@ -248,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('22 ComingEvents.xml');
+      console.debug('23 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -266,7 +266,7 @@ color: white;
       {
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
-        var opts = {dataType:'jsonp'};
+        var opts = {dataType:'jsonp',itemsPerPage:1};
 
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		
@@ -293,6 +293,12 @@ color: white;
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
+		/*var paginas = (filas)/10;
+		if((filas)%10 != 0){
+		paginas = paginas +1;
+		}*/
+		
+	
         var month = new Array();
         month[0]="Jan";
         month[1]="Feb";
