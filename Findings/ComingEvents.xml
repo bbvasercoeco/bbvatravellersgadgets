@@ -248,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('19 ComingEvents.xml');
+      console.debug('20 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -274,7 +274,7 @@ color: white;
 		{
 			document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 			document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View coming events</a></div>';
-			var querytosend = "select max(D),B,P,U,V,W,G,A where dateDiff(D,now())>0 group by B,P,U,V,W,G,A order by max(D)  desc limit 3"; 
+			var querytosend = "select max(D),B,E,U,V,W,G,A where dateDiff(D,now())>0 group by B,E,U,V,W,G,A order by max(D)  desc limit 3"; 
 		}
 		else
 		{
