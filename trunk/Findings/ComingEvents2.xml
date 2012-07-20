@@ -292,7 +292,7 @@ color: white;
       function handleQueryResponse(response)
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
-        data = response.getDataTable().itemsPerPage(1);
+        data = response.itemsPerPage(1).getDataTable();
 		
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
