@@ -118,7 +118,7 @@
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
-		alert(filas);
+	
        /* var fecha = new Date(data.getValue(0,0));
         var fecha1 = new Date(data.getValue(1,0));
         var fecha2 = new Date(data.getValue(2,0));*/
