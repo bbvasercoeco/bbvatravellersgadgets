@@ -62,7 +62,7 @@
 		background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/loading.gif);
       }
       .finding .text {
-        padding: 20px 20px 10px 480px;
+        padding: 15px 20px 10px 100px;
       }
       .finding .text h3 {
         color: #000;
@@ -107,7 +107,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 16');
+      console.debug('version 17');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
