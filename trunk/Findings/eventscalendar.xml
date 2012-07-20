@@ -99,10 +99,10 @@
       <h2>
         Calendario de eventos<!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
       </h2>
-      
+      </div>
         <div id="futureevents"></div>
      
-    </div>
+    
 
     <script type="text/javascript">
 
@@ -177,7 +177,7 @@
 		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
 		html +='</div>';
 		html += '</div>';
-		html += '</div>';
+		
 		
 		document.getElementById('futureevents').innerHTML= html;
 		
