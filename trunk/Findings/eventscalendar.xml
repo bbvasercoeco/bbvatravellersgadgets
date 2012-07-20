@@ -171,7 +171,9 @@
 		html += '<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
 		html += '<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
 		html += '</div>';
-		html += '<div class="titleevent">'+data.getValue(i,1)+'</div>';
+		html += '<div class="text">';
+		html += '<div class="summary">'+data.getValue(i,1)+'</div>';
+		html += '</div>';
 		html +='<div class="footer">';
 		html += '<div class="More Info"><a target="_parent" href="'+data.getValue(i,2)+'" class="more-link">More Info</a></div>';
 		html +='</div>';
