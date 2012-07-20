@@ -73,7 +73,7 @@
         color: #094691;
       }
       .finding .text .summary {
-        margin: 15px 0;
+        margin: 10px -15px 0px 0px;
 		font-family: arial, sans-serif;
 		font-weight:bold;
 		font-size:14px;
@@ -111,7 +111,7 @@
     <script type="text/javascript">
 
       //console.debug('lastfindings.xml');
-      console.debug('version 19');
+      console.debug('version 20');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
