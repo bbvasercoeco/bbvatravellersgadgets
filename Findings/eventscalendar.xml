@@ -129,7 +129,7 @@
 
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select min(D),S,V group by S,V order by min(D)";
+        var querytosend = "select min(D),S,U where dateDiff(D,now())>0 group by S,U order by min(D)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
 
