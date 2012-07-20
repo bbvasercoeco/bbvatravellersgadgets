@@ -293,15 +293,15 @@ color: white;
       function handleQueryResponse(response)
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
-		
+		var contador = 0;
         data = response.getDataTable();
 		google.gdata.opensearch.ItemsPerPage(1);
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
-		/*var paginas = (filas)/10;
+		var paginas = (filas)/10;
 		if((filas)%10 != 0){
 		paginas = paginas +1;
-		}*/
+		}
 		
 	
         var month = new Array();
@@ -317,10 +317,11 @@ color: white;
         month[9]="Oct";
         month[10]="Nov";
         month[11]="Dec";
-
-        for(var i = 0; i < filas; i++) 
-		{
-			var fecha = new Date(data.getValue(i,0));
+    for (var j=0;j<paginas;j++){
+		 for(var x = 0; x < 10; x++){
+			for(var i = 0; i < filas; i++) 
+			{   
+	        var fecha = new Date(data.getValue(i,0));
 			var topicname = data.getValue(i,7);
 			switch(topicname)
 			{
@@ -355,8 +356,11 @@ color: white;
 			html +='</div>';
 			html +='</div>';
 			document.getElementById("comingevents").innerHTML += html;
+		
+			}
         }
-     }
+	 }
+  }
 	
 		
     </script>
