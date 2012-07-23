@@ -3,10 +3,8 @@
   <ModulePrefs title="ComingEvents.xml"
     description=""
     author_affiliation="Capgemini">
-	
     <Require feature="idi"/>
     <Require feature="locked-domain" />
-	
   </ModulePrefs>
 
   <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
@@ -250,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('45 ComingEvents.xml');
+      console.debug('21 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -269,14 +267,14 @@ color: white;
         gadgetHelper = new google.visualization.GadgetHelper();
         //var query = gadgetHelper.createQueryFromPrefs(prefs);
         var opts = {dataType:'jsonp'};
-		
+
 		var situation = gadgets.util.getUrlParameters()["parent"].split("/");
 		
 		if(situation.indexOf('coming-events')== -1)
 		{
 			document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 			document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View coming events</a></div>';
-			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc "; 
+			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc limit 3"; 
 		}
 		else
 		{
@@ -285,7 +283,6 @@ color: white;
 			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
-		
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
       }
@@ -293,16 +290,9 @@ color: white;
       function handleQueryResponse(response)
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
-		var contador = 0;
         data = response.getDataTable();
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
-		alert(filas);
-		var paginas = Math.ceil((filas)/10);
-		var paginas1 = (filas%10);
-				
-		alert(paginas);
-		
-		
         var month = new Array();
         month[0]="Jan";
         month[1]="Feb";
@@ -316,10 +306,10 @@ color: white;
         month[9]="Oct";
         month[10]="Nov";
         month[11]="Dec";
-    
-			for(var i = 0; i < filas; i++) 
-			{   
-	        var fecha = new Date(data.getValue(i,0));
+
+        for(var i = 0; i < filas; i++) 
+		{
+			var fecha = new Date(data.getValue(i,0));
 			var topicname = data.getValue(i,7);
 			switch(topicname)
 			{
@@ -354,10 +344,8 @@ color: white;
 			html +='</div>';
 			html +='</div>';
 			document.getElementById("comingevents").innerHTML += html;
-		
-		
-	 }
-  }
+        }
+     }
 	
 		
     </script>
