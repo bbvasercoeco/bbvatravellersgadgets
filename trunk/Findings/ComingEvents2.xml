@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('43 ComingEvents.xml');
+      console.debug('44 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -302,7 +302,7 @@ color: white;
 		alert(paginas1+" moduloooo");
 		
 		if((filas%10) != 0){
-		paginas ++;
+		Math.ceil(paginas);
 		}
 		
 		alert(paginas);
