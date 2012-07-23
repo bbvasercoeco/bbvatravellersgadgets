@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('40 ComingEvents.xml');
+      console.debug('41 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -296,10 +296,12 @@ color: white;
 		var contador = 0;
         data = response.getDataTable();
         filas = data.getNumberOfRows();
+		alert(filas);
 		var paginas = (filas)/10;
-		if((filas)%10 != 0){
+		if((filas%10) != 0){
 		paginas = paginas +1;
 		}
+		
 		alert(paginas);
 		
 		
