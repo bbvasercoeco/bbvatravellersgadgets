@@ -280,7 +280,7 @@ color: white;
 		{
 			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
-			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc";
+			var querytosend = "select max(D),B,E,U,C,W,G,A,AB where dateDiff(D,now())>0 group by B,E,U,C,W,G,A,AB order by max(D)  desc";
 		}
         var query = new google.visualization.Query(urlTable, opts);
         query.setQuery(querytosend);
@@ -312,6 +312,7 @@ color: white;
 			var fecha = new Date(data.getValue(i,0));
 			alert(fecha);
 			alert(data.getColumnType(i,0));
+			alert(data.getValue(i,8));
 			var topicname = data.getValue(i,7);
 			switch(topicname)
 			{
