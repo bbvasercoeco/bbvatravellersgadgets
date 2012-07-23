@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('44 ComingEvents.xml');
+      console.debug('45 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -297,14 +297,9 @@ color: white;
         data = response.getDataTable();
         filas = data.getNumberOfRows();
 		alert(filas);
-		var paginas = (filas)/10;
+		var paginas = Math.ceil((filas)/10);
 		var paginas1 = (filas%10);
-		alert(paginas1+" moduloooo");
-		
-		if((filas%10) != 0){
-		Math.ceil(paginas);
-		}
-		
+				
 		alert(paginas);
 		
 		
