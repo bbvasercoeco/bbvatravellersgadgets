@@ -250,7 +250,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('38 ComingEvents.xml');
+      console.debug('39 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -295,15 +295,14 @@ color: white;
         if (!gadgetHelper.validateResponse(response)) { return; }
 		var contador = 0;
         data = response.getDataTable();
-		google.gdata.opensearch.ItemsPerPage(1);
-        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
 		var paginas = (filas)/10;
 		if((filas)%10 != 0){
 		paginas = paginas +1;
 		}
+		alert(paginas);
 		
-	
+		
         var month = new Array();
         month[0]="Jan";
         month[1]="Feb";
@@ -317,8 +316,7 @@ color: white;
         month[9]="Oct";
         month[10]="Nov";
         month[11]="Dec";
-    for (var j=0;j<paginas;j++){
-		 for(var x = 0; x < 10; x++){
+    
 			for(var i = 0; i < filas; i++) 
 			{   
 	        var fecha = new Date(data.getValue(i,0));
@@ -357,8 +355,7 @@ color: white;
 			html +='</div>';
 			document.getElementById("comingevents").innerHTML += html;
 		
-			}
-        }
+		
 	 }
   }
 	
