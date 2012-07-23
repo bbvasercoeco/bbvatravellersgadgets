@@ -248,7 +248,7 @@ color: white;
 
     <script type="text/javascript">
 
-      console.debug('31 ComingEvents.xml');
+      console.debug('32 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -312,7 +312,7 @@ color: white;
 			var fecha = new Date(data.getValue(i,0));
 			alert(fecha);
 			alert(data.getColumnType(i,0));
-			alert(data.getValue(i,8));
+			alert(data.getValue(i,8)+"jordiiii");
 			var topicname = data.getValue(i,7);
 			switch(topicname)
 			{
