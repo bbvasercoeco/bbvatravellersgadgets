@@ -225,6 +225,12 @@ margin-top:-20px;
 margin-right:50px;
 font-weight:bold;
  }
+ 
+  p.text {	 
+		font-size: 0.8em;
+		color: #3B3B3B;
+	}
+	
 </style>
 
 
@@ -251,7 +257,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    console.debug('prod 6 findings.xml');
+    console.debug('prod 7 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -331,7 +337,7 @@ font-weight:bold;
 	   
 	   if(filas<1){
 			var html = "";
-			html += '<p>There is no event associated with this topic.</p>';
+			html += '<p class="text">There is no event associated with this topic.</p>';
 	   }
 	   else
 	   {
