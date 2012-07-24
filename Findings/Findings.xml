@@ -90,7 +90,7 @@
         }
 
         .par {            
-            margin-right: 15px !important;
+            margin-right: 0px !important;
         }
 
         .blockFinding .container-imageFindings {
@@ -250,7 +250,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prod 11 findings.xml');
+        console.debug('prod 12 findings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -353,11 +353,11 @@
                 resto = i % 2;
                 if (resto == 0)
                 {
-                    html += '<div class="blockFinding par" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
+                    html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
                 } 
                 else
                 {
-                    html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
+                    html += '<div class="blockFinding par" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
                 }
                 
                 html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
