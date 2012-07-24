@@ -159,6 +159,7 @@ top: 116px;
 	
 	p.textoBanner {
 		padding-top: 4px;
+		font-size: 0.9em;
 	}
 	
  </style>
