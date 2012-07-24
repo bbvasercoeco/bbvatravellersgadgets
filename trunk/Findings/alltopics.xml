@@ -63,7 +63,7 @@ height: 25px;
       }
       .topic img {
         float: left;
-        padding: 15px 35px;
+        padding: 20px 35px 35px 35px;
       }
       .topic .last-findings-link {
         clear: both;
@@ -133,8 +133,7 @@ line-height: 35px;
  }
 
  .blockData {
-
-    height: 110px;
+    height: 150px;
  }
  
     </style>
