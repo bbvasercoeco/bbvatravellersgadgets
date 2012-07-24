@@ -82,18 +82,18 @@ h2 {
 
 <ul id="contribute">
   <li id="found-event" class="item">
-    <h3>Want to scout some</h3>
-    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <h3>Attending or wishing to scout</h3>
+    <div class="summary">Let us know if you booked an event (or have an interest), we will help you.</div>
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event">Contribute</a></div>
   </li>
   <li id="went-event" class="item">
-    <h3>Share what you got</h3>
-    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <h3>Share findings</h3>
+    <div class="summary">Share highlights, testimonies, insights, photos, minutes...</div>
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience">Contribute</a></div>
   </li>
   <li id="want-go-event" class="item last">
     <h3>Suggest a new expedition</h3>
-    <div class="summary">Sed gravida fementum lacinia. Proin cursus tem, nus tempor dapibus. Am sollicitudin. Sed gravida ferm entum lacinia. Proin ursus tem nusle tempos dapibus.</div>
+    <div class="summary">If you want to tell us about a relevant event, this is the place.</div>
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event">Contribute</a></div>
   </li>
 </ul>
