@@ -242,7 +242,10 @@ margin-top:-20px;
 margin-right:50px;
 font-weight:bold;
  } 
-     
+     #home p {	 
+		font-size: 0.8em;
+		color: #3B3B3B;
+	}
     </style>
 
     <div id="home"></div>
