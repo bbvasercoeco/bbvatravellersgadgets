@@ -157,8 +157,7 @@ position: absolute;
 top: 116px;
       }
 	
-	p.textBanner1,
-	p.textBanner2 {
+	p.textoBanner {
 		padding-top: 4px;
 	}
 	
@@ -167,12 +166,12 @@ top: 116px;
     <div class="banners-container">
       <div class="banner banner-schedule">
         <h2 id="titleBanner1">Calendario</h2>
-        <p id="textBanner1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p id="textBanner1" class="textoBanner">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <p id="button1" class="button"><a href="#"></a></p>
       </div>
       <div class="banner banner-interest">
         <h2 id="titleBanner2">¿Te interesa?</h2>
-        <p id="textBanner2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p id="textBanner2" class="textoBanner">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
         <p id="button2" class="button"><a href="#">Contribute</a></p>
       </div>
     </div>
