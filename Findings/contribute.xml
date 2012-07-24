@@ -55,6 +55,10 @@ h2 {
   margin: 0;
   padding: 169px 43px 10px 43px;
 }
+
+.item h3.oneline {
+	padding: 199px 43px 10px 43px;
+}
 .item .summary {
   color: #2d2d2d;
   padding: 0 43px 48px 43px;
@@ -88,12 +92,12 @@ h2 {
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/ask-an-event">Contribute</a></div>
   </li>
   <li id="went-event" class="item">
-    <h3>Share findings</h3>
+    <h3 class="oneline">Share findings</h3>
     <div class="summary">Share highlights, testimonies, insights, photos, minutes...</div>
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/share-your-experience">Contribute</a></div>
   </li>
   <li id="want-go-event" class="item last">
-    <h3>Suggest a new expedition</h3>
+    <h3 class="oneline">Suggest a new expedition</h3>
     <div class="summary">If you want to tell us about a relevant event, this is the place.</div>
     <div class="link"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/contribute/tell-us-new-event">Contribute</a></div>
   </li>
