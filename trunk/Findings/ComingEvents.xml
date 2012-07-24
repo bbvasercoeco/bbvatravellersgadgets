@@ -358,13 +358,12 @@ font-weight:bold;
 			html +='</div>';
 			
 		if(pagTotales>1){
-            if ( (i==10*pagActual-1) )
-            {
-				
+            if ( (i==5*pagActual-1) )
+            {				
                 var pagActualParaMostrar = pagActual+1;
                 var pagSiguiente = pagActualParaMostrar+1;
 				
-				if(i>9){
+				if(i>4){
 				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">Anterior</a></div>';
 				//console.debug('ANTERIOR i>9 -> i='+i);
 				}
