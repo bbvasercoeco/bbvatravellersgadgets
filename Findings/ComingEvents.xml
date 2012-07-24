@@ -254,7 +254,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 0 ComingEvents.xml');
+     console.debug('prod 1 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -278,12 +278,13 @@ font-weight:bold;
 		
 		if(situation.indexOf('coming-events')== -1)
 		{
-			document.getElementById("home").innerHTML = "<h2>Coming Events</h2><p>Browse forthcoming events selected by their relevance, and find out who\'s coming in case you need to request specific information.</p>";
+			document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 			document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View coming events</a></div>';
 			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc limit 3"; 
 		}
 		else
 		{
+			document.getElementById("home").innerHTML = "<p>Browse forth coming events selected by their relevance, and find out who\'s coming in case you need to request specific information.</p>";
 			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
 			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc";
