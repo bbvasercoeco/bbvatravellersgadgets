@@ -254,7 +254,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 1 ComingEvents.xml');
+     console.debug('prod 2 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -284,8 +284,8 @@ font-weight:bold;
 		}
 		else
 		{
+			document.getElementById("home").innerHTML = "";
 			document.getElementById("home").innerHTML = "<p>Browse forth coming events selected by their relevance, and find out who\'s coming in case you need to request specific information.</p>";
-			document.getElementById("home").style.display = "none";
 			document.getElementById("all").style.display = "none";
 			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D)  desc";
 		}
