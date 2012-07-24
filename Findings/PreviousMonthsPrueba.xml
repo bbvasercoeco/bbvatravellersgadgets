@@ -118,7 +118,7 @@
         data = response.getDataTable();
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         var filas = data.getNumberOfRows();
-	
+		alert(filas);
 
         var month = new Array();
         month[0]="January";
