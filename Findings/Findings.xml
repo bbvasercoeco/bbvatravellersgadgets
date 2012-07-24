@@ -88,25 +88,24 @@
   }
 
   .blockFinding .blockData .label-topicName {
-    padding-top: 10px;
-    /*padding-left: 212px;*/
-    color: black;
-    font-weight: normal;
-    font-size: 11px;
-    text-align: left;
-    line-height: 17px;
-    height: 25px;
-    width: 268px;
+   padding-top: 10px;
+color: black;
+font-weight: normal;
+font-size: 11px;
+text-align: left;
+line-height: 17px;
+height: 25px;
+width: 250px;
   }
 
   .blockFinding .blockData .label-topicName span{
-    padding-left: 208px;
-    color: white;
-    font-weight: normal;
-    font-size: 11px;
-    text-align: left;
-    line-height: 17px;
-    height: 25px;
+    padding-left: 190px;
+color: white;
+font-weight: normal;
+font-size: 11px;
+text-align: left;
+line-height: 17px;
+height: 25px;
 
   }
 
@@ -238,7 +237,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    //console.debug('107 findings_jmc.xml');
+    console.debug('prod 1 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
