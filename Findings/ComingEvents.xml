@@ -257,7 +257,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 3 ComingEvents.xml');
+     console.debug('prod 4 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -301,7 +301,7 @@ font-weight:bold;
       {
         if (!gadgetHelper.validateResponse(response)) { return; }
         data = response.getDataTable();
-        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
 		var pagActual = 1;
         var pagTotales = Math.ceil(filas/5);
@@ -319,6 +319,10 @@ font-weight:bold;
         month[9]="Oct";
         month[10]="Nov";
         month[11]="Dec";
+
+		var html = "";
+
+        html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 
         for(var i = 0; i < filas; i++) 
 		{
@@ -338,7 +342,7 @@ font-weight:bold;
                 default: var classname="brown";break;
 			}
 			
-			var html = "";
+			//var html = "";
 			html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\');">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
