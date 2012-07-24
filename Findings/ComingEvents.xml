@@ -257,7 +257,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 2 ComingEvents.xml');
+     console.debug('prod 3 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -304,7 +304,7 @@ font-weight:bold;
         //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
         filas = data.getNumberOfRows();
 		var pagActual = 1;
-        var pagTotales = Math.ceil(filas/10);
+        var pagTotales = Math.ceil(filas/5);
 		
         var month = new Array();
         month[0]="Jan";
