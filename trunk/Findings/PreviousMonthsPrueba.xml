@@ -102,7 +102,7 @@
 
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select min(D),T where T <> '' group by T order by min(D)";
+        var querytosend = "select min(D),T,A where T <> '' group by T,A order by min(D)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
 
