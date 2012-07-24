@@ -157,6 +157,11 @@ position: absolute;
 top: 116px;
       }
 	
+	p.textBanner1,
+	p.textBanner2 {
+		padding-top: 4px;
+	}
+	
  </style>
 
     <div class="banners-container">
