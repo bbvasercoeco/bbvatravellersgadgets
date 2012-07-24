@@ -251,7 +251,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    console.debug('prod 4 findings.xml');
+    console.debug('prod 6 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -317,20 +317,28 @@ font-weight:bold;
 
         data = response.getDataTable();
 
+		
         var filas = data.getNumberOfRows();
+		
+		
         var pagActual = 1;
         
         
 		var pagTotales = Math.ceil(filas/10);
         
 
-       //console.debug('filas:'+filas);
-        //console.debug('<div class="paginaNueva">');
-       
-        var html = "";
-
+       console.debug('filas:'+filas);
+	   
+	   if(filas<1){
+			var html = "";
+			html += '<p>There is no event associated with this topic.</p>';
+	   }
+	   else
+	   {
+		var html = "";
         html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
-
+	   }
+	   
         for(var i = 0; i < filas; i++)
         {
 
