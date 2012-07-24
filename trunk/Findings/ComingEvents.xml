@@ -245,6 +245,7 @@ font-weight:bold;
      #home p {	 
 		font-size: 0.8em;
 		color: #3B3B3B;
+		margin-bottom: 15px;
 	}
 	
 	#bloqueEnlaces a,
