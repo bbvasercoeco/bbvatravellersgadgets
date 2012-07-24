@@ -267,8 +267,7 @@ font-weight:bold;
         var opts = {dataType:'jsonp'};
         var query = new google.visualization.Query(urlTable, opts);
         var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-		
-        var situation = gadgets.util.getUrlParameters()["parent"];
+		var situation = gadgets.util.getUrlParameters()["parent"];
 
     
         document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2>';
