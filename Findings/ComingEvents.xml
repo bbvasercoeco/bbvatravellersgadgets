@@ -247,7 +247,8 @@ font-weight:bold;
 		color: #3B3B3B;
 	}
 	
-	#bloqueEnlaces a {
+	#bloqueEnlaces a,
+	#bloqueEnlaces1 a	{
 	
 	font-size: 0.8em;
 text-decoration: none;
