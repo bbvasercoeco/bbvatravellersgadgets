@@ -236,6 +236,21 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
+	  .bloqueAnterior{
+ clear:both;
+ display:block;
+ margin-left:15px;
+ font-weight:bold;
+ font-family: arial,sans-serif;
+ }
+ .bloqueSiguiente{
+display:block;
+font-family: arial,sans-serif;
+float:right;
+margin-top:-20px;
+margin-right:50px;
+font-weight:bold;
+ } 
      
     </style>
 
