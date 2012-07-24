@@ -141,9 +141,10 @@
       
          for (var i=1;i<=filas;i++){
           var fecha = new Date(data.getValue(i,0));
-		  alert(fecha);
-		  alert(data.getValue(i,1));
-		  document.getElementById('previousmonths').innerHTML += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
+		  var html = "";
+		  html += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
+		  alert(html);
+		  document.getElementById('previousmonths').innerHTML += html;
 
          }
 
