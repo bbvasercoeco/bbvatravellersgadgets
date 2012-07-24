@@ -119,7 +119,7 @@ height: 25px;
     }
 
     .label-topicName {
-height: 35px;
+height: 30px;
 width: 200px;
 margin-left: 258px;
     }
