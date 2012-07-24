@@ -257,7 +257,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 4 ComingEvents.xml');
+     console.debug('prod 5 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
