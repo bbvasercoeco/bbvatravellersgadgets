@@ -246,6 +246,13 @@ font-weight:bold;
 		font-size: 0.8em;
 		color: #3B3B3B;
 	}
+	
+	#bloqueEnlaces a {
+	
+	font-size: 0.8em;
+text-decoration: none;
+font-weight: normal;
+}
     </style>
 
     <div id="home"></div>
@@ -257,7 +264,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 6 ComingEvents.xml');
+     console.debug('prod 7 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -368,16 +375,15 @@ font-weight:bold;
                 var pagSiguiente = pagActualParaMostrar+1;
 				
 				if(i>4){
-				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">Anterior</a></div>';
+				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';
 				//console.debug('ANTERIOR i>9 -> i='+i);
 				}
-                html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente</a></div>';
+                html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
                 
 				html += '</div>';
                 html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 800px;">';
 			
-				//console.debug('</div><div class="paginaNueva" style="border:1px solid blue; display: block;width: auto;height: 700px;">');
-                //console.debug('<div id="bloqueEnlaces" ><a href="javascript:continuacion();">Siguiente</a></div>');
+				
                
 				pagActual++;
                 
@@ -386,7 +392,7 @@ font-weight:bold;
 			
 				//console.debug('ANTERIOR>');
 				pagActual--;
-				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">Anterior</a></div>';
+				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
 				
 			}			
            
