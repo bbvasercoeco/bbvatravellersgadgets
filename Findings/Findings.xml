@@ -238,7 +238,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    console.debug('106 findings_jmc.xml');
+    console.debug('107 findings_jmc.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -280,7 +280,7 @@ font-weight:bold;
         }
         else
         {
-            document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic+'</strong></h2>';
+            document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic[1]+'</strong></h2>';
             //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
           
             //esta query funciona
