@@ -238,7 +238,7 @@ color: white;
 display:block;
 font-family: arial,sans-serif;
 float:right;
-margin-top:-20px;
+margin-top:0px;
 margin-right:50px;
 font-weight:bold;
  } 
@@ -257,7 +257,7 @@ font-weight:bold;
 
     <script type="text/javascript">
 
-     console.debug('prod 5 ComingEvents.xml');
+     console.debug('prod 6 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -322,7 +322,7 @@ font-weight:bold;
 
 		var html = "";
 
-        html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
+        html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 800px;">';
 
         for(var i = 0; i < filas; i++) 
 		{
@@ -374,7 +374,7 @@ font-weight:bold;
                 html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente</a></div>';
                 
 				html += '</div>';
-                html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+                html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 800px;">';
 			
 				//console.debug('</div><div class="paginaNueva" style="border:1px solid blue; display: block;width: auto;height: 700px;">');
                 //console.debug('<div id="bloqueEnlaces" ><a href="javascript:continuacion();">Siguiente</a></div>');
