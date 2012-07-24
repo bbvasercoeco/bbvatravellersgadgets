@@ -6,7 +6,7 @@ style="margin-bottom:-50px;"
 <Content type="html"><![CDATA[
 <style> 
 #piepagina{
-	width: 970px;
+	width: 960px;
 	height: 100px;
 	background-image:url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/piedepagina.png);	
 	margin:0;
