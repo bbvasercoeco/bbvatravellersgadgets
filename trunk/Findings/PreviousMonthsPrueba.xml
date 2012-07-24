@@ -140,7 +140,7 @@
           var fecha = new Date(data.getValue(i,0));
 		  var html = "";
 		  html += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
-		  alert(html);
+		  //alert(html);
 		  document.getElementById('previousmonths').innerHTML += html;
 
          }
