@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s lastFindings.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+  </ModulePrefs>
+
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+ 
+  <Content type="html">
+    <![CDATA[
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+    <style type="text/css">
+    body { background-color:transparent !important;}
+      #previous-month {
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebebeb', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+        border: 1px solid #d3d3d3;
+        -moz-border-radius: 8px;
+        -webkit-border-radius: 8px;
+        border-radius: 8px;
+        font-family: arial, sans-serif;
+        font-size: 12px;
+      }
+      #previous-month h2 {
+        background: #ebebeb; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ViZWJlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #ebebeb 0%, #ffffff 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebebeb), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ebebeb 0%,#ffffff 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #ebebeb 0%,#ffffff 100%); /* W3C */
+        border-bottom: 1px solid #d3d3d3;
+        color: #383838;
+        font-size: 18px;
+        font-weight: normal;
+        margin: 0;
+        padding: 10px 25px;
+      }
+      #previous-month ul {
+        margin: 0;
+        padding: 0;
+      }
+      #previous-month ul li {
+        border-bottom: 1px dotted #d3d3d3;
+        list-style: none;
+        padding: 6px 25px;
+        background-color:#FFFFFF;
+      }
+      #previous-month ul li:last-child {
+        border-bottom: none;
+      }
+      #previous-month ul a {
+        color: #0e4f9c;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    </style>
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        #previous-month h2 {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+    <div id="previous-month">
+      <h2>
+        Previous Months <!--<span id="nombreCliente"><img class="loading" width="15" src="https://bbvagcs.googlecode.com/svn/trunk/img/loading.gif"/></span>-->
+      </h2>
+      <div id="lastfindings">
+        <ul id="previousmonths"></ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      //console.debug('lastfindings.xml');
+      //console.debug('version 20');
+
+      var gadgetHelper = null;
+      var prefs = new _IG_Prefs(); // User preferences
+      var urlTable = prefs.getString("_table_query_url");
+
+      _IG_RegisterOnloadHandler(loadVisualizationAPI);
+
+      function loadVisualizationAPI()
+      {
+        google.load("visualization", "1", {"packages": ["table"]});
+        google.setOnLoadCallback(sendQuery);
+      }
+
+      function sendQuery()
+      {
+        gadgetHelper = new google.visualization.GadgetHelper();
+        //var query = gadgetHelper.createQueryFromPrefs(prefs);
+        var opts = {dataType:'jsonp'};
+
+
+        var query = new google.visualization.Query(urlTable, opts);
+        var querytosend = "select min(D),T group by T order by min(D)";
+        query.setQuery(querytosend);
+        query.send(handleQueryResponse);
+
+
+
+      }
+
+
+
+      function handleQueryResponse(response)
+      {
+        if (!gadgetHelper.validateResponse(response)) { return; }
+        data = response.getDataTable();
+        //console.debug('data.getNumberOfRows(): ' + data.getNumberOfRows());
+        var filas = data.getNumberOfRows();
+	
+       /* var fecha = new Date(data.getValue(0,0));
+        var fecha1 = new Date(data.getValue(1,0));
+        var fecha2 = new Date(data.getValue(2,0));*/
+
+        var month = new Array();
+        month[0]="January";
+        month[1]="February";
+        month[2]="March";
+        month[3]="April";
+        month[4]="May";
+        month[5]="June";
+        month[6]="July";
+        month[7]="August";
+        month[8]="September";
+        month[9]="October";
+        month[10]="November";
+        month[11]="December";
+
+      
+      
+         for (var i=0;i<(filas);i++){
+          var fecha = new Date(data.getValue(i,0));
+		  document.getElementById('previousmonths').innerHTML += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
+
+         }
+
+
+
+      }
+
+
+
+    </script>
+    ]]>
+  </Content>
+</Module>
