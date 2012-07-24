@@ -65,7 +65,7 @@
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     background-color: white;
-    width: 47%;
+    width: 45%;
     margin-right: 15px;
     cursor: hand;
     cursor: pointer;
@@ -197,7 +197,21 @@
     text-decoration: none;
   }
   
-
+ .bloqueAnterior{
+ clear:both;
+ display:block;
+ margin-left:15px;
+ font-weight:bold;
+ font-family: arial,sans-serif;
+ }
+ .bloqueSiguiente{
+display:block;
+font-family: arial,sans-serif;
+float:right;
+margin-top:-20px;
+margin-right:50px;
+font-weight:bold;
+ }
 </style>
 
 
@@ -224,7 +238,7 @@
 
 <script type="text/javascript">
 
-    console.debug('84 findings.xml');
+    console.debug('105 findings_jmc.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -253,26 +267,33 @@
         var opts = {dataType:'jsonp'};
         var query = new google.visualization.Query(urlTable, opts);
         var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+		
         var situation = gadgets.util.getUrlParameters()["parent"];
 
-        if(situation.indexOf('topic')== -1)
+    
+        document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2>';
+
+
+        if(situation.indexOf('jordi')== -1)
         {
             document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
             var querytosend = "select max(D),A,C,L,G,R,S,B,F where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D) desc limit 4";
         }
         else
         {
-            document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic[1]+'</strong></h2>';
+            document.getElementById("titleHome").innerHTML = '<h2><strong>'+topic+'</strong></h2>';
             //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
           
             //esta query funciona
             //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
-            //añadiendo la validación de F==Yes
+            //añadiendo la validacion de F==Yes
             var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
-        }
+        }   
+
 
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
+
     }
 
    function handleQueryResponse(response)
@@ -285,22 +306,35 @@
         data = response.getDataTable();
 
         var filas = data.getNumberOfRows();
+        var pagActual = 1;
+        
+        
+		var pagTotales = Math.ceil(filas/10);
+        
 
         console.debug('filas:'+filas);
+        console.debug('<div class="paginaNueva">');
+       
+        var html = "";
+
+        html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
 
         for(var i = 0; i < filas; i++)
         {
-            var html = "";
+
+            //var html = "";
 
             var topicName = data.getValue(i,1);
             var traveller = data.getValue(i,3);
             var imageFinding = data.getValue(i,4);
             var summary = data.getValue(i,6);
-            // alert(data.getColumnType(7));
+            console.debug('i:'+ i);
+            console.debug('pagActual:'+ pagActual);
+            console.debug('10*pagActual:'+ 10*pagActual);
 
             switch(topicName)
             {
-                 case 'Security': var classname="green2";break;
+                case 'Security': var classname="green2";break;
                 case 'Banking':  var classname="brown";break;
                 case 'Scouting':  var classname="green";break;
                 case 'Mobile':  var classname="blue";break;
@@ -311,7 +345,7 @@
                 case 'Payments':  var classname="green3";break;
                 default: var classname="brown";break;
             }
-		
+        
             html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
 
             html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
@@ -333,11 +367,82 @@
             html += '</div>';
             html += '</div>';
             html += '</div>';
-            //alert(data.getValue(i,7));
-            document.getElementById("lastfindings").innerHTML += html;
-        }
+		
+		if(pagTotales>1){
+            if ( (i==10*pagActual-1) )
+            {
+				
+                var pagActualParaMostrar = pagActual+1;
+                var pagSiguiente = pagActualParaMostrar+1;
+				
+				if(i>9){
+				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">Anterior</a></div>';
+				console.debug('ANTERIOR i>9 -> i='+i);
+				}
+                html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente</a></div>';
+                
+				html += '</div>';
+                html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+			
+				console.debug('</div><div class="paginaNueva" style="border:1px solid blue; display: block;width: auto;height: 700px;">');
+                console.debug('<div id="bloqueEnlaces" ><a href="javascript:continuacion();">Siguiente</a></div>');
+               
+				pagActual++;
+                
+            }
+			else if(i==filas-1){
+			
+				console.debug('ANTERIOR>');
+				var pagActualParaMostrar = pagActual-1;
+				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar+'\');">Anterior</a></div>';
+				
+				
+			}			
+           
+		}
+
+       }
+
+        //  html += '<div id="bloqueEnlaces" style="text-align: right; width:100%; display:block; height: 40px;"><a href="javascript:continuacion();">Siguiente</a></div>';
+
+        document.getElementById("lastfindings").innerHTML += html;
+
+        
 
     }
+
+    function continuacion(num)
+    {
+       
+        var bloque = "pagina"+num;
+        var numInt = parseInt(num)-1;
+        var bloque_anterior = "pagina"+ numInt;
+       
+       document.getElementById(bloque).style.display='block';
+       document.getElementById(bloque_anterior).style.display='none';
+
+    }
+	function anterior(num)
+    {
+       
+       var bloque = "pagina"+num;
+       var numInt = parseInt(num)-1;
+       var numInt2 = parseInt(num)-2;
+	   if (numInt2 == 0){
+	   numInt  = 2;
+	   numInt2 = 1;
+	   }
+	   var bloque_actual = "pagina"+ numInt;
+	   var bloque_anterior = "pagina"+ numInt2;
+     
+	   
+	   
+       document.getElementById(bloque_actual).style.display='none';
+       document.getElementById(bloque_anterior).style.display='block';
+
+    }
+
+
    </script>
    ]]>
   </Content>
