@@ -62,7 +62,7 @@
    <style type="text/css">
       
       body {background-color:transparent;}
-	  
+	  /*
   .banner {
         background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
         color: #fff;
@@ -74,6 +74,20 @@
         padding-top: 30px;
         width: 227px;
       }
+*/
+ .banner {	  
+	background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
+color: white;
+font-family: arial, sans-serif;
+height: 133px;
+margin-bottom: 30px;
+padding-left: 684px;
+padding-right: 30px;
+padding-top: 10px;
+padding-bottom: 20px;
+width: 227px;  
+	  }
+	  
       .banner h2 {
         border: none;
         box-shadow: none;
