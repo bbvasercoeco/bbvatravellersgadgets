@@ -117,11 +117,11 @@
             text-align: left;
             line-height: 17px;
             height: 25px;
-            width: 250px;
+            width: 272px;
         }
 
         .blockFinding .blockData .label-topicName span{
-            padding-left: 190px;
+            padding-left: 210px;
             color: white;
             font-weight: normal;
             font-size: 11px;
