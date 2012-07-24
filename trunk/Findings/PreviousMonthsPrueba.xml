@@ -139,7 +139,7 @@
 
       
       
-         for (var i=0;i<(filas);i++){
+         for (var i=1;i<=filas;i++){
           var fecha = new Date(data.getValue(i,0));
 		  alert(fecha);
 		  alert(data.getValue(i,1));
