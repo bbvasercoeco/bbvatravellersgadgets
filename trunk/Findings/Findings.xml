@@ -238,7 +238,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    console.debug('107 findings_jmc.xml');
+    //console.debug('107 findings_jmc.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -311,8 +311,8 @@ font-weight:bold;
 		var pagTotales = Math.ceil(filas/10);
         
 
-        console.debug('filas:'+filas);
-        console.debug('<div class="paginaNueva">');
+       //console.debug('filas:'+filas);
+        //console.debug('<div class="paginaNueva">');
        
         var html = "";
 
@@ -327,9 +327,9 @@ font-weight:bold;
             var traveller = data.getValue(i,3);
             var imageFinding = data.getValue(i,4);
             var summary = data.getValue(i,6);
-            console.debug('i:'+ i);
-            console.debug('pagActual:'+ pagActual);
-            console.debug('10*pagActual:'+ 10*pagActual);
+            //console.debug('i:'+ i);
+            //console.debug('pagActual:'+ pagActual);
+            //console.debug('10*pagActual:'+ 10*pagActual);
 
             switch(topicName)
             {
@@ -376,22 +376,22 @@ font-weight:bold;
 				
 				if(i>9){
 				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">Anterior</a></div>';
-				console.debug('ANTERIOR i>9 -> i='+i);
+				//console.debug('ANTERIOR i>9 -> i='+i);
 				}
                 html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente</a></div>';
                 
 				html += '</div>';
                 html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
 			
-				console.debug('</div><div class="paginaNueva" style="border:1px solid blue; display: block;width: auto;height: 700px;">');
-                console.debug('<div id="bloqueEnlaces" ><a href="javascript:continuacion();">Siguiente</a></div>');
+				//console.debug('</div><div class="paginaNueva" style="border:1px solid blue; display: block;width: auto;height: 700px;">');
+                //console.debug('<div id="bloqueEnlaces" ><a href="javascript:continuacion();">Siguiente</a></div>');
                
 				pagActual++;
                 
             }
 			else if(i==filas-1){
 			
-				console.debug('ANTERIOR>');
+				//console.debug('ANTERIOR>');
 				pagActual--;
 				html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">Anterior</a></div>';
 				
