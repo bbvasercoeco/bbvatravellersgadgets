@@ -102,7 +102,7 @@
 
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select min(D),T,A where T <> '' group by T,A order by min(D)";
+        var querytosend = "select min(D),T,A,F where T <> '' and F like 'Yes' group by T,A,F order by min(D)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
 
@@ -139,7 +139,7 @@
          for (var i=1;i<=filas;i++){
           var fecha = new Date(data.getValue(i,0));
 		  var html = "";
-		  html += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
+		  html += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+fecha.getDate()+' '+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
 		 
 		  document.getElementById('previousmonths').innerHTML += html;
 
