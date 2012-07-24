@@ -79,7 +79,7 @@
 
     <script type="text/javascript">
 
-      //console.debug('lastfindings.xml');
+      console.debug('prod 1 previousm.xml');
       //console.debug('version 20');
 
       var gadgetHelper = null;
