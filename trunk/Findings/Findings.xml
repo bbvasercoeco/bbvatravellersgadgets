@@ -221,7 +221,7 @@ height: 25px;
 display:block;
 font-family: arial,sans-serif;
 float:right;
-margin-top:-20px;
+margin-top:0px;
 margin-right:50px;
 font-weight:bold;
  }
@@ -231,6 +231,15 @@ font-weight:bold;
 		color: #3B3B3B;
 	}
 	
+	
+	#bloqueEnlaces a,
+	#bloqueEnlaces1 a	{
+	
+	font-size: 0.8em;
+text-decoration: none;
+font-weight: normal;
+}
+
 </style>
 
 
@@ -257,7 +266,7 @@ font-weight:bold;
 
 <script type="text/javascript">
 
-    console.debug('prod 7 findings.xml');
+    console.debug('prod 8 findings.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
