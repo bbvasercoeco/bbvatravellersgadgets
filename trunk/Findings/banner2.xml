@@ -121,8 +121,7 @@ width: 227px;
     var titlebanner1 = prefs.getString("titleBanner1");
 	var textbanner1 = prefs.getString("textBanner1");
 	var loc = gadgets.util.getUrlParameters()["parent"].split("/");
-	console.debug(loc);
-	console.debug(loc.indexOf('topicname'));
+    console.debug(loc[loc.length-1]);
 	document.getElementById("titleBanner1").innerHTML = titlebanner1;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
 	if(loc.indexOf('contribute') != -1){
@@ -130,7 +129,7 @@ width: 227px;
 	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/imagenHeader.png) no-repeat left top';
 	}
 	else if(loc.indexOf('topicname') != -1){
-	console.debug(loc.indexOf('topicname'));
+	
 	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/ImagenHeader.png) no-repeat left top';
 	}
 	
