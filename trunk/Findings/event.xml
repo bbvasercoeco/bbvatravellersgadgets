@@ -84,7 +84,7 @@ h2 {
 
 .back{
  margin-top:50px;
- text-align:center:
+ text-align:center;
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
