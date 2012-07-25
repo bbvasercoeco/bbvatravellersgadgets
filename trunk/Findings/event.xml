@@ -93,6 +93,8 @@ h2 {
  text-decoration:none;
  font-size:12px;
  font-family:helvetica;
+ color:#494949;
+ font-weight:bold;
 }
 .back img{
 width:41px;
@@ -106,7 +108,7 @@ margin-right:10px;
 
 <script type="text/javascript">
 
-  console.debug('18 event.xml');
+  console.debug('19 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
