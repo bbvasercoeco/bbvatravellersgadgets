@@ -113,7 +113,7 @@ width: 227px;
 
 
     <script type="text/javascript">
-	console.debug('version 2');
+	console.debug('version 3');
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	//document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
@@ -126,7 +126,7 @@ width: 227px;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
 	if(loc.indexOf('pruebajordi') != -1){
 	alert("entro");
-	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/ImagenHeader.png) no-repeat left top';
+	document.getElementsByClassName('banner')[0].style.background = 'url("https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/ImagenHeader.png") no-repeat left top';
 	
 	}
 	
