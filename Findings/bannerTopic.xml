@@ -73,7 +73,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 2 bannerTopic');
+	console.debug('prod 3 bannerTopic');
 	
 	
 	
