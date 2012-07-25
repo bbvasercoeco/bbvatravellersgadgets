@@ -83,12 +83,16 @@ h2 {
   font-size: 12px;
 
 .back{
- 
+ margin-top:50px;
+ text-align:center:
+ font-size:12px;
+ font-weight:bold;
+ font-family:helvetica;
 }
 .back img{
 width:41px;
 height:39px;
-
+margin-right:10px;
 }
 
 </style>
