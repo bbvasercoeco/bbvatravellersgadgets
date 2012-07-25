@@ -82,6 +82,12 @@ h2 {
   line-height:20px;
   font-size: 12px;
 
+.back{
+ 
+}
+.back img{
+width:41px;
+height:39px;
 
 }
 
@@ -176,8 +182,10 @@ h2 {
       html += '<div class="role">'+data.getValue(0,4)+'</div>';
       html += '<div class="summary">'+data.getValue(0,11)+'</div>';
       html += '</div>';
+	  html += '<div class="back"><a href="'+javascript:history.back()+'"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/volver.png"/>Volver</a></div>';
       
       document.getElementById("event").innerHTML += html;
+	  
     }
     </script>
     ]]>
