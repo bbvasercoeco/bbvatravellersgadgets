@@ -65,6 +65,8 @@ h2 {
 .user-bbva img {
   float: left;
   margin: 0 17px 5px 0;
+  width:100px;
+  height: 110px;
 }
 .user-bbva h3 {
   margin: 0;
