@@ -91,7 +91,7 @@ h2 {
 }
 .back  a{
  margin-top:50px;
- text-align:center:
+ text-align:center;
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
@@ -108,7 +108,7 @@ margin-right:10px;
 
 <script type="text/javascript">
 
-  console.debug('12 event.xml');
+  console.debug('13 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
