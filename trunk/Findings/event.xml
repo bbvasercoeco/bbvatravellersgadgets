@@ -82,21 +82,21 @@ h2 {
   line-height:20px;
   font-size: 12px;
 
-#back{
+.event #back{
  margin-top:50px;
  text-align:center:
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
 }
-#back a{
+.event #back a{
  margin-top:50px;
  text-align:center:
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
 }
-#back img{
+.event #back img{
 width:41px;
 height:39px;
 margin-right:10px;
@@ -108,7 +108,7 @@ margin-right:10px;
 
 <script type="text/javascript">
 
-  console.debug('9 event.xml');
+  console.debug('10 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
