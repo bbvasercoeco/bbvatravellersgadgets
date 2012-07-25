@@ -56,7 +56,7 @@ width: 227px;
         padding: 0;
       }
       .banner .text {
-        font-size: 14px;
+        font-size: 12px;
       }
 	
  </style>
