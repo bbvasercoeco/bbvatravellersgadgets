@@ -73,7 +73,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 5 bannerTopic');
+	console.debug('prod 6 bannerTopic');
 	
 	
 	
@@ -101,7 +101,9 @@ width: 227px;
 			//esta query funciona
 			//var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
 			//añadiendo la validacion de F==Yes
-			var querytosend = "select A,B,C,D where (B like '%"+topic[1]+"%')" group by A,B,C,D;
+			
+			var querytosend = "select A,B,C,D where (B like '%"+topic[1]+"%') group by A,B,C,D";
+			
 			//var querytosend = "select *";
           
 
