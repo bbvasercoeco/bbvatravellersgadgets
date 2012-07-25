@@ -132,6 +132,10 @@ width: 227px;
 	
 	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
 	}
+	else if(param.indexOf('eventname') != -1){
+	
+	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/travellers_event.png) no-repeat left top';
+	}
 	
   </script>
     ]]>
