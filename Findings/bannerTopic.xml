@@ -73,7 +73,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 9 bannerTopic');
+	console.debug('prod 10 bannerTopic');
 	
 	
 	
@@ -176,7 +176,7 @@ width: 227px;
 				
            
 
-            //document.getElementById("textBanner1").innerHTML += html;
+            document.getElementById("textBanner1").innerHTML += html;
         }
   </script>
     ]]>
