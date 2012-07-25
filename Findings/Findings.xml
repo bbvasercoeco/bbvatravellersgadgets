@@ -87,6 +87,7 @@
             margin-right: 15px;
             cursor: hand;
             cursor: pointer;
+            box-shadow: 0 1px #DDD;
         }
 
         .par {            
