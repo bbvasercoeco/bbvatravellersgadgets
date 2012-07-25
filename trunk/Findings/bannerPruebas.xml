@@ -126,7 +126,7 @@ width: 227px;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
 	if(loc.indexOf('pruebajordi') != -1){
 	alert("entro");
-	document.getElementsByClassName('banner')[0].style = 'https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/ImagenHeader.png) no-repeat left top';
+	document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/ImagenHeader.png) no-repeat left top';
 	
 	}
 	
