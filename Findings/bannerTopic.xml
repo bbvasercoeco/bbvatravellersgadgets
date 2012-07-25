@@ -128,52 +128,52 @@ width: 227px;
 
         
 			var topicName = data.getValue(0,1);
-			//var topicsummary = data.getValue(1,3);
+			var topicsummary = data.getValue(0,2);
 			
                 
 			console.debug('topicName:'+topicName);	
-			//console.debug('topicsummary:'+topicsummary);	
+			console.debug('topicsummary:'+topicsummary);	
 
 				
 			html += topicsummary;
 			
-			/*	
+			
 			 switch(topicName)
                 {
                     case 'Security': 
-						document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+						document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnsecurity.jpg) no-repeat left top';
 						break;
                     case 'Banking':  
-						document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+						document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnbanking.jpg) no-repeat left top';
 						break;
-                    case 'Scouting':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+                    case 'Exploration':  
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnexploration.jpg) no-repeat left top';
 						break;
                     case 'Mobile':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnmobile.jpg) no-repeat left top';
 						break;
                     case 'Boundaries':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnboundaries.jpg) no-repeat left top';
 						break;
                     case 'Technology':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnalltopic.jpg) no-repeat left top';
 						break;
                     case 'Innovation':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bninnovation.jpg) no-repeat left top';
 						break;
                     case 'Enterprise 2.0': 
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnbusinness2.jpg) no-repeat left top';
 						break;
                     case 'Payments':  
-					document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+					document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnpayments.jpg) no-repeat left top';
 						break;
                     default: 
-						document.getElementsByClassName('banner')[0].style.background = 'url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Findings/topic.png) no-repeat left top';
+						document.getElementsByClassName('banner')[0].style.background = 'url(http://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/bnalltopic.jpg) no-repeat left top';
 						break;
                     
                 }
 				
-				*/	
+				
            
 
             //document.getElementById("textBanner1").innerHTML += html;
