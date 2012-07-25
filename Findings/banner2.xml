@@ -120,7 +120,7 @@ width: 227px;
 	
 	var titlebanner1 = prefs.getString("titleBanner1");
 	var textbanner1 = prefs.getString("textBanner1");
-	var loc = gadgets.util.getUrlParameters()["parent"].split("/");
+	var loc = gadgets.util.getUrlParameters()["parent"];
 		
 	document.getElementById("titleBanner1").innerHTML = titlebanner1;
 	document.getElementById("textBanner1").innerHTML = textbanner1;
