@@ -18,21 +18,9 @@
    <style type="text/css">
       
       body {background-color:transparent;}
-	  /*
-  .banner {
-        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
-        color: #fff;
-        font-family: arial, sans-serif;
-        height: 133px;
-        margin-bottom: 20px;
-        padding-left: 684px;
-        padding-right: 30px;
-        padding-top: 30px;
-        width: 227px;
-      }
-*/
+	
  .banner {	  
-	background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
+	/*background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;*/
 color: white;
 font-family: arial, sans-serif;
 height: 133px;
@@ -73,7 +61,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 10 bannerTopic');
+	console.debug('prod 11 bannerTopic');
 	
 	
 	
