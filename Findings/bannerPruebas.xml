@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="banner2.xml"
+    description=""
+    author_affiliation="Capgemini">
+    <Require feature="idi"/>
+    <Require feature="locked-domain" />
+	<Require feature="dynamic-height"/>   
+	<Require feature="setprefs" />   
+  </ModulePrefs>
+<UserPref name="titleBanner1" display_name="Title Banner" required="true" />
+<UserPref name="textBanner1" display_name="Text Banner" required="true" />
+
+
+<Content type="html" view="configuration" preferred_height="480">
+
+ <![CDATA[
+ <style>
+    input#VarrootSite {
+           width: 300px;
+          }
+		  
+  </style>
+  
+  <table width="100%" border="0" id="tablaconfig">    
+  <form name="myForm">       
+            <tr>       
+                <td>
+                    Title - Banner1: <input type="text" size="100" id="titleBanner1" value="__UP_titleBanner1__"   onchange="registra('titleBanner1')"/>                   
+                </td>
+            </tr>
+			 <tr>       
+                <td>
+					
+                    <!--Text of Banner1: <textarea rows="5" cols="40" id="textBanner1" onchange="registra('textBanner1')"></textarea> -->
+					Text - Banner1: <input type="text" size="100" id="textBanner1" value="__UP_textBanner1__" onchange="registra('textBanner1')"/> 
+					</form>
+              
+			
+  </table>	
+  
+<script type="text/javascript">           
+            // Get userprefs
+            var prefs = new gadgets.Prefs();           
+            function registra(variable)
+            {	
+				
+                prefs.set(variable,document.getElementById(variable).value);
+				
+			
+            } 
+			
+			
+            gadgets.window.adjustHeight();
+        </script>   
+ ]]>
+ </Content>
+  <Content type="html">
+    <![CDATA[
+
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+   <style type="text/css">
+      
+      body {background-color:transparent;}
+	  /*
+  .banner {
+        background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
+        color: #fff;
+        font-family: arial, sans-serif;
+        height: 133px;
+        margin-bottom: 20px;
+        padding-left: 684px;
+        padding-right: 30px;
+        padding-top: 30px;
+        width: 227px;
+      }
+*/
+ .banner {	  
+	background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Topics/ImagenHeader.png) no-repeat left top;
+color: white;
+font-family: arial, sans-serif;
+height: 133px;
+margin-bottom: 30px;
+padding-left: 684px;
+padding-right: 30px;
+padding-top: 10px;
+padding-bottom: 20px;
+width: 227px;  
+	  }
+	  
+      .banner h2 {
+        border: none;
+        box-shadow: none;
+        color: #fff;
+        font-size: 29px;
+        font-weight: bold;
+        line-height: 0.9em;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+      }
+      .banner .text {
+        font-size: 14px;
+      }
+	
+ </style>
+
+
+<div class="banner">
+      <h2 id="titleBanner1">About your contribution</h2>
+      <div id="textBanner1" class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum varius tellus.</div>
+    </div>
+
+
+    <script type="text/javascript">
+
+	var gadgetHelper = null;
+	var prefs = new gadgets.Prefs();
+	//document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
+	
+    var titlebanner1 = prefs.getString("titleBanner1");
+	var textbanner1 = prefs.getString("textBanner1");
+	var loc = gadgets.util.getUrlParameters()["parent"].split("/");
+	alert(loc);
+	document.getElementById("titleBanner1").innerHTML = titlebanner1;
+	document.getElementById("textBanner1").innerHTML = textbanner1;
+	if(loc.indexOf('pruebajordi') != -1){
+	document.getElementsByClassName('banner')[0].style = 'https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Contribute/ImagenHeader.png) no-repeat left top';
+	
+	}
+	
+  </script>
+    ]]>
+  </Content>
+</Module>
