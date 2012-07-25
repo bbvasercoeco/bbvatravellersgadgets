@@ -73,7 +73,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 7 bannerTopic');
+	console.debug('prod 8 bannerTopic');
 	
 	
 	
@@ -103,7 +103,7 @@ width: 227px;
 			//añadiendo la validacion de F==Yes
 			
 			console.debug('topic[1]:'+topic[1]);	
-			var querytosend = "select A,B,C,D where (B like '%"+topic[1]+"%') group by A,B,C,D";
+			var querytosend = "select A,B,C,D where (B like '%"+topic[1]+"%')";
 			
 			//var querytosend = "select *";
           
