@@ -82,21 +82,21 @@ h2 {
   line-height:20px;
   font-size: 12px;
 
-.event #back{
+.back{
  margin-top:50px;
  text-align:center:
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
 }
-.event #back a{
+.back  a{
  margin-top:50px;
  text-align:center:
  font-size:12px;
  font-weight:bold;
  font-family:helvetica;
 }
-.event #back img{
+.back img{
 width:41px;
 height:39px;
 margin-right:10px;
@@ -193,7 +193,7 @@ margin-right:10px;
       html += '<div class="role">'+data.getValue(0,4)+'</div>';
       html += '<div class="summary">'+data.getValue(0,11)+'</div>';
       html += '</div>';
-	  html += '<div id="back"><a href="javascript:history.back()"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/volver.png"/>Volver</a></div>';
+	  html += '<div class="back"><a href="javascript:history.back()"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/volver.png"/>Volver</a></div>';
       
       document.getElementById("event").innerHTML += html;
 	  
