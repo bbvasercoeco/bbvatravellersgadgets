@@ -73,7 +73,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 8 bannerTopic');
+	console.debug('prod 9 bannerTopic');
 	
 	
 	
@@ -127,7 +127,7 @@ width: 227px;
             console.debug('filas:'+filas);
 
         
-			var topicName = data.getValue(1,2);
+			var topicName = data.getValue(0,1);
 			//var topicsummary = data.getValue(1,3);
 			
                 
