@@ -89,6 +89,13 @@ h2 {
  font-weight:bold;
  font-family:helvetica;
 }
+.back a{
+ margin-top:50px;
+ text-align:center:
+ font-size:12px;
+ font-weight:bold;
+ font-family:helvetica;
+}
 .back img{
 width:41px;
 height:39px;
