@@ -83,7 +83,7 @@
 		font-family: arial, sans-serif;
 		font-weight:bold;
 		font-size:14px;
-		width:155px;
+		width:140px;
       }
       .finding .footer {
         bottom: 10px;
@@ -140,7 +140,7 @@
 
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select min(D),S,U where dateDiff(D,now())>0 group by S,U order by min(D)";
+        var querytosend = "select max(D),S,U where dateDiff(D,now())>0 group by S,U order by max(D)";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
 
