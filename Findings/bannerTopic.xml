@@ -61,9 +61,7 @@ width: 227px;
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
 	
-	console.debug('prod 11 bannerTopic');
-	
-	
+	console.debug('prod 12 bannerTopic');
 	
 	var urlTable = prefs.getString("_table_query_url");
         
@@ -83,20 +81,10 @@ width: 227px;
             var query = new google.visualization.Query(urlTable, opts);
             var topic = gadgets.util.getUrlParameters()["parent"].split("=");
     		var situation = gadgets.util.getUrlParameters()["parent"];
-                   
-			//document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic[1]+'</strong></h2>';
-			//var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
-			//esta query funciona
-			//var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
-			//añadiendo la validacion de F==Yes
-			
-			console.debug('topic[1]:'+topic[1]);	
+           
+			//console.debug('topic[1]:'+topic[1]);	
 			var querytosend = "select A,B,C,D where (B like '%"+topic[1]+"%')";
-			
-			//var querytosend = "select *";
-          
-
-            query.setQuery(querytosend);
+			query.setQuery(querytosend);
             query.send(handleQueryResponse);
 
         }
@@ -160,10 +148,6 @@ width: 227px;
 						break;
                     
                 }
-				
-				
-           
-
             document.getElementById("textBanner1").innerHTML += html;
         }
   </script>
