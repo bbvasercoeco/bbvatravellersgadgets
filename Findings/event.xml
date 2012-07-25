@@ -81,20 +81,20 @@ h2 {
 .summary {
   line-height:20px;
   font-size: 12px;
-
+}
 .back{
  margin-top:50px;
  text-align:center;
  font-size:12px;
  font-weight:bold;
-
+ font-family:helvetica;
 }
 .back  a{
  margin-top:50px;
  text-align:center;
  font-size:12px;
  font-weight:bold;
-
+ font-family:helvetica;
 }
 .back img{
 width:41px;
@@ -108,7 +108,7 @@ margin-right:10px;
 
 <script type="text/javascript">
 
-  console.debug('14 event.xml');
+  console.debug('15 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
