@@ -72,7 +72,6 @@ width: 227px;
 
 	var gadgetHelper = null;
 	var prefs = new gadgets.Prefs();
-	//document.getElementById('textBanner1').defaultValue = prefs.getString("textBanner1");
 	
 	console.debug('prod 2 bannerTopic');
 	
@@ -97,7 +96,7 @@ width: 227px;
             var topic = gadgets.util.getUrlParameters()["parent"].split("=");
     		var situation = gadgets.util.getUrlParameters()["parent"];
                    
-			document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic[1]+'</strong></h2>';
+			//document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic[1]+'</strong></h2>';
 			//var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
 			//esta query funciona
 			//var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
