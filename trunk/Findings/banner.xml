@@ -72,11 +72,14 @@
     padding: 40px 15px;
     width: 912px;
   }
+   .banner-home h2 {
  border: none;
 font-family: "BBVA Web Medium", arial, sans-serif;
 font-size: 52px;
 margin: 0;
 padding: 20px 0 0 0;
+
+}
   .banner-home p {
     margin: 0 5px;
     width: 325px;
