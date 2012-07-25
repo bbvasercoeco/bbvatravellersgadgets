@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="Datos de los ??mos eventos con los ??mos t??s lastFindings.xml"
+  <ModulePrefs title="Previousmonths.xml"
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
