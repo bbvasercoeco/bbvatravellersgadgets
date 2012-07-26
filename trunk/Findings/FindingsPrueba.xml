@@ -330,7 +330,7 @@
             {               
                 html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
             }
-			html += '<div id="top"></div>';
+			html += '<a name="ancla"></div>';
             for(var i = 0; i < filas; i++)
             {
 
@@ -427,7 +427,7 @@
             document.getElementById(bloque_anterior).style.display='none';*/
  
       
-  window.parent.$("body").animate({scrollTop:0}, 'slow');
+document.location.href = "#ancla";
          console.debug("aaa2wwwwwwwww2");
 		    
         }
