@@ -427,7 +427,7 @@
             document.getElementById(bloque_anterior).style.display='none';*/
  
       
-  $("html,body").scrollTop(0);
+  window.parent.$("body").animate({scrollTop:0}, 'slow');
          console.debug("aaa2wwwwwwwww2");
 		    
         }
