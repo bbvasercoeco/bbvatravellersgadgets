@@ -257,7 +257,9 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 34 findings.xml');
+        console.debug('prueba 35 findings.xml');
+		console.debug(document.location.href);
+		console.debug(document.location);
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -428,8 +430,8 @@
             document.getElementById(bloque_anterior).style.display='none';*/
  
       
-document.location.href = "#ancla";
-         console.debug("aaa2wwwwwwwww2");
+//document.location.href = "#ancla";
+         //console.debug("aaa2wwwwwwwww2");
 		    
         }
 
