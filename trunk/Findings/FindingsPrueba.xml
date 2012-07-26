@@ -330,7 +330,7 @@
             {               
                 html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
             }
-			html += '<a name="ancla"></div>';
+			html += '<a name="ancla"></a>';
             for(var i = 0; i < filas; i++)
             {
 
