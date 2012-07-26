@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs title="Findings.xml "
+    description=""
+    author_affiliation="Capgemini">
+   <Require feature="idi"/>
+   <Require feature="locked-domain" />
+  </ModulePrefs>
+
+  <UserPref name="_table_query_url" default_value="" display_name="Data source url (Ej:https://docs.google.com/spreadsheet/ccc?key=0AoYEewut2JmZdG5HM2VLTTdwQUlLdmhnMk1DLXBWZl)" required="true" />
+
+  <Content type="html">
+   <![CDATA[
+
+   <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+
+  <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
+
+    <style type="text/css">
+
+        body{
+            background-color:transparent !important;
+        }
+
+        img.loading {
+            margin: 5px 0 0 29px;
+        }
+
+        a {
+            color: #62B4E6 !important;
+        }
+
+        a:visited {
+            color: #62B4E6 !important;
+        }
+
+        #titleHome {
+            padding-bottom: 10px;
+        }
+
+        #titleHome h2 {
+            font-family: "BBVA Web Light", arial, sans-serif;
+            font-size: 32px;
+            font-weight: normal;
+            margin: 0px;
+            padding: 0 0 5px 0;
+            width: 500px;
+            float: left;
+        }
+
+        #titleHome h2.internal {
+            border-bottom: 1px solid #CACACA;
+            font-family: "BBVA Web Light", arial, sans-serif;
+            font-weight: normal;
+            margin: 0 0 20px 0;
+            padding-bottom: 0px;
+            color: #3B3B3B;
+            box-shadow: 0px 1px white;
+            width: 100%;
+        }
+
+        #titleHome #showAll {
+            padding: 0 5px 5px 0;
+            width: 90px;
+            float: right;
+            text-align: right;
+        }
+
+        #titleHome #showAll a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        #lastfindings {
+            margin-top:15px;
+        }
+
+        .blockFinding {
+            float: left;
+            padding-left: 12px;
+           /* border: 1px solid #D0D0D0;*/
+            margin-bottom: 20px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            background-color: white;
+            width: 455px;
+            margin-right: 15px;
+            cursor: hand;
+            cursor: pointer;
+            box-shadow: 0 1px #DDD;
+        }
+
+        .par {            
+            margin-right: 0px !important;
+        }
+
+        .blockFinding .container-imageFindings {
+            padding-top: 0px;
+            width: auto;
+            float: left;
+        }
+
+        .blockFinding .container-imageFindings img {
+            width: 182px;
+            height: 140px;
+        }
+
+        .blockFinding .blockData {
+            width: auto;
+            margin-left: 182px;
+        }
+
+        .blockFinding .blockData .label-topicName {
+            padding-top: 10px;
+            color: black;
+            font-weight: normal;
+            font-size: 11px;
+            text-align: left;
+            line-height: 17px;
+            height: 25px;
+            width: 272px;
+        }
+
+        .blockFinding .blockData .label-topicName span{
+            padding-left: 210px;
+            color: white;
+            font-weight: normal;
+            font-size: 11px;
+            text-align: left;
+            line-height: 17px;
+            height: 25px;
+        }
+
+        .brown {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown.png) right 9px no-repeat;
+        }
+
+        .green {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green.png) right 9px no-repeat;
+        }
+
+        .blue {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue.png) right 9px no-repeat;
+        }
+
+        .brown2 {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-brown2.png) right 9px no-repeat;
+        }
+
+        .green2 {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green2.png) right 9px no-repeat;
+        }
+
+        .blue2 {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue2.png) right 9px no-repeat;
+        }
+
+        .green3 {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-green3.png) right 9px no-repeat;
+        }
+
+        .blue3 {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-blue3.png) right 9px no-repeat;
+        }
+
+        .pink {
+            background: url(https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/label-pink.png) right 9px no-repeat;
+        }
+
+        .blockFinding .blockData .label-summary {
+            padding-top: 0px;
+            padding-left: 20px;
+            margin: 0;
+            height: 68px;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 18px;
+        }
+
+        .blockFinding .blockData .infoviajero {
+            overflow: hidden;
+            border-top: 1px solid #D0D0D0;
+            height: 35px;
+        }
+
+        .blockFinding .blockData .infoviajero .label-bbvatraveller {
+            overflow: hidden;
+            width: 185px;
+            padding-left: 20px;
+            padding-top: 10px;
+            float: left;
+            font-family: arial,sans-serif;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: justify;
+        }
+
+        .blockFinding .blockData .infoviajero .more-link {
+            width: 55px;
+            height: 25px;
+            padding-right: 0px;
+            float: left;
+            color: #62B4E6;
+            padding-top: 10px;
+            font-family: arial,sans-serif;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: justify;
+        }
+
+        .blockFinding .blockData .infoviajero .more-link a {
+            text-decoration: none;
+        }
+
+        .bloqueAnterior{
+            clear:both;
+            display:block;
+            margin-left:15px;
+            font-weight:bold;
+            font-family: arial,sans-serif;
+        }
+
+        .bloqueSiguiente{
+            display:block;
+            font-family: arial,sans-serif;
+            float:right;
+            margin-top:0px;
+            margin-right:50px;
+            font-weight:bold;
+        }
+
+        p.text {	 
+            font-size: 0.8em;
+            color: #3B3B3B;
+        }
+
+        #bloqueEnlaces a,
+        #bloqueEnlaces1 a	{
+            font-size: 0.8em;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+    </style>
+    
+    <div id="titleHome"></div>
+
+    <div id="lastfindings">
+    </div>
+
+
+    <script type="text/javascript">
+
+        console.debug('prod 13 findings.xml');
+
+        //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
+        //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
+
+        var gadgetHelper = null;
+        
+        var prefs = new gadgets.Prefs(); // User preferences
+        
+        var urlTable = prefs.getString("_table_query_url");
+        
+        gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
+
+        function loadVisualizationAPI()
+        {
+            google.load("visualization", "1", {"packages": ["table"]});
+            google.setOnLoadCallback(sendQuery);
+        }
+
+        function sendQuery()
+        {
+            gadgetHelper = new google.visualization.GadgetHelper();
+            var query = gadgetHelper.createQueryFromPrefs(prefs);
+            var opts = {dataType:'jsonp'};
+            var query = new google.visualization.Query(urlTable, opts);
+            var topic = gadgets.util.getUrlParameters()["parent"].split("=");
+    		var situation = gadgets.util.getUrlParameters()["parent"];
+        
+            document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2>';
+
+            if(situation.indexOf('topic')== -1)
+            {
+                document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D) desc limit 4";
+            }
+            else
+            {
+                document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic[1]+'</strong></h2>';
+                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
+                //esta query funciona
+                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
+                //añadiendo la validacion de F==Yes
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
+            }   
+
+            query.setQuery(querytosend);
+            query.send(handleQueryResponse);
+
+        }
+
+       function handleQueryResponse(response)
+       {
+            if (!gadgetHelper.validateResponse(response))
+            {
+                return;
+            }
+
+            data = response.getDataTable();    		
+            var filas = data.getNumberOfRows(); 
+            var pagActual = 1;
+            var pagTotales = Math.ceil(filas/10); 
+            var par; 
+            var html = "";
+            //console.debug('filas:'+filas);
+
+            if(filas<1)
+            {
+    			html += '<p class="text">There is no event associated with this topic.</p>';
+            }
+            else
+            {               
+                html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
+            }
+    	   
+            for(var i = 0; i < filas; i++)
+            {
+
+                //var html = "";
+                var topicName = data.getValue(i,1);
+                var traveller = data.getValue(i,3);
+                var imageFinding = data.getValue(i,4);
+                var summary = data.getValue(i,6);
+                //console.debug('i:'+ i);
+                //console.debug('pagActual:'+ pagActual);
+                //console.debug('10*pagActual:'+ 10*pagActual);
+
+                switch(topicName)
+                {
+                    case 'Security': var classname="green2";break;
+                    case 'Banking':  var classname="brown";break;
+                    case 'Scouting':  var classname="green";break;
+                    case 'Mobile':  var classname="blue";break;
+                    case 'Boundaries':  var classname="pink";break;
+                    case 'Technology':  var classname="blue2";break;
+                    case 'Innovation':  var classname="brown2";break;
+                    case 'Enterprise 2.0': var classname="blue3";break;
+                    case 'Payments':  var classname="green3";break;
+                    default: var classname="brown";break;
+                }
+            
+                resto = i % 2;
+                if (resto == 0)
+                {
+                    html += '<div class="blockFinding" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
+                } 
+                else
+                {
+                    html += '<div class="blockFinding par" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
+                }
+                
+                html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
+
+                html += '<div class="blockData">';
+
+                html += '<div class="label-topicName ' + classname + '"><span>' + topicName + '</span></div>';
+
+                html += '<h3 class="label-summary">' + summary + '</h3>';
+
+                html += '<div class="infoviajero">';
+
+                html += '<div class="label-bbvatraveller"><strong>Traveller</strong> - ' + traveller + '</div>';
+
+                html += '<div class="more-link">';
+                html += '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'">More Info</a>';
+                html += '</div>';
+
+                html += '</div>';
+                html += '</div>';
+                html += '</div>';
+    		
+                if(pagTotales>1)
+                {
+                    if ( (i==10*pagActual-1) )
+                    {
+    				
+                        var pagActualParaMostrar = pagActual+1;
+                        var pagSiguiente = pagActualParaMostrar+1;
+    				
+    				    if(i>9)
+                        {
+    				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';    				      
+    				    }
+                    
+                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
+                        html += '</div>';
+                        html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
+    			
+    				    pagActual++;
+                    }
+        			else if(i==filas-1)
+                    {    			
+				        //console.debug('ANTERIOR>');
+				        pagActual--;
+				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
+				    }			
+                }
+            }
+
+            document.getElementById("lastfindings").innerHTML += html;
+        }
+
+        function continuacion(num)
+        {           
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var bloque_anterior = "pagina"+ numInt;           
+            document.getElementById(bloque).style.display='block';
+            document.getElementById(bloque_anterior).style.display='none';
+        }
+
+    	function anterior(num)
+        {           
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var numInt2 = parseInt(num)-2;
+            if (numInt2 == 0)
+            {
+                numInt  = 2;
+                numInt2 = 1;
+            }
+            var bloque_actual = "pagina"+ numInt;
+            var bloque_anterior = "pagina"+ numInt2;
+            document.getElementById(bloque_actual).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+        }
+
+    	function anteriorUltima(num)
+        {
+            var bloque = "pagina"+num;
+            var numInt = parseInt(num)-1;
+            var bloque_anterior = "pagina"+ numInt;
+            document.getElementById(bloque).style.display='none';
+            document.getElementById(bloque_anterior).style.display='block';
+    	}
+
+   </script>
+   ]]>
+  </Content>
+</Module>
