@@ -277,24 +277,24 @@
             var query = gadgetHelper.createQueryFromPrefs(prefs);
             var opts = {dataType:'jsonp'};
             var query = new google.visualization.Query(urlTable, opts);
-            var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-    		var situation = gadgets.util.getUrlParameters()["parent"];
+            var topic = "Banking"; //gadgets.util.getUrlParameters()["parent"].split("=");
+    		//var situation = gadgets.util.getUrlParameters()["parent"];
         
             document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2>';
 
-            if(situation.indexOf('topic')== -1)
+            if(situation.indexOf('pruebajordi')== -1)
             {
                 document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
                 var querytosend = "select max(D),A,C,L,G,R,S,B,F where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D) desc limit 4";
             }
             else
             {
-                document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic[1]+'</strong></h2>';
-                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
+                document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>'+topic+'</strong></h2>';
+                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
                 //esta query funciona
-                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
+                //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
                 //añadiendo la validacion de F==Yes
-                var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
             }   
 
             query.setQuery(querytosend);
