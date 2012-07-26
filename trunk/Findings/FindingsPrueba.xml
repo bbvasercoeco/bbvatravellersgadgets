@@ -13,7 +13,7 @@
    <![CDATA[
 
    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-
+   <script src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/jquery-1.7.2.js"></script>
   <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 
     <style type="text/css">
@@ -252,7 +252,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 19 findings.xml');
+        console.debug('prueba 20 findings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -421,7 +421,7 @@
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';
 			window.location.target = "#top";
-		
+		    $('sites-chrome-everything-scrollbar').animate({ scrollTop: 0 }, 0);
         }
 
     	function anterior(num)
