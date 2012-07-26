@@ -427,8 +427,8 @@
             document.getElementById(bloque_anterior).style.display='none';*/
  
       
-      $('#779541914', top.document).scrollTop();
-         console.debug("aaa2");
+  window.parent.window.scrollTo(0,0); 
+         console.debug("aaa2w");
 		    
         }
 
