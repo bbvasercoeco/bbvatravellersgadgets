@@ -251,7 +251,7 @@
 	
 	<script>
 	$(document).ready(function() {
-	$('content').animate({ scrollTop: 0 }, 0);
+	$('sites-chrome-everything').animate({ scrollTop: 0 }, 0);
 	});
 	</script>
 
