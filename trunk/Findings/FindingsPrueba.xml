@@ -11,9 +11,9 @@
 
   <Content type="html">
    <![CDATA[
-
-   <script src="https://www.google.com/jsapi" type="text/javascript"></script>
    <head><script src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/jquery-1.7.2.js"></script></head>
+   <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+   
   <link type="text/css" rel="stylesheet" href="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/css/fonts.css" />
 
     <style type="text/css">
@@ -251,13 +251,13 @@
 	
 	<script>
 	$(document).ready(function() {
-	$('sites-chrome-everything-scrollbar').animate({ scrollTop: 0 }, 0);
+	$('lastfindings').animate({ scrollTop: 0 }, 0);
 	});
 	</script>
 
     <script type="text/javascript">
 
-        console.debug('prueba 25 findings.xml');
+        console.debug('prueba 26 findings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
