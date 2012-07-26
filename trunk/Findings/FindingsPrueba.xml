@@ -257,7 +257,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 38 findings.xml');
+        console.debug('prueba 39 findings.xml');
 		console.debug(document.location.href);
 		console.debug(document.location);
 
@@ -268,9 +268,9 @@
         
         var prefs = new gadgets.Prefs(); // User preferences
         
-        var urlTable = prefs.getString("_table_query_url");
+        //var urlTable = prefs.getString("_table_query_url");
         
-        gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
+       // gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
 
         function loadVisualizationAPI()
         {
@@ -463,33 +463,12 @@
     	}
 
    </script>
-   <a name="ancla"></a>
+   <a name="ancla">ancla</a>
    <br>
    <br>
    <br>
    <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
+   
    <br>
    <br>
    <br>
