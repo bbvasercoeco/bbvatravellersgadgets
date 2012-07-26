@@ -257,7 +257,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 35 findings.xml');
+        console.debug('prueba 36 findings.xml');
 		console.debug(document.location.href);
 		console.debug(document.location);
 
@@ -428,8 +428,8 @@
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';*/
- 
-      
+			console.debug(document.location.href);
+			document.location.href = document.location.href+"#ancla";
 //document.location.href = "#ancla";
          //console.debug("aaa2wwwwwwwww2");
 		    
