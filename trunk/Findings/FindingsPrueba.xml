@@ -420,7 +420,7 @@
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';
-			document.getElementById(bloque).location='_top';
+			document.getElementById(bloque).location = '_top';
 			
         }
 
