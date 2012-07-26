@@ -251,13 +251,13 @@
 	
 	<script>
 	$(document).ready(function() {
-	$('sites-chrome-everything').animate({ scrollTop: 0 }, 0);
+	$('#top').animate({ scrollTop: 0 }, 0);
 	});
 	</script>
 
     <script type="text/javascript">
 
-        console.debug('prueba 30 findings.xml');
+        console.debug('prueba 31 findings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -400,7 +400,7 @@
     				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';    				      
     				    }
 						
-                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
+                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a target="#top" href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
                         html += '</div>';
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
     			
