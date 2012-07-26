@@ -257,7 +257,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 37 findings.xml');
+        console.debug('prueba 38 findings.xml');
 		console.debug(document.location.href);
 		console.debug(document.location);
 
@@ -274,8 +274,8 @@
 
         function loadVisualizationAPI()
         {
-            google.load("visualization", "1", {"packages": ["table"]});
-            google.setOnLoadCallback(sendQuery);
+            //google.load("visualization", "1", {"packages": ["table"]});
+            //google.setOnLoadCallback(sendQuery);
         }
 
         function sendQuery()
@@ -402,8 +402,8 @@
     				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anterior(\''+ pagActualParaMostrar +'\');">< Anterior</a></div>';    				      
     				    }
 						
-                      //  html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a target="#top" href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
-                        html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a  href="#ancla">Siguiente ></a></div>';
+                      html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a target="#top" href="javascript:continuacion(\''+ pagActualParaMostrar +'\');">Siguiente ></a></div>';
+                        //html += '<div id="bloqueEnlaces"  class="bloqueSiguiente"><a  href="#ancla">Siguiente ></a></div>';
                         html += '</div>';
                         html += '<div id="pagina'+ pagActualParaMostrar +'" class="paginaNueva" style="display:none; width: auto;height: 660px;">';
     			
@@ -428,11 +428,12 @@
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';*/
+			
+			
 			console.debug(document.location.href);
 			document.location.href = document.location.href+"#ancla";
 			console.debug(document.location.href);
-//document.location.href = "#ancla";
-         //console.debug("aaa2wwwwwwwww2");
+
 		    
         }
 
@@ -462,6 +463,50 @@
     	}
 
    </script>
+   <a name="ancla"></a>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <a href="javascript:continuacion('5');">siguiente</a>
    ]]>
   </Content>
 </Module>
