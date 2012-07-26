@@ -427,8 +427,8 @@
             document.getElementById(bloque_anterior).style.display='none';*/
  
       
-  window.parent.parent.scrollTo(0,0); 
-         console.debug("aaa2w2");
+  $("html,body").scrollTop(0);
+         console.debug("aaa2wwwwwwwww2");
 		    
         }
 
