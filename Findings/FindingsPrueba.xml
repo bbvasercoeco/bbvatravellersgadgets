@@ -298,7 +298,7 @@
                 //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic+"%') and (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F order by max(D)  desc ";              
                 //esta query funciona
                 //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
-                //añadiendo la validacion de F==Yes
+                //aÃ±adiendo la validacion de F==Yes
                 var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
             }   
 
@@ -426,6 +426,7 @@
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';
 			window.scrollTo(0,0);
+         console.debug("aaa");
 		    
         }
 
