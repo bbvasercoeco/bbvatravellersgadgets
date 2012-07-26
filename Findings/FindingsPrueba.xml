@@ -252,7 +252,7 @@
 
     <script type="text/javascript">
 
-        console.debug('prueba 11 findings.xml');
+        console.debug('prueba 12 findings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -420,7 +420,7 @@
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';
-			document.getElementById(bloqueEnlaces).target = '_top';
+			window.location.target = "_top";
 		
         }
 
