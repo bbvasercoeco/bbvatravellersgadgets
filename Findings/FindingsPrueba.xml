@@ -405,7 +405,7 @@
                     {    			
 				        //console.debug('ANTERIOR>');
 				        pagActual--;
-				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
+				        html += '<div id="bloqueEnlaces1" class="bloqueAnterior"><a alt="#top" href="javascript:anteriorUltima(\''+ pagActualParaMostrar+'\');">< Anterior</a></div>';
 				    }			
                 }
             }
