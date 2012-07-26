@@ -425,7 +425,9 @@
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
             document.getElementById(bloque_anterior).style.display='none';*/
-		$(window).scrollTop();
+ 
+      
+      $('#779541914', top.document).scrollTop();
          console.debug("aaa");
 		    
         }
