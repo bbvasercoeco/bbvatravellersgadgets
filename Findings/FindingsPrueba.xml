@@ -254,10 +254,10 @@
 	$('#top').animate({ scrollTop: 0 }, 0);
 	});
 	</script>
-
+<a name="ancla">ancla</a>
     <script type="text/javascript">
 
-        console.debug('prueba 39 findings.xml');
+        console.debug('prueba 40 findings.xml');
 		console.debug(document.location.href);
 		console.debug(document.location);
 
@@ -333,6 +333,7 @@
                 html += '<div id="pagina1" class="paginaNueva" style=" display: block;width: auto;height: 660px;">';
             }
 			html += '<a name="ancla"></a>';
+			html += '<input id="ancla" type="hidden"></input>';
             for(var i = 0; i < filas; i++)
             {
 
