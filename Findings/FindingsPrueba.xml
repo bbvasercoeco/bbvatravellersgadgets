@@ -257,7 +257,7 @@
 <a name="ancla">ancla</a>
     <script type="text/javascript">
 
-        console.debug('prueba 40 findings.xml');
+        console.debug('prueba 41 findings.xml');
 		console.debug(document.location.href);
 		console.debug(document.location);
 
@@ -424,11 +424,11 @@
 
         function continuacion(num)
         {           
-           /* var bloque = "pagina"+num;
+            var bloque = "pagina"+num;
             var numInt = parseInt(num)-1;
             var bloque_anterior = "pagina"+ numInt;           
             document.getElementById(bloque).style.display='block';
-            document.getElementById(bloque_anterior).style.display='none';*/
+            document.getElementById(bloque_anterior).style.display='none';
 			
 			
 			console.debug(document.location.href);
