@@ -119,7 +119,7 @@ float:left;
 
 <script type="text/javascript">
 
-  console.debug('28 event.xml');
+  console.debug('29 event.xml');
 
     //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
 
@@ -186,7 +186,7 @@ float:left;
 	  console.debug(time2);
       html +='<div class="title-page">'+data.getValue(0,1)+'</div>';
 
-      html +='<div class="event-date">'+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+'</div>';
+      html +='<div class="event-date">'+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+' - '+time2.getDate()+' / '+month[time2.getMonth()]+' / '+time2.getFullYear()+'</div>';
 
       html += '<h2>'+data.getValue(0,7)+'</h2>';
 
