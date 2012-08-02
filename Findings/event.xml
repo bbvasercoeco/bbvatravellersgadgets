@@ -186,7 +186,7 @@ float:left;
 	  console.debug(time2);
       html +='<div class="title-page">'+data.getValue(0,1)+'</div>';
 
-      html +='<div class="event-date">'+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+'</div>';
+      html +='<div class="event-date">'+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+' - '+time2.getDate()+' / '+month[time2.getMonth()]+' / '+time2.getFullYear()+'</div>';
 
       html += '<h2>'+data.getValue(0,7)+'</h2>';
 
@@ -194,7 +194,7 @@ float:left;
 
       html += '<div class="event-detail">';
       html += '<h3>Event detail</h3>';
-      html += '<div class="date-detail"><span>FECHA:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+'</div>';
+      html += '<div class="date-detail"><span>FECHA:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+' - '+time2.getDate()+' de '+month[time2.getMonth()]+' de '+time2.getFullYear()+'</div>';
       html += '<div class="time"><span>HORARIO:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' horas</div>';
       html += '<div class="place"><span>LUGAR:</span> '+data.getValue(0,2)+'</div>';
       html += '<div class="registration"><span>INSCRIPCION:</span> '+data.getValue(0,10)+'</div>';
