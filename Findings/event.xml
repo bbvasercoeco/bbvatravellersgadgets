@@ -194,10 +194,10 @@ float:left;
 
       html += '<div class="event-detail">';
       html += '<h3>Event detail</h3>';
-      html += '<div class="date-detail"><span>FECHA:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+' - '+time2.getDate()+' de '+month[time2.getMonth()]+' de '+time2.getFullYear()+'</div>';
-      html += '<div class="time"><span>HORARIO:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' horas</div>';
-      html += '<div class="place"><span>LUGAR:</span> '+data.getValue(0,2)+'</div>';
-      html += '<div class="registration"><span>INSCRIPCION:</span> '+data.getValue(0,10)+'</div>';
+      html += '<div class="date-detail"><span>DATE:</span> '+fecha.getDate()+' de '+month[fecha.getMonth()]+' de '+fecha.getFullYear()+' - '+time2.getDate()+' de '+month[time2.getMonth()]+' de '+time2.getFullYear()+'</div>';
+      html += '<div class="time"><span>HORARY:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' horas</div>';
+      html += '<div class="place"><span>PLACE:</span> '+data.getValue(0,2)+'</div>';
+      html += '<div class="registration"><span>REGISTRATION:</span> '+data.getValue(0,10)+'</div>';
       html += '</div>';
 
       html += '<div class="user-bbva">';
