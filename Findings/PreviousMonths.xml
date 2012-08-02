@@ -136,7 +136,7 @@
 
       
       
-         for (var i=1;i<=filas;i++){
+         for (var i=1;i<filas;i++){
           var fecha = new Date(data.getValue(i,0));
 		  var html = "";
 		  html += '<li><a target="_blank" href="'+data.getValue(i,1)+'">'+fecha.getDate()+' '+month[fecha.getMonth()]+', '+fecha.getFullYear()+'</a></li>';
