@@ -80,7 +80,7 @@
     <script type="text/javascript">
 
       console.debug('prod 2 previousm.xml');
-      console.debug('version 10');
+      console.debug('version 11');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -102,7 +102,7 @@
 
 
         var query = new google.visualization.Query(urlTable, opts);
-        var querytosend = "select max(D),T,B,F where T <> '' and F like 'Yes' group by T,B,F order by max(D) desc";
+        var querytosend = "select max(D),T,F where T <> '' and F like 'Yes' group by T,F order by max(D) desc";
         query.setQuery(querytosend);
         query.send(handleQueryResponse);
 
