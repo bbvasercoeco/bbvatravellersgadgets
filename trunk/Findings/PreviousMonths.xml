@@ -80,7 +80,7 @@
     <script type="text/javascript">
 
       console.debug('prod 2 previousm.xml');
-      console.debug('version 8');
+      console.debug('version 9');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
