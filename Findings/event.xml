@@ -210,7 +210,7 @@ float:left;
       html += '<div class="registration"><span>REGISTRATION:</span> '+data.getValue(0,10)+'</div>';
 	  html += '<div class="webevent"><span>WEBSITE:</span> <a target="_blank" href="'+data.getValue(0,13)+'">'+data.getValue(0,1)+'</a></div>';
 	  if(data.getValue(0,14)!=''){
-	  html += '<div class="extrainfo"><span>MORE INFO:</span> <a target="_blank" href="'+data.getValue(0,14)+'">Additional documentation</a></div>';
+	  html += '<div class="extrainfo"><span>OTHER RELEVANT INFO:</span> <a target="_blank" href="'+data.getValue(0,14)+'">Additional documentation</a></div>';
 	  }
       html += '</div>';
 
