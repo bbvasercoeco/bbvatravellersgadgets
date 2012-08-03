@@ -75,9 +75,13 @@ h2 {
 .user-bbva .role {
   color: #626262;
   font-weight: bold;
+ 
+}
+.user-bbva .mail {
+  color: #626262;
+  font-weight: bold;
   margin-bottom: 8px;
 }
-
 .summary {
   line-height:20px;
   font-size: 12px;
