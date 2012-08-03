@@ -195,7 +195,7 @@ float:left;
       html += '<div class="event-detail">';
       html += '<h3>Event detail</h3>';
       html += '<div class="date-detail"><span>DATE:</span> '+fecha.getDate()+' / '+month[fecha.getMonth()]+' / '+fecha.getFullYear()+' - '+time2.getDate()+' / '+month[time2.getMonth()]+' / '+time2.getFullYear()+'</div>';
-      html += '<div class="time"><span>HORARY:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' hours</div>';
+      html += '<div class="time"><span>TIMETABLE:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' hours</div>';
       html += '<div class="place"><span>PLACE:</span> '+data.getValue(0,2)+'</div>';
       html += '<div class="registration"><span>REGISTRATION:</span> '+data.getValue(0,10)+'</div>';
       html += '</div>';
