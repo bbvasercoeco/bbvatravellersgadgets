@@ -159,7 +159,7 @@ float:left;
     //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where B like '"+topic[1].replace(/\+/g," ")+"'and dateDiff(D,now())>0 group by B,C,L,N,O,P,S,X,Y,Z,AA  order by max(D)  desc ";
      //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') and (dateDiff(D,now())>0) group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
     
-    var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA,M,H where (B like '" + topic[1].replace(/\+/g," ") + "') group by B,C,L,N,O,P,S,X,Y,Z,AA,M,H order by max(D)  desc ";
+    var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA,M,H,AB where (B like '" + topic[1].replace(/\+/g," ") + "') group by B,C,L,N,O,P,S,X,Y,Z,AA,M,H,AB order by max(D)  desc ";
     
 
       query.setQuery(querytosend);
@@ -208,7 +208,10 @@ float:left;
       html += '<div class="time"><span>TIMETABLE:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' hours</div>';
       html += '<div class="place"><span>PLACE:</span> '+data.getValue(0,2)+'</div>';
       html += '<div class="registration"><span>REGISTRATION:</span> '+data.getValue(0,10)+'</div>';
-	  html += '<div class="webevent"><span>EVENT WEB:</span> <a href="'+data.getValue(0,13)+'">'+data.getValue(0,1)+'</a></div>';
+	  html += '<div class="webevent"><span>WEBSITE:</span> <a href="'+data.getValue(0,13)+'">'+data.getValue(0,1)+'</a></div>';
+	  if(data.getValue(0,14)<>''){
+	  html += '<div class="extrainfo"><span>MORE INFO:</span> <a href="'+data.getValue(0,14)+'">Additional documentation</a></div>';
+	  }
       html += '</div>';
 
       html += '<div class="user-bbva">';
