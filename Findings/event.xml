@@ -61,7 +61,7 @@ h2 {
 .event-detail a{
 color:#62B4E6;
 font-weight: bold;
-text-decoration:none;
+
 }
 .user-bbva {
   border-bottom: 1px solid #b1b1b1;
