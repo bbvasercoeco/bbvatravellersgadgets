@@ -208,9 +208,9 @@ float:left;
       html += '<div class="time"><span>TIMETABLE:</span> '+time1.getHours()+':'+time1.getMinutes()+' - '+time2.getHours()+':'+time2.getMinutes()+' hours</div>';
       html += '<div class="place"><span>PLACE:</span> '+data.getValue(0,2)+'</div>';
       html += '<div class="registration"><span>REGISTRATION:</span> '+data.getValue(0,10)+'</div>';
-	  html += '<div class="webevent"><span>WEBSITE:</span> <a href="'+data.getValue(0,13)+'">'+data.getValue(0,1)+'</a></div>';
+	  html += '<div class="webevent"><span>WEBSITE:</span> <a target="_blank" href="'+data.getValue(0,13)+'">'+data.getValue(0,1)+'</a></div>';
 	  if(data.getValue(0,14)!=''){
-	  html += '<div class="extrainfo"><span>MORE INFO:</span> <a href="'+data.getValue(0,14)+'">Additional documentation</a></div>';
+	  html += '<div class="extrainfo"><span>MORE INFO:</span> <a target="_blank" href="'+data.getValue(0,14)+'">Additional documentation</a></div>';
 	  }
       html += '</div>';
 
