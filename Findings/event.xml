@@ -149,7 +149,7 @@ float:left;
     //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where B like '"+topic[1].replace(/\+/g," ")+"'and dateDiff(D,now())>0 group by B,C,L,N,O,P,S,X,Y,Z,AA  order by max(D)  desc ";
      //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') and (dateDiff(D,now())>0) group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
     
-    var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
+    var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA,M where (B like '" + topic[1].replace(/\+/g," ") + "') group by B,C,L,N,O,P,S,X,Y,Z,AA,M order by max(D)  desc ";
     
 
       query.setQuery(querytosend);
@@ -204,6 +204,7 @@ float:left;
       html += '<div><img src="'+data.getValue(0,5)+'" /></div>';
       html += '<h3>'+data.getValue(0,3)+'</h3>';
       html += '<div class="role">'+data.getValue(0,4)+'</div>';
+	  html += '<div class="mail">'+data.getValue(0,12)+'</div>;
       html += '<div class="summary">'+data.getValue(0,11)+'</div>';
       html += '</div>';
 	  html += '<div class="back"><a class="imagen" href="javascript:history.back()"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/Findings/images/Images_Findings_Events/volver.png"/></a><a class="return" href="javascript:history.back()">Back</a></div>';
