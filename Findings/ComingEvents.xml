@@ -201,7 +201,7 @@ color: white;
       .finding .text h3 {
         color: #000;
         font-size: 18px;
-        margin: 0 25px 0 0;
+        margin: 0 35px 0 0;
 		
       }
       .finding .text a {
