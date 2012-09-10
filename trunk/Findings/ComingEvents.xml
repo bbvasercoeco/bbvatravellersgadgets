@@ -269,7 +269,7 @@ font-weight: normal;
 
     <script type="text/javascript">
 
-     console.debug('prod 8 ComingEvents.xml');
+     console.debug('prod 9 ComingEvents.xml');
 
       var gadgetHelper = null;
       var prefs = new _IG_Prefs(); // User preferences
@@ -355,7 +355,7 @@ font-weight: normal;
 			}
 			
 			//var html = "";
-			html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\');">';
+			html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\',\'website\');">';
 			html +='<div class="date">';
 			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
 			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
@@ -368,7 +368,7 @@ font-weight: normal;
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-			html +='<div id="urlmoreinfo"><a target="_blank" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
+			html +='<div id="urlmoreinfo"><a href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			html +='</div>';
 			html +='</div>';
 			html +='</div>';
