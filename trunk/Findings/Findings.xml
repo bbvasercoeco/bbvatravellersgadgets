@@ -207,7 +207,7 @@
             text-align: left;
         }
         .blockFinding .blockData .infoviajero .label-bbvatraveller-large span:last-child {
-            padding-left: 60px;
+            padding-left: 52px;
         }
 
         .blockFinding .blockData .infoviajero .more-link {
