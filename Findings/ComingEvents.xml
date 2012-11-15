@@ -217,13 +217,13 @@ color: white;
         width: 440px;
       }
       .finding .footer .center {
+      	width: 160px;
+      	text-align: left;
         float: left;
         font-weight: bold;
       }
       .finding .footer .label-traveller-data {
         float: left;
-        paddig-left: 10px;
-        font-weight: bold;
       }
       .finding .footer a.more-link {
         color: #62b4e6;
