@@ -206,7 +206,7 @@
             line-height: 17px;
             text-align: left;
         }
-        .blockFinding .blockData .infoviajero .label-bbvatraveller-large:AFTER br{
+        .blockFinding .blockData .infoviajero .label-bbvatraveller-large br:after{
             padding-left: 60px;
         }
 
