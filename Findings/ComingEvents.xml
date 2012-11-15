@@ -220,7 +220,7 @@ color: white;
         float: left;
         font-weight: bold;
       }
-      .finding .footer .center .label-traveller-data{
+      .finding .footer .label-traveller-data {
         float: left;
         paddig-left: 10px;
         font-weight: bold;
