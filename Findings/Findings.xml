@@ -195,6 +195,20 @@
             line-height: 17px;
             text-align: left;
         }
+        .blockFinding .blockData .infoviajero .label-bbvatraveller-large {
+            overflow: hidden;
+            width: 185px;
+            padding-left: 20px;
+            padding-top: 0px;
+            float: left;
+            font-family: arial,sans-serif;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: left;
+        }
+        .blockFinding .blockData .infoviajero .label-bbvatraveller-large:AFTER br{
+            padding-left: 60px;
+        }
 
         .blockFinding .blockData .infoviajero .more-link {
             width: 55px;
@@ -373,7 +387,7 @@
                 html += '<div class="infoviajero">';
 				if (traveller.indexOf(',') != -1){
 					var travellers = traveller.split(',');
-					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> - ' + travellers[0] + '<br/>' + travellers[1] + '</div>';
+					html += '<div class="label-bbvatraveller-large"><strong>Traveller</strong> - ' + travellers[0] + '<br/>' + travellers[1] + '</div>';
 				}else{
 					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> - ' + traveller + '</div>';
 				}        
