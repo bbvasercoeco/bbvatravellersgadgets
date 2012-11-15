@@ -186,8 +186,8 @@
 
         .blockFinding .blockData .infoviajero .label-bbvatraveller {
             overflow: hidden;
-            width: 185px;
-            padding-left: 20px;
+            width: 195px;
+            padding-left: 10px;
             padding-top: 10px;
             float: left;
             font-family: arial,sans-serif;
@@ -197,8 +197,8 @@
         }
         .blockFinding .blockData .infoviajero .label-bbvatraveller-large {
             overflow: hidden;
-            width: 185px;
-            padding-left: 20px;
+            width: 195px;
+            padding-left: 10px;
             padding-top: 0px;
             float: left;
             font-family: arial,sans-serif;
@@ -387,9 +387,9 @@
                 html += '<div class="infoviajero">';
 				if (traveller.indexOf(',') != -1){
 					var travellers = traveller.split(',');
-					html += '<div class="label-bbvatraveller-large"><strong>Traveller</strong> : <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
+					html += '<div class="label-bbvatraveller-large"><strong>Traveller</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
 				}else{
-					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> : <span>' + traveller + '</span></div>';
+					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> <span>' + traveller + '</span></div>';
 				}        
        
                 html += '<div class="more-link">';
