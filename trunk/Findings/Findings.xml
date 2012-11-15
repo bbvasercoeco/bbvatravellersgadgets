@@ -395,7 +395,7 @@
                 html += '<div class="infoviajero">';
 				if (traveller.indexOf(',') != -1){
 					var travellers = traveller.split(',');
-					html += '<div class="label-bbvatraveller-large1"><strong>Traveller</strong> - ' + travellers[0] + '</div><div class="label-bbvatraveller-large1">' + travellers[1] + '</div>';
+					html += '<div class="label-bbvatraveller-large1"><strong>Traveller</strong> - ' + travellers[0] + '</div><div class="label-bbvatraveller-large2">' + travellers[1] + '</div>';
 				}else{
 					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> - ' + traveller + '</div>';
 				}        
