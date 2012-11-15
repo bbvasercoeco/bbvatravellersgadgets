@@ -387,7 +387,7 @@
                 html += '<div class="infoviajero">';
 				if (traveller.indexOf(',') != -1){
 					var travellers = traveller.split(',');
-					html += '<div class="label-bbvatraveller-large"><strong>Traveller</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
+					html += '<div class="label-bbvatraveller-large"><strong>Travellers</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
 				}else{
 					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> <span>' + traveller + '</span></div>';
 				}        
