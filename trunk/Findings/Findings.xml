@@ -332,11 +332,11 @@
                 //var html = "";
                 var topicName = data.getValue(i,1);
                 var traveller = data.getValue(i,3);
-                if (data.getValue(i,9) != ""){
+               // if (data.getValue(i,9) != ""){
                 	var imageFinding = data.getValue(i,9);
-                }else{
-                	var imageFinding = data.getValue(i,4);
-                }
+                //}else{
+                //	var imageFinding = data.getValue(i,4);
+                //}
                 var summary = data.getValue(i,6);
                 //console.debug('i:'+ i);
                 //console.debug('pagActual:'+ pagActual);
