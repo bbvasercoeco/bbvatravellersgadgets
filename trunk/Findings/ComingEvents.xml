@@ -222,7 +222,7 @@ color: white;
         float: left;
         font-weight: bold;
       }
-      .finding .footer .label-traveller-data {
+      .finding .label-traveller-data {
         float: left;
       }
       .finding .footer a.more-link {
@@ -233,15 +233,7 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
-      .finding a.more-link {
-        color: #62b4e6;
-        font-weight: normal;
-        text-decoration: none;
-      }
-      .finding a.more-link:hover {
-        text-decoration: underline;
-      }
-	  .bloqueAnterior{
+      .bloqueAnterior{
  clear:both;
  display:block;
  margin-left:15px;
@@ -383,7 +375,7 @@ font-weight: normal;
 			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
-			html +='<div id="traveller" class="label-traveller-data">' + traveller + '</div>';
+			html +='<div id="traveller" class="label-traveller-data"><strong>Traveler:</strong><span>' + traveller + '</span></div>';
 			html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/botonEventWebsite.png"/></a></div>';
 			html +='</div>';
 			html +='</div>';
