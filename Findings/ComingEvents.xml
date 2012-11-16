@@ -233,6 +233,10 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
+      .finding .textHeader {
+      	float: left;
+      	margin: 0;
+      }
       .bloqueAnterior{
  clear:both;
  display:block;
@@ -370,9 +374,11 @@ font-weight: normal;
 			html +='</div>';
 			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
 			html +='<div class="text">';
+			html +='<header class="textHeader">';
 			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
+			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';	
+			html +='</header>';		
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
 			html +='<div id="traveller" class="label-traveller-data"><strong>Travelers:</strong><span>' + traveller + '</span></div>';
