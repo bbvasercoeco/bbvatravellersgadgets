@@ -102,8 +102,8 @@
         }
 
         .blockFinding .container-imageFindings img {
-            width: 182px;
-            height: 140px;
+            max-width: 182px;
+            max-height: 140px;
         }
 
         .blockFinding .blockData {
@@ -308,7 +308,7 @@
                 //esta query funciona
                 //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
                 //añadiendo la validacion de F==Yes
-                var querytosend = "select max(D),A,C,L,G,R,S,B,F where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F order by max(D)  desc ";
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AA,AB where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F,AA,AB order by max(D)  desc ";
             }   
 
             query.setQuery(querytosend);
@@ -346,7 +346,7 @@
                 //var html = "";
                 var topicName = data.getValue(i,1);
                 var traveller = data.getValue(i,3);
-                var imageFinding = data.getValue(i,4);
+                var imageFinding = data.getValue(i,9);
                 var summary = data.getValue(i,6);
                 //console.debug('i:'+ i);
                 //console.debug('pagActual:'+ pagActual);
@@ -376,7 +376,7 @@
                     html += '<div class="blockFinding par" onclick="javascript:window.parent.location.href =\'https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname='+ data.getValue(i,7) +'\';">';
                 }
                 
-                html += '<div class="container-imageFindings"><img width="15" src="' + imageFinding + '"/></div>';
+                html += '<div class="container-imageFindings"><img src="' + imageFinding + '"/></div>';
 
                 html += '<div class="blockData">';
 
