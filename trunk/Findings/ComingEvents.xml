@@ -225,12 +225,12 @@ color: white;
       .finding .footer .label-traveller-data {
         float: left;
       }
-      .finding a.more-link {
+      .finding .footer a.more-link {
         color: #62b4e6;
         font-weight: normal;
         text-decoration: none;
       }
-      .finding a.more-link:hover {
+      .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
 	  .bloqueAnterior{
@@ -370,10 +370,7 @@ font-weight: normal;
 			html +='</div>';
 			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
 			html +='<div class="text">';
-			html +='<div class="header">';
 			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
-			html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
-			html +='</div>';
 			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
@@ -381,6 +378,7 @@ font-weight: normal;
 			if (document.getElementById("all").style.display == "none"){
 				html +='<div id="traveller" class="label-traveller-data">' + traveller + '</div>';
 			}
+			html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			html +='</div>';
 			html +='</div>';
 			html +='</div>';
