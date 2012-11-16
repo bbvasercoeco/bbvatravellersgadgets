@@ -299,7 +299,7 @@
             if(situation.indexOf('topic')== -1)
             {
                 document.getElementById("titleHome").innerHTML = '<h2>Last <strong>Findings</strong></h2><div id="showAll"><a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/topics">View all topics</a></div>';
-                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC,AD where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F,AC,AD order by max(D) desc limit 4";
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F,AC order by max(D) desc limit 4";
             }
             else
             {
@@ -308,7 +308,7 @@
                 //esta query funciona
                 //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
                 //añadiendo la validacion de F==Yes
-                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC,AD where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F,AC,AD order by max(D)  desc ";
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F,AC order by max(D)  desc ";
             }   
 
             query.setQuery(querytosend);
