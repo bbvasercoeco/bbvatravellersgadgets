@@ -347,6 +347,7 @@
                 var topicName = data.getValue(i,1);
                 var traveller = data.getValue(i,3);
                 var imageFinding = data.getValue(i,9);
+                alert(imageFinding);
                 var summary = data.getValue(i,6);
                 //console.debug('i:'+ i);
                 //console.debug('pagActual:'+ pagActual);
