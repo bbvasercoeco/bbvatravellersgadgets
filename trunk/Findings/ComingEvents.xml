@@ -208,8 +208,11 @@ color: white;
         color: #094691;
       }
       .finding .text .summary {
-        margin-top: 11px;
+        margin-top: 10px;
         float: left;
+        width: 407px;
+        height: 48px;
+        overflow: hidden;
       }
       .finding .footer {
         bottom: 7px;
