@@ -180,7 +180,7 @@
 
         .blockFinding .blockData .infoviajero {
             overflow: hidden;
-            border-top: 1px solid #D0D0D0;
+            padding-top: 1px;
             height: 35px;
         }
 
@@ -385,12 +385,12 @@
                 html += '<h3 class="label-summary">' + summary + '</h3>';
 
                 html += '<div class="infoviajero">';
-				if (traveller.indexOf(',') != -1){
-					var travellers = traveller.split(',');
-					html += '<div class="label-bbvatraveller-large"><strong>Travellers</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
-				}else{
-					html += '<div class="label-bbvatraveller"><strong>Traveller</strong> <span>' + traveller + '</span></div>';
-				}        
+				//if (traveller.indexOf(',') != -1){
+				//	var travellers = traveller.split(',');
+				//	html += '<div class="label-bbvatraveller-large"><strong>Traveler:</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
+				//}else{
+					html += '<div class="label-bbvatraveller"><strong>Traveler:</strong><br/><span>' + traveller + '</span></div>';
+				//}        
        
                 html += '<div class="more-link">';
                 html += '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'">More Info</a>';
