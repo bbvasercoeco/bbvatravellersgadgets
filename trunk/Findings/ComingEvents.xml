@@ -298,7 +298,7 @@ font-weight: normal;
 		{
 			document.getElementById("home").innerHTML = "<h2>Coming Events</h2>";
 			document.getElementById("all").innerHTML = '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events">View coming events</a></div>';
-			var querytosend = "select max(D),B,E,U,C,W,G,A where dateDiff(D,now())>0 group by B,E,U,C,W,G,A order by max(D) limit 3"; 
+			var querytosend = "select max(D),B,E,U,C,W,G,A,L where dateDiff(D,now())>0 group by B,E,U,C,W,G,A,L order by max(D) limit 3"; 
 		}
 		else
 		{
@@ -343,9 +343,8 @@ font-weight: normal;
 		{
 			var fecha = new Date(data.getValue(i,0));
 			var topicname = data.getValue(i,7);
-			if (document.getElementById("all").style.display == "none"){
-				var traveller = data.getValue(i,8)
-			}
+			var traveller = data.getValue(i,8);
+			
 			switch(topicname)
 			{
 			 case 'Security': var classname="green2";break;
