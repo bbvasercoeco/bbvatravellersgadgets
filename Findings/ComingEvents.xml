@@ -62,7 +62,7 @@
 			background-repeat:no-repeat;
 			float:right;
 			margin-right:-25px;
-			margin-top:-20px;
+			margin-top: 2px;
 	 }
 	
  .brown {
@@ -201,42 +201,36 @@ color: white;
       .finding .text h3 {
         color: #000;
         font-size: 18px;
-        margin: 0 45px 0 0;
-		
+        margin: 0;
+        float: left;
       }
       .finding .text a {
         color: #094691;
       }
       .finding .text .summary {
-        margin: 15px 0;
+        margin-top: 11px;
+        float: left;
       }
       .finding .footer {
-        bottom: 10px;
+        bottom: 7px;
         position: absolute;
         text-align: right;
         width: 440px;
       }
       .finding .center {
-      	width: 160px;
-      	text-align: left;
         float: left;
         font-weight: bold;
+        margin-top: 5px;
+        margin-left: 10px;
       }
       .finding .footer .label-traveller-data {
         float: left;
+        margin-top: 5px;
       }
       .finding .footer a.more-link {
-        color: #62b4e6;
-        font-weight: normal;
-        text-decoration: none;
+      	margin-right: -25px;
       }
-      .finding .footer a.more-link:hover {
-        text-decoration: underline;
-      }
-      .finding .textHeader {
-      	float: left;
-      	margin: 0;
-      }
+      
       .bloqueAnterior{
  clear:both;
  display:block;
@@ -374,14 +368,12 @@ font-weight: normal;
 			html +='</div>';
 			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
 			html +='<div class="text">';
-			html +='<header class="textHeader">';
 			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';	
-			html +='</header>';		
+			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';		
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
-			html +='<div id="traveller" class="label-traveller-data"><strong>Travelers:</strong><span>' + traveller + '</span></div>';
+			html +='<div id="traveller" class="label-traveller-data"><strong>Travelers:</strong><span> ' + traveller + '</span></div>';
 			html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link"><img src="https://bbvatravellersgadgets.googlecode.com/svn/trunk/botonEventWebsite.png"/></a></div>';
 			html +='</div>';
 			html +='</div>';
