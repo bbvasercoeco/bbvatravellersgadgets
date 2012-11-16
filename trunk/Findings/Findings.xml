@@ -188,7 +188,7 @@
             overflow: hidden;
             width: 195px;
             padding-left: 10px;
-            padding-top: 10px;
+            padding-top: 0px;
             float: left;
             font-family: arial,sans-serif;
             font-size: 12px;
