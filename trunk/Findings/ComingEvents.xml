@@ -371,24 +371,34 @@ font-weight: normal;
 			}
 			
 			//var html = "";
-			html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\',\'website\');">';
-			html +='<div class="date">';
-			html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
-			html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
-			html +='</div>';
-			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
-			html +='<div class="text">';
-			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
 			if (document.getElementById("all").style.display == "none"){
-				html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
-			}
-			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
-			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
-			html +='<div class="footer">';
-			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
-			if (document.getElementById("all").style.display == "none"){
+				html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\',\'website\');">';
+				html +='<div class="date">';
+				html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
+				html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
+				html +='</div>';
+				html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
+				html +='<div class="text">';
+				html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
+				html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
+				html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
+				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
+				html +='<div class="footer">';
 				html +='<div id="traveller" class="label-traveller-data">' + traveller + '</div>';
+				html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			}else{
+				html +='<div id="comingevent" class="finding" onclick="javascript:window.open(\''+ data.getValue(i,3) +'\',\'website\');">';
+				html +='<div class="date">';
+				html +='<div class="day" id="dia">'+fecha.getDate()+'</div>';
+				html +='<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
+				html +='</div>';
+				html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
+				html +='<div class="text">';
+				html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
+				html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
+				html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
+				html +='<div class="footer">';
+				html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
 				html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			}
 			html +='</div>';
@@ -429,6 +439,7 @@ font-weight: normal;
         }
 		document.getElementById("comingevents").innerHTML += html;
      }
+     
 	function continuacion(num)
     {
        
