@@ -233,6 +233,14 @@ color: white;
       .finding .footer a.more-link:hover {
         text-decoration: underline;
       }
+      .finding a.more-link {
+        color: #62b4e6;
+        font-weight: normal;
+        text-decoration: none;
+      }
+      .finding a.more-link:hover {
+        text-decoration: underline;
+      }
 	  .bloqueAnterior{
  clear:both;
  display:block;
@@ -371,14 +379,18 @@ font-weight: normal;
 			html +='<div id="imageevent" class="image"><img src="' + data.getValue(i,5) +'" /></div>';
 			html +='<div class="text">';
 			html +='<h3 id="event">'+data.getValue(i,1)+'</h3>';
+			if (document.getElementById("all").style.display == "none"){
+				html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
+			}
 			html += '<div id="topicname" class="topicname '+ classname +'">'+topicname+'</div>';			
 			html +='<div id="summaryevent" class="summary">'+data.getValue(i,2)+'</div>';			
 			html +='<div class="footer">';
 			html +='<div id="centro" class="center">'+data.getValue(i,4)+'</div>';
 			if (document.getElementById("all").style.display == "none"){
 				html +='<div id="traveller" class="label-traveller-data">' + traveller + '</div>';
+			}else{
+				html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			}
-			html +='<div id="urlmoreinfo"><a target="website" href="'+data.getValue(i,3)+ '" class="more-link">Event website</a></div>';
 			html +='</div>';
 			html +='</div>';
 			html +='</div>';
