@@ -308,7 +308,7 @@
                 //esta query funciona
                 //var querytosend = "select max(D),A,C,L,G,R,S,B,F where (A like '%"+topic[1]+"%') group by A,C,L,G,R,S,B,F order by max(D)  desc ";
                 //añadiendo la validacion de F==Yes
-                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AA,AB where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F,AA,AB order by max(D)  desc ";
+                var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC,AD where ((A like '%"+topic[1]+"%') and (F like 'Yes')) group by A,C,L,G,R,S,B,F,AA,AB order by max(D)  desc ";
             }   
 
             query.setQuery(querytosend);
