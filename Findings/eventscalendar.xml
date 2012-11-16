@@ -180,7 +180,7 @@
 		html += '<div class="date">';
 		html += '<div class="day" id="dia">'+fecha.getDate()+'</div>';
 		html += '<div class="month" id="mes">'+month[fecha.getMonth()]+'</div>';
-		html += '<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
+		//html += '<div class="time" id="hora">'+fecha.getHours()+':'+fecha.getMinutes()+'</div>';
 		html += '</div>';
 		html += '<div class="text">';
 		html += '<div class="summary">'+data.getValue(i,1)+'</div>';
