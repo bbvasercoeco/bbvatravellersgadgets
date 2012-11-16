@@ -389,7 +389,7 @@
 				//	var travellers = traveller.split(',');
 				//	html += '<div class="label-bbvatraveller-large"><strong>Traveler:</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
 				//}else{
-					html += '<div class="label-bbvatraveller"><strong>Traveler:</strong><br/><span>' + traveller + '</span></div>';
+					html += '<div class="label-bbvatraveller"><strong>Travelers:</strong><br/><span>' + traveller + '</span></div>';
 				//}        
        
                 html += '<div class="more-link">';
