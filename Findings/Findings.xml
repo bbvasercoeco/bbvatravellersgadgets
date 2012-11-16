@@ -195,21 +195,7 @@
             line-height: 17px;
             text-align: left;
         }
-        .blockFinding .blockData .infoviajero .label-bbvatraveller-large {
-            overflow: hidden;
-            width: 195px;
-            padding-left: 10px;
-            padding-top: 0px;
-            float: left;
-            font-family: arial,sans-serif;
-            font-size: 12px;
-            line-height: 17px;
-            text-align: left;
-        }
-        .blockFinding .blockData .infoviajero .label-bbvatraveller-large span:last-child {
-            padding-left: 60px;
-        }
-
+        
         .blockFinding .blockData .infoviajero .more-link {
             width: 55px;
             height: 25px;
@@ -385,12 +371,8 @@
                 html += '<h3 class="label-summary">' + summary + '</h3>';
 
                 html += '<div class="infoviajero">';
-				//if (traveller.indexOf(',') != -1){
-				//	var travellers = traveller.split(',');
-				//	html += '<div class="label-bbvatraveller-large"><strong>Traveler:</strong> <span>' + travellers[0] + '</span><br/><span>' + travellers[1] + '</span></div>';
-				//}else{
-					html += '<div class="label-bbvatraveller"><strong>Travelers:</strong><br/><span>' + traveller + '</span></div>';
-				//}        
+
+				html += '<div class="label-bbvatraveller"><strong>Travelers:</strong><br/><span>' + traveller + '</span></div>';       
        
                 html += '<div class="more-link">';
                 html += '<a target="_parent" href="https://sites.google.com/a/bbva.com/findings/home/coming-events/event?eventname=' + data.getValue(i,7) +'">More Info</a>';
