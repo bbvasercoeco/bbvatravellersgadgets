@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
-  <ModulePrefs title="events.xml información del evento."
+  <ModulePrefs title="events.xml informaciï¿½n del evento."
     description=""
     author_affiliation="Capgemini">
     <Require feature="idi"/>
@@ -155,7 +155,7 @@ float:left;
 
     var query = new google.visualization.Query(urlTable, opts);
     var topic = gadgets.util.getUrlParameters()["parent"].split("=");
-	//alert(topic[1].replace(/\+/g," "));
+	alert(topic[1].replace(/\+/g," "));
     //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where B like '"+topic[1].replace(/\+/g," ")+"'and dateDiff(D,now())>0 group by B,C,L,N,O,P,S,X,Y,Z,AA  order by max(D)  desc ";
      //var querytosend = "select max(D),B,C,L,N,O,P,S,X,Y,Z,AA where (B like '" + topic[1].replace(/\+/g," ") + "') and (dateDiff(D,now())>0) group by B,C,L,N,O,P,S,X,Y,Z,AA order by max(D)  desc ";
     
