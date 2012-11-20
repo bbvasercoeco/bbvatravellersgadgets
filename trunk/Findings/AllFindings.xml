@@ -247,10 +247,6 @@
     <div id="titleHome"></div>
 
     <div id="lastfindings">
-     asjdjasdjasjdajsdjasdjsdghasdiohgasdhgioasdhgasd+gasd
-     g
-     asd
-     gasdgasdgasdg
     </div>
 
 
@@ -266,7 +262,7 @@
         var prefs = new gadgets.Prefs(); // User preferences
         
         var urlTable = prefs.getString("_table_query_url");
-        
+        alert(urlTable);
         gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
 
         function loadVisualizationAPI()
