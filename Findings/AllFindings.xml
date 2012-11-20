@@ -267,6 +267,7 @@
 
         function loadVisualizationAPI()
         {
+        	alert("YEAG");
             google.load("visualization", "1", {"packages": ["table"]});
             google.setOnLoadCallback(sendQuery);
         }
