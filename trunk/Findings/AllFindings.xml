@@ -251,8 +251,8 @@
 
 
     <script type="text/javascript">
-
-        console.debug('prod 13 AllFindings.xml');
+		alert(urlTable);
+        //console.debug('prod 13 AllFindings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
         //https://sites.google.com/a/bbva.com/findings/prueba-last-findings
@@ -262,7 +262,7 @@
         var prefs = new gadgets.Prefs(); // User preferences
         
         var urlTable = prefs.getString("_table_query_url");
-        alert(urlTable);
+        
         gadgets.util.registerOnLoadHandler(loadVisualizationAPI);
 
         function loadVisualizationAPI()
