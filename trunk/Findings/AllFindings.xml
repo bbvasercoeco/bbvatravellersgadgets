@@ -251,7 +251,6 @@
 
 
     <script type="text/javascript">
-		alert("ASDFSD");
         //console.debug('prod 13 AllFindings.xml');
 
         //https://docs.google.com/a/bbva.com/spreadsheet/ccc?key=0AqlvxYdNvmcRdFZZLXlCdWZnM25qZEVIMmVYdkpraFE#gid=0
@@ -267,7 +266,6 @@
 
         function loadVisualizationAPI()
         {
-        	alert(urlTable);
             google.load("visualization", "1", {"packages": ["table"]});
             google.setOnLoadCallback(sendQuery);
         }
@@ -280,10 +278,8 @@
             var query = new google.visualization.Query(urlTable, opts);
            	document.getElementById("titleHome").innerHTML = '<h2 class="internal"><strong>All findings</strong></h2>';
            	var querytosend = "select max(D),A,C,L,G,R,S,B,F,AC where (F like 'Yes') and (dateDiff(D,now())<=0) group by A,C,L,G,R,S,B,F,AC order by max(D) desc";
-			alert(querytosend);
             query.setQuery(querytosend);
             query.send(handleQueryResponse);
-
         }
 
        function handleQueryResponse(response)
