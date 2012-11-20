@@ -247,7 +247,10 @@
     <div id="titleHome"></div>
 
     <div id="lastfindings">
-    	"ME CAWEN TODO"
+     asjdjasdjasjdajsdjasdjsdghasdiohgasdhgioasdhgasd+gasd
+     g
+     asd
+     gasdgasdgasdg
     </div>
 
 
@@ -268,7 +271,7 @@
 
         function loadVisualizationAPI()
         {
-        	alert("YEAG");
+        	alert(urlTable);
             google.load("visualization", "1", {"packages": ["table"]});
             google.setOnLoadCallback(sendQuery);
         }
